@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { Service, siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
@@ -26,9 +27,12 @@ export function ServiceCard({ service }: ServiceCardProps) {
       <div className="service-card__body">
         <h3>{service.title}</h3>
         <p>{service.description}</p>
-        <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
-          Consultar este tratamiento
-        </Button>
+        <div className="service-card__actions">
+          <Link href={`/servicios/${service.slug}`}>Ver guía</Link>
+          <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
+            Consultar este tratamiento
+          </Button>
+        </div>
       </div>
     </article>
   );

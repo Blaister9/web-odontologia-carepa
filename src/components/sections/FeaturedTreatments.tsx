@@ -19,7 +19,7 @@ export function FeaturedTreatments() {
     .filter(Boolean);
 
   return (
-    <section className="section featured-treatments">
+    <section className="section featured-treatments" id="tratamientos-destacados">
       <div className="container">
         <SectionHeading
           eyebrow="Tratamientos destacados"

@@ -15,6 +15,11 @@ export function Hero() {
 
   return (
     <section className="hero" id="inicio">
+      <div className="hero__ambient" aria-hidden="true">
+        <span />
+        <span />
+        <span />
+      </div>
       <div className="container hero__grid">
         <div className="hero__content">
           <p className="eyebrow">Odontología estética y familiar en Carepa, Antioquia</p>
@@ -38,6 +43,11 @@ export function Hero() {
               <span key={badge}>{badge}</span>
             ))}
           </div>
+
+          <a className="hero__scroll-cue" href="#tratamientos-destacados">
+            <span aria-hidden="true" />
+            Ver tratamientos destacados
+          </a>
         </div>
 
         <div className="hero__visual" aria-label="Consultorio odontológico moderno">
@@ -59,6 +69,14 @@ export function Hero() {
           <div className="hero__note">
             <span>Valoración clara</span>
             <strong>Plan de tratamiento explicado paso a paso</strong>
+          </div>
+          <div className="hero__micro-card hero__micro-card--top">
+            <span>Sin presión</span>
+            <strong>Primero orientación, luego decisión.</strong>
+          </div>
+          <div className="hero__micro-card hero__micro-card--bottom">
+            <span>Enfoque local</span>
+            <strong>Carepa y región de Urabá.</strong>
           </div>
         </div>
       </div>
