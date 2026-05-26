@@ -6,6 +6,7 @@ import { getWhatsAppUrl } from "@/utils/whatsapp";
 import { Button } from "../ui/Button";
 
 const navItems = [
+  { label: "Necesidad", href: "#que-necesitas" },
   { label: "Servicios", href: "#servicios" },
   { label: "Primera cita", href: "#primera-cita" },
   { label: "Doctora", href: "#doctora" },
@@ -18,7 +19,7 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una cita odontológica en Carepa."
+    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
   );
 
   return (
@@ -30,11 +31,13 @@ export function Header() {
           </span>
           <span>
             <strong>{siteConfig.clinicName}</strong>
-            <small>{siteConfig.city}, {siteConfig.department}</small>
+            <small>
+              {siteConfig.city}, {siteConfig.department}
+            </small>
           </span>
         </a>
 
-        <nav className="site-header__nav" aria-label="Navegacion principal">
+        <nav className="site-header__nav" aria-label="Navegación principal">
           {navItems.map((item) => (
             <a key={item.href} href={item.href}>
               {item.label}
@@ -49,7 +52,7 @@ export function Header() {
           <button
             className="menu-toggle"
             type="button"
-            aria-label={isOpen ? "Cerrar menu" : "Abrir menu"}
+            aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
             aria-expanded={isOpen}
             aria-controls="mobile-menu"
             onClick={() => setIsOpen((current) => !current)}

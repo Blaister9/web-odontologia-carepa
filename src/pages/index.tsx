@@ -3,14 +3,18 @@ import Head from "next/head";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { AboutDoctor } from "@/components/sections/AboutDoctor";
+import { BeforeBooking } from "@/components/sections/BeforeBooking";
 import { Emergency } from "@/components/sections/Emergency";
 import { FAQ } from "@/components/sections/FAQ";
 import { FirstVisit } from "@/components/sections/FirstVisit";
 import { Hero } from "@/components/sections/Hero";
+import { LocalTrust } from "@/components/sections/LocalTrust";
 import { Location } from "@/components/sections/Location";
+import { NeedSelector } from "@/components/sections/NeedSelector";
 import { Services } from "@/components/sections/Services";
 import { Testimonials } from "@/components/sections/Testimonials";
 import { TrustBar } from "@/components/sections/TrustBar";
+import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/data/site";
 import { getDentistJsonLd } from "@/utils/seo";
@@ -44,16 +48,20 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
+        <NeedSelector />
+        <LocalTrust />
         <Services />
         <FirstVisit />
         <AboutDoctor />
         <Emergency />
+        <BeforeBooking />
         <Testimonials />
         <Location />
         <FAQ />
       </main>
       <Footer />
       <WhatsAppFloatingButton />
+      <MobileStickyCTA />
     </>
   );
 }

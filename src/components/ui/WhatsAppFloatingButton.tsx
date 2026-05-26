@@ -4,7 +4,7 @@ import { getWhatsAppUrl } from "@/utils/whatsapp";
 export function WhatsAppFloatingButton() {
   const href = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una cita odontológica en Carepa."
+    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
   );
 
   return (

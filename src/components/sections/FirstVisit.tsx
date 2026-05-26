@@ -10,8 +10,12 @@ export function FirstVisit() {
           <SectionHeading
             eyebrow="Primera cita"
             title="Tu primera cita en 3 pasos"
-            description="Un proceso simple para que puedas pasar de la duda inicial a una valoración con información suficiente y expectativas claras."
+            description="Un proceso simple para pasar de la duda inicial a una valoración con información suficiente y expectativas claras."
           />
+          <div className="first-visit__copy">
+            <p>No necesitas saber el nombre del tratamiento.</p>
+            <p>Puedes escribir contando lo que sientes o lo que te gustaría revisar.</p>
+          </div>
         </div>
 
         <div className="steps">
@@ -21,6 +25,7 @@ export function FirstVisit() {
               <div>
                 <h3>{step.title}</h3>
                 <p>{step.description}</p>
+                <small>{step.reassurance}</small>
               </div>
             </article>
           ))}

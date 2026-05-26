@@ -5,16 +5,19 @@ import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "../ui/Button";
 
-const heroBadges = ["Atención personalizada", "Citas por WhatsApp", "Carepa, Antioquia"];
+const heroBadges = ["Atención clara", "Citas por WhatsApp", "Carepa y Urabá"];
 
 export function Hero() {
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una cita odontológica en Carepa."
+    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
   );
 
   return (
     <section className="hero" id="inicio">
+      <span className="hero__orb hero__orb--mint" aria-hidden="true" />
+      <span className="hero__orb hero__orb--gold" aria-hidden="true" />
+
       <div className="container hero__grid">
         <div className="hero__content">
           <p className="eyebrow">Odontología estética y familiar en Carepa, Antioquia</p>
@@ -26,10 +29,10 @@ export function Hero() {
 
           <div className="hero__actions">
             <Button href={appointmentUrl} target="_blank" size="lg">
-              Agendar por WhatsApp
+              Agendar valoración
             </Button>
-            <Button href="#servicios" variant="outline" size="lg">
-              Ver tratamientos
+            <Button href="#que-necesitas" variant="outline" size="lg">
+              No sé qué tratamiento necesito
             </Button>
           </div>
 
@@ -49,6 +52,13 @@ export function Hero() {
             sizes="(min-width: 1024px) 48vw, 100vw"
             className="hero__image"
           />
+          <div className="hero__appointment-card">
+            <span>Agenda tu valoración</span>
+            <strong>Cuéntanos qué necesitas y revisamos disponibilidad.</strong>
+            <a href={appointmentUrl} target="_blank" rel="noreferrer">
+              Escribir por WhatsApp
+            </a>
+          </div>
           <div className="hero__note">
             <span>Valoración clara</span>
             <strong>Plan de tratamiento explicado paso a paso</strong>
