@@ -76,6 +76,10 @@ export default function ServiceDetailPage({
                 sizes="(min-width: 980px) 44vw, 100vw"
                 priority
               />
+              <div className="service-hero__image-caption">
+                <span>{service.badge}</span>
+                <strong>Orientación responsable antes de iniciar.</strong>
+              </div>
             </div>
           </div>
         </section>
@@ -171,11 +175,14 @@ export default function ServiceDetailPage({
 
         <section className="service-disclaimer">
           <div className="container service-disclaimer__inner">
-            <p>
-              La información de esta página es educativa y no reemplaza una valoración
-              odontológica profesional. Para confirmar disponibilidad y orientación inicial,
-              escribe por WhatsApp.
-            </p>
+            <div>
+              <span>Antes de decidir</span>
+              <p>
+                La información de esta página es educativa y no reemplaza una valoración
+                odontológica profesional. Para confirmar disponibilidad y orientación inicial,
+                escribe por WhatsApp.
+              </p>
+            </div>
             <a className="button button--primary button--md" href={whatsappUrl} target="_blank" rel="noreferrer">
               Agendar valoración
             </a>
