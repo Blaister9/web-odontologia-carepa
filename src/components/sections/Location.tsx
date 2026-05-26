@@ -17,7 +17,7 @@ export function Location() {
           <SectionHeading
             eyebrow="Ubicación"
             title={`Atención odontológica en ${siteConfig.city}, ${siteConfig.department}`}
-            description="Un punto de atención pensado para pacientes de Carepa y la región de Urabá. Confirma la dirección exacta al agendar."
+            description="La atención es en Carepa y la disponibilidad se confirma por WhatsApp. Antes de asistir, puedes resolver dudas sobre ubicación, horarios y motivo de consulta."
           />
 
           <div className="location__details">
@@ -35,7 +35,7 @@ export function Location() {
 
           <div className="location__actions">
             <Button href={siteConfig.mapUrl} target="_blank" variant="secondary">
-              Cómo llegar
+              Ver referencia en Maps
             </Button>
             <Button href={appointmentUrl} target="_blank" variant="outline">
               Escribir por WhatsApp
@@ -46,7 +46,7 @@ export function Location() {
         <a className="map-card" href={siteConfig.mapUrl} target="_blank" rel="noreferrer">
           <span className="map-card__pin" aria-hidden="true" />
           <strong>Carepa, Antioquia</strong>
-          <span>Ver ubicación en Google Maps</span>
+          <span>Confirmar ubicación exacta al agendar</span>
         </a>
       </div>
     </section>

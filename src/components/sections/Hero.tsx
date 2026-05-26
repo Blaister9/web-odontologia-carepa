@@ -15,9 +15,6 @@ export function Hero() {
 
   return (
     <section className="hero" id="inicio">
-      <span className="hero__orb hero__orb--mint" aria-hidden="true" />
-      <span className="hero__orb hero__orb--gold" aria-hidden="true" />
-
       <div className="container hero__grid">
         <div className="hero__content">
           <p className="eyebrow">Odontología estética y familiar en Carepa, Antioquia</p>

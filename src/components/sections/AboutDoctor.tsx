@@ -10,8 +10,8 @@ export function AboutDoctor() {
       <div className="container about__grid">
         <div className="about__image">
           <Image
-            src="/images/equipo/odontologa-carepa-placeholder.png"
-            alt={`Foto profesional de ${siteConfig.doctorName}`}
+            src="/images/equipo/odontologia-profesional-carepa.png"
+            alt="Imagen referencial de atención odontológica profesional"
             fill
             sizes="(min-width: 1024px) 38vw, 100vw"
           />
@@ -23,11 +23,10 @@ export function AboutDoctor() {
             title={siteConfig.doctorName}
             description={siteConfig.specialty}
           />
-          {/* Reemplazar esta biografía cuando la odontóloga confirme estudios, enfoque clínico y datos verificables. */}
           <p>
-            Profesional en odontología enfocada en una atención cercana, clara y responsable.
-            Su consulta está pensada para que cada paciente entienda el estado de su salud oral,
-            las alternativas disponibles y los cuidados necesarios antes de iniciar un tratamiento.
+            Una atención odontológica cercana, clara y responsable ayuda a que cada paciente
+            entienda el estado de su salud oral, las alternativas disponibles y los cuidados
+            necesarios antes de iniciar un tratamiento.
           </p>
           <div className="about__highlights" aria-label="Enfoque de atención">
             <span>Escucha activa</span>
