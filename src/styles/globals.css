@@ -13,6 +13,7 @@
   --color-danger: #9a4d3c;
   --shadow-soft: 0 18px 48px rgba(21, 52, 67, 0.12);
   --shadow-card: 0 14px 34px rgba(21, 52, 67, 0.08);
+  --shadow-hover: 0 22px 56px rgba(21, 52, 67, 0.14);
   --radius-card: 8px;
   --header-height: 78px;
 }
@@ -177,9 +178,9 @@ p {
 .site-header__nav {
   display: none;
   align-items: center;
-  gap: 22px;
+  gap: 16px;
   color: var(--color-ink-soft);
-  font-size: 0.92rem;
+  font-size: 0.88rem;
   font-weight: 680;
 }
 
@@ -253,7 +254,7 @@ p {
 }
 
 .button:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .button--sm {
@@ -319,13 +320,44 @@ p {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 74px 0 58px;
+  padding: 78px 0 64px;
   background:
-    linear-gradient(125deg, rgba(255, 255, 255, 0.86), rgba(228, 243, 239, 0.72)),
+    radial-gradient(circle at 14% 18%, rgba(191, 226, 216, 0.52), transparent 28%),
+    radial-gradient(circle at 82% 28%, rgba(243, 223, 180, 0.5), transparent 26%),
+    linear-gradient(125deg, rgba(255, 255, 255, 0.88), rgba(228, 243, 239, 0.84)),
     var(--color-ivory);
 }
 
+.hero__orb {
+  position: absolute;
+  z-index: 0;
+  border-radius: 999px;
+  opacity: 0.9;
+  pointer-events: none;
+  filter: blur(1px);
+}
+
+.hero__orb--mint {
+  top: 120px;
+  right: 9%;
+  width: 92px;
+  height: 92px;
+  background: rgba(13, 107, 115, 0.16);
+  animation: floatSoft 7s ease-in-out infinite;
+}
+
+.hero__orb--gold {
+  bottom: 62px;
+  left: 5%;
+  width: 64px;
+  height: 64px;
+  background: rgba(199, 155, 69, 0.18);
+  animation: floatSoft 8s ease-in-out infinite reverse;
+}
+
 .hero__grid {
+  position: relative;
+  z-index: 1;
   display: grid;
   align-items: center;
   gap: 38px;
@@ -371,24 +403,30 @@ p {
   border-radius: 18px;
   background: var(--color-teal-soft);
   box-shadow: var(--shadow-soft);
+  transform: translateZ(0);
 }
 
 .hero__image {
   object-fit: cover;
 }
 
+.hero__appointment-card,
 .hero__note {
   position: absolute;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
-  max-width: 360px;
   padding: 18px;
   border-radius: var(--radius-card);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 14px 34px rgba(21, 52, 67, 0.14);
+  backdrop-filter: blur(14px);
 }
 
+.hero__appointment-card {
+  top: 16px;
+  right: 16px;
+  max-width: 278px;
+}
+
+.hero__appointment-card span,
 .hero__note span {
   display: block;
   color: var(--color-teal);
@@ -396,10 +434,140 @@ p {
   font-weight: 800;
 }
 
+.hero__appointment-card strong,
 .hero__note strong {
   display: block;
   margin-top: 4px;
   line-height: 1.28;
+}
+
+.hero__appointment-card a {
+  display: inline-flex;
+  margin-top: 12px;
+  color: var(--color-teal);
+  font-size: 0.92rem;
+  font-weight: 800;
+}
+
+.hero__note {
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  max-width: 360px;
+}
+
+.need-selector {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f1f8f5 100%);
+}
+
+.need-selector__grid {
+  display: grid;
+  gap: 28px;
+}
+
+.need-selector__note {
+  max-width: 620px;
+  margin-bottom: 0;
+}
+
+.need-selector__panel {
+  display: grid;
+  gap: 16px;
+}
+
+.need-selector__options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.need-option {
+  min-height: 44px;
+  border-radius: 999px;
+  background: var(--color-white);
+  color: var(--color-ink);
+  padding: 0 15px;
+  box-shadow: inset 0 0 0 1px var(--color-border);
+  font-size: 0.92rem;
+  font-weight: 760;
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease,
+    background-color 180ms ease,
+    color 180ms ease;
+}
+
+.need-option:hover,
+.need-option--active {
+  background: var(--color-teal);
+  color: var(--color-white);
+  box-shadow: 0 12px 26px rgba(13, 107, 115, 0.2);
+  transform: translateY(-1px);
+}
+
+.need-result {
+  padding: 26px;
+  border-radius: 18px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(228, 243, 239, 0.8)),
+    var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.need-result span {
+  display: inline-flex;
+  margin-bottom: 14px;
+  border-radius: 999px;
+  background: var(--color-gold-soft);
+  color: #4b3511;
+  padding: 5px 10px;
+  font-size: 0.78rem;
+  font-weight: 850;
+}
+
+.need-result p:last-of-type {
+  margin-bottom: 22px;
+}
+
+.local-trust {
+  background: var(--color-ivory);
+}
+
+.local-trust__grid {
+  display: grid;
+  gap: 26px;
+}
+
+.local-trust__pillars {
+  display: grid;
+  gap: 14px;
+}
+
+.local-pillar {
+  position: relative;
+  overflow: hidden;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.local-pillar:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.local-pillar span {
+  display: block;
+  width: 34px;
+  height: 5px;
+  margin-bottom: 18px;
+  border-radius: 999px;
+  background: var(--color-gold);
 }
 
 .trust-bar {
@@ -474,6 +642,14 @@ p {
   border-radius: var(--radius-card);
   background: var(--color-white);
   box-shadow: var(--shadow-card);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-hover);
 }
 
 .service-card__image {
@@ -484,6 +660,26 @@ p {
 
 .service-card__image img {
   object-fit: cover;
+  transition: transform 320ms ease;
+}
+
+.service-card:hover .service-card__image img {
+  transform: scale(1.035);
+}
+
+.service-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.88);
+  color: var(--color-teal);
+  padding: 6px 11px;
+  box-shadow: 0 10px 22px rgba(21, 52, 67, 0.12);
+  font-size: 0.78rem;
+  font-weight: 850;
+  backdrop-filter: blur(12px);
 }
 
 .service-card__body {
@@ -504,12 +700,38 @@ p {
   gap: 26px;
 }
 
+.first-visit__copy {
+  display: grid;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.first-visit__copy p {
+  margin: 0;
+  border-left: 3px solid var(--color-gold);
+  padding-left: 14px;
+  color: var(--color-ink);
+  font-weight: 720;
+}
+
 .steps {
+  position: relative;
   display: grid;
   gap: 14px;
 }
 
+.steps::before {
+  position: absolute;
+  top: 28px;
+  bottom: 28px;
+  left: 23px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-teal), var(--color-gold-soft));
+  content: "";
+}
+
 .step-card {
+  position: relative;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 16px;
@@ -517,9 +739,19 @@ p {
   border-radius: var(--radius-card);
   background: var(--color-white);
   box-shadow: var(--shadow-card);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.step-card:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-hover);
 }
 
 .step-card__number {
+  position: relative;
+  z-index: 1;
   display: grid;
   width: 46px;
   height: 46px;
@@ -531,7 +763,58 @@ p {
 }
 
 .step-card p {
+  margin-bottom: 8px;
+}
+
+.step-card small {
+  color: var(--color-teal);
+  font-weight: 800;
+}
+
+.before-booking {
+  background:
+    radial-gradient(circle at 20% 10%, rgba(191, 226, 216, 0.42), transparent 24%),
+    #f8fbf9;
+}
+
+.before-booking__grid {
+  display: grid;
+  gap: 16px;
+}
+
+.objection-card {
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: inset 0 0 0 1px var(--color-border), var(--shadow-card);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.objection-card:hover {
+  transform: translateY(-3px);
+  box-shadow: inset 0 0 0 1px rgba(13, 107, 115, 0.22), var(--shadow-hover);
+}
+
+.objection-card p {
   margin-bottom: 0;
+}
+
+.before-booking__cta {
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  max-width: 720px;
+  margin: 34px auto 0;
+  text-align: center;
+}
+
+.before-booking__cta p {
+  margin-bottom: 0;
+  color: var(--color-ink);
+  font-size: 1.08rem;
+  font-weight: 780;
 }
 
 .about {
@@ -833,6 +1116,55 @@ p {
   font-weight: 820;
 }
 
+.mobile-sticky-cta {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+  z-index: 46;
+  display: none;
+  width: calc(100% - 24px);
+  max-width: 430px;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.48);
+  border-radius: 999px;
+  background: rgba(16, 44, 57, 0.92);
+  padding: 8px;
+  box-shadow: 0 18px 42px rgba(16, 44, 57, 0.28);
+  backdrop-filter: blur(18px);
+}
+
+.mobile-sticky-cta a {
+  display: inline-flex;
+  min-height: 42px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  color: var(--color-white);
+  padding: 0 14px;
+  font-size: 0.9rem;
+  font-weight: 840;
+}
+
+.mobile-sticky-cta a:first-child {
+  background: #128c7e;
+}
+
+.mobile-sticky-cta a:last-child {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+@keyframes floatSoft {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(0, -12px, 0);
+  }
+}
+
 .whatsapp-floating__icon {
   display: grid;
   width: 32px;
@@ -871,7 +1203,8 @@ p {
   }
 
   .services__grid,
-  .testimonials__grid {
+  .testimonials__grid,
+  .before-booking__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -922,12 +1255,22 @@ p {
   .about__grid,
   .emergency__grid,
   .location__grid,
-  .faq__grid {
+  .faq__grid,
+  .need-selector__grid,
+  .local-trust__grid {
     grid-template-columns: 0.92fr 1.08fr;
   }
 
   .emergency__grid {
     align-items: center;
+  }
+
+  .local-trust__pillars {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .before-booking__grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
 
@@ -946,11 +1289,61 @@ p {
     right: 12px;
     bottom: 12px;
   }
+
+  .hero__appointment-card {
+    right: 12px;
+    left: 12px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(360px, calc(100% - 32px));
+    margin-right: auto;
+    margin-left: 16px;
+  }
+
+  h1 {
+    max-width: 360px;
+    font-size: 2.25rem;
+  }
+
+  .hero__lead,
+  .hero__actions,
+  .hero__badges,
+  .hero__visual {
+    max-width: 360px;
+  }
+
+  .hero__actions .button {
+    width: 100%;
+  }
+
+  .need-option {
+    max-width: 100%;
+  }
+
+  .mobile-sticky-cta {
+    max-width: 360px;
+  }
 }
 
 @media (max-width: 760px) {
   .site-header__actions .button {
     display: none;
+  }
+
+  body {
+    padding-bottom: 74px;
+  }
+
+  .whatsapp-floating {
+    display: none;
+  }
+
+  .mobile-sticky-cta {
+    display: grid;
   }
 }
 

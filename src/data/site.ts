@@ -26,11 +26,15 @@ export type SiteConfig = {
   trustItems: TrustItem[];
   firstVisitSteps: FirstVisitStep[];
   emergencyReasons: string[];
+  needOptions: NeedOption[];
+  localTrustPillars: LocalTrustPillar[];
+  beforeBookingItems: BeforeBookingItem[];
 };
 
 export type Service = {
   id: string;
   title: string;
+  badge: string;
   description: string;
   image: string;
   alt: string;
@@ -56,6 +60,25 @@ export type TrustItem = {
 export type FirstVisitStep = {
   title: string;
   description: string;
+  reassurance: string;
+};
+
+export type NeedOption = {
+  id: string;
+  label: string;
+  summary: string;
+  guidance: string;
+  whatsappMessage: string;
+};
+
+export type LocalTrustPillar = {
+  title: string;
+  description: string;
+};
+
+export type BeforeBookingItem = {
+  title: string;
+  answer: string;
 };
 
 export const siteConfig: SiteConfig = {
@@ -93,8 +116,8 @@ export const siteConfig: SiteConfig = {
   ],
   trustItems: [
     {
-      title: "Atención personalizada",
-      description: "Valoraciones claras, sin presiones y con explicaciones fáciles de entender."
+      title: "Atención clara",
+      description: "Valoraciones sin presiones, con explicaciones fáciles de entender."
     },
     {
       title: "Bioseguridad",
@@ -105,7 +128,7 @@ export const siteConfig: SiteConfig = {
       description: "Tratamientos orientados a salud oral, armonía dental y comodidad diaria."
     },
     {
-      title: "Acompañamiento claro",
+      title: "Acompañamiento",
       description: "Desde la valoración conoces opciones, tiempos y pasos del tratamiento."
     }
   ],
@@ -113,99 +136,110 @@ export const siteConfig: SiteConfig = {
     {
       id: "limpieza-dental",
       title: "Limpieza dental",
+      badge: "Preventivo",
       description:
         "Profilaxis y cuidado preventivo para mantener en buen estado tus dientes y encía.",
       image: "/images/servicios/limpieza-dental.png",
       alt: "Imagen referencial de limpieza dental en consultorio odontológico",
       whatsappMessage:
-        "Hola, quiero consultar por una limpieza dental en Carepa. Me gustaría conocer disponibilidad."
+        "Hola, estoy en Carepa y quiero consultar por una limpieza dental. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "blanqueamiento-dental",
       title: "Blanqueamiento dental",
+      badge: "Estético",
       description:
         "Opciones de aclaramiento dental evaluadas según tu caso y sensibilidad.",
       image: "/images/servicios/blanqueamiento-dental.png",
       alt: "Imagen referencial de blanqueamiento dental",
       whatsappMessage:
-        "Hola, quiero consultar por blanqueamiento dental en Carepa. Me gustaría recibir orientación."
+        "Hola, estoy en Carepa y quiero consultar por blanqueamiento dental. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "resinas-esteticas",
       title: "Resinas estéticas",
+      badge: "Restaurativo",
       description:
         "Restauraciones del color del diente para mejorar forma, función y apariencia.",
       image: "/images/servicios/resinas-esteticas.png",
       alt: "Imagen referencial de resinas estéticas dentales",
       whatsappMessage:
-        "Hola, quiero consultar por resinas estéticas. Me gustaría agendar una valoración."
+        "Hola, estoy en Carepa y quiero consultar por resinas estéticas. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "diseno-sonrisa",
       title: "Diseño de sonrisa",
+      badge: "Estético",
       description:
         "Valoración estética responsable para planear cambios armónicos y realistas.",
       image: "/images/servicios/diseno-sonrisa.png",
       alt: "Imagen referencial de diseño de sonrisa",
       whatsappMessage:
-        "Hola, quiero consultar por diseño de sonrisa en Carepa. Me gustaría saber qué opciones tengo."
+        "Hola, estoy en Carepa y quiero consultar por diseño de sonrisa. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "ortodoncia",
       title: "Ortodoncia",
+      badge: "Funcional",
       description:
         "Acompañamiento para alinear dientes y mordida según diagnóstico profesional.",
       image: "/images/servicios/ortodoncia.png",
       alt: "Imagen referencial de ortodoncia",
       whatsappMessage:
-        "Hola, quiero consultar por ortodoncia en Carepa. Me gustaría conocer disponibilidad para valoración."
+        "Hola, estoy en Carepa y quiero consultar por ortodoncia. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "protesis-dentales",
       title: "Prótesis dentales",
+      badge: "Restaurativo",
       description:
         "Alternativas para recuperar piezas dentales, función masticatoria y seguridad al sonreír.",
       image: "/images/servicios/protesis-dentales.png",
       alt: "Imagen referencial de prótesis dentales",
       whatsappMessage:
-        "Hola, quiero consultar por prótesis dentales. Me gustaría recibir información para una valoración."
+        "Hola, estoy en Carepa y quiero consultar por prótesis dentales. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
       id: "urgencias-odontologicas",
       title: "Urgencias odontológicas",
+      badge: "Urgencia",
       description:
         "Orientación para dolor, inflamación, fracturas o restauraciones caídas.",
       image: "/images/servicios/urgencias-odontologicas.png",
       alt: "Imagen referencial de urgencias odontológicas",
       whatsappMessage:
-        "Hola, tengo una urgencia odontológica en Carepa. Quiero revisar disponibilidad de atención."
+        "Hola, estoy en Carepa y tengo una urgencia odontológica. ¿Me pueden orientar con disponibilidad de atención?"
     },
     {
       id: "odontologia-familiar",
       title: "Odontología familiar",
+      badge: "Familiar",
       description:
         "Atención preventiva y restaurativa para diferentes etapas de la familia.",
       image: "/images/servicios/odontologia-familiar.png",
       alt: "Imagen referencial de odontología familiar",
       whatsappMessage:
-        "Hola, quiero consultar por odontología familiar en Carepa. Me gustaría agendar una cita."
+        "Hola, estoy en Carepa y quiero consultar por odontología familiar. ¿Me pueden orientar con disponibilidad para una cita?"
     }
   ],
   firstVisitSteps: [
     {
       title: "Escribes por WhatsApp",
       description:
-        "Cuéntales qué necesitas, si tienes dolor o si buscas un tratamiento estético o preventivo."
+        "Cuéntanos qué sientes, qué te preocupa o qué cambio te gustaría revisar.",
+      reassurance: "No necesitas saber el nombre del tratamiento."
     },
     {
       title: "Agendamos tu valoración",
       description:
-        "Revisamos disponibilidad y te indicamos la información necesaria para asistir."
+        "Revisamos disponibilidad y te indicamos la información necesaria para asistir.",
+      reassurance: "Puedes escribir primero y decidir con calma."
     },
     {
       title: "Recibes diagnóstico y plan",
       description:
-        "Después de la revisión conoces hallazgos, opciones y siguientes pasos."
+        "Después de la revisión conoces hallazgos, opciones y siguientes pasos.",
+      reassurance: "La valoración define el camino adecuado."
     }
   ],
   emergencyReasons: [
@@ -214,6 +248,107 @@ export const siteConfig: SiteConfig = {
     "Fractura dental",
     "Sangrado o trauma oral",
     "Corona o restauración caída"
+  ],
+  needOptions: [
+    {
+      id: "dolor-dental",
+      label: "Tengo dolor dental",
+      summary: "Te conviene escribir describiendo intensidad, zona y desde cuándo inició.",
+      guidance:
+        "No reemplaza una valoración. Con esa información pueden orientarte sobre disponibilidad y el siguiente paso responsable.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero agendar una valoración. Mi motivo de consulta es: tengo dolor dental. ¿Me pueden orientar con disponibilidad?"
+    },
+    {
+      id: "mejorar-sonrisa",
+      label: "Quiero mejorar mi sonrisa",
+      summary: "Puedes iniciar con una valoración estética para revisar opciones realistas.",
+      guidance:
+        "La recomendación depende de tu salud oral, expectativas, color, forma dental y diagnóstico profesional.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero agendar una valoración. Mi motivo de consulta es: quiero mejorar mi sonrisa. ¿Me pueden orientar con disponibilidad?"
+    },
+    {
+      id: "limpieza",
+      label: "Necesito una limpieza",
+      summary: "Es una consulta frecuente para prevención, control de placa y cuidado de encías.",
+      guidance:
+        "La profesional definirá si basta con profilaxis o si necesitas otro manejo según la valoración.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero agendar una valoración. Mi motivo de consulta es: necesito una limpieza dental. ¿Me pueden orientar con disponibilidad?"
+    },
+    {
+      id: "ortodoncia",
+      label: "Me interesa ortodoncia",
+      summary: "Puedes pedir una valoración para revisar alineación, mordida y alternativas.",
+      guidance:
+        "No todos los casos requieren el mismo plan. La valoración ayuda a definir opciones, tiempos y pasos.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero agendar una valoración. Mi motivo de consulta es: me interesa ortodoncia. ¿Me pueden orientar con disponibilidad?"
+    },
+    {
+      id: "urgencia",
+      label: "Tengo una urgencia",
+      summary: "Si hay dolor fuerte, inflamación, trauma o restauración caída, escribe cuanto antes.",
+      guidance:
+        "El equipo revisará disponibilidad. No se promete atención inmediata si no está confirmada.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y tengo una urgencia odontológica. ¿Me pueden orientar con disponibilidad de atención?"
+    },
+    {
+      id: "precios",
+      label: "Quiero consultar precios",
+      summary: "Puedes preguntar primero, pero el valor final depende del diagnóstico.",
+      guidance:
+        "Para evitar información incompleta, lo ideal es revisar tu caso y explicar opciones antes de decidir.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero consultar precios de atención odontológica. ¿Me pueden orientar y contarme si debo agendar valoración?"
+    },
+    {
+      id: "no-se",
+      label: "No sé qué tratamiento necesito",
+      summary: "Es normal no tener claro el nombre del tratamiento antes de una revisión.",
+      guidance:
+        "Puedes escribir contando lo que notas o lo que te incomoda. La valoración ayuda a definir el camino adecuado.",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero agendar una valoración. No sé qué tratamiento necesito, pero quiero recibir orientación. ¿Me pueden ayudar con disponibilidad?"
+    }
+  ],
+  localTrustPillars: [
+    {
+      title: "Cercanía",
+      description: "Agenda directa por WhatsApp, sin formularios largos ni procesos confusos."
+    },
+    {
+      title: "Claridad",
+      description: "Explicación del diagnóstico, opciones y próximos pasos antes de iniciar."
+    },
+    {
+      title: "Responsabilidad",
+      description: "Cada plan depende de una valoración profesional y de tus necesidades reales."
+    }
+  ],
+  beforeBookingItems: [
+    {
+      title: "No sé cuánto cuesta",
+      answer:
+        "Puedes preguntar primero. El valor final depende de la valoración, el diagnóstico y el plan que realmente necesites."
+    },
+    {
+      title: "No sé si necesito valoración",
+      answer:
+        "Si tienes dolor, dudas estéticas o molestias repetidas, la valoración ayuda a decidir con información clara."
+    },
+    {
+      title: "Me da nervios ir al odontólogo",
+      answer:
+        "Puedes contarlo desde el primer mensaje. La atención busca ser clara, tranquila y sin presión."
+    },
+    {
+      title: "Solo quiero preguntar primero",
+      answer:
+        "Está bien. Escribe tu duda por WhatsApp y agenda después cuando tengas más claridad."
+    }
   ],
   // Reemplazar estos textos por testimonios reales autorizados antes de publicar campañas.
   testimonials: [

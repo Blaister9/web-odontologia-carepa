@@ -10,7 +10,7 @@ export function Services() {
         <SectionHeading
           eyebrow="Tratamientos"
           title="Servicios odontológicos para cuidar salud, función y estética"
-          description="Cada tratamiento inicia con una valoración profesional. La recomendación final depende de tu diagnóstico, antecedentes y expectativas reales."
+          description="Explora opciones frecuentes, pero recuerda: la recomendación final depende de una valoración profesional y de lo que realmente necesites."
         />
 
         <div className="services__grid">

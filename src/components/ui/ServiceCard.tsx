@@ -15,6 +15,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
   return (
     <article className="service-card">
       <div className="service-card__image">
+        <span className="service-card__badge">{service.badge}</span>
         <Image
           src={service.image}
           alt={service.alt}
@@ -26,7 +27,7 @@ export function ServiceCard({ service }: ServiceCardProps) {
         <h3>{service.title}</h3>
         <p>{service.description}</p>
         <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
-          Consultar por WhatsApp
+          Consultar este tratamiento
         </Button>
       </div>
     </article>
