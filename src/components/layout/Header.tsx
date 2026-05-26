@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Link from "next/link";
 
 import { siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
@@ -6,13 +7,13 @@ import { getWhatsAppUrl } from "@/utils/whatsapp";
 import { Button } from "../ui/Button";
 
 const navItems = [
-  { label: "Necesidad", href: "#que-necesitas" },
-  { label: "Servicios", href: "#servicios" },
-  { label: "Primera cita", href: "#primera-cita" },
-  { label: "Doctora", href: "#doctora" },
-  { label: "Urgencias", href: "#urgencias" },
-  { label: "Ubicación", href: "#ubicacion" },
-  { label: "Preguntas", href: "#preguntas" }
+  { label: "Necesidad", href: "/#que-necesitas" },
+  { label: "Servicios", href: "/#servicios" },
+  { label: "Primera cita", href: "/#primera-cita" },
+  { label: "Doctora", href: "/#doctora" },
+  { label: "Urgencias", href: "/#urgencias" },
+  { label: "Ubicación", href: "/#ubicacion" },
+  { label: "Preguntas", href: "/#preguntas" }
 ];
 
 export function Header() {
@@ -25,7 +26,7 @@ export function Header() {
   return (
     <header className="site-header">
       <div className="container site-header__inner">
-        <a className="site-header__brand" href="#inicio" aria-label="Ir al inicio">
+        <Link className="site-header__brand" href="/" aria-label="Ir al inicio">
           <span className="site-header__mark" aria-hidden="true">
             OC
           </span>
@@ -35,7 +36,7 @@ export function Header() {
               {siteConfig.city}, {siteConfig.department}
             </small>
           </span>
-        </a>
+        </Link>
 
         <nav className="site-header__nav" aria-label="Navegación principal">
           {navItems.map((item) => (

@@ -7,19 +7,19 @@ export function Testimonials() {
     <section className="section testimonials">
       <div className="container">
         <SectionHeading
-          eyebrow="Experiencias"
-          title="Referencias de pacientes"
-          description="Estos textos son placeholders neutrales y deben reemplazarse por testimonios reales autorizados antes de usar la página en campañas o pauta."
+          eyebrow="Experiencia del paciente"
+          title="Una experiencia pensada para que decidas con tranquilidad"
+          description="Mientras se incorporan testimonios reales autorizados, estos principios describen el tipo de atención que buscamos sostener en cada contacto."
           align="center"
         />
 
         <div className="testimonials__grid">
-          {siteConfig.testimonials.map((testimonial) => (
-            <article className="testimonial-card" key={`${testimonial.name}-${testimonial.label}`}>
-              <p>&ldquo;{testimonial.quote}&rdquo;</p>
+          {siteConfig.experiencePrinciples.map((principle) => (
+            <article className="testimonial-card" key={principle.title}>
+              <p>{principle.description}</p>
               <div>
-                <strong>{testimonial.name}</strong>
-                <span>{testimonial.label}</span>
+                <strong>{principle.title}</strong>
+                <span>Criterio de atención</span>
               </div>
             </article>
           ))}

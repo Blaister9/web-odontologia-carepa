@@ -21,7 +21,6 @@ export type SiteConfig = {
   seoDescription: string;
   seoKeywords: string[];
   services: Service[];
-  testimonials: Testimonial[];
   faqs: FAQItem[];
   trustItems: TrustItem[];
   firstVisitSteps: FirstVisitStep[];
@@ -29,22 +28,21 @@ export type SiteConfig = {
   needOptions: NeedOption[];
   localTrustPillars: LocalTrustPillar[];
   beforeBookingItems: BeforeBookingItem[];
+  careExperienceItems: CareExperienceItem[];
+  experiencePrinciples: ExperiencePrinciple[];
+  regionCities: string[];
 };
 
 export type Service = {
   id: string;
   title: string;
   badge: string;
+  slug: string;
+  featuredSummary: string;
   description: string;
   image: string;
   alt: string;
   whatsappMessage: string;
-};
-
-export type Testimonial = {
-  name: string;
-  label: string;
-  quote: string;
 };
 
 export type FAQItem = {
@@ -81,29 +79,40 @@ export type BeforeBookingItem = {
   answer: string;
 };
 
+export type CareExperienceItem = {
+  title: string;
+  description: string;
+};
+
+export type ExperiencePrinciple = {
+  title: string;
+  description: string;
+};
+
 export const siteConfig: SiteConfig = {
   clinicName: "Odontología Carepa",
-  doctorName: "Dra. Nombre por confirmar",
-  specialty: "Odontología estética y familiar",
+  doctorName: "Atención odontológica profesional",
+  specialty: "Odontología estética, preventiva y familiar",
   city: "Carepa",
   department: "Antioquia",
   whatsappNumber: "573000000000",
-  whatsappDisplay: "+57 300 000 0000",
-  address: "Dirección pendiente por confirmar, Carepa, Antioquia",
+  whatsappDisplay: "WhatsApp disponible al agendar",
+  address: "Confirma la dirección exacta al agendar tu cita.",
   schedule: {
-    weekdays: "Lunes a viernes: horario pendiente por confirmar",
-    saturday: "Sábados: con cita previa",
-    emergencies: "Urgencias odontológicas: consultar disponibilidad por WhatsApp"
+    weekdays: "Agenda sujeta a disponibilidad.",
+    saturday: "Citas según disponibilidad confirmada por WhatsApp.",
+    emergencies: "Urgencias odontológicas: consultar disponibilidad por WhatsApp."
   },
   instagramUrl: "https://www.instagram.com/",
   facebookUrl: "https://www.facebook.com/",
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Carepa%2C%20Antioquia%2C%20Colombia",
-  siteUrl: "",
+  siteUrl: "https://web-odontologia-carepa.vercel.app",
   ogImage: "/images/hero/consultorio-odontologico-carepa.png",
-  seoTitle: "Odontóloga en Carepa, Antioquia | Odontología estética y familiar",
+  seoTitle: "Odontología en Carepa, Antioquia | Atención estética y familiar",
   seoDescription:
-    "Atención odontológica moderna, clara y cercana en Carepa, Antioquia. Agenda por WhatsApp servicios de limpieza dental, blanqueamiento, resinas, ortodoncia, urgencias y odontología familiar.",
+    "Atención odontológica clara y profesional en Carepa, Antioquia. Agenda por WhatsApp valoración para limpieza dental, blanqueamiento, resinas, diseño de sonrisa, ortodoncia, urgencias y odontología familiar.",
   seoKeywords: [
+    "odontología en Carepa",
     "odontóloga en Carepa",
     "odontología en Carepa Antioquia",
     "diseño de sonrisa Carepa",
@@ -137,6 +146,8 @@ export const siteConfig: SiteConfig = {
       id: "limpieza-dental",
       title: "Limpieza dental",
       badge: "Preventivo",
+      slug: "limpieza-dental-carepa",
+      featuredSummary: "Cuidado preventivo para revisar placa, encías y hábitos de higiene.",
       description:
         "Profilaxis y cuidado preventivo para mantener en buen estado tus dientes y encía.",
       image: "/images/servicios/limpieza-dental.png",
@@ -148,6 +159,8 @@ export const siteConfig: SiteConfig = {
       id: "blanqueamiento-dental",
       title: "Blanqueamiento dental",
       badge: "Estético",
+      slug: "blanqueamiento-dental-carepa",
+      featuredSummary: "Orientación estética para aclarar el tono dental de forma responsable.",
       description:
         "Opciones de aclaramiento dental evaluadas según tu caso y sensibilidad.",
       image: "/images/servicios/blanqueamiento-dental.png",
@@ -159,6 +172,8 @@ export const siteConfig: SiteConfig = {
       id: "resinas-esteticas",
       title: "Resinas estéticas",
       badge: "Restaurativo",
+      slug: "resinas-esteticas-carepa",
+      featuredSummary: "Restauraciones del color del diente para mejorar forma y función.",
       description:
         "Restauraciones del color del diente para mejorar forma, función y apariencia.",
       image: "/images/servicios/resinas-esteticas.png",
@@ -170,6 +185,8 @@ export const siteConfig: SiteConfig = {
       id: "diseno-sonrisa",
       title: "Diseño de sonrisa",
       badge: "Estético",
+      slug: "diseno-de-sonrisa-carepa",
+      featuredSummary: "Valoración estética para planear cambios armónicos y realistas.",
       description:
         "Valoración estética responsable para planear cambios armónicos y realistas.",
       image: "/images/servicios/diseno-sonrisa.png",
@@ -181,6 +198,8 @@ export const siteConfig: SiteConfig = {
       id: "ortodoncia",
       title: "Ortodoncia",
       badge: "Funcional",
+      slug: "ortodoncia-carepa",
+      featuredSummary: "Revisión de alineación dental, mordida y alternativas de manejo.",
       description:
         "Acompañamiento para alinear dientes y mordida según diagnóstico profesional.",
       image: "/images/servicios/ortodoncia.png",
@@ -192,6 +211,8 @@ export const siteConfig: SiteConfig = {
       id: "protesis-dentales",
       title: "Prótesis dentales",
       badge: "Restaurativo",
+      slug: "protesis-dentales-carepa",
+      featuredSummary: "Alternativas para recuperar piezas dentales y comodidad al masticar.",
       description:
         "Alternativas para recuperar piezas dentales, función masticatoria y seguridad al sonreír.",
       image: "/images/servicios/protesis-dentales.png",
@@ -203,6 +224,8 @@ export const siteConfig: SiteConfig = {
       id: "urgencias-odontologicas",
       title: "Urgencias odontológicas",
       badge: "Urgencia",
+      slug: "urgencias-odontologicas-carepa",
+      featuredSummary: "Orientación para dolor, inflamación, fracturas o restauraciones caídas.",
       description:
         "Orientación para dolor, inflamación, fracturas o restauraciones caídas.",
       image: "/images/servicios/urgencias-odontologicas.png",
@@ -214,6 +237,8 @@ export const siteConfig: SiteConfig = {
       id: "odontologia-familiar",
       title: "Odontología familiar",
       badge: "Familiar",
+      slug: "odontologia-familiar-carepa",
+      featuredSummary: "Atención preventiva y restaurativa para diferentes etapas de la familia.",
       description:
         "Atención preventiva y restaurativa para diferentes etapas de la familia.",
       image: "/images/servicios/odontologia-familiar.png",
@@ -350,32 +375,47 @@ export const siteConfig: SiteConfig = {
         "Está bien. Escribe tu duda por WhatsApp y agenda después cuando tengas más claridad."
     }
   ],
-  // Reemplazar estos textos por testimonios reales autorizados antes de publicar campañas.
-  testimonials: [
+  careExperienceItems: [
     {
-      name: "Paciente verificado",
-      label: "Tratamiento preventivo",
-      quote:
-        "Recibí una explicación clara del tratamiento y pude resolver mis dudas antes de agendar."
+      title: "Escucha inicial",
+      description: "El primer contacto busca entender qué te pasa, qué te preocupa y qué esperas resolver."
     },
     {
-      name: "Paciente verificado",
-      label: "Atención estética",
-      quote:
-        "La atención fue ordenada, puntual y con recomendaciones fáciles de seguir en casa."
+      title: "Valoración",
+      description: "La revisión clínica permite identificar necesidades reales antes de recomendar un plan."
     },
     {
-      name: "Paciente verificado",
-      label: "Consulta familiar",
-      quote:
-        "Me gustó que el proceso fuera cercano y que explicaran las opciones con tranquilidad."
+      title: "Explicación clara",
+      description: "Conoces hallazgos, alternativas y próximos pasos con lenguaje sencillo."
+    },
+    {
+      title: "Plan responsable",
+      description: "Cada decisión se toma según diagnóstico profesional, prioridades y disponibilidad."
     }
   ],
+  experiencePrinciples: [
+    {
+      title: "Decidir con tranquilidad",
+      description:
+        "Buscamos que el paciente entienda sus opciones antes de iniciar cualquier tratamiento."
+    },
+    {
+      title: "Cuidado sin presión",
+      description:
+        "La conversación por WhatsApp y la valoración están pensadas para resolver dudas con calma."
+    },
+    {
+      title: "Expectativas realistas",
+      description:
+        "Los tratamientos se explican de forma responsable, con expectativas claras y prudentes."
+    }
+  ],
+  regionCities: ["Carepa", "Apartadó", "Chigorodó", "Turbo", "Urabá"],
   faqs: [
     {
       question: "¿Dónde está ubicada la atención?",
       answer:
-        "La atención es en Carepa, Antioquia. La dirección exacta debe confirmarse en la configuración del sitio antes de publicar."
+        "La atención es en Carepa, Antioquia. La dirección exacta se confirma al agendar por WhatsApp."
     },
     {
       question: "¿Puedo agendar por WhatsApp?",
@@ -390,7 +430,7 @@ export const siteConfig: SiteConfig = {
     {
       question: "¿La valoración tiene costo?",
       answer:
-        "El costo de la valoración está pendiente por confirmar. Puedes consultarlo directamente antes de agendar."
+        "Puedes consultar el valor de la valoración directamente por WhatsApp antes de agendar."
     },
     {
       question: "¿Qué tratamientos ofrecen?",

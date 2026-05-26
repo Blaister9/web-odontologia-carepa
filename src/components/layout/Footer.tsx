@@ -26,7 +26,7 @@ export function Footer() {
           <ul>
             {siteConfig.services.slice(0, 6).map((service) => (
               <li key={service.id}>
-                <a href={`#${service.id}`}>{service.title}</a>
+                <a href={`/servicios/${service.slug}`}>{service.title}</a>
               </li>
             ))}
           </ul>
