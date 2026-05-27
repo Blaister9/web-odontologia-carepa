@@ -13,10 +13,20 @@ export function MobileStickyCTA() {
 
   return (
     <nav className="mobile-sticky-cta" aria-label="Acciones rápidas por WhatsApp">
-      <a href={appointmentUrl} target="_blank" rel="noreferrer">
+      <a
+        href={appointmentUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Agendar valoración por WhatsApp"
+      >
         Agenda por WhatsApp
       </a>
-      <a href={emergencyUrl} target="_blank" rel="noreferrer">
+      <a
+        href={emergencyUrl}
+        target="_blank"
+        rel="noreferrer"
+        aria-label="Consultar urgencia odontológica por WhatsApp"
+      >
         Urgencia
       </a>
     </nav>

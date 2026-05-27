@@ -13,7 +13,7 @@ export type SiteConfig = {
     saturday: string;
     emergencies: string;
   };
-  instagramUrl: string;
+  instagramUrl?: string;
   facebookUrl?: string;
   mapUrl: string;
   siteUrl: string;
@@ -105,8 +105,6 @@ export const siteConfig: SiteConfig = {
     saturday: "Citas según disponibilidad confirmada por WhatsApp.",
     emergencies: "Urgencias odontológicas: consultar disponibilidad por WhatsApp."
   },
-  instagramUrl: "https://www.instagram.com/",
-  facebookUrl: "https://www.facebook.com/",
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Carepa%2C%20Antioquia%2C%20Colombia",
   siteUrl: "https://web-odontologia-carepa.vercel.app",
   ogImage: "/images/hero/consultorio-odontologico-carepa.png",

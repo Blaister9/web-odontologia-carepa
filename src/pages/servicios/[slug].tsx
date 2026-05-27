@@ -36,11 +36,15 @@ export default function ServiceDetailPage({
         <link rel="canonical" href={canonicalUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_CO" />
+        <meta property="og:site_name" content={siteConfig.clinicName} />
         <meta property="og:title" content={servicePage.title} />
         <meta property="og:description" content={servicePage.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
         <meta property="og:image" content={absoluteUrl(siteConfig, service.image)} />
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={servicePage.title} />
+        <meta name="twitter:description" content={servicePage.metaDescription} />
+        <meta name="twitter:image" content={absoluteUrl(siteConfig, service.image)} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
