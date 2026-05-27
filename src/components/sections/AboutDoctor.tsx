@@ -1,37 +1,76 @@
 import Image from "next/image";
 
 import { siteConfig } from "@/data/site";
+import { getWhatsAppUrl } from "@/utils/whatsapp";
 
-import { SectionHeading } from "../ui/SectionHeading";
+import { Button } from "../ui/Button";
 
 export function AboutDoctor() {
+  const doctorProfile = siteConfig.doctorProfile;
+  const appointmentUrl = getWhatsAppUrl(
+    siteConfig.whatsappNumber,
+    "Hola, quiero agendar una valoración odontológica con la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+  );
+
   return (
     <section className="section about" id="doctora">
+      <div className="about__pattern" aria-hidden="true" />
       <div className="container about__grid">
-        <div className="about__image">
-          <Image
-            src="/images/equipo/odontologia-profesional-carepa.png"
-            alt="Imagen referencial de atención odontológica"
-            fill
-            sizes="(min-width: 1024px) 38vw, 100vw"
-          />
+        <div className="about__media">
+          <div className="about__image-frame">
+            <Image
+              src={doctorProfile.image}
+              alt="Imagen referencial de atención odontológica profesional"
+              fill
+              sizes="(min-width: 1024px) 42vw, 100vw"
+              className="about__image"
+            />
+          </div>
+
+          <div className="about__identity-card" aria-label="Perfil profesional">
+            <span>{doctorProfile.name}</span>
+            <strong>{doctorProfile.title}</strong>
+          </div>
+
+          <div className="about__quote-card">
+            <span aria-hidden="true">“</span>
+            <p>{doctorProfile.quote}</p>
+          </div>
         </div>
 
         <div className="about__content">
-          <SectionHeading
-            eyebrow="Atención profesional"
-            title={siteConfig.doctorName}
-            description={siteConfig.specialty}
-          />
-          <p>
-            Una atención odontológica cercana, clara y responsable ayuda a que cada paciente
-            entienda el estado de su salud oral, las alternativas disponibles y los cuidados
-            necesarios antes de iniciar un tratamiento.
-          </p>
-          <div className="about__highlights" aria-label="Enfoque de atención">
-            <span>Escucha activa</span>
-            <span>Explicaciones claras</span>
-            <span>Planificación responsable</span>
+          <p className="eyebrow">Conoce a la doctora</p>
+          <h2>Una atención odontológica clara, cercana y profesional.</h2>
+          <p className="about__intro">{doctorProfile.intro}</p>
+
+          <div className="about__highlights" aria-label="Puntos de confianza">
+            {doctorProfile.highlights.map((highlight) => (
+              <article className="about__highlight" key={highlight}>
+                <span aria-hidden="true" />
+                <p>{highlight}</p>
+              </article>
+            ))}
+          </div>
+
+          <div className="about__approach" aria-label="Enfoque de atención">
+            {doctorProfile.approach.map((item, index) => (
+              <article className="about__approach-item" key={item.title}>
+                <span>{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </article>
+            ))}
+          </div>
+
+          <div className="about__actions">
+            <Button href={appointmentUrl} target="_blank" size="lg">
+              Agendar valoración con la Dra. Nataly
+            </Button>
+            <Button href="#servicios" variant="outline" size="lg">
+              Ver tratamientos
+            </Button>
           </div>
         </div>
       </div>
