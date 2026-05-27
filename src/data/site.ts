@@ -1,4 +1,5 @@
 export type SiteConfig = {
+  brandInitials: string;
   clinicName: string;
   doctorName: string;
   specialty: string;
@@ -90,9 +91,10 @@ export type ExperiencePrinciple = {
 };
 
 export const siteConfig: SiteConfig = {
-  clinicName: "Odontología Carepa",
-  doctorName: "Atención odontológica profesional",
-  specialty: "Odontología estética, preventiva y familiar",
+  brandInitials: "NJ",
+  clinicName: "CONSULTORIO ODONTÓLOGICO DRA NATALY JIMÉNEZ",
+  doctorName: "Dra. Nataly Jiménez",
+  specialty: "Odontología general, estética y especializada.",
   city: "Carepa",
   department: "Antioquia",
   whatsappNumber: "573000000000",
@@ -108,10 +110,12 @@ export const siteConfig: SiteConfig = {
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Carepa%2C%20Antioquia%2C%20Colombia",
   siteUrl: "https://web-odontologia-carepa.vercel.app",
   ogImage: "/images/hero/consultorio-odontologico-carepa.png",
-  seoTitle: "Odontología en Carepa, Antioquia | Atención estética y familiar",
+  seoTitle: "CONSULTORIO ODONTÓLOGICO DRA NATALY JIMÉNEZ | Carepa",
   seoDescription:
-    "Atención odontológica clara y profesional en Carepa, Antioquia. Agenda por WhatsApp valoración para limpieza dental, blanqueamiento, resinas, diseño de sonrisa, ortodoncia, urgencias y odontología familiar.",
+    "Odontología general, estética y especializada en Carepa, Antioquia. Agenda por WhatsApp una valoración en el Consultorio Odontológico Dra. Nataly Jiménez.",
   seoKeywords: [
+    "Consultorio Odontológico Dra Nataly Jiménez",
+    "Dra Nataly Jiménez",
     "odontología en Carepa",
     "odontóloga en Carepa",
     "odontología en Carepa Antioquia",

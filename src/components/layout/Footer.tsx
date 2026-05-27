@@ -11,11 +11,9 @@ export function Footer() {
     <footer className="site-footer">
       <div className="container site-footer__grid">
         <div className="site-footer__brand">
-          <span className="site-footer__mark">OC</span>
+          <span className="site-footer__mark">{siteConfig.brandInitials}</span>
           <h2>{siteConfig.clinicName}</h2>
-          <p>
-            {siteConfig.specialty} en {siteConfig.city}, {siteConfig.department}.
-          </p>
+          <p>{siteConfig.specialty}</p>
           <p className="site-footer__legal">
             La información publicada no reemplaza una valoración odontológica profesional.
           </p>

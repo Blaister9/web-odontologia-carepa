@@ -147,7 +147,13 @@ p {
   display: inline-flex;
   align-items: center;
   gap: 12px;
+  flex: 1 1 auto;
   min-width: 0;
+}
+
+.site-header__brand-text {
+  min-width: 0;
+  max-width: min(430px, 54vw);
 }
 
 .site-header__brand strong,
@@ -156,12 +162,14 @@ p {
   color: var(--color-ink);
   font-size: 1rem;
   line-height: 1.1;
+  text-wrap: balance;
 }
 
 .site-header__brand small {
   display: block;
   color: var(--color-muted);
   font-size: 0.78rem;
+  line-height: 1.25;
 }
 
 .site-header__mark,

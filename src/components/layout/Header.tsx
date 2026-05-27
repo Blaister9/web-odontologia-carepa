@@ -28,13 +28,11 @@ export function Header() {
       <div className="container site-header__inner">
         <Link className="site-header__brand" href="/" aria-label="Ir al inicio">
           <span className="site-header__mark" aria-hidden="true">
-            OC
+            {siteConfig.brandInitials}
           </span>
-          <span>
+          <span className="site-header__brand-text">
             <strong>{siteConfig.clinicName}</strong>
-            <small>
-              {siteConfig.city}, {siteConfig.department}
-            </small>
+            <small>{siteConfig.specialty}</small>
           </span>
         </Link>
 

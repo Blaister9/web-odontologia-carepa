@@ -11,7 +11,7 @@ export function AboutDoctor() {
         <div className="about__image">
           <Image
             src="/images/equipo/odontologia-profesional-carepa.png"
-            alt="Imagen referencial de atención odontológica profesional"
+            alt="Imagen referencial de atención odontológica"
             fill
             sizes="(min-width: 1024px) 38vw, 100vw"
           />
