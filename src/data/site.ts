@@ -21,6 +21,7 @@ export type SiteConfig = {
   seoTitle: string;
   seoDescription: string;
   seoKeywords: string[];
+  doctorProfile: DoctorProfile;
   services: Service[];
   faqs: FAQItem[];
   trustItems: TrustItem[];
@@ -90,6 +91,21 @@ export type ExperiencePrinciple = {
   description: string;
 };
 
+export type DoctorApproachItem = {
+  title: string;
+  description: string;
+};
+
+export type DoctorProfile = {
+  name: string;
+  title: string;
+  intro: string;
+  quote: string;
+  image: string;
+  highlights: string[];
+  approach: DoctorApproachItem[];
+};
+
 export const siteConfig: SiteConfig = {
   brandInitials: "NJ",
   clinicName: "CONSULTORIO ODONTÓLOGICO DRA NATALY JIMÉNEZ",
@@ -125,6 +141,38 @@ export const siteConfig: SiteConfig = {
     "odontología estética Carepa",
     "odontología en Urabá"
   ],
+  doctorProfile: {
+    name: "Dra. Nataly Jiménez",
+    title: "Odontología general, estética y especializada.",
+    intro:
+      "Atención odontológica con enfoque claro, humano y responsable para pacientes de Carepa y la región de Urabá.",
+    quote:
+      "Antes de iniciar cualquier tratamiento, lo más importante es entender qué necesitas y explicarte las opciones con claridad.",
+    image: "/images/equipo/odontologia-profesional-carepa.png",
+    highlights: [
+      "Atención cercana y personalizada",
+      "Valoración antes de definir el tratamiento",
+      "Comunicación clara desde la primera cita",
+      "Enfoque estético, funcional y preventivo"
+    ],
+    approach: [
+      {
+        title: "Escuchar primero",
+        description:
+          "Cada atención inicia entendiendo tu motivo de consulta, tus dudas y lo que esperas mejorar."
+      },
+      {
+        title: "Explicar con claridad",
+        description:
+          "El plan se conversa de forma sencilla, sin presiones y según lo que se observe en la valoración."
+      },
+      {
+        title: "Cuidar con responsabilidad",
+        description:
+          "Las recomendaciones dependen de una revisión profesional y de las necesidades reales de cada paciente."
+      }
+    ]
+  },
   trustItems: [
     {
       title: "Atención clara",
