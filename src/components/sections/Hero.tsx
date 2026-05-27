@@ -22,7 +22,7 @@ export function Hero() {
       </div>
       <div className="container hero__grid">
         <div className="hero__content">
-          <p className="eyebrow">Odontología estética y familiar en Carepa, Antioquia</p>
+          <p className="eyebrow">{siteConfig.specialty}</p>
           <h1>Sonríe con confianza, cerca de casa.</h1>
           <p className="hero__lead">
             Atención odontológica moderna, clara y profesional en Carepa, con procesos
