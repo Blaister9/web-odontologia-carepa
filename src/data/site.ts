@@ -97,8 +97,8 @@ export const siteConfig: SiteConfig = {
   specialty: "Odontología general, estética y especializada.",
   city: "Carepa",
   department: "Antioquia",
-  whatsappNumber: "573000000000",
-  whatsappDisplay: "WhatsApp disponible al agendar",
+  whatsappNumber: "573128311449",
+  whatsappDisplay: "+57 312 831 1449",
   address: "Confirma la dirección exacta al agendar tu cita.",
   schedule: {
     weekdays: "Agenda sujeta a disponibilidad.",
