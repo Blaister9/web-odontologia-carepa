@@ -1,5 +1,8 @@
 import { ServicePage } from "@/data/servicePages";
 import { Service, SiteConfig } from "@/data/site";
+import { normalizeWhatsAppNumber } from "@/utils/whatsapp";
+
+const PLACEHOLDER_PHONE_NUMBERS = new Set(["573000000000", "3000000000"]);
 
 export function absoluteUrl(site: SiteConfig, path = ""): string {
   const baseUrl = site.siteUrl.replace(/\/$/, "");
@@ -9,6 +12,13 @@ export function absoluteUrl(site: SiteConfig, path = ""): string {
 }
 
 export function getDentistJsonLd(site: SiteConfig): Record<string, unknown> {
+  const normalizedPhone = normalizeWhatsAppNumber(site.whatsappNumber);
+  const verifiedPhone = PLACEHOLDER_PHONE_NUMBERS.has(normalizedPhone)
+    ? undefined
+    : `+${normalizedPhone}`;
+  const sameAs = [site.instagramUrl, site.facebookUrl].filter((url): url is string =>
+    Boolean(url)
+  );
   const address: Record<string, string> = {
     "@type": "PostalAddress",
     addressLocality: site.city,
@@ -20,12 +30,11 @@ export function getDentistJsonLd(site: SiteConfig): Record<string, unknown> {
     address.streetAddress = site.address;
   }
 
-  return {
+  const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Dentist",
     name: site.clinicName,
     description: site.seoDescription,
-    telephone: site.whatsappDisplay,
     image: absoluteUrl(site, site.ogImage),
     url: site.siteUrl,
     address,
@@ -39,10 +48,18 @@ export function getDentistJsonLd(site: SiteConfig): Record<string, unknown> {
         name: "Urabá"
       }
     ],
-    medicalSpecialty: "Dentistry",
-    priceRange: "$$",
-    sameAs: [site.instagramUrl, site.facebookUrl].filter(Boolean)
+    medicalSpecialty: "Dentistry"
   };
+
+  if (verifiedPhone) {
+    jsonLd.telephone = verifiedPhone;
+  }
+
+  if (sameAs.length > 0) {
+    jsonLd.sameAs = sameAs;
+  }
+
+  return jsonLd;
 }
 
 export function getServiceJsonLd(

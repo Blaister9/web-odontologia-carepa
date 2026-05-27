@@ -43,7 +43,13 @@ export function Location() {
           </div>
         </div>
 
-        <a className="map-card" href={siteConfig.mapUrl} target="_blank" rel="noreferrer">
+        <a
+          className="map-card"
+          href={siteConfig.mapUrl}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Ver referencia de Carepa, Antioquia en Google Maps"
+        >
           <span className="map-card__pin" aria-hidden="true" />
           <strong>Carepa, Antioquia</strong>
           <span>Confirmar ubicación exacta al agendar</span>

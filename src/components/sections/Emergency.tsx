@@ -14,7 +14,7 @@ export function Emergency() {
       <div className="container emergency__grid">
         <div>
           <p className="eyebrow eyebrow--light">Urgencias odontológicas</p>
-          <h2>Si tienes dolor o una molestia fuerte, escribenos para revisar disponibilidad.</h2>
+          <h2>Si tienes dolor o una molestia fuerte, escríbenos para revisar disponibilidad.</h2>
           <p>
             La orientación oportuna ayuda a definir el siguiente paso. Describe tus síntomas,
             desde cuándo iniciaron y si has tenido inflamación, trauma o fiebre.

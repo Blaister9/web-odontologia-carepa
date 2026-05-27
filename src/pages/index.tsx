@@ -38,6 +38,7 @@ export default function Home() {
         <link rel="canonical" href={siteConfig.siteUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:locale" content="es_CO" />
+        <meta property="og:site_name" content={siteConfig.clinicName} />
         <meta property="og:title" content={siteConfig.seoTitle} />
         <meta property="og:description" content={siteConfig.seoDescription} />
         <meta property="og:url" content={siteConfig.siteUrl} />
@@ -45,6 +46,7 @@ export default function Home() {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={siteConfig.seoTitle} />
         <meta name="twitter:description" content={siteConfig.seoDescription} />
+        <meta name="twitter:image" content={absoluteUrl(siteConfig, siteConfig.ogImage)} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

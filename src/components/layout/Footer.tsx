@@ -6,6 +6,11 @@ export function Footer() {
     siteConfig.whatsappNumber,
     "Hola, quiero recibir información sobre atención odontológica en Carepa."
   );
+  const footerLinks = [
+    { label: "Instagram", href: siteConfig.instagramUrl },
+    { label: "Facebook", href: siteConfig.facebookUrl },
+    { label: "Cómo llegar", href: siteConfig.mapUrl }
+  ].filter((link): link is { label: string; href: string } => Boolean(link.href));
 
   return (
     <footer className="site-footer">
@@ -44,25 +49,15 @@ export function Footer() {
         </div>
 
         <div>
-          <h3>Redes</h3>
+          <h3>Enlaces</h3>
           <ul>
-            <li>
-              <a href={siteConfig.instagramUrl} target="_blank" rel="noreferrer">
-                Instagram
-              </a>
-            </li>
-            {siteConfig.facebookUrl ? (
-              <li>
-                <a href={siteConfig.facebookUrl} target="_blank" rel="noreferrer">
-                  Facebook
+            {footerLinks.map((link) => (
+              <li key={link.label}>
+                <a href={link.href} target="_blank" rel="noreferrer">
+                  {link.label}
                 </a>
               </li>
-            ) : null}
-            <li>
-              <a href={siteConfig.mapUrl} target="_blank" rel="noreferrer">
-                Cómo llegar
-              </a>
-            </li>
+            ))}
           </ul>
         </div>
       </div>

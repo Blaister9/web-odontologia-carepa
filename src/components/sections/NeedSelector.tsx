@@ -37,7 +37,7 @@ export function NeedSelector() {
         </div>
 
         <div className="need-selector__panel">
-          <div className="need-selector__options" role="list" aria-label="Motivos de consulta">
+          <div className="need-selector__options" aria-label="Motivos de consulta">
             {siteConfig.needOptions.map((option) => (
               <button
                 className={`need-option ${option.id === selectedNeed.id ? "need-option--active" : ""}`}
