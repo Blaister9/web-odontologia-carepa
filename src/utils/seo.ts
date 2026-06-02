@@ -40,7 +40,7 @@ export function getDentistJsonLd(site: SiteConfig): Record<string, unknown> {
       },
       {
         "@type": "AdministrativeArea",
-        name: "Urabá"
+        name: site.department
       }
     ],
     medicalSpecialty: "Dentistry"
@@ -71,7 +71,7 @@ export function getServiceJsonLd(
       },
       {
         "@type": "AdministrativeArea",
-        name: "Urabá"
+        name: site.department
       }
     ],
     provider: {

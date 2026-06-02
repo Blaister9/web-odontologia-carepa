@@ -14,6 +14,7 @@ import { Hero } from "@/components/sections/Hero";
 import { LocalTrust } from "@/components/sections/LocalTrust";
 import { Location } from "@/components/sections/Location";
 import { NeedSelector } from "@/components/sections/NeedSelector";
+import { OralHealthCampaign } from "@/components/sections/OralHealthCampaign";
 import { PatientGuidance } from "@/components/sections/PatientGuidance";
 import { RegionFocus } from "@/components/sections/RegionFocus";
 import { Services } from "@/components/sections/Services";
@@ -57,6 +58,7 @@ export default function Home() {
       <main>
         <Hero />
         <TrustBar />
+        <OralHealthCampaign />
         <FeaturedTreatments />
         <PatientGuidance />
         <NeedSelector />

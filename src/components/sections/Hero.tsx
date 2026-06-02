@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { siteConfig } from "@/data/site";
+import { trackEvent } from "@/utils/tracking";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "../ui/Button";
@@ -10,7 +11,7 @@ const heroBadges = ["Atención clara", "Citas por WhatsApp", "Carepa y Urabá"];
 export function Hero() {
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
+    "Hola, quiero agendar una valoración odontológica preventiva en Carepa."
   );
 
   return (
@@ -23,18 +24,23 @@ export function Hero() {
       <div className="container hero__grid">
         <div className="hero__content">
           <p className="eyebrow">{siteConfig.specialty}</p>
-          <h1>Sonríe con confianza, cerca de casa.</h1>
+          <h1>Odontología en Carepa con atención cercana y diagnóstico claro</h1>
           <p className="hero__lead">
-            Atención odontológica moderna, clara y profesional en Carepa, con procesos
-            pensados para que entiendas tu diagnóstico y tomes decisiones con tranquilidad.
+            Agenda tu valoración odontológica preventiva y recibe una orientación inicial sobre
+            el estado de tu salud oral antes de iniciar cualquier tratamiento.
           </p>
 
           <div className="hero__actions">
-            <Button href={appointmentUrl} target="_blank" size="lg">
-              Agendar valoración
+            <Button
+              href={appointmentUrl}
+              target="_blank"
+              size="lg"
+              onClick={() => trackEvent("click_whatsapp_hero")}
+            >
+              Agendar por WhatsApp
             </Button>
-            <Button href="#que-necesitas" variant="outline" size="lg">
-              No sé qué tratamiento necesito
+            <Button href="#servicios" variant="outline" size="lg">
+              Ver servicios
             </Button>
           </div>
 
