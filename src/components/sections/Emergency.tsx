@@ -2,6 +2,7 @@ import { siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "../ui/Button";
+import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 
 export function Emergency() {
   const emergencyUrl = getWhatsAppUrl(
@@ -12,19 +13,30 @@ export function Emergency() {
   return (
     <section className="emergency" id="urgencias">
       <div className="container emergency__grid">
-        <div>
+        <div data-reveal>
+          <p className="emergency__pill">
+            <span className="emergency__pulse" aria-hidden="true" />
+            Prioridad a urgencias según disponibilidad
+          </p>
           <p className="eyebrow eyebrow--light">Urgencias odontológicas</p>
           <h2>Si tienes dolor o una molestia fuerte, escríbenos para revisar disponibilidad.</h2>
           <p>
             Damos prioridad a las urgencias odontológicas según disponibilidad, para orientar
             molestias como dolor, inflamación, fracturas o emergencias dentales.
           </p>
-          <Button href={emergencyUrl} target="_blank" variant="emergency" size="lg">
+          <Button
+            href={emergencyUrl}
+            target="_blank"
+            variant="emergency"
+            size="lg"
+            className="emergency__cta"
+          >
+            <WhatsAppIcon className="button__icon" />
             Tengo una urgencia
           </Button>
         </div>
 
-        <ul className="emergency__list" aria-label="Motivos frecuentes de urgencia">
+        <ul className="emergency__list" aria-label="Motivos frecuentes de urgencia" data-reveal="group">
           {siteConfig.emergencyReasons.map((reason) => (
             <li key={reason}>{reason}</li>
           ))}

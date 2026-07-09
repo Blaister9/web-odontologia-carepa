@@ -5,8 +5,9 @@ import { trackEvent } from "@/utils/tracking";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "../ui/Button";
+import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 
-const heroBadges = ["Atención clara", "Citas por WhatsApp", "Carepa y Urabá"];
+const heroBadges = ["Carepa y Urabá", "Atención personalizada", "Agenda por WhatsApp"];
 
 export function Hero() {
   const appointmentUrl = getWhatsAppUrl(
@@ -35,8 +36,10 @@ export function Hero() {
               href={appointmentUrl}
               target="_blank"
               size="lg"
+              className="button--whatsapp-glow"
               onClick={() => trackEvent("click_whatsapp_hero")}
             >
+              <WhatsAppIcon className="button__icon" />
               Agendar valoración
             </Button>
             <Button href="#servicios" variant="outline" size="lg">

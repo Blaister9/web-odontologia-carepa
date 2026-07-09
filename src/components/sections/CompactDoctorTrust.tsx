@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { brandContent } from "@/data/brandContent";
@@ -17,16 +18,30 @@ export function CompactDoctorTrust() {
   return (
     <section className="section compact-trust" id="doctora">
       <div className="container compact-trust__inner">
-        <div>
+        <div data-reveal>
           <p className="eyebrow">Confianza y orientación</p>
           <h2>La valoración primero. El tratamiento se decide con claridad.</h2>
           <p>{brandContent.homeIntro}</p>
+          <blockquote className="compact-trust__quote">
+            <span aria-hidden="true">“</span>
+            <p>{siteConfig.doctorProfile.quote}</p>
+          </blockquote>
         </div>
 
-        <div className="compact-trust__panel">
+        <div className="compact-trust__panel" data-reveal>
           <div className="compact-trust__doctor">
-            <span>{siteConfig.doctorProfile.name}</span>
-            <strong>{siteConfig.doctorProfile.title}</strong>
+            <div className="compact-trust__photo">
+              <Image
+                src={siteConfig.doctorProfile.image}
+                alt={`${siteConfig.doctorProfile.name}, odontóloga en Carepa`}
+                fill
+                sizes="96px"
+              />
+            </div>
+            <div>
+              <span>{siteConfig.doctorProfile.name}</span>
+              <strong>{siteConfig.doctorProfile.title}</strong>
+            </div>
           </div>
 
           <ul aria-label="Puntos de confianza">

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { siteConfig } from "@/data/site";
@@ -21,13 +22,15 @@ export function FeaturedTreatments() {
   return (
     <section className="section featured-treatments" id="servicios">
       <div className="container">
-        <SectionHeading
-          eyebrow="Tratamientos destacados"
-          title="Opciones frecuentes para pacientes en Carepa"
-          description="Guías claras para entender mejor cada servicio antes de escribir por WhatsApp o agendar una valoración."
-        />
+        <div data-reveal>
+          <SectionHeading
+            eyebrow="Tratamientos destacados"
+            title="Opciones frecuentes para pacientes en Carepa"
+            description="Guías claras para entender mejor cada servicio antes de escribir por WhatsApp o agendar una valoración."
+          />
+        </div>
 
-        <div className="featured-treatments__grid">
+        <div className="featured-treatments__grid" data-reveal="group">
           {featuredServices.map((service) => {
             if (!service) {
               return null;
@@ -37,22 +40,35 @@ export function FeaturedTreatments() {
 
             return (
               <article className="featured-treatment-card" key={service.id}>
-                <span>{service.badge}</span>
-                <h3>{service.title}</h3>
-                <p>{service.featuredSummary}</p>
-                <div>
-                  <Link href={`/servicios/${service.slug}`}>Ver guía del servicio</Link>
-                  <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
-                    Consultar servicio
-                  </Button>
+                <div className="featured-treatment-card__media" aria-hidden="true">
+                  <Image
+                    src={service.image}
+                    alt=""
+                    fill
+                    sizes="(min-width: 980px) 25vw, (min-width: 720px) 50vw, 100vw"
+                  />
+                  <span className="featured-treatment-card__badge">{service.badge}</span>
+                </div>
+                <div className="featured-treatment-card__body">
+                  <h3>{service.title}</h3>
+                  <p>{service.featuredSummary}</p>
+                  <div className="featured-treatment-card__actions">
+                    <Link href={`/servicios/${service.slug}`}>Ver guía del servicio</Link>
+                    <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
+                      Consultar servicio
+                    </Button>
+                  </div>
                 </div>
               </article>
             );
           })}
         </div>
 
-        <div className="featured-treatments__footer">
-          <Link href="/servicios">Ver todos los servicios</Link>
+        <div className="featured-treatments__footer" data-reveal>
+          <Link className="featured-treatments__all" href="/servicios">
+            Ver todos los servicios
+            <span aria-hidden="true">→</span>
+          </Link>
         </div>
       </div>
     </section>
