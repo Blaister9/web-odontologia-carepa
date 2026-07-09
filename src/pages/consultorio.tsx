@@ -18,7 +18,7 @@ export default function ConsultorioPage() {
   );
   const title = "Consultorio odontológico en Carepa | Dra. Nataly Jiménez";
   const description =
-    "Conoce el enfoque del Consultorio Odontológico Dra Nataly Jiménez en Carepa: atención cercana, valoración responsable y orientación clara antes de iniciar.";
+    "Conoce Odontología Dra. Nataly Jiménez en Carepa: salud oral, estética dental, bienestar y atención personalizada con orientación clara.";
   const jsonLd = getDentistJsonLd(siteConfig);
 
   return (
@@ -50,16 +50,42 @@ export default function ConsultorioPage() {
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Consultorio</p>
-            <h1>{brandContent.consultorioTitle}</h1>
-            <p>{brandContent.consultorioIntro}</p>
+            <h1>{brandContent.presentation.title}</h1>
+            <p>{brandContent.presentation.lead}</p>
             <div className="internal-hero__actions">
               <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
-                Agendar por WhatsApp
+                Agendar valoración
               </a>
               <Link className="button button--outline button--lg" href="/servicios">
                 Ver servicios
               </Link>
             </div>
+          </div>
+        </section>
+
+        <section className="section consultorio-story">
+          <div className="container consultorio-story__grid">
+            <div className="consultorio-story__copy">
+              <p className="eyebrow">{brandContent.presentation.eyebrow}</p>
+              <h2>{brandContent.consultorioTitle}</h2>
+              <p>{brandContent.consultorioIntro}</p>
+              {brandContent.presentation.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+            </div>
+
+            <aside className="consultorio-story__panel" aria-label="Enfoque del consultorio">
+              <span>Carepa, Antioquia</span>
+              <strong>Salud oral, estética dental y bienestar con atención personalizada.</strong>
+              <ul>
+                {brandContent.presentation.highlights.map((highlight) => (
+                  <li key={highlight}>{highlight}</li>
+                ))}
+              </ul>
+              <a className="button button--primary button--md" href={whatsappUrl} target="_blank" rel="noreferrer">
+                Escribir por WhatsApp
+              </a>
+            </aside>
           </div>
         </section>
 

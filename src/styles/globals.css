@@ -2499,6 +2499,83 @@ p {
   color: var(--color-ink-soft);
 }
 
+.consultorio-story {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(228, 243, 239, 0.68)),
+    var(--color-white);
+}
+
+.consultorio-story__grid {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+.consultorio-story__copy {
+  max-width: 720px;
+}
+
+.consultorio-story__copy p {
+  color: var(--color-ink-soft);
+}
+
+.consultorio-story__copy p:last-child {
+  margin-bottom: 0;
+  color: var(--color-ink);
+  font-weight: 760;
+}
+
+.consultorio-story__panel {
+  display: grid;
+  gap: 18px;
+  padding: 28px;
+  border: 1px solid rgba(13, 107, 115, 0.16);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(135deg, rgba(21, 52, 67, 0.96), rgba(13, 107, 115, 0.92)),
+    var(--color-teal);
+  color: var(--color-white);
+  box-shadow: var(--shadow-cinematic);
+}
+
+.consultorio-story__panel > span {
+  color: var(--color-gold-soft);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.consultorio-story__panel strong {
+  font-size: 1.26rem;
+  line-height: 1.25;
+}
+
+.consultorio-story__panel ul {
+  display: grid;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.consultorio-story__panel li {
+  position: relative;
+  padding-left: 22px;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.consultorio-story__panel li::before {
+  position: absolute;
+  top: 0.7em;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--color-gold-soft);
+  content: "";
+}
+
 .service-directory__category {
   display: grid;
   gap: 22px;
@@ -2607,7 +2684,8 @@ p {
   .dental-team__grid,
   .team-directory__grid,
   .internal-content__grid,
-  .service-catalog-preview__grid {
+  .service-catalog-preview__grid,
+  .consultorio-story__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2863,6 +2941,10 @@ p {
   }
 
   .final-whatsapp__inner {
+    padding: 22px;
+  }
+
+  .consultorio-story__panel {
     padding: 22px;
   }
 
