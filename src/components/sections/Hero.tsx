@@ -37,7 +37,7 @@ export function Hero() {
               size="lg"
               onClick={() => trackEvent("click_whatsapp_hero")}
             >
-              Agendar por WhatsApp
+              Agendar valoración
             </Button>
             <Button href="#servicios" variant="outline" size="lg">
               Ver servicios
@@ -50,7 +50,7 @@ export function Hero() {
             ))}
           </div>
 
-          <a className="hero__scroll-cue" href="#tratamientos-destacados">
+          <a className="hero__scroll-cue" href="#servicios">
             <span aria-hidden="true" />
             Ver tratamientos destacados
           </a>

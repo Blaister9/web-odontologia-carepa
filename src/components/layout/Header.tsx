@@ -9,12 +9,10 @@ import { Button } from "../ui/Button";
 const navItems = [
   { label: "Necesidad", href: "/#que-necesitas" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Consultorio", href: "/consultorio" },
-  { label: "Equipo", href: "/equipo" },
   { label: "Doctora", href: "/#doctora" },
   { label: "Urgencias", href: "/#urgencias" },
-  { label: "Ubicación", href: "/#ubicacion" },
-  { label: "Preguntas", href: "/#preguntas" }
+  { label: "Consultorio", href: "/consultorio" },
+  { label: "Equipo", href: "/equipo" }
 ];
 
 export function Header() {

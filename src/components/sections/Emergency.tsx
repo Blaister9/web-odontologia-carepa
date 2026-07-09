@@ -20,7 +20,7 @@ export function Emergency() {
             molestias como dolor, inflamación, fracturas o emergencias dentales.
           </p>
           <Button href={emergencyUrl} target="_blank" variant="emergency" size="lg">
-            Consultar urgencia por WhatsApp
+            Tengo una urgencia
           </Button>
         </div>
 

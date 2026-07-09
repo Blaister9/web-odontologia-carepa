@@ -21,7 +21,7 @@ export function RegionWhatsApp() {
           </p>
         </div>
         <Button href={whatsappUrl} target="_blank" size="lg">
-          Escribir desde mi ubicación
+          Estoy en Carepa o una vereda cercana
         </Button>
       </div>
     </section>
