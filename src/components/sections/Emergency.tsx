@@ -6,7 +6,7 @@ import { Button } from "../ui/Button";
 export function Emergency() {
   const emergencyUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, tengo una urgencia odontológica en Carepa y quiero revisar disponibilidad de atención."
+    "Hola, tengo una urgencia odontológica y estoy en Carepa o cerca. ¿Me pueden ayudar con disponibilidad?"
   );
 
   return (
@@ -16,8 +16,8 @@ export function Emergency() {
           <p className="eyebrow eyebrow--light">Urgencias odontológicas</p>
           <h2>Si tienes dolor o una molestia fuerte, escríbenos para revisar disponibilidad.</h2>
           <p>
-            La orientación oportuna ayuda a definir el siguiente paso. Describe tus síntomas,
-            desde cuándo iniciaron y si has tenido inflamación, trauma o fiebre.
+            Damos prioridad a las urgencias odontológicas según disponibilidad, para orientar
+            molestias como dolor, inflamación, fracturas o emergencias dentales.
           </p>
           <Button href={emergencyUrl} target="_blank" variant="emergency" size="lg">
             Consultar urgencia por WhatsApp

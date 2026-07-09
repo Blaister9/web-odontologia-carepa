@@ -14,6 +14,10 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
       loc: siteConfig.siteUrl,
       priority: "1.0"
     },
+    ...["/consultorio", "/equipo", "/servicios"].map((path) => ({
+      loc: absoluteUrl(siteConfig, path),
+      priority: "0.8"
+    })),
     ...servicePages.map((servicePage) => ({
       loc: absoluteUrl(siteConfig, `/servicios/${servicePage.slug}`),
       priority: "0.8"

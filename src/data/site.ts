@@ -271,6 +271,58 @@ export const siteConfig: SiteConfig = {
         "Hola, estoy en Carepa y quiero consultar por prótesis dentales. ¿Me pueden orientar con disponibilidad para una valoración?"
     },
     {
+      id: "endodoncia",
+      title: "Endodoncia",
+      badge: "Especializado",
+      slug: "endodoncia-carepa",
+      featuredSummary: "Valoración para dolor, sensibilidad o molestias internas del diente.",
+      description:
+        "Orientación para revisar si una molestia dental requiere manejo especializado.",
+      image: "/images/servicios/odontologia-familiar.png",
+      alt: "Imagen referencial de valoración odontológica especializada",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero consultar por endodoncia. ¿Me pueden orientar con disponibilidad para una valoración?"
+    },
+    {
+      id: "implantologia",
+      title: "Implantología",
+      badge: "Rehabilitación",
+      slug: "implantologia-carepa",
+      featuredSummary: "Orientación para revisar alternativas ante piezas dentales ausentes.",
+      description:
+        "Valoración para revisar si los implantes dentales son una alternativa según tu caso.",
+      image: "/images/servicios/protesis-dentales.png",
+      alt: "Imagen referencial de rehabilitación oral e implantología",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero consultar por implantología. ¿Me pueden orientar con disponibilidad para una valoración?"
+    },
+    {
+      id: "armonizacion-orofacial",
+      title: "Armonización orofacial",
+      badge: "Estético",
+      slug: "armonizacion-orofacial-carepa",
+      featuredSummary: "Consulta estética responsable con valoración previa y expectativas claras.",
+      description:
+        "Orientación para procedimientos de armonización orofacial según valoración profesional.",
+      image: "/images/servicios/diseno-sonrisa.png",
+      alt: "Imagen referencial de atención estética odontológica",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero consultar por armonización orofacial. ¿Me pueden orientar con disponibilidad para una valoración?"
+    },
+    {
+      id: "extraccion-cordales",
+      title: "Extracción de cordales",
+      badge: "Cirugía",
+      slug: "extraccion-de-cordales-carepa",
+      featuredSummary: "Valoración de terceros molares, molestias, inflamación o indicación quirúrgica.",
+      description:
+        "Orientación para revisar cordales y definir el manejo adecuado según diagnóstico.",
+      image: "/images/servicios/urgencias-odontologicas.png",
+      alt: "Imagen referencial de valoración para extracción de cordales",
+      whatsappMessage:
+        "Hola, estoy en Carepa y quiero consultar por extracción de cordales. ¿Me pueden orientar con disponibilidad para una valoración?"
+    },
+    {
       id: "urgencias-odontologicas",
       title: "Urgencias odontológicas",
       badge: "Urgencia",

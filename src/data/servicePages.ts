@@ -260,6 +260,166 @@ export const servicePages: ServicePage[] = [
     relatedServices: ["resinas-esteticas-carepa", "odontologia-familiar-carepa", "limpieza-dental-carepa"]
   },
   {
+    slug: "endodoncia-carepa",
+    serviceId: "endodoncia",
+    title: "Endodoncia en Carepa | Valoración por dolor dental",
+    metaDescription:
+      "Consulta por endodoncia en Carepa. Agenda valoración para revisar dolor, sensibilidad o molestias dentales y recibir orientación profesional.",
+    h1: "Endodoncia en Carepa",
+    intro:
+      "La endodoncia puede considerarse cuando hay dolor, sensibilidad persistente o señales de compromiso interno del diente. La valoración permite revisar el caso y definir si este manejo corresponde.",
+    benefits: [
+      "Permite estudiar molestias que no mejoran o aparecen con frío, calor o presión.",
+      "Ayuda a orientar el manejo cuando el dolor parece venir del interior del diente.",
+      "Evita asumir un tratamiento sin una revisión odontológica previa."
+    ],
+    whenToConsider: [
+      "Tienes dolor dental persistente o sensibilidad fuerte.",
+      "Sientes molestia al morder o presión en un diente específico.",
+      "Te indicaron revisar si un diente requiere manejo especializado."
+    ],
+    processSteps: [
+      "Escribes por WhatsApp y describes dolor, tiempo de evolución y zona afectada.",
+      "Se agenda valoración según disponibilidad.",
+      "La profesional revisa el caso y explica si conviene endodoncia u otra alternativa."
+    ],
+    faq: [
+      {
+        question: "¿Todo dolor dental requiere endodoncia?",
+        answer:
+          "No. El dolor puede tener diferentes causas. La valoración define si se requiere endodoncia, restauración, manejo periodontal u otro tratamiento."
+      },
+      {
+        question: "¿Puedo consultar primero por WhatsApp?",
+        answer:
+          "Sí. Puedes explicar tus síntomas para revisar disponibilidad y saber cómo iniciar la valoración."
+      }
+    ],
+    whatsappMessage:
+      "Hola, estoy en Carepa y quiero consultar por endodoncia. ¿Me pueden orientar con disponibilidad para una valoración?",
+    relatedServices: ["urgencias-odontologicas-carepa", "resinas-esteticas-carepa", "limpieza-dental-carepa"]
+  },
+  {
+    slug: "implantologia-carepa",
+    serviceId: "implantologia",
+    title: "Implantología en Carepa | Valoración para implantes dentales",
+    metaDescription:
+      "Consulta por implantología en Carepa. Valoración para revisar piezas ausentes, alternativas de rehabilitación oral y pasos según diagnóstico.",
+    h1: "Implantología en Carepa",
+    intro:
+      "La implantología es una alternativa de rehabilitación oral que debe planearse con valoración profesional. Antes de decidir, se revisan condiciones orales, necesidades funcionales y opciones posibles.",
+    benefits: [
+      "Ayuda a revisar alternativas ante la ausencia de una o varias piezas dentales.",
+      "Permite entender pasos generales, criterios y necesidades antes de iniciar.",
+      "Integra función, comodidad y planificación responsable."
+    ],
+    whenToConsider: [
+      "Te falta una pieza dental y quieres conocer opciones.",
+      "Usas una prótesis y deseas revisar alternativas de rehabilitación.",
+      "Quieres orientación antes de tomar una decisión sobre implantes."
+    ],
+    processSteps: [
+      "Cuentas por WhatsApp qué pieza o zona quieres revisar.",
+      "Se agenda valoración para examinar el caso y definir necesidades.",
+      "Recibes orientación sobre alternativas, estudios o remisiones si aplican."
+    ],
+    faq: [
+      {
+        question: "¿Los implantes son para todos los pacientes?",
+        answer:
+          "No siempre. La indicación depende de salud oral, hueso, hábitos, antecedentes y diagnóstico profesional."
+      },
+      {
+        question: "¿La valoración define el tratamiento exacto?",
+        answer:
+          "La valoración inicial orienta el caso y puede indicar si se requieren estudios adicionales antes de definir un plan."
+      }
+    ],
+    whatsappMessage:
+      "Hola, estoy en Carepa y quiero consultar por implantología. ¿Me pueden orientar con disponibilidad para una valoración?",
+    relatedServices: ["protesis-dentales-carepa", "limpieza-dental-carepa", "odontologia-familiar-carepa"]
+  },
+  {
+    slug: "armonizacion-orofacial-carepa",
+    serviceId: "armonizacion-orofacial",
+    title: "Armonización orofacial en Carepa | Valoración estética responsable",
+    metaDescription:
+      "Consulta por armonización orofacial en Carepa. Orientación estética responsable con valoración previa, expectativas claras y disponibilidad por WhatsApp.",
+    h1: "Armonización orofacial en Carepa",
+    intro:
+      "La armonización orofacial requiere valoración individual, explicación clara de expectativas y criterio profesional. La consulta ayuda a revisar si el procedimiento que tienes en mente es adecuado para tu caso.",
+    benefits: [
+      "Permite conversar expectativas antes de decidir.",
+      "Ayuda a revisar alternativas estéticas con orientación responsable.",
+      "Evita iniciar procedimientos sin una valoración individual."
+    ],
+    whenToConsider: [
+      "Quieres orientación sobre labios, perfil facial o procedimientos estéticos.",
+      "Buscas entender opciones antes de tomar una decisión.",
+      "Tienes dudas sobre indicaciones, cuidados o disponibilidad."
+    ],
+    processSteps: [
+      "Escribes por WhatsApp contando qué procedimiento te interesa.",
+      "Se agenda una valoración según disponibilidad.",
+      "Se revisan expectativas, alternativas y recomendaciones responsables."
+    ],
+    faq: [
+      {
+        question: "¿Se pueden prometer resultados exactos?",
+        answer:
+          "No. Cada caso responde de forma diferente. La valoración permite explicar posibilidades y límites de manera responsable."
+      },
+      {
+        question: "¿Puedo consultar por varios procedimientos?",
+        answer:
+          "Sí. Puedes escribir qué opciones te interesan para recibir orientación inicial y revisar disponibilidad."
+      }
+    ],
+    whatsappMessage:
+      "Hola, estoy en Carepa y quiero consultar por armonización orofacial. ¿Me pueden orientar con disponibilidad para una valoración?",
+    relatedServices: ["diseno-de-sonrisa-carepa", "blanqueamiento-dental-carepa", "odontologia-familiar-carepa"]
+  },
+  {
+    slug: "extraccion-de-cordales-carepa",
+    serviceId: "extraccion-cordales",
+    title: "Extracción de cordales en Carepa | Valoración de terceros molares",
+    metaDescription:
+      "Consulta por extracción de cordales en Carepa. Valoración para revisar dolor, inflamación, posición de terceros molares y disponibilidad.",
+    h1: "Extracción de cordales en Carepa",
+    intro:
+      "Las cordales pueden generar dolor, inflamación o molestias, pero no todos los casos requieren extracción. La valoración ayuda a revisar síntomas, posición y siguiente paso responsable.",
+    benefits: [
+      "Permite revisar si la molestia está relacionada con terceros molares.",
+      "Ayuda a definir si se necesita manejo quirúrgico, control o remisión.",
+      "Ordena la información necesaria antes de tomar una decisión."
+    ],
+    whenToConsider: [
+      "Sientes dolor o inflamación en la zona posterior de la boca.",
+      "Te indicaron revisar la posición de una cordal.",
+      "Tienes molestias repetidas al morder o abrir la boca."
+    ],
+    processSteps: [
+      "Escribes por WhatsApp indicando síntomas y zona afectada.",
+      "Se revisa disponibilidad para valoración.",
+      "La profesional orienta si se requiere estudio adicional, manejo o remisión."
+    ],
+    faq: [
+      {
+        question: "¿Todas las cordales deben extraerse?",
+        answer:
+          "No. La decisión depende de síntomas, posición, salud oral y diagnóstico profesional."
+      },
+      {
+        question: "¿Qué debo contar por WhatsApp?",
+        answer:
+          "Indica si hay dolor, inflamación, fiebre, dificultad para abrir la boca o cuánto tiempo llevas con la molestia."
+      }
+    ],
+    whatsappMessage:
+      "Hola, estoy en Carepa y quiero consultar por extracción de cordales. ¿Me pueden orientar con disponibilidad para una valoración?",
+    relatedServices: ["urgencias-odontologicas-carepa", "endodoncia-carepa", "limpieza-dental-carepa"]
+  },
+  {
     slug: "urgencias-odontologicas-carepa",
     serviceId: "urgencias-odontologicas",
     title: "Urgencias odontológicas en Carepa | Dolor dental e inflamación",
