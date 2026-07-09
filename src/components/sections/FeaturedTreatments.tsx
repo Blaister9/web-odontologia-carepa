@@ -19,7 +19,7 @@ export function FeaturedTreatments() {
     .filter(Boolean);
 
   return (
-    <section className="section featured-treatments" id="tratamientos-destacados">
+    <section className="section featured-treatments" id="servicios">
       <div className="container">
         <SectionHeading
           eyebrow="Tratamientos destacados"
@@ -43,12 +43,16 @@ export function FeaturedTreatments() {
                 <div>
                   <Link href={`/servicios/${service.slug}`}>Ver guía del servicio</Link>
                   <Button href={whatsappUrl} target="_blank" variant="ghost" size="sm">
-                    Consultar
+                    Consultar servicio
                   </Button>
                 </div>
               </article>
             );
           })}
+        </div>
+
+        <div className="featured-treatments__footer">
+          <Link href="/servicios">Ver todos los servicios</Link>
         </div>
       </div>
     </section>

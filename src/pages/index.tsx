@@ -2,19 +2,13 @@ import Head from "next/head";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
-import { AboutDoctor } from "@/components/sections/AboutDoctor";
-import { BrandStory } from "@/components/sections/BrandStory";
-import { CareExperience } from "@/components/sections/CareExperience";
-import { DentalTeam } from "@/components/sections/DentalTeam";
+import { CompactDoctorTrust } from "@/components/sections/CompactDoctorTrust";
 import { Emergency } from "@/components/sections/Emergency";
-import { FAQ } from "@/components/sections/FAQ";
 import { FeaturedTreatments } from "@/components/sections/FeaturedTreatments";
 import { FinalWhatsAppCTA } from "@/components/sections/FinalWhatsAppCTA";
 import { Hero } from "@/components/sections/Hero";
-import { Location } from "@/components/sections/Location";
 import { NeedSelector } from "@/components/sections/NeedSelector";
 import { RegionWhatsApp } from "@/components/sections/RegionWhatsApp";
-import { ServiceCatalogPreview } from "@/components/sections/ServiceCatalogPreview";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/data/site";
@@ -54,15 +48,9 @@ export default function Home() {
         <Hero />
         <NeedSelector />
         <FeaturedTreatments />
-        <ServiceCatalogPreview />
-        <BrandStory />
-        <AboutDoctor />
-        <DentalTeam />
+        <CompactDoctorTrust />
         <Emergency />
-        <CareExperience />
         <RegionWhatsApp />
-        <Location />
-        <FAQ />
         <FinalWhatsAppCTA />
       </main>
       <Footer />
