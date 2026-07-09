@@ -9,7 +9,8 @@ import { Button } from "../ui/Button";
 const navItems = [
   { label: "Necesidad", href: "/#que-necesitas" },
   { label: "Servicios", href: "/#servicios" },
-  { label: "Primera cita", href: "/#primera-cita" },
+  { label: "Consultorio", href: "/consultorio" },
+  { label: "Equipo", href: "/equipo" },
   { label: "Doctora", href: "/#doctora" },
   { label: "Urgencias", href: "/#urgencias" },
   { label: "Ubicación", href: "/#ubicacion" },

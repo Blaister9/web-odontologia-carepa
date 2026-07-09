@@ -3,23 +3,18 @@ import Head from "next/head";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { AboutDoctor } from "@/components/sections/AboutDoctor";
-import { AestheticFunctionalCare } from "@/components/sections/AestheticFunctionalCare";
-import { BeforeBooking } from "@/components/sections/BeforeBooking";
+import { BrandStory } from "@/components/sections/BrandStory";
 import { CareExperience } from "@/components/sections/CareExperience";
+import { DentalTeam } from "@/components/sections/DentalTeam";
 import { Emergency } from "@/components/sections/Emergency";
 import { FAQ } from "@/components/sections/FAQ";
 import { FeaturedTreatments } from "@/components/sections/FeaturedTreatments";
-import { FirstVisit } from "@/components/sections/FirstVisit";
+import { FinalWhatsAppCTA } from "@/components/sections/FinalWhatsAppCTA";
 import { Hero } from "@/components/sections/Hero";
-import { LocalTrust } from "@/components/sections/LocalTrust";
 import { Location } from "@/components/sections/Location";
 import { NeedSelector } from "@/components/sections/NeedSelector";
-import { OralHealthCampaign } from "@/components/sections/OralHealthCampaign";
-import { PatientGuidance } from "@/components/sections/PatientGuidance";
-import { RegionFocus } from "@/components/sections/RegionFocus";
-import { Services } from "@/components/sections/Services";
-import { Testimonials } from "@/components/sections/Testimonials";
-import { TrustBar } from "@/components/sections/TrustBar";
+import { RegionWhatsApp } from "@/components/sections/RegionWhatsApp";
+import { ServiceCatalogPreview } from "@/components/sections/ServiceCatalogPreview";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/data/site";
@@ -57,23 +52,18 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <TrustBar />
-        <OralHealthCampaign />
-        <FeaturedTreatments />
-        <PatientGuidance />
         <NeedSelector />
-        <LocalTrust />
-        <CareExperience />
-        <AestheticFunctionalCare />
-        <Services />
-        <FirstVisit />
+        <FeaturedTreatments />
+        <ServiceCatalogPreview />
+        <BrandStory />
         <AboutDoctor />
+        <DentalTeam />
         <Emergency />
-        <BeforeBooking />
-        <RegionFocus />
-        <Testimonials />
+        <CareExperience />
+        <RegionWhatsApp />
         <Location />
         <FAQ />
+        <FinalWhatsAppCTA />
       </main>
       <Footer />
       <WhatsAppFloatingButton />

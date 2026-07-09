@@ -2160,6 +2160,286 @@ p {
   color: var(--color-gold-soft);
 }
 
+.brand-story {
+  background:
+    linear-gradient(135deg, rgba(228, 243, 239, 0.82), rgba(251, 248, 241, 0.96)),
+    var(--color-ivory);
+}
+
+.brand-story__grid,
+.region-whatsapp__inner,
+.final-whatsapp__inner {
+  display: grid;
+  gap: 28px;
+}
+
+.brand-story__panel {
+  display: grid;
+  gap: 16px;
+}
+
+.brand-story__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(13, 107, 115, 0.14);
+  border-radius: var(--radius-card);
+  background: rgba(255, 255, 255, 0.76);
+  box-shadow: var(--shadow-card);
+}
+
+.brand-story__item > span {
+  width: 11px;
+  height: 11px;
+  margin-top: 7px;
+  border-radius: 999px;
+  background: var(--color-gold);
+}
+
+.brand-story__item h3,
+.brand-story__item p {
+  margin-bottom: 0;
+}
+
+.brand-story__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.brand-story__links a,
+.dental-team__footer a,
+.final-whatsapp__actions a,
+.catalog-preview-card__actions a,
+.service-directory__actions a {
+  font-weight: 800;
+  color: var(--color-teal);
+}
+
+.dental-team {
+  background: var(--color-white);
+}
+
+.dental-team__heading,
+.service-catalog-preview__heading {
+  display: grid;
+  gap: 18px;
+  align-items: end;
+  margin-bottom: 30px;
+}
+
+.dental-team__grid,
+.service-catalog-preview__grid,
+.team-directory__grid,
+.internal-content__grid,
+.service-directory__grid {
+  display: grid;
+  gap: 18px;
+}
+
+.team-card {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.team-card__image {
+  position: relative;
+  min-height: 250px;
+  background: var(--color-teal-soft);
+}
+
+.team-card__image img {
+  object-fit: cover;
+}
+
+.team-card__body {
+  padding: 20px;
+}
+
+.team-card__body span,
+.service-directory__category > div:first-child span,
+.catalog-preview-card span,
+.internal-card span {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.team-card__body h2,
+.team-card__body h3 {
+  margin-bottom: 8px;
+}
+
+.team-card__body strong {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--color-teal);
+}
+
+.team-card__body p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.dental-team__footer {
+  margin-top: 22px;
+}
+
+.service-catalog-preview {
+  background: var(--color-ivory);
+}
+
+.catalog-preview-card,
+.internal-card,
+.service-directory__category {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-white);
+  box-shadow: var(--shadow-card);
+}
+
+.catalog-preview-card {
+  display: grid;
+  min-height: 240px;
+  padding: 22px;
+}
+
+.catalog-preview-card h3 {
+  font-size: 1.2rem;
+}
+
+.catalog-preview-card p {
+  color: var(--color-ink-soft);
+}
+
+.catalog-preview-card__actions,
+.service-directory__actions,
+.final-whatsapp__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  margin-top: auto;
+}
+
+.region-whatsapp,
+.final-whatsapp {
+  padding: 58px 0;
+}
+
+.region-whatsapp {
+  background:
+    linear-gradient(135deg, rgba(21, 52, 67, 0.92), rgba(13, 107, 115, 0.88)),
+    var(--color-teal);
+  color: var(--color-white);
+}
+
+.region-whatsapp h2,
+.region-whatsapp p,
+.final-whatsapp h2,
+.final-whatsapp p {
+  margin-bottom: 0;
+}
+
+.region-whatsapp p {
+  max-width: 680px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.final-whatsapp {
+  background: var(--color-white);
+}
+
+.final-whatsapp__inner {
+  padding: 28px;
+  border: 1px solid rgba(13, 107, 115, 0.16);
+  border-radius: var(--radius-card);
+  background:
+    linear-gradient(135deg, rgba(228, 243, 239, 0.72), rgba(255, 255, 255, 0.96)),
+    var(--color-white);
+  box-shadow: var(--shadow-soft);
+}
+
+.internal-hero {
+  padding: 86px 0 64px;
+  background:
+    linear-gradient(135deg, rgba(228, 243, 239, 0.92), rgba(251, 248, 241, 0.94)),
+    var(--color-ivory);
+}
+
+.internal-hero__inner {
+  max-width: 820px;
+}
+
+.internal-hero__inner p:not(.eyebrow) {
+  max-width: 720px;
+  color: var(--color-ink-soft);
+  font-size: 1.08rem;
+}
+
+.internal-hero__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.internal-card {
+  padding: 22px;
+}
+
+.internal-card p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.service-directory__category {
+  display: grid;
+  gap: 22px;
+  padding: 24px;
+}
+
+.service-directory__category > div:first-child p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.service-directory__items {
+  display: grid;
+  gap: 12px;
+}
+
+.service-directory__item {
+  display: grid;
+  gap: 14px;
+  padding: 16px;
+  border: 1px solid rgba(13, 107, 115, 0.12);
+  border-radius: var(--radius-card);
+  background: rgba(228, 243, 239, 0.34);
+}
+
+.service-directory__item h3 {
+  margin-bottom: 6px;
+}
+
+.service-directory__item p {
+  margin: 0;
+  color: var(--color-ink-soft);
+}
+
+.service-directory__actions {
+  align-items: flex-start;
+}
+
 @keyframes sectionReveal {
   from {
     opacity: 0;
@@ -2182,7 +2462,12 @@ p {
   .service-process__step,
   .related-card,
   .about__highlight,
-  .about__approach-item {
+  .about__approach-item,
+  .brand-story__item,
+  .team-card,
+  .catalog-preview-card,
+  .internal-card,
+  .service-directory__category {
     animation: sectionReveal both;
     animation-range: entry 8% cover 28%;
     animation-timeline: view();
@@ -2194,7 +2479,8 @@ p {
   .about__actions,
   .location__actions,
   .service-hero__actions,
-  .guidance-band__actions {
+  .guidance-band__actions,
+  .internal-hero__actions {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -2220,7 +2506,11 @@ p {
   .featured-treatments__grid,
   .care-experience__grid,
   .service-process__grid,
-  .related-services__grid {
+  .related-services__grid,
+  .dental-team__grid,
+  .team-directory__grid,
+  .internal-content__grid,
+  .service-catalog-preview__grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -2281,7 +2571,10 @@ p {
   .service-hero__grid,
   .service-content__grid,
   .service-faq__grid,
-  .service-disclaimer__inner {
+  .service-disclaimer__inner,
+  .brand-story__grid,
+  .region-whatsapp__inner,
+  .final-whatsapp__inner {
     grid-template-columns: 0.92fr 1.08fr;
   }
 
@@ -2299,8 +2592,21 @@ p {
 
   .featured-treatments__grid,
   .care-experience__grid,
-  .related-services__grid {
+  .related-services__grid,
+  .dental-team__grid,
+  .service-catalog-preview__grid,
+  .team-directory__grid {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .dental-team__heading,
+  .service-catalog-preview__heading {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .service-directory__item {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
   }
 
   .about__grid {
@@ -2410,6 +2716,16 @@ p {
 
   .about__actions .button {
     width: 100%;
+  }
+
+  .internal-hero__actions .button,
+  .final-whatsapp__actions .button,
+  .region-whatsapp .button {
+    width: 100%;
+  }
+
+  .final-whatsapp__inner {
+    padding: 22px;
   }
 
   .mobile-sticky-cta {
