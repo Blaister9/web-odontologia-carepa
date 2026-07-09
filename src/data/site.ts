@@ -122,7 +122,7 @@ export const siteConfig: SiteConfig = {
     emergencies: "Urgencias odontológicas: consultar disponibilidad por WhatsApp."
   },
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Carepa%2C%20Antioquia%2C%20Colombia",
-  siteUrl: "https://dranatalyjimenez.com",
+  siteUrl: "https://www.dranatalyjimenez.com",
   ogImage: "/images/hero/consultorio-odontologico-carepa.png",
   seoTitle: "Odontología en Carepa | Valoración odontológica y salud oral",
   seoDescription:
