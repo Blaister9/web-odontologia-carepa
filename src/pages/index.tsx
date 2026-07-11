@@ -2,12 +2,13 @@ import Head from "next/head";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { ConversionJourney } from "@/components/conversion/ConversionJourney";
 import { CompactDoctorTrust } from "@/components/sections/CompactDoctorTrust";
 import { Emergency } from "@/components/sections/Emergency";
 import { FeaturedTreatments } from "@/components/sections/FeaturedTreatments";
 import { FinalWhatsAppCTA } from "@/components/sections/FinalWhatsAppCTA";
 import { Hero } from "@/components/sections/Hero";
-import { NeedSelector } from "@/components/sections/NeedSelector";
+import { GoogleTrustPreview } from "@/components/sections/GoogleTrustPreview";
 import { RegionWhatsApp } from "@/components/sections/RegionWhatsApp";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
@@ -46,9 +47,10 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <NeedSelector />
+        <ConversionJourney />
         <FeaturedTreatments />
         <CompactDoctorTrust />
+        <GoogleTrustPreview />
         <Emergency />
         <RegionWhatsApp />
         <FinalWhatsAppCTA />

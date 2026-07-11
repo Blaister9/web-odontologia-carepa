@@ -19,11 +19,8 @@ export function Emergency() {
             Prioridad a urgencias según disponibilidad
           </p>
           <p className="eyebrow eyebrow--light">Urgencias odontológicas</p>
-          <h2>Si tienes dolor o una molestia fuerte, escríbenos para revisar disponibilidad.</h2>
-          <p>
-            Damos prioridad a las urgencias odontológicas según disponibilidad, para orientar
-            molestias como dolor, inflamación, fracturas o emergencias dentales.
-          </p>
+          <h2>¿Tienes dolor ahora?</h2>
+          <p>Escríbenos para consultar disponibilidad de valoración.</p>
           <Button
             href={emergencyUrl}
             target="_blank"
@@ -32,7 +29,7 @@ export function Emergency() {
             className="emergency__cta"
           >
             <WhatsAppIcon className="button__icon" />
-            Tengo una urgencia
+            Consultar mi urgencia
           </Button>
         </div>
 

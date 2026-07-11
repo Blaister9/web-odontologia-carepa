@@ -1,13 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { brandContent } from "@/data/brandContent";
 import { siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "../ui/Button";
 
-const compactHighlights = siteConfig.doctorProfile.highlights.slice(0, 3);
+const compactHighlights = [
+  "Odontología general, estética y especializada",
+  "Equipo interdisciplinario en Carepa",
+  "Comunicación directa por WhatsApp"
+];
 
 export function CompactDoctorTrust() {
   const appointmentUrl = getWhatsAppUrl(
@@ -19,13 +22,9 @@ export function CompactDoctorTrust() {
     <section className="section compact-trust" id="doctora">
       <div className="container compact-trust__inner">
         <div data-reveal>
-          <p className="eyebrow">Confianza y orientación</p>
-          <h2>La valoración primero. El tratamiento se decide con claridad.</h2>
-          <p>{brandContent.homeIntro}</p>
-          <blockquote className="compact-trust__quote">
-            <span aria-hidden="true">“</span>
-            <p>{siteConfig.doctorProfile.quote}</p>
-          </blockquote>
+          <p className="eyebrow">Confianza en segundos</p>
+          <h2>Un equipo cercano en Carepa</h2>
+          <p>Valoración profesional y opciones explicadas con claridad.</p>
         </div>
 
         <div className="compact-trust__panel" data-reveal>
@@ -54,8 +53,7 @@ export function CompactDoctorTrust() {
             <Button href={appointmentUrl} target="_blank" size="lg">
               Agendar valoración
             </Button>
-            <Link href="/consultorio">Conocer el consultorio</Link>
-            <Link href="/equipo">Conocer el equipo</Link>
+            <Link href="/equipo">Ver equipo profesional</Link>
           </div>
         </div>
       </div>

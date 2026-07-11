@@ -19,8 +19,7 @@ export function RegionWhatsApp() {
           <p className="eyebrow eyebrow--light">Carepa y Urabá</p>
           <h2>Escribe desde tu ubicación y revisamos disponibilidad.</h2>
           <p>
-            Si estás en Carepa, una vereda cercana o la región de Urabá, puedes escribir por
-            WhatsApp para consultar disponibilidad, orientación inicial y agendar tu valoración.
+            Atendemos pacientes de Carepa, veredas cercanas y la región de Urabá con cita previa.
           </p>
           <div className="region-whatsapp__chips" aria-label="Zonas de cobertura por WhatsApp">
             {coverageChips.map((chip) => (
