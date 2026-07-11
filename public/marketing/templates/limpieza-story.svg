@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc" data-campaign="limpieza" data-format="story">
+  <title id="title">Limpieza y profilaxis — Instagram Story / Estado de WhatsApp</title>
+  <desc id="desc">Plantilla SVG editable del Consultorio Odontológico Dra. Nataly Jiménez. Conoce si una limpieza o profilaxis puede ser tu siguiente paso.</desc>
+  <metadata>{&quot;generator&quot;:&quot;scripts/generate-marketing-assets.py&quot;,&quot;campaign&quot;:&quot;limpieza&quot;,&quot;format&quot;:&quot;story&quot;,&quot;dimensions&quot;:{&quot;width&quot;:1080,&quot;height&quot;:1920},&quot;safeMargins&quot;:{&quot;top&quot;:250,&quot;right&quot;:90,&quot;bottom&quot;:250,&quot;left&quot;:90},&quot;editableText&quot;:true,&quot;fontStack&quot;:&quot;Inter, Arial, sans-serif&quot;,&quot;paletteSource&quot;:&quot;src/styles/globals.css&quot;,&quot;destination&quot;:&quot;https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&amp;utm_medium=offline&amp;utm_campaign=limpieza_carepa&amp;utm_content=qr_print&quot;,&quot;visualConcept&quot;:&quot;Anillos limpios y brillo&quot;}</metadata>
+
+  <defs>
+    <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#E4F3EF" stop-opacity=".82"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="concept-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="486.0" y="155.0" width="540.0" height="411.0"/>
+    </clipPath>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#background-gradient)"/>
+  <circle cx="950.4" cy="230.4" r="378.0" fill="url(#glow)"/>
+  <path d="M-86.4 1689.6C216.0 1228.8 367.2 1996.8 712.8 1612.8S1134.0 1401.6 1209.6 1804.8" fill="none" stroke="#0D6B73" stroke-width="9.7" opacity=".12"/>
+
+<g id="visual-concept" clip-path="url(#concept-clip)"><g transform="translate(777.6 368.7) scale(0.6629)">
+    <circle cx="0" cy="0" r="265" fill="none" stroke="#E4F3EF" stroke-width="58" opacity=".72"/>
+    <circle cx="0" cy="0" r="170" fill="none" stroke="#0D6B73" stroke-width="12" opacity=".65"/>
+    <path d="M-45-115c-63 0-94 58-84 115 10 52 39 71 43 145 3 49 20 78 42 78 27 0 25-64 54-64 28 0 25 64 53 64 22 0 39-29 42-78 4-74 33-93 43-145 10-57-21-115-84-115-24 0-37 13-54 13-18 0-31-13-55-13z" fill="#FBF8F1" stroke="#0D6B73" stroke-width="9"/>
+    <path d="M210-240v92M164-194h92" stroke="#0D6B73" stroke-width="12" stroke-linecap="round"/>
+</g></g>
+
+  <g id="brand" transform="translate(90.0 250.0)">
+    <rect width="58" height="58" rx="29.0" fill="#C79B45"/>
+    <text x="29.0" y="38.3" text-anchor="middle" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="22.6" font-weight="850">NJ</text>
+    <text x="78.0" y="22.0" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="16.8" font-weight="850" letter-spacing=".5">DRA. NATALY JIMÉNEZ</text>
+    <text x="78.0" y="42.3" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="11.6" font-weight="650" letter-spacing="1.2">ODONTOLOGÍA · CAREPA</text>
+  </g>
+  <text id="eyebrow" x="90.0" y="600.0" fill="#0D6B73" font-family="Inter,Arial,sans-serif" font-size="24.5" font-weight="850" letter-spacing="2.7">CUIDADO PREVENTIVO</text>
+  <text class="headline" x="90.0" y="688.0" text-anchor="start" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="79.0" font-weight="850"><tspan x="90.0" dy="0.0">Cuidar hoy también es</tspan><tspan x="90.0" dy="85.3">prevenir</tspan></text>
+  <text class="supporting-line" x="90.0" y="895.0" text-anchor="start" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="34.0" font-weight="520"><tspan x="90.0" dy="0.0">Conoce si una limpieza o profilaxis</tspan><tspan x="90.0" dy="48.3">puede ser tu siguiente paso.</tspan></text>
+
+  <g id="cta" transform="translate(90.0 1578.0)">
+    <rect width="476.1" height="82" rx="41.0" fill="#0D6B73"/>
+    <text x="238.1" y="52.5" text-anchor="middle" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="800">Explora limpieza y cuidado</text>
+  </g>
+
+  <text id="short-url" data-role="url" x="990.0" y="1694.0" text-anchor="end" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="750">dranatalyjimenez.com/c/limpieza</text>
+
+  <!-- Zona segura editable: cambia opacity a .35 para verla durante ajustes. -->
+  <g id="safe-zone" opacity="0" pointer-events="none">
+    <rect x="90.0" y="250.0" width="900.0" height="1420.0" fill="none" stroke="#FF00AA" stroke-width="4" stroke-dasharray="20 14"/>
+  </g>
+</svg>

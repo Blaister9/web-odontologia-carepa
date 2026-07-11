@@ -1,3 +1,4 @@
+import type { GetServerSideProps } from "next";
 import Head from "next/head";
 
 import { Footer } from "@/components/layout/Footer";
@@ -10,13 +11,47 @@ import { FinalWhatsAppCTA } from "@/components/sections/FinalWhatsAppCTA";
 import { Hero } from "@/components/sections/Hero";
 import { GoogleTrustPreview } from "@/components/sections/GoogleTrustPreview";
 import { RegionWhatsApp } from "@/components/sections/RegionWhatsApp";
+import { Button } from "@/components/ui/Button";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
+import {
+  CampaignConfig,
+  CampaignRequest,
+  getEnabledCampaignBySlug,
+  resolveCampaignRequest
+} from "@/data/campaigns";
 import { siteConfig } from "@/data/site";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
 
-export default function Home() {
+type HomeProps = CampaignRequest;
+
+function CampaignEntry({ campaign }: { campaign: CampaignConfig }) {
+  const targetId = campaign.slug === "uraba" ? "#elige-tu-camino" : "#recorrido-opciones";
+
+  return (
+    <section
+      className="campaign-entry"
+      id="campaign-entry"
+      aria-labelledby="campaign-entry-title"
+    >
+      <div className="container campaign-entry__inner">
+        <div className="campaign-entry__copy">
+          <p className="eyebrow">Llegaste por: {campaign.name}</p>
+          <h2 id="campaign-entry-title">{campaign.headline}</h2>
+          <p>{campaign.supportingLine}</p>
+        </div>
+        <Button href={targetId} size="lg">
+          {campaign.cta}
+          <span aria-hidden="true">↓</span>
+        </Button>
+      </div>
+    </section>
+  );
+}
+
+export default function Home({ campaignSlug }: HomeProps) {
   const jsonLd = getDentistJsonLd(siteConfig);
+  const campaign = getEnabledCampaignBySlug(campaignSlug);
 
   return (
     <>
@@ -47,6 +82,7 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
+        {campaign ? <CampaignEntry campaign={campaign} /> : null}
         <ConversionJourney />
         <FeaturedTreatments />
         <CompactDoctorTrust />
@@ -61,3 +97,7 @@ export default function Home() {
     </>
   );
 }
+
+export const getServerSideProps: GetServerSideProps<HomeProps> = async ({ query }) => ({
+  props: resolveCampaignRequest(query)
+});

@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="628" viewBox="0 0 1200 628" role="img" aria-labelledby="title desc" data-campaign="ortodoncia" data-format="meta-horizontal">
+  <title id="title">Ortodoncia — Facebook / Meta horizontal</title>
+  <desc id="desc">Plantilla SVG editable del Consultorio Odontológico Dra. Nataly Jiménez. Conoce el recorrido de ortodoncia y resuelve tus primeras dudas.</desc>
+  <metadata>{&quot;generator&quot;:&quot;scripts/generate-marketing-assets.py&quot;,&quot;campaign&quot;:&quot;ortodoncia&quot;,&quot;format&quot;:&quot;meta-horizontal&quot;,&quot;dimensions&quot;:{&quot;width&quot;:1200,&quot;height&quot;:628},&quot;safeMargins&quot;:{&quot;top&quot;:58,&quot;right&quot;:64,&quot;bottom&quot;:58,&quot;left&quot;:64},&quot;editableText&quot;:true,&quot;fontStack&quot;:&quot;Inter, Arial, sans-serif&quot;,&quot;paletteSource&quot;:&quot;src/styles/globals.css&quot;,&quot;destination&quot;:&quot;https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&amp;utm_medium=offline&amp;utm_campaign=ortodoncia_carepa&amp;utm_content=qr_print&quot;,&quot;visualConcept&quot;:&quot;Sistema de alineación&quot;}</metadata>
+
+  <defs>
+    <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#BFE2D8" stop-opacity=".82"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="concept-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="780.0" y="31.9" width="384.0" height="564.2"/>
+    </clipPath>
+  </defs>
+  <rect width="1200" height="628" fill="url(#background-gradient)"/>
+  <circle cx="1056.0" cy="75.4" r="219.8" fill="url(#glow)"/>
+  <path d="M-96.0 552.6C240.0 401.9 408.0 653.1 792.0 527.5S1260.0 458.4 1344.0 590.3" fill="none" stroke="#153443" stroke-width="5.7" opacity=".12"/>
+
+<g id="visual-concept" clip-path="url(#concept-clip)"><g transform="translate(987.4 325.3) scale(0.6194)">
+    <path d="M-275-55H275M-275 55H275" stroke="#BFE2D8" stroke-width="20" stroke-linecap="round"/>
+    <rect x="-241" y="-86" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="-136" y="-86" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="-31" y="-86" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="74" y="-86" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="179" y="-86" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="-241" y="24" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="-136" y="24" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="-31" y="24" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="74" y="24" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/><rect x="179" y="24" width="62" height="62" rx="13" fill="none" stroke="#153443" stroke-width="10"/>
+    <path d="M-250 165C-160 280 160 280 250 165" fill="none" stroke="#153443" stroke-width="14" stroke-linecap="round"/>
+</g></g>
+
+  <g id="brand" transform="translate(64.0 58.0)">
+    <rect width="52" height="52" rx="26.0" fill="#C79B45"/>
+    <text x="26.0" y="34.3" text-anchor="middle" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="20.3" font-weight="850">NJ</text>
+    <text x="72.0" y="19.8" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="15.1" font-weight="850" letter-spacing=".5">DRA. NATALY JIMÉNEZ</text>
+    <text x="72.0" y="38.0" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="10.4" font-weight="650" letter-spacing="1.2">ODONTOLOGÍA · CAREPA</text>
+  </g>
+  <text id="eyebrow" x="64.0" y="176.0" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="17.3" font-weight="850" letter-spacing="2.7">ALINEACIÓN Y MORDIDA</text>
+  <text class="headline" x="64.0" y="235.0" text-anchor="start" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="53.0" font-weight="850"><tspan x="64.0" dy="0.0">Cada sonrisa merece una</tspan><tspan x="64.0" dy="57.2">valoración propia</tspan></text>
+  <text class="supporting-line" x="64.0" y="373.9" text-anchor="start" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="24.0" font-weight="520"><tspan x="64.0" dy="0.0">Conoce el recorrido de ortodoncia y resuelve</tspan><tspan x="64.0" dy="34.1">tus primeras dudas.</tspan></text>
+
+  <g id="cta" transform="translate(64.0 504.0)">
+    <rect width="310.0" height="64" rx="32.0" fill="#153443"/>
+    <text x="155.0" y="41.0" text-anchor="middle" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="22" font-weight="800">Explora ortodoncia</text>
+  </g>
+
+  <text id="short-url" data-role="url" x="1136.0" y="589.0" text-anchor="end" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="19" font-weight="750">dranatalyjimenez.com/c/ortodoncia</text>
+
+  <!-- Zona segura editable: cambia opacity a .35 para verla durante ajustes. -->
+  <g id="safe-zone" opacity="0" pointer-events="none">
+    <rect x="64.0" y="58.0" width="1072.0" height="512.0" fill="none" stroke="#FF00AA" stroke-width="4" stroke-dasharray="20 14"/>
+  </g>
+</svg>

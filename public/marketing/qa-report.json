@@ -1,0 +1,818 @@
+{
+  "status": "passed",
+  "verifiedAt": "2026-07-11T19:36:36.497022+00:00",
+  "checks": {
+    "canonicalDomain": "www.dranatalyjimenez.com",
+    "whatsappNumber": "573128311449",
+    "utmConvention": {
+      "source": "qr",
+      "medium": "offline",
+      "content": "qr_print"
+    },
+    "qrDecoder": "OpenCV 4.13.0",
+    "googleReviewsQr": "pending-official-url",
+    "runtimeDependenciesAdded": false
+  },
+  "counts": {
+    "qrDestinations": 8,
+    "qrSvgVerified": 32,
+    "qrPngDecoded": 32,
+    "visualLines": 6,
+    "formats": 7,
+    "templateSvgVerified": 42,
+    "previewPngVerified": 42,
+    "embeddedTemplateQrDecoded": 12
+  },
+  "assets": {
+    "qrSvg": [
+      {
+        "path": "public/marketing/qr/svg/web-general-clean.svg",
+        "sha256": "b87af61c9cd74950259eaea0516a0c149c5d55f929e6e53a0a9694c25c131946"
+      },
+      {
+        "path": "public/marketing/qr/svg/web-general-framed-cta.svg",
+        "sha256": "52e52bcfcef4c6c1fd09e4c8d6f6afadedb08f74b3431ce6520c232d5c13c961"
+      },
+      {
+        "path": "public/marketing/qr/svg/web-general-light.svg",
+        "sha256": "d56acc4dc399d3d0cac8da5c5a66a4187786fcd7b58101b6a78526d9ed7f0ca1"
+      },
+      {
+        "path": "public/marketing/qr/svg/web-general-mono.svg",
+        "sha256": "8a01b7f50b49b3c53836be7d03a160a2abbcb9d474367189e98f62211c659845"
+      },
+      {
+        "path": "public/marketing/qr/svg/urgencias-clean.svg",
+        "sha256": "b4d65b737eb6a579c3cbb519ec351c0a9f29c0fc0da6a654b370317a9e5ec839"
+      },
+      {
+        "path": "public/marketing/qr/svg/urgencias-framed-cta.svg",
+        "sha256": "331990f5a24a6d0a6ae8f215ee32b77420277a350aef62c76f2bea9b3a0368c0"
+      },
+      {
+        "path": "public/marketing/qr/svg/urgencias-light.svg",
+        "sha256": "0ceb79eed940a094195af60edd3f92e26ac4f5a4e351154c3e91d0a4d3abeb8f"
+      },
+      {
+        "path": "public/marketing/qr/svg/urgencias-mono.svg",
+        "sha256": "b9000b0868ce6bdf07a6ce39cf6673499943b0a5b7d6f0989f44fcdf29334c00"
+      },
+      {
+        "path": "public/marketing/qr/svg/sonrisa-clean.svg",
+        "sha256": "a0597a38c82f6fb91ee664c0b749cb008b3c5867f2333c999e2212ead5b969db"
+      },
+      {
+        "path": "public/marketing/qr/svg/sonrisa-framed-cta.svg",
+        "sha256": "51f8bff0f05e344a44b78d4b95d1861097a91f7f25296fbc145795597c9a7136"
+      },
+      {
+        "path": "public/marketing/qr/svg/sonrisa-light.svg",
+        "sha256": "330afe46834475e4015b60359255827cd7f30b81a5fa974a9f991b6bdf73ab5f"
+      },
+      {
+        "path": "public/marketing/qr/svg/sonrisa-mono.svg",
+        "sha256": "c9d92f1fab1543870a0349341582acd4f86737b4c627d9ab0ca2fdb3b38dea45"
+      },
+      {
+        "path": "public/marketing/qr/svg/limpieza-clean.svg",
+        "sha256": "b30c04d9500311e74c192308fa42cbc3923d34aafa090b2d6690969558b27e73"
+      },
+      {
+        "path": "public/marketing/qr/svg/limpieza-framed-cta.svg",
+        "sha256": "15d346b4dbe2f67cf19d091cf8cbd0a16a6a1ad4dd14773dbf2b713511c1e720"
+      },
+      {
+        "path": "public/marketing/qr/svg/limpieza-light.svg",
+        "sha256": "5c8b30ffcf6777034c9228d0c3176e16ca6f92953e6dfe7b6a78c38a3845200b"
+      },
+      {
+        "path": "public/marketing/qr/svg/limpieza-mono.svg",
+        "sha256": "b93a70fb4093b49774be5238fe8546c076b249f176b0baf6e96aaf97d57e0ec7"
+      },
+      {
+        "path": "public/marketing/qr/svg/ortodoncia-clean.svg",
+        "sha256": "4a21cf9bb92a80d5636673948a1915e6291986219ec3da881f14fbc9023c7190"
+      },
+      {
+        "path": "public/marketing/qr/svg/ortodoncia-framed-cta.svg",
+        "sha256": "8a488c012cff413f7f912aefdbd6467f6cdfeaa1a8a72780506b37483e78e3b3"
+      },
+      {
+        "path": "public/marketing/qr/svg/ortodoncia-light.svg",
+        "sha256": "1285c6a4bc2ce0c7fba58e4c1f1c49886b67a4241d9ee71d8d144eecbc1c4b07"
+      },
+      {
+        "path": "public/marketing/qr/svg/ortodoncia-mono.svg",
+        "sha256": "653f7dcc78566086d07864c7328413c12dacc7b7b6475227d3c79b408f585f15"
+      },
+      {
+        "path": "public/marketing/qr/svg/valoracion-clean.svg",
+        "sha256": "e2d77f2e44c92dca21043b4513d0d89acb5840907d0b7a7223a21f9b9aa1c34d"
+      },
+      {
+        "path": "public/marketing/qr/svg/valoracion-framed-cta.svg",
+        "sha256": "1c3996634758d9a71c009600b55cb54a6df2586538203ef961fffa4e19d9771d"
+      },
+      {
+        "path": "public/marketing/qr/svg/valoracion-light.svg",
+        "sha256": "2e051361a32394e46d05946c1a2fa1065b41de9d7cdc73504cd79142060eca50"
+      },
+      {
+        "path": "public/marketing/qr/svg/valoracion-mono.svg",
+        "sha256": "b663656bc00a2df622f9530dcd19415811916887189648d00c2aa7ad9b29e94c"
+      },
+      {
+        "path": "public/marketing/qr/svg/uraba-clean.svg",
+        "sha256": "5f23eb57f173262bca68419e2a6dfbbd2f25bc84160fac5998c5b8dcd7a03299"
+      },
+      {
+        "path": "public/marketing/qr/svg/uraba-framed-cta.svg",
+        "sha256": "efda097161ffa690f957709117d3a9dc05b80a681f13174631c02ad5a55ff817"
+      },
+      {
+        "path": "public/marketing/qr/svg/uraba-light.svg",
+        "sha256": "f1c0387fb2680ebce56581927b85f414d911e5e07dd53fb80a99de7719995c9d"
+      },
+      {
+        "path": "public/marketing/qr/svg/uraba-mono.svg",
+        "sha256": "03db047ec2ccd41de8d7e069764db92c9143979f5897f43685c1838058888397"
+      },
+      {
+        "path": "public/marketing/qr/svg/whatsapp-directo-clean.svg",
+        "sha256": "c436e49c5334d2b3e9eb053521ed662faa5552bdd764b793c1718c1326ac73a5"
+      },
+      {
+        "path": "public/marketing/qr/svg/whatsapp-directo-framed-cta.svg",
+        "sha256": "3899a201fc01b1142780a4773f318da63a79130239c9654fd6e1ff341696c6c4"
+      },
+      {
+        "path": "public/marketing/qr/svg/whatsapp-directo-light.svg",
+        "sha256": "81d9246d61de54277e38cf6c266b9f54c191ff28583eb665107182449f7c0472"
+      },
+      {
+        "path": "public/marketing/qr/svg/whatsapp-directo-mono.svg",
+        "sha256": "b29c05ad7a08499d0331ec1f7ebdb3d043ba5556cac6ce3c1a0b8e20815edafe"
+      }
+    ],
+    "qrPng": [
+      {
+        "path": "public/marketing/qr/png/web-general-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "99e25895c8647754e6ab08f68dba8f9c8e202c1b716f538ada4664334e3071d9"
+      },
+      {
+        "path": "public/marketing/qr/png/web-general-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "de423f23960ab3fb0d4831ff6f456b7cb1d4840e23b490b15474c198a49395e6"
+      },
+      {
+        "path": "public/marketing/qr/png/web-general-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "8cdcf58ec19d8a9fb1169143e65b0d550c18f28904cd42f8c0109ccb3fe07cad"
+      },
+      {
+        "path": "public/marketing/qr/png/web-general-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "30fc614c4d17995aecdb52f2c4aeb552f5d5afb97ab8d95764ca366e7070a107"
+      },
+      {
+        "path": "public/marketing/qr/png/urgencias-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "51a8a0e371ed353b7a0a9681df8da7f9741edd5312fd6ba3aeb986bda0699078"
+      },
+      {
+        "path": "public/marketing/qr/png/urgencias-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "6964c5ba389517e60b885e57c1e0e400e439b9595d8bb0af255884206e7dc010"
+      },
+      {
+        "path": "public/marketing/qr/png/urgencias-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "fad05da1237e01d640818d53c7d0994559375eff0336124e009d8a555b7fbed8"
+      },
+      {
+        "path": "public/marketing/qr/png/urgencias-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "d49fc6c8f22ecfe09bc463aaf6074129c2b6e75f1f7f33b9d28a06cf92a551ff"
+      },
+      {
+        "path": "public/marketing/qr/png/sonrisa-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "d38ecd92dadcfb9c39514190717e81b70c87ae7216ed1eefe58ba8b19bae3e2f"
+      },
+      {
+        "path": "public/marketing/qr/png/sonrisa-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "f53ea03bf8229fb05f91186b2532c5fa4f3b8a576edb8df26d2b69300934ef17"
+      },
+      {
+        "path": "public/marketing/qr/png/sonrisa-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "1bcb4d44cfeb216c6d44a95a97934c275ab100f57470ad2d1ad2b52c18d11289"
+      },
+      {
+        "path": "public/marketing/qr/png/sonrisa-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "347779b3aa27997d413af99996e9a199a4cbd662e19a228e62ec492e52d609b3"
+      },
+      {
+        "path": "public/marketing/qr/png/limpieza-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "db7116db524a51e92e0f1fcae7346f99dbfb98598cd1a79b83d6e7c6e3371d3b"
+      },
+      {
+        "path": "public/marketing/qr/png/limpieza-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "7cbfc26302f1be928599dc25331389a15390a0782c3f4ddee95e64f4f2c4c3dc"
+      },
+      {
+        "path": "public/marketing/qr/png/limpieza-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "8c996f98259e41e71c24ce120c08557e92de48bf1c7fcc3fa353dfb7a12dee7b"
+      },
+      {
+        "path": "public/marketing/qr/png/limpieza-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "3f64429b1e639f5c2eaa0bf08ac985f789567964c1398da6bbe82a1a1cd1bf86"
+      },
+      {
+        "path": "public/marketing/qr/png/ortodoncia-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "91e836d6ac79aa2af67d5b88624047648a15c18cc857101822f1a6480c05df87"
+      },
+      {
+        "path": "public/marketing/qr/png/ortodoncia-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "f12a99746e7009fb8a5755c6dcb1178d77242986ec0bf6d5f87d1228adf2f70f"
+      },
+      {
+        "path": "public/marketing/qr/png/ortodoncia-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "ff0713fc78d903e2afbd693033cace5601811bd2ce082073e1f9c9b931198694"
+      },
+      {
+        "path": "public/marketing/qr/png/ortodoncia-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "88d6f412abea0fddc3d29f490cfec2396cfc499b90dc994e96804a387be8a1e8"
+      },
+      {
+        "path": "public/marketing/qr/png/valoracion-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "3d7882b09d9b4b939ff3a77a7cc4ad4a29e3f4ed949a30e80fea017db5b8b784"
+      },
+      {
+        "path": "public/marketing/qr/png/valoracion-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "85e9795d891b483cbbeccd16ff62e9bd18a41856d95a0356d772abf62e3dd088"
+      },
+      {
+        "path": "public/marketing/qr/png/valoracion-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "6db3e40b070e9bc49207b32507b9c163440559ed9a204ed4b862f2cd444e4e06"
+      },
+      {
+        "path": "public/marketing/qr/png/valoracion-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "b1ce301e3f7fc41569b55a072f0e5865455cc3afea03247501126ddbe69499bc"
+      },
+      {
+        "path": "public/marketing/qr/png/uraba-clean.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "25683424720ebaa60a15c3cc830a44fc4c0c3ea2d32351b60c170603b7b557a6"
+      },
+      {
+        "path": "public/marketing/qr/png/uraba-framed-cta.png",
+        "width": 1444,
+        "height": 1690,
+        "sha256": "6a9dc0d0a6ecfba020c16261d5f6a6cf24595be440ca99e1805e0b7949a3de5c"
+      },
+      {
+        "path": "public/marketing/qr/png/uraba-light.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "30bd7ac3c0b562608dba66180a6eca2a7dabfcb9abbefd371eaaee3590806008"
+      },
+      {
+        "path": "public/marketing/qr/png/uraba-mono.png",
+        "width": 1560,
+        "height": 1560,
+        "sha256": "e1754df82d8ef1cc48a38ffa10938806943bd37aafede475db5845a80a6a7e35"
+      },
+      {
+        "path": "public/marketing/qr/png/whatsapp-directo-clean.png",
+        "width": 2040,
+        "height": 2040,
+        "sha256": "3cd9442ad470a956e880815913c1c12dbf20de31d78b099725f2930595b0be25"
+      },
+      {
+        "path": "public/marketing/qr/png/whatsapp-directo-framed-cta.png",
+        "width": 1844,
+        "height": 2090,
+        "sha256": "f468ecd4178b891aade34556866d675b6f74aa191d024df8420b75b2a925b8f2"
+      },
+      {
+        "path": "public/marketing/qr/png/whatsapp-directo-light.png",
+        "width": 2040,
+        "height": 2040,
+        "sha256": "b6cf1ed1104679ab6530c493df76c2c6f45b124b3f7cbf97902c28436ac36089"
+      },
+      {
+        "path": "public/marketing/qr/png/whatsapp-directo-mono.png",
+        "width": 2040,
+        "height": 2040,
+        "sha256": "5bbcddca8306a0cd9b12302a96fa051a7a778c7ff0d701724ffe12556b30a1b8"
+      }
+    ],
+    "templateSvg": [
+      {
+        "path": "public/marketing/templates/lanzamiento-feed-square.svg",
+        "sha256": "90ad4dce9e44d8f01f4729a2c68cec9f4e4ce69f368e7d752e6507b4ff661c1e"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-feed-portrait.svg",
+        "sha256": "7d217e690a0a19ba8ee15d666fb4d63e8a9a18cfcd173b8f41511a36a7fe7d91"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-story.svg",
+        "sha256": "63abb1dab2f9cf85b81bbe1c00bfce598101f10e4d54a4ec0a656cb95b0d83c6"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-meta-horizontal.svg",
+        "sha256": "409370dac271a660522f1e50904d4d30cc1ae6afd8ac2575c24c51b93cd0dfc4"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-google-business.svg",
+        "sha256": "a1cc22a2a48abe63bce9e3d8f5c5547995b94fe173a6a35143d0cff21c58f10a"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-a5.svg",
+        "sha256": "93660408d5d6c4f2324119670326ffa8a0d7a5a466438c52264b8e31f31229b4"
+      },
+      {
+        "path": "public/marketing/templates/lanzamiento-counter-card.svg",
+        "sha256": "8e1964bc62ff8818998a8013850359e866a59636c2adc5fafacc3bd3fe23dbff"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-feed-square.svg",
+        "sha256": "24da627b2e6382ec00335fc0cc1bdfb8631b036b68c67e76420906a190774bac"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-feed-portrait.svg",
+        "sha256": "cc0fde5f8502b19af25662886de1e97aa75988bf4211dff9679c89c27ffaa384"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-story.svg",
+        "sha256": "79896f19ad179e571cc1fc17d4abf51c62c50010a3623349adf0f4eaf1b05642"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-meta-horizontal.svg",
+        "sha256": "6979c343767f535b8d889a349f9dd937d3ef393b78043be904eeffbee0b4df4f"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-google-business.svg",
+        "sha256": "f561fc058adb167661e67e6b7da409a0d41f9a24d7495da06e7f376870c6d3ca"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-a5.svg",
+        "sha256": "7e813f2ceedf0f0f0073481fb6013b9daf6b9b1523dd2a8e7adf91d7581d479b"
+      },
+      {
+        "path": "public/marketing/templates/urgencias-counter-card.svg",
+        "sha256": "69dfea57e1faa0355f4d57cbc9f093249867652e26d5b4b5365644ed3c84113b"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-feed-square.svg",
+        "sha256": "90c312bd4bc83d05c1ed5b455f87f891b1881f13c4bfe5b56fb3459d1710636b"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-feed-portrait.svg",
+        "sha256": "3ea3038800de28675defca4a0a978472569153b74ac94316c9e15d030c47182b"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-story.svg",
+        "sha256": "5f82795065af09fdfed295429d72e6adb52033a437ed7c306fb5142927f06540"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-meta-horizontal.svg",
+        "sha256": "d059537ef977e38089bb5232a3f29390da041cf9bd36138ac67bc1e36c6f94a1"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-google-business.svg",
+        "sha256": "714b33d36eab8350b3bff06a043161544acea8c1900a803ae4e24da6a00eec1a"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-a5.svg",
+        "sha256": "51ad197c169b2b570568332181b7a699d194a1ea496076bf16ab6e099261529d"
+      },
+      {
+        "path": "public/marketing/templates/sonrisa-counter-card.svg",
+        "sha256": "20caffc947254064b2ade09ade1b31303333e9511bf482b0e19b1b5c1aabdfac"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-feed-square.svg",
+        "sha256": "29df7367ed877d57ec588c8605cf3a27598a99a17e439965713c01d6d5a2c04d"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-feed-portrait.svg",
+        "sha256": "060a6269a81464e52c83bf6e349786a5039f21a7b187a35ca678ebc9f3e661e0"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-story.svg",
+        "sha256": "650d8a5543294fb8626f743600f846c4f38f124c6a4b6bc0d42c958c3f9bcb5f"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-meta-horizontal.svg",
+        "sha256": "8f3a11c1f5060bf6d1a0bdd15c7737165f224d9d705216179a96e9fcf6444321"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-google-business.svg",
+        "sha256": "387a25078da42346d47f7e6341879a4123e9a522a94efa413f70e00f684a3733"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-a5.svg",
+        "sha256": "e81eebb64437acc23994b2823ac0de0e12108277c94071dff128b39bb9d3478d"
+      },
+      {
+        "path": "public/marketing/templates/limpieza-counter-card.svg",
+        "sha256": "32c67bd33ccc1b12becff4170d68debe007e0600924898015bb50b0c0f7a9906"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-feed-square.svg",
+        "sha256": "22032081309e7de89b539b6a38213f3ba5e53ca73b22d854b410d3f6e61ef729"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-feed-portrait.svg",
+        "sha256": "e44c2128306ba84e1cb307204e008e311df7e50e28b4c11b3718ac5e2686109d"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-story.svg",
+        "sha256": "8aa831c433503696f7cb12f26906e94973bd12dafff807bac0980daf34bdacfc"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-meta-horizontal.svg",
+        "sha256": "58b5064572c45415dee1586877dedf111057bf879983fb209f4d109a8343eb5a"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-google-business.svg",
+        "sha256": "d1a15a70a0abd1f0480927d5ceef25c4a48d80c7801a51ba92c3f641937ec041"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-a5.svg",
+        "sha256": "3d873eb9f2342ac6ca7570293028f6bd351e13fbb1bb901534f5509807fcfde9"
+      },
+      {
+        "path": "public/marketing/templates/ortodoncia-counter-card.svg",
+        "sha256": "a73a6525710c8fb3ecc8a2a53b3e4cf31d62fa78162d7f7e50a7addee22eb0ed"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-feed-square.svg",
+        "sha256": "72f1e7e103099abc8847a7f752af7a8f85685c3681c3b16c204d1909c1f9288d"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-feed-portrait.svg",
+        "sha256": "db19f98e9089af36b6297a515ea60679d82fcf2d06e114d5f496b49e3342be49"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-story.svg",
+        "sha256": "54f6eb384b534d33d5c636dcbad6f412498401f2601af506b201b61f5330841f"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-meta-horizontal.svg",
+        "sha256": "cb0d019dd4a483994a856a5161e9bd9ef4cdfe41e25c6ec4fe2aa4a9323026d2"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-google-business.svg",
+        "sha256": "b5b9fb71d97c39c3f0780382bdc761bacc57b5eb3f61aa834a773d19c52189f4"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-a5.svg",
+        "sha256": "6868471019f4e2e291483444980b99fb993825e76ffacc1123ecbee17e563c12"
+      },
+      {
+        "path": "public/marketing/templates/valoracion-counter-card.svg",
+        "sha256": "e90ee2f537b108e97ca4e3fe99e42952d5074efd8174495dd5f75fc4327b8eb4"
+      }
+    ],
+    "previews": [
+      {
+        "path": "public/marketing/previews/lanzamiento-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "ccaeb7107a4c6ea0eeecc1054245e4955fb3fdb21ccba2e39078225782b49275",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "8cb4cde892d50628bb751810dc5204234f8b4c5d85c38c1f0ae2536099f6439d",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "8b5a7890821c1b7d44ea39004ae29d90b79f033aa0ed6e8b7b2016642ffc6246",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "e9adad7c0d9460a4411405aa3d70a2034064a46702c81d98f42110bc7593c048",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "22833c6bb6766abd402972d31d09dcccc51d9eb37709a7e14e7d178e0aa1df4f",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "8f5e4104ee099ed0430760e8640975df9e1c8832137f1e4929ce2425e1d8cb3e",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/lanzamiento-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "00b1803e9dc05d18cd0795c797ababd6e5f955dfe780871de79ace0882998a7d",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/urgencias-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "041454d0662cb1efc7909107533a6946e1425f18a229a0102bf1344ed60127aa",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/urgencias-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "bfd2b066ffe50ea432a58c00b286102e8b973faddcc090521328e95511196140",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/urgencias-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "447e3404fa88cf0b68e6ce18485d9b0a3ed79faf1cb45ee018a31c2b8fab339f",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/urgencias-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "c9728186c346e73ea4f8fb64aa422d27f9ecc6aaa81a61c0b68d654161536aef",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/urgencias-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "0bf02ccdc1b91f5dac4f4c5cfb58d3018cd62dfbac83d5ce6cffd2e7b84ba314",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/urgencias-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "d895c291bda409586526c6b9ae54675f9efb8fba1a87e8ad0efbb7524ee963a3",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/urgencias-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "b51103771130e6c0766f4af762146f9fd49ee2ca80670e20db50ca3d2c256f24",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "da68b97f1c0c88c992741238e6f03abab76d3cca38ec7f88b721e826a28a562e",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "0d406d8010d326a1e72dc5efad56ceb24acf9b90a285fa812fbd7e03f19c7ee1",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "b108959012a200b555a3473346cf52e9a1c9694c8a071408e83d7e6a575da57d",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "b852a672454c9cbe5abfc1da28cf1452acf06c9f8312a524eb796f90ec7839ae",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "4ccd38f81462a711c812456bfc61ac025ae53bddcbab2f521bd3a96740bbd3be",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "585d905854d1893a8c67f4ec203775fcda99c9a8865d9e2c46708e3fd3fce3aa",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/sonrisa-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "9a2c57a4217e45045785e2133b03904d2539e2ffcd07c255d5a467a90c6ab829",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/limpieza-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "678cc6a75cbd2c9a9cc0d292f090304f8a9f341bab537a877e81e192858a7450",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/limpieza-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "b74588b5880644357bc9eeb5008b710cf7e07eba7781cb25f142e10c652e7aac",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/limpieza-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "c82c10470b01b91dd07b67adf41ca9afe4be4edda12efd37bc79ccf24f05bbfd",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/limpieza-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "c1e4dece0395f9bbc370e80fa7c452c391beccd4df3cd5c4f036c98a6dbbac8a",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/limpieza-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "8fc5bf790b7284ccc72f4cacc150b1d7376dfb010236d06241080811067bf73e",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/limpieza-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "3e61cc7da062a76c7cbbdb5ef813ec69ad1a11294b28f01620c9b67d1a61049e",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/limpieza-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "abea60dcc59221f8175cccfd5b20222c5b04d5e95eb70d8681b03e4f37dc635f",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "7bba602b5e8d4e93d1b7507d056fb39491c18b46c4306746848713f621c375bf",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "e34e5d849b0d5d54509a3de2296e7343c81ace08b050f86452388fd15a26b9fc",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "4070c58916dcf772ff325988b81d9e646eb81c5ec25216fe0c85c05997386808",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "36e86f47c8f8a75dc048ee57ffd270f275ffc86ce2cd7cd2350a694a2f8d2ea8",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "ab47dae56ff73ee6e1c29c2421cde2caec2bf110bada72efe60ca26513b7a3a1",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "d5651677e7e1f72b3928f2da0313709c2f220be66b64c6d8131b66b7f77663d0",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/ortodoncia-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "e75ba1b81543159940cf6ab8fb442aeb015511f680a65f0861f229c8fbd5cfc2",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/valoracion-feed-square.png",
+        "width": 900,
+        "height": 900,
+        "sha256": "56edfb1e7d0b47242161af2057140465ed8c5763a4620b0a2aa1c28fb13422f2",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/valoracion-feed-portrait.png",
+        "width": 900,
+        "height": 1125,
+        "sha256": "91182683ea7f1ee0f9fcbc9f5cbaa16df76c6c7b797e17aa3c145e91778ebece",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/valoracion-story.png",
+        "width": 900,
+        "height": 1600,
+        "sha256": "bae399c14b158ea9f3b3840f3c026af15f35d9599051e931a398be3ece1c5054",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/valoracion-meta-horizontal.png",
+        "width": 900,
+        "height": 471,
+        "sha256": "8f89c207a26d109b28fbcfc91cafac76f4ba48a8dd735bd63b96edd353badcd7",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/valoracion-google-business.png",
+        "width": 900,
+        "height": 675,
+        "sha256": "eb2bdff2436a477016b0607401f0faf58d31e6c92fb9abc0cd45a49d27407bed",
+        "embeddedQrDecoded": false
+      },
+      {
+        "path": "public/marketing/previews/valoracion-a5.png",
+        "width": 900,
+        "height": 1277,
+        "sha256": "6c21ac0c6c367bca7224c3975b15c2190df2eeeb410fdf5b2e0b59e206a2df9f",
+        "embeddedQrDecoded": true
+      },
+      {
+        "path": "public/marketing/previews/valoracion-counter-card.png",
+        "width": 900,
+        "height": 1350,
+        "sha256": "1f5116be6337dedc7bb3dbb1cd50f12a6ebec6a23f8fc204e5f0f60f6c8c02d7",
+        "embeddedQrDecoded": true
+      }
+    ]
+  }
+}
