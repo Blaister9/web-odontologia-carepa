@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img" aria-labelledby="title desc" data-campaign="urgencias" data-format="feed-portrait">
+  <title id="title">Urgencias odontológicas — Instagram feed vertical</title>
+  <desc id="desc">Plantilla SVG editable del Consultorio Odontológico Dra. Nataly Jiménez. Cuéntanos qué pasó y consulta disponibilidad para una valoración.</desc>
+  <metadata>{&quot;generator&quot;:&quot;scripts/generate-marketing-assets.py&quot;,&quot;campaign&quot;:&quot;urgencias&quot;,&quot;format&quot;:&quot;feed-portrait&quot;,&quot;dimensions&quot;:{&quot;width&quot;:1080,&quot;height&quot;:1350},&quot;safeMargins&quot;:{&quot;top&quot;:90,&quot;right&quot;:80,&quot;bottom&quot;:110,&quot;left&quot;:80},&quot;editableText&quot;:true,&quot;fontStack&quot;:&quot;Inter, Arial, sans-serif&quot;,&quot;paletteSource&quot;:&quot;src/styles/globals.css&quot;,&quot;destination&quot;:&quot;https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&amp;utm_medium=offline&amp;utm_campaign=urgencias_carepa&amp;utm_content=qr_print&quot;,&quot;visualConcept&quot;:&quot;Pulso y señal de atención&quot;}</metadata>
+
+  <defs>
+    <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#F3DDD7" stop-opacity=".82"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="concept-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="486.0" y="43.2" width="540.0" height="333.8"/>
+    </clipPath>
+  </defs>
+  <rect width="1080" height="1350" fill="url(#background-gradient)"/>
+  <circle cx="950.4" cy="162.0" r="378.0" fill="url(#glow)"/>
+  <path d="M-86.4 1188.0C216.0 864.0 367.2 1404.0 712.8 1134.0S1134.0 985.5 1209.6 1269.0" fill="none" stroke="#B85F4B" stroke-width="9.7" opacity=".12"/>
+
+<g id="visual-concept" clip-path="url(#concept-clip)"><g transform="translate(777.6 216.8) scale(0.5384)">
+    <path d="M-300 30h120l48-105 82 215 76-170 43 60h230" fill="none" stroke="#B85F4B" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M-80-245c-92 0-137 85-122 168 14 77 56 105 62 215 4 72 30 115 62 115 40 0 36-94 78-94s38 94 78 94c32 0 58-43 62-115 6-110 48-138 62-215 15-83-30-168-122-168-35 0-54 19-80 19s-45-19-80-19z" fill="none" stroke="#B85F4B" stroke-width="10" opacity=".38"/>
+    <circle cx="205" cy="-205" r="62" fill="#B85F4B"/>
+    <path d="M205-235v42M205-168v2" stroke="#fff" stroke-width="13" stroke-linecap="round"/>
+</g></g>
+
+  <g id="brand" transform="translate(80.0 90.0)">
+    <rect width="58" height="58" rx="29.0" fill="#C79B45"/>
+    <text x="29.0" y="38.3" text-anchor="middle" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="22.6" font-weight="850">NJ</text>
+    <text x="78.0" y="22.0" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="16.8" font-weight="850" letter-spacing=".5">DRA. NATALY JIMÉNEZ</text>
+    <text x="78.0" y="42.3" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="11.6" font-weight="650" letter-spacing="1.2">ODONTOLOGÍA · CAREPA</text>
+  </g>
+  <text id="eyebrow" x="80.0" y="405.0" fill="#B85F4B" font-family="Inter,Arial,sans-serif" font-size="22.3" font-weight="850" letter-spacing="2.7">ORIENTACIÓN INICIAL</text>
+  <text class="headline" x="80.0" y="478.0" text-anchor="start" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="74.0" font-weight="850"><tspan x="80.0" dy="0.0">¿Dolor o una molestia</tspan><tspan x="80.0" dy="79.9">dental?</tspan></text>
+  <text class="supporting-line" x="80.0" y="671.9" text-anchor="start" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="31.0" font-weight="520"><tspan x="80.0" dy="0.0">Cuéntanos qué pasó y consulta</tspan><tspan x="80.0" dy="44.0">disponibilidad para una valoración.</tspan></text>
+
+  <g id="cta" transform="translate(80.0 1164.0)">
+    <rect width="568.5" height="82" rx="41.0" fill="#B85F4B"/>
+    <text x="284.2" y="52.5" text-anchor="middle" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="800">Revisa el recorrido de urgencias</text>
+  </g>
+
+  <text id="short-url" data-role="url" x="1000.0" y="1261.0" text-anchor="end" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="750">dranatalyjimenez.com/c/urgencias</text>
+
+  <!-- Zona segura editable: cambia opacity a .35 para verla durante ajustes. -->
+  <g id="safe-zone" opacity="0" pointer-events="none">
+    <rect x="80.0" y="90.0" width="920.0" height="1150.0" fill="none" stroke="#FF00AA" stroke-width="4" stroke-dasharray="20 14"/>
+  </g>
+</svg>

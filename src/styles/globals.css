@@ -3574,6 +3574,43 @@ p {
   transform: translateY(3px);
 }
 
+.campaign-entry {
+  scroll-margin-top: calc(var(--header-height) + 14px);
+  padding: 30px 0 0;
+  background: var(--color-white);
+}
+
+.campaign-entry__inner {
+  display: grid;
+  align-items: center;
+  gap: 22px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(199, 155, 69, 0.2), transparent 28%),
+    linear-gradient(135deg, var(--color-ivory), var(--color-teal-soft));
+  padding: 24px;
+  box-shadow: var(--shadow-card);
+}
+
+.campaign-entry__copy {
+  max-width: 720px;
+}
+
+.campaign-entry__copy h2 {
+  margin-bottom: 10px;
+  font-size: clamp(1.55rem, 4vw, 2rem);
+}
+
+.campaign-entry__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.campaign-entry .button {
+  justify-self: start;
+}
+
 .intent-gateway {
   position: relative;
   z-index: 3;
@@ -3760,6 +3797,7 @@ p {
 }
 
 @media (min-width: 720px) {
+  .campaign-entry__inner { grid-template-columns: minmax(0, 1fr) auto; padding: 28px 30px; }
   .intent-gateway__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .intent-card { min-height: 190px; grid-template-columns: 1fr auto; align-content: space-between; }
   .intent-card__icon { grid-column: 1 / -1; }
@@ -3782,6 +3820,9 @@ p {
   .hero__visual { display: none; }
   .hero__badges { margin-bottom: 0; }
   .hero__badges span:nth-child(n + 2) { display: none; }
+  .campaign-entry { padding-top: 22px; }
+  .campaign-entry__inner { gap: 18px; padding: 20px 18px; }
+  .campaign-entry .button { width: 100%; }
   .intent-gateway { padding: 44px 0 24px; }
   .intent-gateway__heading { margin-bottom: 18px; }
   .intent-gateway__heading h2 { font-size: 1.75rem; }

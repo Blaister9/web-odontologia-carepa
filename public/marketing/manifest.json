@@ -1,0 +1,1542 @@
+{
+  "schemaVersion": 1,
+  "generatedOn": "2026-07-11",
+  "brand": {
+    "name": "Consultorio Odontológico Dra. Nataly Jiménez",
+    "mark": "NJ",
+    "location": "Carepa, Antioquia",
+    "domain": "https://www.dranatalyjimenez.com",
+    "whatsapp": "573128311449",
+    "fontStack": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "palette": {
+      "ink": "#153443",
+      "inkSoft": "#48616D",
+      "muted": "#6F838C",
+      "teal": "#0D6B73",
+      "tealSoft": "#E4F3EF",
+      "mint": "#BFE2D8",
+      "gold": "#C79B45",
+      "goldSoft": "#F3DFB4",
+      "ivory": "#FBF8F1",
+      "white": "#FFFFFF",
+      "border": "#DFE9E5",
+      "danger": "#9A4D3C",
+      "coral": "#B85F4B"
+    },
+    "auditSources": [
+      "src/styles/globals.css",
+      "src/data/site.ts",
+      "src/components/layout/Header.tsx"
+    ]
+  },
+  "formats": {
+    "feed-square": {
+      "label": "Instagram feed cuadrado",
+      "width": 1080,
+      "height": 1080,
+      "safe": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital"
+    },
+    "feed-portrait": {
+      "label": "Instagram feed vertical",
+      "width": 1080,
+      "height": 1350,
+      "safe": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital"
+    },
+    "story": {
+      "label": "Instagram Story / Estado de WhatsApp",
+      "width": 1080,
+      "height": 1920,
+      "safe": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital"
+    },
+    "meta-horizontal": {
+      "label": "Facebook / Meta horizontal",
+      "width": 1200,
+      "height": 628,
+      "safe": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital"
+    },
+    "google-business": {
+      "label": "Google Business Profile",
+      "width": 1200,
+      "height": 900,
+      "safe": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital"
+    },
+    "a5": {
+      "label": "A5 imprimible",
+      "width": 1748,
+      "height": 2480,
+      "safe": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300
+    },
+    "counter-card": {
+      "label": "Tarjeta de mostrador",
+      "width": 1181,
+      "height": 1772,
+      "safe": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300
+    }
+  },
+  "counts": {
+    "qrDestinations": 8,
+    "qrVariantsPerDestination": 4,
+    "qrSvg": 32,
+    "qrPng": 32,
+    "visualLines": 6,
+    "formatsPerLine": 7,
+    "templateSvg": 42,
+    "previewPng": 42
+  },
+  "qrDestinations": [
+    {
+      "id": "web-general",
+      "label": "Web general",
+      "target": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "lanzamiento_sitio",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/web-general-clean.svg",
+          "png": "/marketing/qr/png/web-general-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/web-general-framed-cta.svg",
+          "png": "/marketing/qr/png/web-general-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/web-general-light.svg",
+          "png": "/marketing/qr/png/web-general-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/web-general-mono.svg",
+          "png": "/marketing/qr/png/web-general-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "urgencias",
+      "label": "Urgencias",
+      "target": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "urgencias_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/urgencias-clean.svg",
+          "png": "/marketing/qr/png/urgencias-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/urgencias-framed-cta.svg",
+          "png": "/marketing/qr/png/urgencias-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/urgencias-light.svg",
+          "png": "/marketing/qr/png/urgencias-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/urgencias-mono.svg",
+          "png": "/marketing/qr/png/urgencias-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "sonrisa",
+      "label": "Mejorar mi sonrisa",
+      "target": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "sonrisa_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/sonrisa-clean.svg",
+          "png": "/marketing/qr/png/sonrisa-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/sonrisa-framed-cta.svg",
+          "png": "/marketing/qr/png/sonrisa-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/sonrisa-light.svg",
+          "png": "/marketing/qr/png/sonrisa-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/sonrisa-mono.svg",
+          "png": "/marketing/qr/png/sonrisa-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "limpieza",
+      "label": "Limpieza y profilaxis",
+      "target": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "limpieza_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/limpieza-clean.svg",
+          "png": "/marketing/qr/png/limpieza-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/limpieza-framed-cta.svg",
+          "png": "/marketing/qr/png/limpieza-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/limpieza-light.svg",
+          "png": "/marketing/qr/png/limpieza-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/limpieza-mono.svg",
+          "png": "/marketing/qr/png/limpieza-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "ortodoncia",
+      "label": "Ortodoncia",
+      "target": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "ortodoncia_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/ortodoncia-clean.svg",
+          "png": "/marketing/qr/png/ortodoncia-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/ortodoncia-framed-cta.svg",
+          "png": "/marketing/qr/png/ortodoncia-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/ortodoncia-light.svg",
+          "png": "/marketing/qr/png/ortodoncia-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/ortodoncia-mono.svg",
+          "png": "/marketing/qr/png/ortodoncia-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "valoracion",
+      "label": "Valoración general",
+      "target": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "valoracion_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/valoracion-clean.svg",
+          "png": "/marketing/qr/png/valoracion-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/valoracion-framed-cta.svg",
+          "png": "/marketing/qr/png/valoracion-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/valoracion-light.svg",
+          "png": "/marketing/qr/png/valoracion-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/valoracion-mono.svg",
+          "png": "/marketing/qr/png/valoracion-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "uraba",
+      "label": "Carepa, veredas y Urabá",
+      "target": "https://www.dranatalyjimenez.com/c/uraba?utm_source=qr&utm_medium=offline&utm_campaign=uraba_carepa&utm_content=qr_print",
+      "utm": {
+        "source": "qr",
+        "medium": "offline",
+        "campaign": "uraba_carepa",
+        "content": "qr_print"
+      },
+      "note": null,
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/uraba-clean.svg",
+          "png": "/marketing/qr/png/uraba-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/uraba-framed-cta.svg",
+          "png": "/marketing/qr/png/uraba-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/uraba-light.svg",
+          "png": "/marketing/qr/png/uraba-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/uraba-mono.svg",
+          "png": "/marketing/qr/png/uraba-mono.png"
+        }
+      ]
+    },
+    {
+      "id": "whatsapp-directo",
+      "label": "WhatsApp directo",
+      "target": "https://wa.me/573128311449?text=Hola%2C%20vi%20el%20c%C3%B3digo%20QR%20del%20Consultorio%20Odontol%C3%B3gico%20Dra.%20Nataly%20Jim%C3%A9nez%20y%20quiero%20recibir%20orientaci%C3%B3n%20para%20agendar%20una%20valoraci%C3%B3n.%20Estoy%20en%20Carepa%20o%20cerca.",
+      "utm": {
+        "source": null,
+        "medium": null,
+        "campaign": null,
+        "content": null
+      },
+      "note": "WhatsApp directo no admite UTM; el mensaje identifica el origen QR.",
+      "variants": [
+        {
+          "id": "clean",
+          "label": "QR limpio",
+          "svg": "/marketing/qr/svg/whatsapp-directo-clean.svg",
+          "png": "/marketing/qr/png/whatsapp-directo-clean.png"
+        },
+        {
+          "id": "framed-cta",
+          "label": "QR con marco y CTA",
+          "svg": "/marketing/qr/svg/whatsapp-directo-framed-cta.svg",
+          "png": "/marketing/qr/png/whatsapp-directo-framed-cta.png"
+        },
+        {
+          "id": "light",
+          "label": "QR para fondo claro",
+          "svg": "/marketing/qr/svg/whatsapp-directo-light.svg",
+          "png": "/marketing/qr/png/whatsapp-directo-light.png"
+        },
+        {
+          "id": "mono",
+          "label": "QR monocromático",
+          "svg": "/marketing/qr/svg/whatsapp-directo-mono.svg",
+          "png": "/marketing/qr/png/whatsapp-directo-mono.png"
+        }
+      ]
+    }
+  ],
+  "templates": [
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-feed-square.svg",
+      "preview": "/marketing/previews/lanzamiento-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-feed-portrait.svg",
+      "preview": "/marketing/previews/lanzamiento-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-story.svg",
+      "preview": "/marketing/previews/lanzamiento-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-meta-horizontal.svg",
+      "preview": "/marketing/previews/lanzamiento-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-google-business.svg",
+      "preview": "/marketing/previews/lanzamiento-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-a5.svg",
+      "preview": "/marketing/previews/lanzamiento-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "lanzamiento",
+      "campaignLabel": "Lanzamiento del sitio",
+      "visualConcept": "Portal de recorridos",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "web-general",
+      "destination": "https://www.dranatalyjimenez.com/?utm_source=qr&utm_medium=offline&utm_campaign=lanzamiento_sitio&utm_content=qr_print",
+      "master": "/marketing/templates/lanzamiento-counter-card.svg",
+      "preview": "/marketing/previews/lanzamiento-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-feed-square.svg",
+      "preview": "/marketing/previews/urgencias-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-feed-portrait.svg",
+      "preview": "/marketing/previews/urgencias-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-story.svg",
+      "preview": "/marketing/previews/urgencias-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-meta-horizontal.svg",
+      "preview": "/marketing/previews/urgencias-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-google-business.svg",
+      "preview": "/marketing/previews/urgencias-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-a5.svg",
+      "preview": "/marketing/previews/urgencias-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "urgencias",
+      "campaignLabel": "Urgencias odontológicas",
+      "visualConcept": "Pulso y señal de atención",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "urgencias",
+      "destination": "https://www.dranatalyjimenez.com/c/urgencias?utm_source=qr&utm_medium=offline&utm_campaign=urgencias_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/urgencias-counter-card.svg",
+      "preview": "/marketing/previews/urgencias-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-feed-square.svg",
+      "preview": "/marketing/previews/sonrisa-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-feed-portrait.svg",
+      "preview": "/marketing/previews/sonrisa-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-story.svg",
+      "preview": "/marketing/previews/sonrisa-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-meta-horizontal.svg",
+      "preview": "/marketing/previews/sonrisa-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-google-business.svg",
+      "preview": "/marketing/previews/sonrisa-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-a5.svg",
+      "preview": "/marketing/previews/sonrisa-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "sonrisa",
+      "campaignLabel": "Mejorar mi sonrisa",
+      "visualConcept": "Arco de sonrisa y destellos",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "sonrisa",
+      "destination": "https://www.dranatalyjimenez.com/c/sonrisa?utm_source=qr&utm_medium=offline&utm_campaign=sonrisa_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/sonrisa-counter-card.svg",
+      "preview": "/marketing/previews/sonrisa-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-feed-square.svg",
+      "preview": "/marketing/previews/limpieza-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-feed-portrait.svg",
+      "preview": "/marketing/previews/limpieza-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-story.svg",
+      "preview": "/marketing/previews/limpieza-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-meta-horizontal.svg",
+      "preview": "/marketing/previews/limpieza-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-google-business.svg",
+      "preview": "/marketing/previews/limpieza-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-a5.svg",
+      "preview": "/marketing/previews/limpieza-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "limpieza",
+      "campaignLabel": "Limpieza y profilaxis",
+      "visualConcept": "Anillos limpios y brillo",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "limpieza",
+      "destination": "https://www.dranatalyjimenez.com/c/limpieza?utm_source=qr&utm_medium=offline&utm_campaign=limpieza_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/limpieza-counter-card.svg",
+      "preview": "/marketing/previews/limpieza-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-feed-square.svg",
+      "preview": "/marketing/previews/ortodoncia-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-feed-portrait.svg",
+      "preview": "/marketing/previews/ortodoncia-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-story.svg",
+      "preview": "/marketing/previews/ortodoncia-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-meta-horizontal.svg",
+      "preview": "/marketing/previews/ortodoncia-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-google-business.svg",
+      "preview": "/marketing/previews/ortodoncia-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-a5.svg",
+      "preview": "/marketing/previews/ortodoncia-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "ortodoncia",
+      "campaignLabel": "Ortodoncia",
+      "visualConcept": "Sistema de alineación",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "ortodoncia",
+      "destination": "https://www.dranatalyjimenez.com/c/ortodoncia?utm_source=qr&utm_medium=offline&utm_campaign=ortodoncia_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/ortodoncia-counter-card.svg",
+      "preview": "/marketing/previews/ortodoncia-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "feed-square",
+      "formatLabel": "Instagram feed cuadrado",
+      "dimensions": {
+        "width": 1080,
+        "height": 1080
+      },
+      "safeMargins": {
+        "top": 80,
+        "right": 80,
+        "bottom": 80,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-feed-square.svg",
+      "preview": "/marketing/previews/valoracion-feed-square.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "feed-portrait",
+      "formatLabel": "Instagram feed vertical",
+      "dimensions": {
+        "width": 1080,
+        "height": 1350
+      },
+      "safeMargins": {
+        "top": 90,
+        "right": 80,
+        "bottom": 110,
+        "left": 80
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-feed-portrait.svg",
+      "preview": "/marketing/previews/valoracion-feed-portrait.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "story",
+      "formatLabel": "Instagram Story / Estado de WhatsApp",
+      "dimensions": {
+        "width": 1080,
+        "height": 1920
+      },
+      "safeMargins": {
+        "top": 250,
+        "right": 90,
+        "bottom": 250,
+        "left": 90
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-story.svg",
+      "preview": "/marketing/previews/valoracion-story.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "meta-horizontal",
+      "formatLabel": "Facebook / Meta horizontal",
+      "dimensions": {
+        "width": 1200,
+        "height": 628
+      },
+      "safeMargins": {
+        "top": 58,
+        "right": 64,
+        "bottom": 58,
+        "left": 64
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-meta-horizontal.svg",
+      "preview": "/marketing/previews/valoracion-meta-horizontal.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "google-business",
+      "formatLabel": "Google Business Profile",
+      "dimensions": {
+        "width": 1200,
+        "height": 900
+      },
+      "safeMargins": {
+        "top": 72,
+        "right": 72,
+        "bottom": 72,
+        "left": 72
+      },
+      "distribution": "digital",
+      "physicalSize": null,
+      "dpi": null,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-google-business.svg",
+      "preview": "/marketing/previews/valoracion-google-business.png",
+      "containsQr": false,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "a5",
+      "formatLabel": "A5 imprimible",
+      "dimensions": {
+        "width": 1748,
+        "height": 2480
+      },
+      "safeMargins": {
+        "top": 142,
+        "right": 142,
+        "bottom": 142,
+        "left": 142
+      },
+      "distribution": "print",
+      "physicalSize": "148 x 210 mm",
+      "dpi": 300,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-a5.svg",
+      "preview": "/marketing/previews/valoracion-a5.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    },
+    {
+      "campaign": "valoracion",
+      "campaignLabel": "Valoración general",
+      "visualConcept": "Ruta clara de valoración",
+      "format": "counter-card",
+      "formatLabel": "Tarjeta de mostrador",
+      "dimensions": {
+        "width": 1181,
+        "height": 1772
+      },
+      "safeMargins": {
+        "top": 96,
+        "right": 96,
+        "bottom": 96,
+        "left": 96
+      },
+      "distribution": "print",
+      "physicalSize": "100 x 150 mm",
+      "dpi": 300,
+      "destinationId": "valoracion",
+      "destination": "https://www.dranatalyjimenez.com/c/valoracion?utm_source=qr&utm_medium=offline&utm_campaign=valoracion_carepa&utm_content=qr_print",
+      "master": "/marketing/templates/valoracion-counter-card.svg",
+      "preview": "/marketing/previews/valoracion-counter-card.png",
+      "containsQr": true,
+      "containsShortUrl": true
+    }
+  ],
+  "pending": [
+    "QR de reseñas de Google: pendiente hasta recibir el enlace oficial del perfil; no se generó uno provisional."
+  ],
+  "tooling": {
+    "generate": "python scripts/generate-marketing-assets.py",
+    "render": "node scripts/render-marketing-previews.mjs",
+    "verify": "python scripts/verify-marketing-assets.py",
+    "runtimeDependenciesAdded": false,
+    "previewPolicy": "Los PNG de plantilla son vistas previas de hasta 900 px de ancho; el SVG es el máster editable."
+  }
+}

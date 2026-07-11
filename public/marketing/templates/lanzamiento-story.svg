@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920" role="img" aria-labelledby="title desc" data-campaign="lanzamiento" data-format="story">
+  <title id="title">Lanzamiento del sitio — Instagram Story / Estado de WhatsApp</title>
+  <desc id="desc">Plantilla SVG editable del Consultorio Odontológico Dra. Nataly Jiménez. Elige lo que necesitas y encuentra un recorrido breve antes de escribirnos.</desc>
+  <metadata>{&quot;generator&quot;:&quot;scripts/generate-marketing-assets.py&quot;,&quot;campaign&quot;:&quot;lanzamiento&quot;,&quot;format&quot;:&quot;story&quot;,&quot;dimensions&quot;:{&quot;width&quot;:1080,&quot;height&quot;:1920},&quot;safeMargins&quot;:{&quot;top&quot;:250,&quot;right&quot;:90,&quot;bottom&quot;:250,&quot;left&quot;:90},&quot;editableText&quot;:true,&quot;fontStack&quot;:&quot;Inter, Arial, sans-serif&quot;,&quot;paletteSource&quot;:&quot;src/styles/globals.css&quot;,&quot;destination&quot;:&quot;https://www.dranatalyjimenez.com/?utm_source=qr&amp;utm_medium=offline&amp;utm_campaign=lanzamiento_sitio&amp;utm_content=qr_print&quot;,&quot;visualConcept&quot;:&quot;Portal de recorridos&quot;}</metadata>
+
+  <defs>
+    <linearGradient id="background-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FBF8F1"/>
+      <stop offset="1" stop-color="#BFE2D8" stop-opacity=".82"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".88"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="concept-clip" clipPathUnits="userSpaceOnUse">
+      <rect x="486.0" y="155.0" width="540.0" height="411.0"/>
+    </clipPath>
+  </defs>
+  <rect width="1080" height="1920" fill="url(#background-gradient)"/>
+  <circle cx="950.4" cy="230.4" r="378.0" fill="url(#glow)"/>
+  <path d="M-86.4 1689.6C216.0 1228.8 367.2 1996.8 712.8 1612.8S1134.0 1401.6 1209.6 1804.8" fill="none" stroke="#0D6B73" stroke-width="9.7" opacity=".12"/>
+
+<g id="visual-concept" clip-path="url(#concept-clip)"><g transform="translate(777.6 368.7) scale(0.6629)">
+    <path d="M-250 250V-30C-250-210-135-320 0-320S250-210 250-30V250" fill="none" stroke="#0D6B73" stroke-width="20" opacity=".24"/>
+    <path d="M-165 250V-15C-165-130-95-210 0-210S165-130 165-15V250" fill="none" stroke="#0D6B73" stroke-width="10" opacity=".7"/>
+    <circle cx="0" cy="-25" r="68" fill="#BFE2D8"/>
+    <path d="M0-67V17M-42-25H42" stroke="#0D6B73" stroke-width="10" stroke-linecap="round"/>
+</g></g>
+
+  <g id="brand" transform="translate(90.0 250.0)">
+    <rect width="58" height="58" rx="29.0" fill="#C79B45"/>
+    <text x="29.0" y="38.3" text-anchor="middle" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="22.6" font-weight="850">NJ</text>
+    <text x="78.0" y="22.0" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="16.8" font-weight="850" letter-spacing=".5">DRA. NATALY JIMÉNEZ</text>
+    <text x="78.0" y="42.3" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="11.6" font-weight="650" letter-spacing="1.2">ODONTOLOGÍA · CAREPA</text>
+  </g>
+  <text id="eyebrow" x="90.0" y="600.0" fill="#0D6B73" font-family="Inter,Arial,sans-serif" font-size="24.5" font-weight="850" letter-spacing="2.7">NUEVA EXPERIENCIA DIGITAL</text>
+  <text class="headline" x="90.0" y="688.0" text-anchor="start" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="79.0" font-weight="850"><tspan x="90.0" dy="0.0">Tu salud oral empieza</tspan><tspan x="90.0" dy="85.3">con una elección clara</tspan></text>
+  <text class="supporting-line" x="90.0" y="895.0" text-anchor="start" fill="#48616D" font-family="Inter,Arial,sans-serif" font-size="34.0" font-weight="520"><tspan x="90.0" dy="0.0">Elige lo que necesitas y encuentra un</tspan><tspan x="90.0" dy="48.3">recorrido breve antes de escribirnos.</tspan></text>
+
+  <g id="cta" transform="translate(90.0 1578.0)">
+    <rect width="383.8" height="82" rx="41.0" fill="#0D6B73"/>
+    <text x="191.9" y="52.5" text-anchor="middle" fill="#FFFFFF" font-family="Inter,Arial,sans-serif" font-size="27" font-weight="800">Explora tu recorrido</text>
+  </g>
+
+  <text id="short-url" data-role="url" x="990.0" y="1694.0" text-anchor="end" fill="#153443" font-family="Inter,Arial,sans-serif" font-size="24" font-weight="750">dranatalyjimenez.com</text>
+
+  <!-- Zona segura editable: cambia opacity a .35 para verla durante ajustes. -->
+  <g id="safe-zone" opacity="0" pointer-events="none">
+    <rect x="90.0" y="250.0" width="900.0" height="1420.0" fill="none" stroke="#FF00AA" stroke-width="4" stroke-dasharray="20 14"/>
+  </g>
+</svg>

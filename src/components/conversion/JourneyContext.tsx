@@ -1,6 +1,15 @@
 import { createContext, ReactNode, useContext, useMemo, useState } from "react";
 
-import { ConversionOption, JourneyIntentId } from "@/data/conversionJourneys";
+import {
+  ConversionOption,
+  getJourney,
+  JourneyIntentId
+} from "@/data/conversionJourneys";
+
+export type JourneyInitialState = {
+  intentId: JourneyIntentId;
+  optionId: string | null;
+};
 
 type JourneyContextValue = {
   intentId: JourneyIntentId | null;
@@ -12,9 +21,32 @@ type JourneyContextValue = {
 
 const JourneyContext = createContext<JourneyContextValue | null>(null);
 
-export function JourneyProvider({ children }: { children: ReactNode }) {
-  const [intentId, setIntentId] = useState<JourneyIntentId | null>(null);
-  const [selectedOption, setSelectedOption] = useState<ConversionOption | null>(null);
+function resolveInitialState(initialState: JourneyInitialState | null) {
+  const journey = getJourney(initialState?.intentId ?? null);
+  const selectedOption = initialState?.optionId
+    ? journey?.options.find((option) => option.id === initialState.optionId) ?? null
+    : null;
+
+  return {
+    intentId: journey?.id ?? null,
+    selectedOption
+  };
+}
+
+export function JourneyProvider({
+  children,
+  initialState = null
+}: {
+  children: ReactNode;
+  initialState?: JourneyInitialState | null;
+}) {
+  const initialSelection = resolveInitialState(initialState);
+  const [intentId, setIntentId] = useState<JourneyIntentId | null>(
+    initialSelection.intentId
+  );
+  const [selectedOption, setSelectedOption] = useState<ConversionOption | null>(
+    initialSelection.selectedOption
+  );
 
   const value = useMemo<JourneyContextValue>(
     () => ({
