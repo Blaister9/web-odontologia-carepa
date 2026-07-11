@@ -20,8 +20,7 @@ export function FinalWhatsAppCTA() {
             <p className="eyebrow eyebrow--light">Agenda por WhatsApp</p>
             <h2>Cuéntanos qué necesitas y revisamos el siguiente paso.</h2>
             <p>
-              Puedes escribir aunque no sepas el nombre del tratamiento. La valoración define el
-              diagnóstico y las opciones adecuadas.
+              Puedes escribir aunque no sepas el tratamiento. La valoración define las opciones adecuadas.
             </p>
           </div>
           <div className="final-whatsapp__actions">
