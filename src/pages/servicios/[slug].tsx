@@ -132,7 +132,7 @@ export default function ServiceDetailPage({
           </div>
         </section>
 
-        {servicePage.caseStudy ? (
+        {servicePage.caseStudy?.enabled ? (
           <section className="section service-case" aria-labelledby="service-case-title">
             <div className="container service-case__inner">
               <div className="section-heading section-heading--center">
@@ -259,9 +259,15 @@ export const getStaticProps: GetStaticProps<ServicePageProps> = ({ params }) => 
     .map((relatedSlug) => siteConfig.services.find((item) => item.slug === relatedSlug))
     .filter((item): item is Service => Boolean(item));
 
+  // Un caso desactivado se elimina de las props: si viajara en el payload de
+  // __NEXT_DATA__ publicaría las rutas de las fotos del paciente aunque el
+  // bloque no se pinte, y esta bandera existe por consentimiento, no por diseño.
+  const { caseStudy, ...restOfPage } = servicePage;
+  const safePage: ServicePage = caseStudy?.enabled ? servicePage : restOfPage;
+
   return {
     props: {
-      servicePage,
+      servicePage: safePage,
       service,
       relatedServices
     }

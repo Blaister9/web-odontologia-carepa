@@ -11,13 +11,18 @@ equipo, el espacio físico y la escena de atención siguen sin fotografía real.
 
 | Necesidad | Estado | Origen |
 | --- | --- | --- |
-| Retrato de la Dra. Nataly | Cubierto de forma provisional | Recorte de pieza publicitaria (`nataly-bata-clinica`) |
-| Segundo retrato de la Dra. Nataly | Cubierto | Fotografía natural sin textos (`nataly-retrato-natural`) |
-| Apertura de `/equipo` | Cubierto de forma provisional | Recorte de pieza publicitaria (`equipo-duo-promo`) |
-| Caso de prótesis | Cubierto | Material clínico de la clienta |
+| Retrato de la Dra. Nataly (`/equipo`) | Cubierto de forma provisional | Recorte de `nataly-bata-promo` |
+| Avatar de la Dra. Nataly (home) | Cubierto de forma provisional | Recorte de `nataly-bata-clinica` |
+| Retrato natural de la Dra. Nataly (`/consultorio`) | Cubierto | `nataly-retrato-natural`, sin textos de origen |
+| Retrato de Vanesa López | Cubierto de forma provisional | Recorte individual de `equipo-duo-promo` |
+| Apertura de `/equipo` | Cubierto de forma provisional | Banda recortada de `equipo-duo-promo` |
+| Caso de prótesis | Material listo, publicación desactivada | Pendiente autorización del paciente |
 
 «Provisional» significa que la imagen proviene de una pieza diseñada para redes:
 sirve, pero no fue tomada con encuadre, fondo ni resolución pensados para web.
+El recorte de Vanesa es el más limitado de todos: la toma original la deja en
+~284 px de ancho útil, así que se ve correcto en escritorio y algo blando en
+móviles de alta densidad. Es la primera foto que conviene reemplazar.
 
 ## Especificaciones generales
 
@@ -70,10 +75,14 @@ sirve, pero no fue tomada con encuadre, fondo ni resolución pensados para web.
 
 ## 4. Retrato — Vanesa López
 
+**Prioridad alta.** Hoy ocupa esa tarjeta un recorte de 284 × 355 px extraído de
+la foto con la doctora; es la imagen de menor resolución del sitio.
+
 - **Orientación**: vertical
 - **Relación de aspecto**: 4:5
 - **Plano**: medio corto, mismo encuadre que la toma 1
 - **Uso en la web**: `/equipo` → `public/images/equipo/vanesa-lopez.webp`
+  (reemplaza el recorte provisional que hoy ocupa esa misma ruta)
 - **Luz**: idéntica a la toma 1
 - **Fondo**: idéntico a la toma 1
 - **Espacio negativo**: igual que la toma 1
@@ -190,6 +199,9 @@ sirve, pero no fue tomada con encuadre, fondo ni resolución pensados para web.
 2. Añadir el recorte correspondiente a `scripts/process-client-photography.mjs`
    y ejecutar `node scripts/process-client-photography.mjs`.
 3. Para retratos de equipo: apuntar `image` a la nueva ruta en
-   `src/data/team.ts` y cambiar `hasRealPhoto` a `true` (eso también corrige el
-   texto alternativo, que hoy declara la imagen como referencial).
+   `src/data/team.ts`, poner `hasRealPhoto: true` (eso corrige el texto
+   alternativo, que si no declara la imagen como referencial) y
+   `awaitingProfessionalPhoto: false`.
 4. Para casos clínicos: añadir el bloque `caseStudy` a la página de servicio.
+   El caso de prótesis ya está declarado con `enabled: false`; al recibir la
+   autorización escrita del paciente basta con ponerlo en `true`.

@@ -67,18 +67,21 @@ export default function EquipoPage() {
           <div className="container team-intro__inner">
             {/*
               Banda fotográfica recortada de la pieza entregada por la clienta.
-              El alt no atribuye identidades: los retratos individuales están
-              pendientes de confirmación una por una.
+              Identidades confirmadas: Nataly Jiménez y Vanesa López. El pie es
+              solo nominal; los roles ya viven en las tarjetas individuales.
             */}
-            <div className="team-intro__media">
-              <Image
-                src={teamGroupPhoto.current}
-                alt="Profesionales del consultorio odontológico Dra. Nataly Jiménez en Carepa"
-                fill
-                sizes="(min-width: 980px) 52vw, 100vw"
-                priority
-              />
-            </div>
+            <figure className="team-intro__figure">
+              <div className="team-intro__media">
+                <Image
+                  src={teamGroupPhoto.current}
+                  alt={teamGroupPhoto.alt}
+                  fill
+                  sizes="(min-width: 980px) 52vw, 100vw"
+                  priority
+                />
+              </div>
+              <figcaption>{teamGroupPhoto.caption}</figcaption>
+            </figure>
             <div className="team-intro__copy">
               <p className="eyebrow">Atención cercana</p>
               <h2>Personas detrás de cada valoración</h2>

@@ -25,6 +25,13 @@ export type ServicePage = {
 };
 
 export type ServiceCaseStudy = {
+  /**
+   * El bloque solo se renderiza con `enabled: true`. Se mantiene declarado y
+   * desactivado mientras no exista autorización escrita de uso de imagen del
+   * paciente (Ley 1581 de 2012): el material ya está listo y activarlo es
+   * cambiar este único valor.
+   */
+  enabled: boolean;
   title: string;
   before: { src: string; alt: string };
   after: { src: string; alt: string };
@@ -272,6 +279,8 @@ export const servicePages: ServicePage[] = [
       "Hola, estoy en Carepa y quiero consultar por prótesis dentales. ¿Me pueden orientar con disponibilidad para una valoración?",
     relatedServices: ["resinas-esteticas-carepa", "odontologia-familiar-carepa", "limpieza-dental-carepa"],
     caseStudy: {
+      // Pendiente: autorización de publicación del paciente.
+      enabled: false,
       title: "Caso de rehabilitación con prótesis dental",
       before: {
         src: "/images/client/web/caso-protesis-antes.webp",

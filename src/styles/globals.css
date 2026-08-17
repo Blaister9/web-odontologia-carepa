@@ -3878,10 +3878,21 @@ p {
   aspect-ratio: 4 / 5;
 }
 
-.team-intro__media {
+.team-intro__figure {
+  width: 100%;
   max-width: 520px;
   margin: 0 auto;
+}
+
+.team-intro__media {
   aspect-ratio: 4 / 3;
+}
+
+.team-intro__figure figcaption {
+  margin-top: 10px;
+  color: var(--color-muted);
+  font-size: 0.86rem;
+  text-align: center;
 }
 
 .consultorio-portrait__media img,
@@ -3965,7 +3976,7 @@ p {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
 
-  .team-intro__media {
+  .team-intro__figure {
     margin: 0;
   }
 }

@@ -21,6 +21,7 @@ import sharp from "sharp";
 const root = process.cwd();
 const rawDir = path.join(root, "public", "images", "client", "raw");
 const webDir = path.join(root, "public", "images", "client", "web");
+const equipoDir = path.join(root, "public", "images", "equipo");
 
 /**
  * `crop` is expressed in the original pixel grid. `width` is the encoded width;
@@ -29,19 +30,35 @@ const webDir = path.join(root, "public", "images", "client", "web");
 const jobs = [
   {
     source: "nataly-bata-clinica.jpeg",
-    output: "nataly-clinica-portrait.webp",
-    note: "Retrato editorial 4:5. Excluye el logo superior izquierdo y la franja de texto inferior.",
-    crop: { left: 250, top: 20, width: 469, height: 586 },
-    width: 469,
-    quality: 82
-  },
-  {
-    source: "nataly-bata-clinica.jpeg",
     output: "nataly-clinica-avatar.webp",
     note: "Recorte facial cuadrado para el avatar circular de confianza.",
     crop: { left: 250, top: 20, width: 420, height: 420 },
     width: 420,
     quality: 84
+  },
+  {
+    source: "nataly-bata-promo.jpeg",
+    output: "nataly-promo-portrait.webp",
+    note:
+      "Retrato profesional 4:5 con mirada a cámara. Excluye el logo superior " +
+      "izquierdo y el bloque de texto inferior. Es el recorte de Nataly con más " +
+      "resolución y el que mejor coincide con el formato pedido para los " +
+      "retratos individuales pendientes.",
+    crop: { left: 220, top: 0, width: 499, height: 624 },
+    width: 499,
+    quality: 82
+  },
+  {
+    // Provisional: recorte del material de redes mientras llega su retrato
+    // profesional. El ancho útil está limitado por la posición de Nataly en
+    // la toma original, así que no puede crecer más sin invadirla.
+    source: "equipo-duo-promo.jpeg",
+    output: "vanesa-lopez.webp",
+    dir: equipoDir,
+    note: "Recorte individual de Vanesa López, sin textos y sin el cabello de Nataly en cuadro.",
+    crop: { left: 435, top: 170, width: 284, height: 355 },
+    width: 284,
+    quality: 86
   },
   {
     source: "nataly-retrato-natural.jpeg",
@@ -79,6 +96,7 @@ const jobs = [
 
 async function main() {
   await fs.mkdir(webDir, { recursive: true });
+  await fs.mkdir(equipoDir, { recursive: true });
 
   for (const job of jobs) {
     const source = path.join(rawDir, job.source);
@@ -95,7 +113,7 @@ async function main() {
       throw new Error(`${job.output}: el ancho de salida haría upscale del recorte.`);
     }
 
-    const target = path.join(webDir, job.output);
+    const target = path.join(job.dir ?? webDir, job.output);
     const info = await sharp(source)
       .extract(job.crop)
       .resize({ width: job.width, withoutEnlargement: true })

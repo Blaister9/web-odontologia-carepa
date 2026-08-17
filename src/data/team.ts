@@ -9,11 +9,12 @@ export type TeamMember = {
    */
   hasRealPhoto: boolean;
   /**
-   * Ruta reservada para el retrato individual pendiente de entrega.
-   * Al recibir la foto: generar el .webp en esa ruta, moverla a `image` y
-   * poner `hasRealPhoto: true`. Ver docs/photography/missing-photo-shotlist.md.
+   * `true` mientras siga pendiente el retrato profesional 4:5 descrito en
+   * docs/photography/missing-photo-shotlist.md. Las fotos actuales de Nataly y
+   * Vanesa son recortes de material de redes: sirven, pero no fueron tomadas
+   * con encuadre ni resolución pensados para web.
    */
-  pendingPhoto?: string;
+  awaitingProfessionalPhoto: boolean;
   featured: boolean;
   profileComplete: boolean;
 };
@@ -26,9 +27,9 @@ export const teamMembers: TeamMember[] = [
     role: "Odontóloga General y Estética.",
     description:
       "Acompaña valoraciones odontológicas con enfoque claro, humano y responsable para pacientes de Carepa y la región de Urabá.",
-    image: "/images/client/web/nataly-clinica-portrait.webp",
+    image: "/images/client/web/nataly-promo-portrait.webp",
     hasRealPhoto: true,
-    pendingPhoto: "/images/equipo/nataly-jimenez.webp",
+    awaitingProfessionalPhoto: true,
     featured: true,
     profileComplete: true
   },
@@ -39,7 +40,7 @@ export const teamMembers: TeamMember[] = [
       "Apoya la valoración y orientación de casos relacionados con alineación dental, mordida y desarrollo maxilar.",
     image: referencePhoto,
     hasRealPhoto: false,
-    pendingPhoto: "/images/equipo/clara-parra.webp",
+    awaitingProfessionalPhoto: true,
     featured: true,
     profileComplete: true
   },
@@ -50,7 +51,7 @@ export const teamMembers: TeamMember[] = [
       "Profesional de apoyo para casos que requieren orientación especializada en cirugía maxilofacial e implantología.",
     image: referencePhoto,
     hasRealPhoto: false,
-    pendingPhoto: "/images/equipo/adalberto-atencia.webp",
+    awaitingProfessionalPhoto: true,
     featured: true,
     profileComplete: false
   },
@@ -59,21 +60,25 @@ export const teamMembers: TeamMember[] = [
     role: "Auxiliar e Higienista Oral.",
     description:
       "Acompaña la atención al paciente, la orientación inicial y el proceso de agendamiento por WhatsApp.",
-    image: referencePhoto,
-    hasRealPhoto: false,
-    pendingPhoto: "/images/equipo/vanesa-lopez.webp",
+    image: "/images/equipo/vanesa-lopez.webp",
+    hasRealPhoto: true,
+    awaitingProfessionalPhoto: true,
     featured: true,
     profileComplete: true
   }
 ];
 
 /**
- * Foto grupal pendiente de entrega: `/images/equipo/equipo-completo.webp`.
- * Mientras llega, `/equipo` abre con la banda fotográfica recortada de la
- * pieza entregada por la clienta (sin textos publicitarios) y sin atribuir
- * identidades individuales.
+ * Apertura de `/equipo`. Identidades confirmadas por la clienta: Dra. Nataly
+ * Jiménez y Vanesa López. Complementa las tarjetas individuales, no las
+ * reemplaza.
+ *
+ * Sigue pendiente la foto grupal de las cuatro personas
+ * (`/images/equipo/equipo-completo.webp`, toma 5 de la shot list).
  */
 export const teamGroupPhoto = {
   current: "/images/client/web/equipo-preview.webp",
-  pending: "/images/equipo/equipo-completo.webp"
+  pending: "/images/equipo/equipo-completo.webp",
+  alt: "Dra. Nataly Jiménez y Vanesa López, auxiliar e higienista oral",
+  caption: "Dra. Nataly Jiménez y Vanesa López"
 } as const;
