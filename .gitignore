@@ -11,3 +11,8 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 *.tsbuildinfo
+
+# Material clínico con pacientes identificables, pendiente de autorización
+# escrita de uso de imagen (Ley 1581 de 2012). Nunca debe entrar a public/
+# ni al repositorio mientras el caso siga con enabled: false.
+private/

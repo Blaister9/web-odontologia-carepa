@@ -16,7 +16,7 @@ equipo, el espacio físico y la escena de atención siguen sin fotografía real.
 | Retrato natural de la Dra. Nataly (`/consultorio`) | Cubierto | `nataly-retrato-natural`, sin textos de origen |
 | Retrato de Vanesa López | Cubierto de forma provisional | Recorte individual de `equipo-duo-promo` |
 | Apertura de `/equipo` | Cubierto de forma provisional | Banda recortada de `equipo-duo-promo` |
-| Caso de prótesis | Material listo, publicación desactivada | Pendiente autorización del paciente |
+| Caso de prótesis | Material fuera del repositorio | Pendiente autorización del paciente |
 
 «Provisional» significa que la imagen proviene de una pieza diseñada para redes:
 sirve, pero no fue tomada con encuadre, fondo ni resolución pensados para web.
@@ -203,5 +203,7 @@ la foto con la doctora; es la imagen de menor resolución del sitio.
    alternativo, que si no declara la imagen como referencial) y
    `awaitingProfessionalPhoto: false`.
 4. Para casos clínicos: añadir el bloque `caseStudy` a la página de servicio.
-   El caso de prótesis ya está declarado con `enabled: false`; al recibir la
-   autorización escrita del paciente basta con ponerlo en `true`.
+   El caso de prótesis ya está declarado con `enabled: false` y sus fotografías
+   están fuera del repositorio, en `private/client-clinical-pending/`. Al recibir
+   la autorización escrita del paciente: cambiar `dir` a `webDir` en
+   `scripts/process-client-photography.mjs`, regenerar y poner `enabled: true`.

@@ -28,8 +28,15 @@ export type ServiceCaseStudy = {
   /**
    * El bloque solo se renderiza con `enabled: true`. Se mantiene declarado y
    * desactivado mientras no exista autorización escrita de uso de imagen del
-   * paciente (Ley 1581 de 2012): el material ya está listo y activarlo es
-   * cambiar este único valor.
+   * paciente (Ley 1581 de 2012).
+   *
+   * Mientras esté en `false`, las fotografías NO viven en public/: están en
+   * private/client-clinical-pending/ (fuera del repositorio), así que las rutas
+   * de abajo todavía no resuelven. Son metadata para reactivar el caso.
+   *
+   * Para publicar, una vez exista la autorización:
+   *   1. regenerar con `dir: webDir` en scripts/process-client-photography.mjs;
+   *   2. poner `enabled: true`.
    */
   enabled: boolean;
   title: string;
