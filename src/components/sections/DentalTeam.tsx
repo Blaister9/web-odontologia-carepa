@@ -35,7 +35,11 @@ export function DentalTeam() {
               <div className="team-card__image">
                 <Image
                   src={member.image}
-                  alt={`Imagen referencial del equipo: ${member.name}`}
+                  alt={
+                    member.hasRealPhoto
+                      ? `${member.name}, ${member.role}`
+                      : `Imagen referencial del equipo: ${member.name}`
+                  }
                   fill
                   sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
                 />

@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
 
 import { Footer } from "@/components/layout/Footer";
@@ -59,6 +60,25 @@ export default function ConsultorioPage() {
               <Link className="button button--outline button--lg" href="/servicios">
                 Ver servicios
               </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="section consultorio-portrait">
+          <div className="container consultorio-portrait__inner">
+            <div className="consultorio-portrait__media">
+              <Image
+                src="/images/client/web/nataly-natural-portrait.webp"
+                alt={`${siteConfig.doctorName} en el consultorio odontológico de Carepa`}
+                fill
+                sizes="(min-width: 980px) 38vw, 100vw"
+              />
+            </div>
+            <div className="consultorio-portrait__copy">
+              <p className="eyebrow">Quién te atiende</p>
+              <h2>{siteConfig.doctorName}</h2>
+              <p>{siteConfig.doctorProfile.intro}</p>
+              <blockquote>{siteConfig.doctorProfile.quote}</blockquote>
             </div>
           </div>
         </section>

@@ -3836,3 +3836,152 @@ p {
   .journey-result__copy p { line-height: 1.45; }
   .mobile-sticky-cta a { padding: 0 10px; font-size: 0.82rem; }
 }
+
+/* ------------------------------------------------------------------
+   Fotografía real de la clienta
+   Contenedores con relación de aspecto fija para que los retratos no se
+   deformen ni se conviertan en pósters a ancho completo en móvil.
+   ------------------------------------------------------------------ */
+
+/* Las tarjetas de equipo pasan a retrato 4:5, que es el formato en el que
+   se solicitaron las fotos individuales pendientes. */
+.team-card__image {
+  min-height: 0;
+  aspect-ratio: 4 / 5;
+}
+
+.consultorio-portrait {
+  background: var(--color-white);
+}
+
+.consultorio-portrait__inner,
+.team-intro__inner {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+.consultorio-portrait__media,
+.team-intro__media {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-teal-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.consultorio-portrait__media {
+  max-width: 320px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 5;
+}
+
+.team-intro__media {
+  max-width: 520px;
+  margin: 0 auto;
+  aspect-ratio: 4 / 3;
+}
+
+.consultorio-portrait__media img,
+.team-intro__media img {
+  object-fit: cover;
+}
+
+.consultorio-portrait__copy h2,
+.team-intro__copy h2 {
+  margin-top: 6px;
+}
+
+.consultorio-portrait__copy p,
+.team-intro__copy p {
+  color: var(--color-ink-soft);
+  margin-bottom: 0;
+}
+
+.consultorio-portrait__copy blockquote {
+  padding-left: 18px;
+  margin: 18px 0 0;
+  border-left: 3px solid var(--color-gold);
+  color: var(--color-ink);
+  font-size: 1.02rem;
+  font-style: italic;
+}
+
+/* Caso clínico antes/después */
+.service-case {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(228, 243, 239, 0.68)),
+    var(--color-white);
+}
+
+.service-case__pair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  width: min(560px, 100%);
+  margin: 0 auto;
+}
+
+.service-case__item {
+  margin: 0;
+}
+
+.service-case__media {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-teal-soft);
+  box-shadow: var(--shadow-card);
+  aspect-ratio: 274 / 600;
+}
+
+.service-case__media img {
+  object-fit: cover;
+}
+
+.service-case__item figcaption {
+  margin-top: 10px;
+  color: var(--color-gold);
+  font-size: 0.78rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-case__disclaimer {
+  width: min(640px, 100%);
+  margin: 26px auto 0;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .team-intro__inner {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .team-intro__media {
+    margin: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .consultorio-portrait__inner {
+    grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+    gap: 44px;
+  }
+
+  .consultorio-portrait__media {
+    max-width: none;
+    margin: 0;
+  }
+
+  .team-intro__inner {
+    gap: 44px;
+  }
+}
