@@ -123,7 +123,7 @@ export const siteConfig: SiteConfig = {
   },
   mapUrl: "https://www.google.com/maps/search/?api=1&query=Carepa%2C%20Antioquia%2C%20Colombia",
   siteUrl: "https://www.dranatalyjimenez.com",
-  ogImage: "/images/hero/consultorio-odontologico-carepa.png",
+  ogImage: "/og-luz-de-uraba.webp",
   seoTitle: "Odontología en Carepa | Valoración odontológica y salud oral",
   seoDescription:
     "Agenda tu valoración odontológica en Carepa. Atención con cita previa, orientación clara y servicios de salud oral para pacientes locales.",

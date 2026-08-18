@@ -2,7 +2,7 @@ export type TeamMember = {
   name: string;
   role: string;
   description: string;
-  image: string;
+  image?: string;
   /**
    * `true` solo cuando `image` es una fotografía confirmada de esta persona.
    * Mientras sea `false` se muestra una imagen referencial y el alt lo declara.
@@ -18,8 +18,6 @@ export type TeamMember = {
   featured: boolean;
   profileComplete: boolean;
 };
-
-const referencePhoto = "/images/equipo/odontologia-profesional-carepa.png";
 
 export const teamMembers: TeamMember[] = [
   {
@@ -38,7 +36,6 @@ export const teamMembers: TeamMember[] = [
     role: "Especialista en Ortodoncia y Ortopedia Maxilar.",
     description:
       "Apoya la valoración y orientación de casos relacionados con alineación dental, mordida y desarrollo maxilar.",
-    image: referencePhoto,
     hasRealPhoto: false,
     awaitingProfessionalPhoto: true,
     featured: true,
@@ -49,7 +46,6 @@ export const teamMembers: TeamMember[] = [
     role: "Cirujano Maxilofacial e Implantólogo.",
     description:
       "Profesional de apoyo para casos que requieren orientación especializada en cirugía maxilofacial e implantología.",
-    image: referencePhoto,
     hasRealPhoto: false,
     awaitingProfessionalPhoto: true,
     featured: true,

@@ -1,5 +1,4 @@
 import { siteConfig } from "@/data/site";
-import { trackWhatsAppClick } from "@/utils/tracking";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { useJourney } from "../conversion/JourneyContext";
@@ -25,6 +24,10 @@ export function MobileStickyCTA() {
       ? "Consultar mi sonrisa"
       : "Agendar valoración";
 
+  if (selectedOption) {
+    return null;
+  }
+
   return (
     <nav className="mobile-sticky-cta" aria-label="Acciones rápidas por WhatsApp">
       <a
@@ -32,7 +35,8 @@ export function MobileStickyCTA() {
         target="_blank"
         rel="noreferrer"
         aria-label={`${label} por WhatsApp`}
-        onClick={() => trackWhatsAppClick({ ctaLocation: "mobile_sticky", journeyId: intentId ?? undefined })}
+        data-cta-location="mobile_sticky"
+        data-journey-id={intentId ?? undefined}
       >
         {label}
       </a>

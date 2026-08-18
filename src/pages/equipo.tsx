@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
-import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/data/site";
 import { teamGroupPhoto, teamMembers } from "@/data/team";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
@@ -46,14 +45,14 @@ export default function EquipoPage() {
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Equipo</p>
             <h1>Un equipo para orientar tu atención odontológica con claridad.</h1>
             <p>
-              La información del equipo se mantiene editable y prudente. Los retratos individuales
-              se irán reemplazando a medida que se reciba la fotografía de cada profesional.
+              Conoce a las personas que acompañan la valoración, el tratamiento y el cuidado oral
+              de pacientes de Carepa y la región de Urabá.
             </p>
             <div className="internal-hero__actions">
               <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
@@ -97,18 +96,25 @@ export default function EquipoPage() {
           <div className="container team-directory__grid">
             {teamMembers.map((member) => (
               <article className="team-card team-card--directory" key={member.name}>
-                <div className="team-card__image">
-                  <Image
-                    src={member.image}
-                    alt={
-                      member.hasRealPhoto
-                        ? `${member.name}, ${member.role}`
-                        : `Imagen referencial del equipo: ${member.name}`
-                    }
-                    fill
-                    sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
-                  />
-                </div>
+                {member.hasRealPhoto && member.image ? (
+                  <div className="team-card__image">
+                    <Image
+                      src={member.image}
+                      alt={`${member.name}, ${member.role}`}
+                      fill
+                      sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
+                    />
+                  </div>
+                ) : (
+                  <div className="team-card__initials" aria-hidden="true">
+                    {member.name
+                      .replace(/^(Dra\.|Dr\.)\s*/, "")
+                      .split(" ")
+                      .map((part) => part[0])
+                      .slice(0, 2)
+                      .join("")}
+                  </div>
+                )}
                 <div className="team-card__body">
                   <span>{member.profileComplete ? "Perfil del equipo" : "Perfil en actualización"}</span>
                   <h2>{member.name}</h2>
@@ -121,7 +127,6 @@ export default function EquipoPage() {
         </section>
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
       <MobileStickyCTA />
     </>
   );

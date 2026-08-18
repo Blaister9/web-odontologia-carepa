@@ -4,7 +4,6 @@ import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
-import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { serviceCatalog } from "@/data/serviceCatalog";
 import { siteConfig } from "@/data/site";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
@@ -42,14 +41,14 @@ export default function ServiciosPage() {
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Servicios</p>
             <h1>Catálogo de atención odontológica en Carepa.</h1>
             <p>
-              Revisa los servicios por categoría. Si no sabes cuál corresponde a tu caso, escribe
-              por WhatsApp y agenda una valoración.
+              Explora por categoría y abre la guía de cada tratamiento. Si no sabes cuál
+              corresponde a tu caso, la valoración es el punto de partida.
             </p>
           </div>
         </section>
@@ -66,8 +65,6 @@ export default function ServiciosPage() {
 
                 <div className="service-directory__items">
                   {category.services.map((service) => {
-                    const whatsappUrl = getWhatsAppUrl(siteConfig.whatsappNumber, service.whatsappMessage);
-
                     return (
                       <div className="service-directory__item" key={`${category.title}-${service.name}`}>
                         <div>
@@ -77,10 +74,9 @@ export default function ServiciosPage() {
                         <div className="service-directory__actions">
                           {service.slug ? (
                             <Link href={`/servicios/${service.slug}`}>Ver guía</Link>
-                          ) : null}
-                          <a href={whatsappUrl} target="_blank" rel="noreferrer">
-                            WhatsApp
-                          </a>
+                          ) : (
+                            <span>Orientación en valoración</span>
+                          )}
                         </div>
                       </div>
                     );
@@ -90,9 +86,28 @@ export default function ServiciosPage() {
             ))}
           </div>
         </section>
+
+        <section className="service-directory__closing">
+          <div className="container service-directory__closing-inner">
+            <div>
+              <span>¿No sabes cuál elegir?</span>
+              <p>Cuéntanos qué sientes y te orientamos para agendar una valoración.</p>
+            </div>
+            <a
+              className="button button--primary button--md"
+              href={getWhatsAppUrl(
+                siteConfig.whatsappNumber,
+                "Hola, quiero orientación para saber qué valoración odontológica necesito."
+              )}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Pedir orientación
+            </a>
+          </div>
+        </section>
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
       <MobileStickyCTA />
     </>
   );

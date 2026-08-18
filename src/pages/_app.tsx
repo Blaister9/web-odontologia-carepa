@@ -1,6 +1,7 @@
 import type { AppProps } from "next/app";
 import { Fraunces, Public_Sans } from "next/font/google";
 
+import { WhatsAppTracking } from "@/components/analytics/WhatsAppTracking";
 import {
   JourneyInitialState,
   JourneyProvider
@@ -44,6 +45,7 @@ export default function App({
   return (
     <div className={`${displayFont.variable} ${textFont.variable} app-shell`}>
       <JourneyProvider key={journeyStateKey} initialState={initialJourney}>
+        <WhatsAppTracking />
         <ScrollReveal />
         <Component {...pageProps} />
       </JourneyProvider>

@@ -34,6 +34,7 @@ export function Hero() {
             alt={`${siteConfig.doctorName}, odontóloga general y estética en Carepa`}
             fill
             priority
+            loading="eager"
             sizes="(min-width: 1024px) 46vw, 44vw"
             className="hero__image"
           />

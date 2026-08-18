@@ -6,7 +6,6 @@ import Link from "next/link";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
-import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { servicePages, ServicePage } from "@/data/servicePages";
 import { Service, siteConfig } from "@/data/site";
 import { absoluteUrl, getServiceJsonLd } from "@/utils/seo";
@@ -26,6 +25,15 @@ export default function ServiceDetailPage({
   const canonicalUrl = absoluteUrl(siteConfig, `/servicios/${servicePage.slug}`);
   const whatsappUrl = getWhatsAppUrl(siteConfig.whatsappNumber, servicePage.whatsappMessage);
   const jsonLd = getServiceJsonLd(siteConfig, servicePage, service);
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: servicePage.faq.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer }
+    }))
+  };
 
   return (
     <>
@@ -40,19 +48,23 @@ export default function ServiceDetailPage({
         <meta property="og:title" content={servicePage.title} />
         <meta property="og:description" content={servicePage.metaDescription} />
         <meta property="og:url" content={canonicalUrl} />
-        <meta property="og:image" content={absoluteUrl(siteConfig, service.image)} />
+        <meta property="og:image" content={absoluteUrl(siteConfig, siteConfig.ogImage)} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={servicePage.title} />
         <meta name="twitter:description" content={servicePage.metaDescription} />
-        <meta name="twitter:image" content={absoluteUrl(siteConfig, service.image)} />
+        <meta name="twitter:image" content={absoluteUrl(siteConfig, siteConfig.ogImage)} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <section className="service-hero">
           <div className="container service-hero__grid">
             <div>
@@ -72,18 +84,10 @@ export default function ServiceDetailPage({
               </div>
             </div>
 
-            <div className="service-hero__image">
-              <Image
-                src={service.image}
-                alt={service.alt}
-                fill
-                sizes="(min-width: 980px) 44vw, 100vw"
-                priority
-              />
-              <div className="service-hero__image-caption">
-                <span>{service.badge}</span>
-                <strong>Orientación responsable antes de iniciar.</strong>
-              </div>
+            <div className="service-hero__note">
+              <span>Antes de iniciar</span>
+              <strong>La valoración define si este tratamiento corresponde a tu caso.</strong>
+              <p>Sin diagnósticos por chat ni promesas de resultado.</p>
             </div>
           </div>
         </section>
@@ -233,7 +237,6 @@ export default function ServiceDetailPage({
         </section>
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
       <MobileStickyCTA />
     </>
   );

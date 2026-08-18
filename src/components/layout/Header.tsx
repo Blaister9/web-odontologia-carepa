@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 import { siteConfig } from "@/data/site";
@@ -17,10 +17,26 @@ const navItems = [
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
     "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
   );
+
+  useEffect(() => {
+    if (!isOpen) return;
+
+    mobileMenuRef.current?.querySelector<HTMLAnchorElement>("a")?.focus();
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setIsOpen(false);
+      menuButtonRef.current?.focus();
+    };
+
+    document.addEventListener("keydown", handleEscape);
+    return () => document.removeEventListener("keydown", handleEscape);
+  }, [isOpen]);
 
   return (
     <header className="site-header">
@@ -48,6 +64,7 @@ export function Header() {
             Agendar cita
           </Button>
           <button
+            ref={menuButtonRef}
             className="menu-toggle"
             type="button"
             aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
@@ -62,7 +79,11 @@ export function Header() {
         </div>
       </div>
 
-      <div className={`mobile-menu ${isOpen ? "mobile-menu--open" : ""}`} id="mobile-menu">
+      <div
+        ref={mobileMenuRef}
+        className={`mobile-menu ${isOpen ? "mobile-menu--open" : ""}`}
+        id="mobile-menu"
+      >
         <div className="container mobile-menu__inner">
           {navItems.map((item) => (
             <a key={item.href} href={item.href} onClick={() => setIsOpen(false)}>
