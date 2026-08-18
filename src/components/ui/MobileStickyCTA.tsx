@@ -1,4 +1,5 @@
 import { siteConfig } from "@/data/site";
+import { trackWhatsAppClick } from "@/utils/tracking";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { useJourney } from "../conversion/JourneyContext";
@@ -31,16 +32,9 @@ export function MobileStickyCTA() {
         target="_blank"
         rel="noreferrer"
         aria-label={`${label} por WhatsApp`}
+        onClick={() => trackWhatsAppClick({ ctaLocation: "mobile_sticky", journeyId: intentId ?? undefined })}
       >
         {label}
-      </a>
-      <a
-        href={emergencyUrl}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Consultar urgencia odontológica por WhatsApp"
-      >
-        ¿Tienes dolor?
       </a>
     </nav>
   );

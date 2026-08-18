@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
@@ -33,7 +31,6 @@ export function FinalWhatsAppCTA() {
               <WhatsAppIcon className="button__icon" />
               Agendar valoración
             </Button>
-            <Link href="/servicios">Ver servicios</Link>
           </div>
         </div>
       </div>

@@ -1,17 +1,6 @@
-import { siteConfig } from "@/data/site";
-import { getWhatsAppUrl } from "@/utils/whatsapp";
-
-import { Button } from "../ui/Button";
-import { WhatsAppIcon } from "../ui/WhatsAppIcon";
-
 const coverageChips = ["Carepa", "Veredas cercanas", "Región de Urabá"];
 
 export function RegionWhatsApp() {
-  const whatsappUrl = getWhatsAppUrl(
-    siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa o en una zona cercana de Urabá y quiero agendar una valoración odontológica. ¿Me pueden ayudar con disponibilidad?"
-  );
-
   return (
     <section className="region-whatsapp">
       <div className="container region-whatsapp__inner">
@@ -42,16 +31,9 @@ export function RegionWhatsApp() {
             ))}
           </div>
         </div>
-        <div data-reveal>
-          <Button
-            href={whatsappUrl}
-            target="_blank"
-            size="lg"
-            className="button--whatsapp-glow"
-          >
-            <WhatsAppIcon className="button__icon" />
-            Estoy en Carepa o una vereda cercana
-          </Button>
+        <div className="region-whatsapp__note" data-reveal>
+          <span>Atención con cita previa</span>
+          <strong>La ubicación exacta y la disponibilidad se confirman al agendar.</strong>
         </div>
       </div>
     </section>

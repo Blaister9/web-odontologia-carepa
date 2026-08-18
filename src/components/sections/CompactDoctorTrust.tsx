@@ -31,10 +31,10 @@ export function CompactDoctorTrust() {
           <div className="compact-trust__doctor">
             <div className="compact-trust__photo">
               <Image
-                src={siteConfig.doctorProfile.image}
+                src="/images/client/web/nataly-natural-portrait.webp"
                 alt={`${siteConfig.doctorProfile.name}, odontóloga en Carepa`}
                 fill
-                sizes="96px"
+                sizes="(min-width: 768px) 38vw, 100vw"
               />
             </div>
             <div>
@@ -42,6 +42,8 @@ export function CompactDoctorTrust() {
               <strong>{siteConfig.doctorProfile.title}</strong>
             </div>
           </div>
+
+          <blockquote>“{siteConfig.doctorProfile.quote}”</blockquote>
 
           <ul aria-label="Puntos de confianza">
             {compactHighlights.map((highlight) => (

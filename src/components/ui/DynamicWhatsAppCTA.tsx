@@ -1,5 +1,5 @@
 import { siteConfig } from "@/data/site";
-import { trackEvent } from "@/utils/tracking";
+import { trackWhatsAppClick } from "@/utils/tracking";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { Button } from "./Button";
@@ -34,7 +34,7 @@ export function DynamicWhatsAppCTA({
       variant={variant}
       fullWidth={fullWidth}
       className={className}
-      onClick={() => trackEvent("click_whatsapp_contextual", { ctaLocation, serviceSlug })}
+      onClick={() => trackWhatsAppClick({ ctaLocation, serviceSlug })}
     >
       <WhatsAppIcon className="button__icon" />
       {label}
