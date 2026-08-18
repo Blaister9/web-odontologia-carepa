@@ -5,13 +5,13 @@ ratios de contraste verificados, espécimen tipográfico, estudio de forma, mate
 textura, componentes de interfaz, tratamiento fotográfico y las decisiones explícitas
 de lo que la dirección **no** hace.
 
-| Dirección | HTML | PNG |
+| Dirección | HTML | WebP |
 |---|---|---|
 | **A · Luz de Urabá** — recomendada | [`a-luz-de-uraba.html`](a-luz-de-uraba.html) | [`a-luz-de-uraba.webp`](a-luz-de-uraba.webp) |
 | **B · Consultorio Claro** | [`b-consultorio-claro.html`](b-consultorio-claro.html) | [`b-consultorio-claro.webp`](b-consultorio-claro.webp) |
 | **C · Noche Suave** — descartada | [`c-noche-suave.html`](c-noche-suave.html) | [`c-noche-suave.webp`](c-noche-suave.webp) |
 
-Los PNG son render a 2x de cada HTML, para poder revisarlos dentro del PR sin abrir nada.
+Los WebP son renders a 2x de cada HTML, para poder revisarlos dentro del PR sin abrir nada.
 Descripción completa de cada dirección en [`../art-directions.md`](../art-directions.md).
 
 ## Notas técnicas

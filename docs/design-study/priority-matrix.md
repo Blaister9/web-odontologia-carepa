@@ -9,7 +9,7 @@
 
 | ID | Cambio | Impacto | Esfuerzo | Riesgo | Confianza | Prioridad | Tipo |
 |---|---|:---:|:---:|:---:|:---:|:---:|---|
-| **P0-1** | Desplegar la fotografía real ya commiteada | **5** | **1** | 1 | **5** | **P0** | Quick win |
+| **P0-1** | Desplegar la fotografía real ya commiteada — **COMPLETADO 2026-08-18, PR #18** | **5** | **1** | 1 | **5** | **P0** | Quick win |
 | **P0-2** | Publicar dirección, horario y enlace al GBP | **5** | **1** | 2 | **5** | **P0** | Quick win |
 | **P0-3** | Corregir "ODONTÓLOGICO" → "ODONTOLÓGICO" | 3 | **1** | 1 | **5** | **P0** | Quick win |
 | **P0-4** | Áreas táctiles ≥ 44 px + arreglar solape del sticky | 4 | 2 | 1 | **5** | **P0** | Quick win |
@@ -52,7 +52,7 @@
 
 | ID | Cambio | Por qué está aquí |
 |---|---|---|
-| P0-1 | Desplegar fotografía real | El mayor salto visual disponible. **Ya está escrito.** Es un merge. |
+| P0-1 | Desplegar fotografía real | **Completado** en el PR #18 (`159de66`). |
 | P0-2 | Dirección, horario y GBP | Cierra la brecha de confianza más grave. Son tres campos de datos. |
 | P0-3 | Corregir la errata del nombre | Un carácter. Está en el header de todas las páginas. |
 | P0-4 | Áreas táctiles y solape del sticky | Corrige 12 fallos WCAG y CTA tapados. |
@@ -61,7 +61,8 @@
 | P0-7 | Eliminar animaciones infinitas | Menos ruido, menos consumo. Es borrar código. |
 | P0-8 | Enlace de salto | Accesibilidad básica. Diez líneas. |
 
-**Estos ocho se pueden ejecutar esta semana y son independientes de este estudio.**
+**P0-1 ya está completado. Los siete restantes se pueden ejecutar esta semana y son
+independientes de este estudio.**
 
 ---
 
@@ -122,4 +123,4 @@ consultorio es una decisión cara de mantener.
 | Añadir cualquier librería de JS | El presupuesto de JS adicional es **0 KB**. |
 | Inventar reseñas, cifras o casos | Destruye exactamente lo que se intenta construir. |
 | Implementar la dirección C con las fotos actuales | Se vería peor que el sitio de hoy. |
-| Rediseñar antes de desplegar P0-1 y P0-2 | Se estaría rediseñando un sitio que aún no demuestra existir. |
+| Rediseñar antes de cerrar P0-2 | P0-1 ya está desplegado, pero el sitio aún no publica dirección, horario ni GBP reales. |

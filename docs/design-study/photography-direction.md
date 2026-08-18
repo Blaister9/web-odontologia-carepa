@@ -26,8 +26,9 @@ Complementa —no reemplaza— `docs/launch-kit/photography-brief.md` y
 | `raw/equipo-duo-promo.jpeg` | — | 56 KB | **MARKETING ONLY** | Pieza de redes |
 | `equipo/vanesa-lopez.webp` | — | 6 KB | **TEAM / débil** | 6 KB es demasiado poco; re-exportar del original |
 
-**OBSERVACIÓN.** Este material **no está en producción**. Vive en
-`feature/real-client-photography-v1`, fuera de `origin/main`.
+**OBSERVACIÓN DEL SNAPSHOT.** Al capturar el estudio, este material no estaba en
+producción: vivía en `feature/real-client-photography-v1`, fuera del commit auditado
+`ddeb2d6`. El 18 de agosto de 2026 se desplegó mediante el PR #18 (`159de66`).
 
 **OBSERVACIÓN.** `nataly-natural-portrait.webp` (900×1125) es el único archivo con
 resolución suficiente para un héroe. Es el activo fotográfico más valioso del proyecto.

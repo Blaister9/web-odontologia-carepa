@@ -1,7 +1,9 @@
 # Design Direction Study — Consultorio Odontológico Dra. Nataly Jiménez
 
-**Estado:** propuesta para decisión. **No implementada.**
-**Rama:** `research/design-direction-study-v1` (creada desde `origin/main` = producción)
+**Estado:** propuesta de dirección para decisión. **No implementada.** El quick win
+fotográfico P0-1 sí fue desplegado después de cerrar el snapshot del estudio.
+**Rama:** `research/design-direction-study-v1` (creada desde `origin/main` y rebasada
+sobre `159de66` antes de abrir el PR)
 **Fecha del estudio:** 17 de agosto de 2026
 **Producción auditada:** <https://www.dranatalyjimenez.com> (commit `ddeb2d6`)
 
@@ -49,15 +51,15 @@ moodboards y prototipos aislados. Ver [Garantía de no-intervención](#garantía
 ```
 screenshots/
   360x800/ 390x844/ 414x896/ 768x1024/ 1366x768/ 1440x900/   ← producción, 6 viewports
-    <pagina>--fold.png     primer viewport
-    <pagina>--full.png     página completa
-    scroll/<pagina>--sNN.png  recorrido pantalla a pantalla (evidencia fiable)
-  _local-branch/          ← rama de fotografía real, aún NO desplegada
+    <pagina>--fold.webp     primer viewport
+    <pagina>--full.webp     página completa
+    scroll/<pagina>--sNN.webp  recorrido pantalla a pantalla (evidencia fiable)
+  _local-branch/          ← preview histórico de fotografía antes del merge del PR #18
   benchmark/desktop/      ← 33 referentes, 1440×900
   benchmark/mobile/       ← 33 referentes, 390×844
   _capture-log.json       ← métricas por página/viewport
-moodboards/               ← 3 moodboards navegables (HTML + PNG)
-concepts/                 ← mockups de las 3 direcciones (HTML + PNG)
+moodboards/               ← 3 moodboards navegables (HTML + WebP)
+concepts/                 ← mockups de las 3 direcciones (HTML + WebP)
 ```
 
 ---
@@ -84,10 +86,10 @@ Cada afirmación del estudio está etiquetada:
 
 ### Limitaciones conocidas — léelas antes de citar el estudio
 
-1. **Las capturas `--full.png` no son evidencia primaria.** El modo *fullPage* de Chrome
+1. **Las capturas `--full.webp` no son evidencia primaria.** El modo *fullPage* de Chrome
    redimensiona el viewport, lo que desactiva `IntersectionObserver` y
    `animation-timeline: view()`, y deja imágenes `next/image fill` sin pintar.
-   **Usa siempre `scroll/*.png`**, que capturan el estado real que ve una persona.
+   **Usa siempre `scroll/*.webp`**, que capturan el estado real que ve una persona.
    Esto es un artefacto de captura, **no** un defecto del sitio: el `ScrollReveal`
    actual degrada correctamente sin JS y con `prefers-reduced-motion`.
 2. **6 de 33 referentes bloquearon el bot** (Tend NYC, Aesop, Six Senses, Dr. Barbara Sturm,
@@ -102,13 +104,14 @@ Cada afirmación del estudio está etiquetada:
 
 ## El hallazgo que cambia el orden de todo lo demás
 
-> **El trabajo de fotografía real ya está hecho y NO está en producción.**
+> **En el snapshot auditado, el trabajo de fotografía real ya estaba hecho pero aún no
+> estaba en producción.**
 
 Los commits `06e7656` ("integrate real client photography") y `b719662`
-("expand verified client photography") viven en `feature/real-client-photography-v1`
-y **no están contenidos en `origin/main`**. Producción sigue sirviendo ilustraciones
-vectoriales genéricas donde ya existen retratos reales de la Dra. Nataly Jiménez
-y de Vanesa López.
+("expand verified client photography") vivían en `feature/real-client-photography-v1`
+y **no estaban contenidos en el commit auditado `ddeb2d6`**. Esa producción servía
+ilustraciones vectoriales genéricas donde ya existían retratos reales de la Dra. Nataly
+Jiménez y de Vanesa López.
 
 Comparación visual: `screenshots/390x844/scroll/home--s04.webp` (producción, avatar
 ilustrado) frente a `screenshots/_local-branch/390x844/scroll/home--s04.webp`
@@ -118,6 +121,11 @@ ilustrado) frente a `screenshots/_local-branch/390x844/scroll/home--s04.webp`
 no es rediseñar nada. Es desplegar lo que ya existe. Está clasificada **P0-1** en
 [`priority-matrix.md`](priority-matrix.md) y es independiente de qué dirección de
 arte se apruebe.
+
+**Estado posterior al snapshot (18 de agosto de 2026):** P0-1 se completó mediante el
+PR #18, fusionado por squash como `159de66`. Las capturas se conservan sin reescribir
+porque documentan la evidencia que produjo la recomendación y permiten comparar el antes
+con la rama fotográfica.
 
 ---
 
@@ -136,5 +144,5 @@ git diff --stat origin/main...research/design-direction-study-v1 -- ':!docs/desi
 Debe devolver salida vacía. Los prototipos de `concepts/` son HTML autocontenido que
 no importa nada de `src/`, no se compila con Next.js y no se sirve desde `public/`.
 
-**No se modificó ningún componente, estilo, dato ni página de producción.
-No se hizo merge. El PR es solo para revisión del estudio.**
+**No se modificó ningún componente, estilo, dato ni página de producción. El PR del
+estudio contiene solamente evidencia y documentación.**

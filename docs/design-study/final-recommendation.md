@@ -27,9 +27,10 @@ Ambos problemas están medidos en [`current-state-audit.md`](current-state-audit
 
 > **La acción de mayor impacto visual disponible no requiere aprobar nada de este estudio.**
 
-Los commits `06e7656` y `b719662` —fotografía real verificada de la Dra. Nataly Jiménez y
-de Vanesa López— **existen, están terminados y no están en `origin/main`**. Producción
-sigue mostrando ilustraciones vectoriales genéricas.
+En el snapshot `ddeb2d6`, los commits `06e7656` y `b719662` —fotografía real verificada
+de la Dra. Nataly Jiménez y de Vanesa López— existían y estaban terminados, pero aún no
+estaban en `origin/main`. Esa producción seguía mostrando ilustraciones vectoriales
+genéricas.
 
 Comparar:
 - `screenshots/390x844/scroll/home--s04.webp` — producción: avatar ilustrado
@@ -40,8 +41,9 @@ Junto a esto hay siete correcciones más de coste casi nulo
 incluida una errata en el nombre de la marca (`ODONTÓLOGICO` en lugar de `ODONTOLÓGICO`)
 que aparece en el header de todas las páginas.
 
-**Recomendación operativa: ejecutar los ocho quick wins esta semana, sin esperar a
-que se decida la dirección de arte.**
+**Estado posterior al snapshot:** P0-1 quedó completado el 18 de agosto de 2026 en el
+PR #18 (`159de66`). La recomendación operativa vigente es ejecutar los otros siete quick
+wins sin esperar a que se decida la dirección de arte.
 
 ---
 

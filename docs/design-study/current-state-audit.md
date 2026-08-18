@@ -3,6 +3,10 @@
 **Objeto:** <https://www.dranatalyjimenez.com> · commit `ddeb2d6` · capturado 2026-08-17
 **Método:** Chrome headless, 6 viewports, 10 rutas. Ver [`README.md`](README.md#método-y-honestidad-de-la-evidencia).
 
+> **Nota de vigencia:** esta es una auditoría de snapshot, no una descripción mutable de
+> `main`. El 18 de agosto de 2026 el PR #18 desplegó la fotografía real y cerró el hallazgo
+> nº 1 de este documento. Los demás hallazgos deben verificarse de nuevo al implementarse.
+
 ---
 
 ## 0. Veredicto en una página
@@ -245,7 +249,7 @@ Es el elemento más grande del sitio y no comunica nada que el usuario necesite.
 
 ### 4.2 Solapamiento real de contenido
 
-**OBSERVACIÓN (`screenshots/390x844/scroll/home--s03.webp` y `--s04.png`).**
+**OBSERVACIÓN (`screenshots/390x844/scroll/home--s03.webp` y `--s04.webp`).**
 La barra CTA fija **tapa contenido accionable**: los enlaces "Ver guía completa" y
 "Consultar urgencia" de la última tarjeta visible quedan parcialmente cubiertos, y
 "Ver equipo profesional" queda cortado a media palabra.

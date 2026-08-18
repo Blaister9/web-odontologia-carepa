@@ -31,7 +31,7 @@ El cromo permanente baja del **32 % al 13 %**.
 
 - HTML autocontenido: sin dependencias, sin JavaScript, sin peticiones de red.
 - Los campos de fotografía son **marcadores etiquetados**, no fotografías.
-- Los PNG son render a 2x, para revisar dentro del PR sin abrir nada.
+- Los WebP son renders a 2x, para revisar dentro del PR sin abrir nada.
 - Las cifras y reseñas mostradas (`★ 4,9 · 27 reseñas`, horarios, dirección) son
   **texto de maqueta**. Los datos reales están marcados como `FALTA EL DATO` en
   [`../trust-architecture.md`](../trust-architecture.md) y deben aportarse antes de
