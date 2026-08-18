@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kit de componentes · A · Luz de Urabá</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{--bg:#F7F2EA;--sf:#FFFFFF;--sunk:#F0E9DD;--ink:#23201C;--soft:#5C554C;
+      --act:#1E4D3A;--act-h:#17402F;--urg:#A24A30;--ln:#E2D8C9;--ls:#C9BCA6;
+      --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif}
+body{margin:0;background:#EDEDEA;color:var(--ink);font-family:Inter,system-ui,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.page{max-width:1240px;margin:0 auto;padding:48px 24px 96px}
+.top{border-bottom:1px solid #C9C9C4;padding-bottom:20px;margin-bottom:44px}
+.top h1{margin:0 0 6px;font-family:var(--serif);font-size:2.1rem;font-weight:600;letter-spacing:-.02em}
+.top p{margin:0;color:#5a5a55;font-size:.94rem;max-width:76ch}
+.cmp{margin-bottom:56px}
+.cmp > h2{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#6a6a64;margin:0 0 10px;font-weight:600}
+.stage{background:var(--bg);border:1px solid #C9C9C4;border-radius:8px;padding:32px;overflow:hidden}
+.stage--m{max-width:390px;padding:0}
+.note{margin:12px 0 0;font-size:.85rem;color:#5a5a55;max-width:80ch}
+.note b{color:#1a1a1a}
+.eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--act);font-weight:600;margin:0 0 12px}
+h3.s{font-family:var(--serif);font-weight:600;letter-spacing:-.01em;margin:0 0 10px}
+.btnp{display:inline-flex;align-items:center;justify-content:center;background:var(--act);color:#fff;min-height:52px;padding:0 26px;border-radius:4px;font-weight:600;text-decoration:none}
+.btns{display:inline-flex;align-items:center;justify-content:center;border:1.5px solid var(--ls);color:var(--ink);min-height:48px;padding:0 22px;border-radius:4px;font-weight:600}
+.btnu{display:inline-flex;align-items:center;justify-content:center;background:var(--urg);color:#fff;min-height:52px;padding:0 26px;border-radius:4px;font-weight:600}
+.ph{position:relative;overflow:hidden;background:linear-gradient(150deg,#EFE6D6,#CFC3AC)}
+.ph::after{content:attr(data-l);position:absolute;inset:auto 0 0 0;padding:8px 12px;font-size:.66rem;letter-spacing:.05em;text-transform:uppercase;color:#5C554C;background:linear-gradient(0deg,rgba(247,242,234,.94),rgba(247,242,234,0))}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="top">
+  <h1>Kit de componentes — A · Luz de Urabá</h1>
+  <p>Los siete componentes clave de la dirección recomendada. Prototipos HTML aislados,
+  sin dependencias del proyecto. Todos los valores de color están verificados contra
+  WCAG 2.2 AA; los campos de fotografía se representan etiquetados porque las tomas
+  definitivas aún no existen.</p>
+</header>
+
+<!-- 1 · IntentGateway -->
+<section class="cmp">
+  <h2>1 · IntentGateway — con expansión en el sitio</h2>
+  <div class="stage">
+    <p class="eyebrow">Paso 1 de 2</p>
+    <h3 class="s" style="font-size:1.9rem">¿Qué necesitas hoy?</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:20px">
+      <div style="background:var(--sf);border:2px solid var(--act);border-radius:4px;padding:18px;min-height:96px">
+        <b style="font-family:var(--serif);font-size:1.15rem;display:block;margin-bottom:4px">Me duele algo</b>
+        <i style="font-style:normal;font-size:.84rem;color:var(--soft)">Dolor, inflamación o fractura</i>
+        <span style="display:block;margin-top:10px;font-size:.75rem;color:var(--act);font-weight:600">SELECCIONADO ✓</span>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:18px;min-height:96px;opacity:.62">
+        <b style="font-family:var(--serif);font-size:1.15rem;display:block;margin-bottom:4px">Quiero verme mejor</b>
+        <i style="font-style:normal;font-size:.84rem;color:var(--soft)">Estética con valoración previa</i>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:18px;min-height:96px;opacity:.62">
+        <b style="font-family:var(--serif);font-size:1.15rem;display:block;margin-bottom:4px">Quiero cuidarme</b>
+        <i style="font-style:normal;font-size:.84rem;color:var(--soft)">Limpieza, control, prevención</i>
+      </div>
+    </div>
+    <div style="background:var(--sf);border:1px solid var(--ln);border-left:4px solid var(--act);border-radius:4px;padding:22px;margin-top:12px">
+      <p style="margin:0 0 6px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600">Tu orientación</p>
+      <h3 class="s" style="font-size:1.35rem">Cuéntanos dónde te duele y desde cuándo</h3>
+      <p style="margin:0 0 18px;color:var(--soft);max-width:62ch">Con la zona, la intensidad y desde cuándo empezó podemos revisar disponibilidad y decirte el siguiente paso. No reemplaza una valoración.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+        <a class="btnp">Escribir por WhatsApp</a>
+        <span class="btns">Ver información de urgencias</span>
+        <span style="font-size:.88rem;color:var(--soft);text-decoration:underline;text-underline-offset:3px">Cambiar opción</span>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>El arreglo clave.</b> Hoy el panel de orientación se renderiza como sección
+  hermana, por debajo del fold: en móvil el usuario toca y parece que no pasa nada. Aquí se
+  expande <b>en el sitio de la tarjeta tocada</b> y el CTA queda visible sin scroll adicional.
+  Es un requisito de aceptación, no un detalle.</p>
+</section>
+
+<!-- 2 · Tarjeta de servicio -->
+<section class="cmp">
+  <h2>2 · TreatmentCard — tipográfica, sin imagen</h2>
+  <div class="stage">
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+      <div style="background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:24px;display:flex;flex-direction:column;min-height:200px">
+        <p style="margin:0 0 10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--act);font-weight:600">Preventivo</p>
+        <h3 class="s" style="font-size:1.5rem">Quiero una sonrisa más limpia</h3>
+        <p style="margin:0 0 auto;color:var(--soft);font-size:.94rem">Cuidado preventivo de dientes y encías.</p>
+        <div style="display:flex;gap:16px;align-items:center;margin-top:20px;min-height:44px">
+          <span style="font-weight:600;text-decoration:underline;text-underline-offset:4px">Ver guía</span>
+          <span class="btns" style="min-height:44px;font-size:.9rem">Consultar</span>
+        </div>
+      </div>
+      <div style="background:var(--sunk);border:1px solid var(--ln);border-radius:4px;padding:24px;display:flex;flex-direction:column;min-height:200px">
+        <p style="margin:0 0 10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--act);font-weight:600">Estético</p>
+        <h3 class="s" style="font-size:1.5rem">Quiero mejorar mi sonrisa</h3>
+        <p style="margin:0 0 auto;color:var(--soft);font-size:.94rem">Alternativas estéticas con valoración previa.</p>
+        <div style="display:flex;gap:16px;align-items:center;margin-top:20px;min-height:44px">
+          <span style="font-weight:600;text-decoration:underline;text-underline-offset:4px">Ver guía</span>
+          <span class="btns" style="min-height:44px;font-size:.9rem">Consultar</span>
+        </div>
+      </div>
+      <div style="background:var(--sf);border:1px solid var(--ln);border-top:4px solid var(--urg);border-radius:4px;padding:24px;display:flex;flex-direction:column;min-height:200px">
+        <p style="margin:0 0 10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--urg);font-weight:600">Urgencia</p>
+        <h3 class="s" style="font-size:1.5rem">Necesito atención por dolor</h3>
+        <p style="margin:0 0 auto;color:var(--soft);font-size:.94rem">Consulta disponibilidad para una valoración.</p>
+        <div style="display:flex;gap:16px;align-items:center;margin-top:20px;min-height:44px">
+          <span style="font-weight:600;text-decoration:underline;text-underline-offset:4px">Ver guía</span>
+          <span class="btnu" style="min-height:44px;font-size:.9rem;padding:0 18px">Consultar</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Resuelve dos defectos a la vez.</b> Elimina las cuatro imágenes duplicadas
+  entre servicios y sube las áreas táctiles de 15 px a 44 px. Una tarjeta sin imagen es
+  honesta; una tarjeta con la imagen de otro servicio es un error visible.</p>
+</section>
+
+<!-- 3 · Doctora -->
+<section class="cmp">
+  <h2>3 · DoctorIntro</h2>
+  <div class="stage">
+    <div style="display:grid;grid-template-columns:340px 1fr;gap:36px;align-items:center">
+      <div class="ph" data-l="Retrato 4:5 · luz de ventana" style="aspect-ratio:4/5;border-radius:4px"></div>
+      <div>
+        <p class="eyebrow">Quién te atiende</p>
+        <h3 class="s" style="font-size:2.1rem">Dra. Nataly Jiménez</h3>
+        <p style="margin:0 0 20px;color:var(--soft);font-size:.92rem;letter-spacing:.06em;text-transform:uppercase;font-weight:600">Odontóloga general y estética · Reg. profesional</p>
+        <blockquote style="margin:0 0 22px;font-family:var(--serif);font-size:1.35rem;line-height:1.35;border-left:2px solid var(--act);padding-left:20px">
+          «Antes de iniciar cualquier tratamiento, lo más importante es entender qué necesitas
+          y explicarte las opciones con claridad.»
+        </blockquote>
+        <div style="display:flex;gap:12px;flex-wrap:wrap"><a class="btnp">Escribir por WhatsApp</a><span class="btns">Ver equipo</span></div>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Usa el activo que ya existe.</b> <code>nataly-natural-portrait.webp</code>
+  (900x1125) es el único archivo con resolución suficiente. Sin recorte circular: el retrato
+  4:5 sostiene la mirada a cámara, que es lo que crea el contacto.</p>
+</section>
+
+<!-- 4 · Equipo -->
+<section class="cmp">
+  <h2>4 · Equipo — sin clones ilustrados</h2>
+  <div class="stage">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:16px">
+      <div>
+        <div class="ph" data-l="Retrato real" style="aspect-ratio:4/5;border-radius:4px"></div>
+        <h3 class="s" style="font-size:1.1rem;margin:12px 0 2px">Dra. Nataly Jiménez</h3>
+        <p style="margin:0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600">Odontóloga general y estética</p>
+      </div>
+      <div>
+        <div class="ph" data-l="Retrato real" style="aspect-ratio:4/5;border-radius:4px"></div>
+        <h3 class="s" style="font-size:1.1rem;margin:12px 0 2px">Vanesa López</h3>
+        <p style="margin:0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600">Auxiliar e higienista oral</p>
+      </div>
+      <div>
+        <div style="aspect-ratio:4/5;border-radius:4px;background:var(--sunk);border:1px dashed var(--ls);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px">
+          <span style="font-family:var(--serif);font-size:2.4rem;color:var(--act);line-height:1">CP</span>
+          <span style="font-size:.7rem;color:var(--soft);margin-top:10px;letter-spacing:.06em">Retrato profesional<br>en producción</span>
+        </div>
+        <h3 class="s" style="font-size:1.1rem;margin:12px 0 2px">Dra. Clara Parra</h3>
+        <p style="margin:0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600">Ortodoncia y ortopedia maxilar</p>
+      </div>
+      <div>
+        <div style="aspect-ratio:4/5;border-radius:4px;background:var(--sunk);border:1px dashed var(--ls);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:16px">
+          <span style="font-family:var(--serif);font-size:2.4rem;color:var(--act);line-height:1">AA</span>
+          <span style="font-size:.7rem;color:var(--soft);margin-top:10px;letter-spacing:.06em">Retrato profesional<br>en producción</span>
+        </div>
+        <h3 class="s" style="font-size:1.1rem;margin:12px 0 2px">Dr. Adalberto Atencia</h3>
+        <p style="margin:0;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--soft);font-weight:600">Cirugía maxilofacial e implantología</p>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Hoy se muestra la misma ilustración genérica dos veces</b>, para dos personas
+  distintas. Dos clones idénticos señalan el relleno con más fuerza que dejar el hueco. La
+  tarjeta tipográfica declarada es honesta, y la honestidad construye más confianza que un
+  relleno detectable. Opción preferida: producir las dos tomas.</p>
+</section>
+
+<!-- 5 · Urgencia -->
+<section class="cmp">
+  <h2>5 · Bloque de urgencia</h2>
+  <div class="stage" style="padding:0">
+    <div style="background:var(--urg);color:#fff;padding:44px 40px">
+      <p style="margin:0 0 12px;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;opacity:.9;font-weight:600">Urgencias odontológicas</p>
+      <h3 class="s" style="font-size:2.2rem;color:#fff;max-width:18ch">¿Tienes dolor ahora?</h3>
+      <p style="margin:0 0 24px;max-width:56ch;opacity:.94">Escríbenos describiendo la zona, la intensidad y desde cuándo. Revisamos disponibilidad de valoración.</p>
+      <div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center">
+        <span style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:var(--urg);min-height:52px;padding:0 26px;border-radius:4px;font-weight:600">Escribir por WhatsApp</span>
+        <span style="font-size:.88rem;opacity:.92">Dolor · inflamación · fractura · restauración caída</span>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>El terracota solo aparece aquí.</b> Nunca como acento decorativo. La urgencia
+  se marca con color <b>y</b> con etiqueta textual, para no depender solo del color (WCAG 1.4.1).</p>
+</section>
+
+<!-- 6 · CTA final -->
+<section class="cmp">
+  <h2>6 · CTA final</h2>
+  <div class="stage" style="padding:0">
+    <div style="background:var(--act);color:#fff;padding:56px 40px;display:grid;grid-template-columns:1fr auto;gap:36px;align-items:center">
+      <div>
+        <h3 class="s" style="font-size:2.1rem;color:#fff;max-width:20ch">Cuéntanos qué necesitas y revisamos el siguiente paso</h3>
+        <p style="margin:0;opacity:.92;max-width:56ch">Puedes escribir aunque no sepas el tratamiento. La valoración define las opciones adecuadas.</p>
+      </div>
+      <span style="display:inline-flex;align-items:center;justify-content:center;background:#fff;color:var(--act);min-height:56px;padding:0 30px;border-radius:4px;font-weight:600;white-space:nowrap">Escribir por WhatsApp</span>
+    </div>
+  </div>
+  <p class="note"><b>Un solo botón.</b> Hoy este bloque ofrece dos acciones compitiendo, y el texto
+  blanco sobre gradiente cae por debajo del contraste requerido en parte de la superficie.</p>
+</section>
+
+<!-- 7 · Service page hero -->
+<section class="cmp">
+  <h2>7 · Héroe de página de servicio</h2>
+  <div class="stage">
+    <p style="margin:0 0 14px;font-size:.82rem;color:var(--soft)">Inicio › Servicios › <span style="color:var(--ink)">Ortodoncia</span></p>
+    <p class="eyebrow">Quiero cuidarme · Funcional</p>
+    <h3 class="s" style="font-size:2.6rem;max-width:16ch">Alineación dental y mordida</h3>
+    <p style="margin:0 0 26px;color:var(--soft);font-size:1.06rem;max-width:62ch">Revisamos cómo cierran tus dientes y qué alternativas existen según el diagnóstico. No todos los casos necesitan el mismo plan.</p>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-bottom:32px"><a class="btnp">Escribir por WhatsApp</a></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px">
+      <div style="background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:22px">
+        <h3 class="s" style="font-size:1.15rem">Para quién es</h3>
+        <ul style="margin:0;padding-left:1.1em;color:var(--soft);font-size:.94rem;line-height:1.8"><li>Apiñamiento o espacios entre dientes</li><li>Mordida que no cierra bien</li><li>Molestias al masticar</li></ul>
+      </div>
+      <div style="background:var(--sunk);border:1px solid var(--ln);border-radius:4px;padding:22px">
+        <h3 class="s" style="font-size:1.15rem">Para quién no</h3>
+        <ul style="margin:0;padding-left:1.1em;color:var(--soft);font-size:.94rem;line-height:1.8"><li>Si hay caries o enfermedad de encías sin tratar</li><li>Si buscas un cambio solo de color dental</li><li>Sin valoración previa</li></ul>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>«Para quién no» es el bloque diferenciador.</b> Ningún referente del benchmark
+  lo tiene. Decir para quién <em>no</em> es un tratamiento construye más credibilidad que
+  cualquier promesa de resultado, y es coherente con la política de honestidad clínica que
+  el sitio ya practica.</p>
+</section>
+
+</div>
+</body>
+</html>
