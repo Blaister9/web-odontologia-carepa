@@ -1,0 +1,387 @@
+/* Home hero correction — deliberate editorial composition, not a 50/50 split. */
+.hero {
+  min-height: 0;
+  padding: clamp(3rem, 4vw, 4rem) 0 clamp(2.5rem, 3.5vw, 3.5rem);
+  border-bottom: 0;
+  background: var(--color-bg);
+}
+
+.site-header--home .site-header__inner {
+  min-height: 72px;
+}
+
+.site-header--home .site-header__mark {
+  border-radius: var(--radius-sm);
+}
+
+.site-header--home .site-header__actions > .button {
+  display: none;
+}
+
+.hero__stage {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.hero__content {
+  display: block;
+  max-width: 44rem;
+  padding: 0;
+  justify-content: initial;
+}
+
+.hero__content > * {
+  opacity: 1;
+  animation: none;
+}
+
+.hero .eyebrow {
+  max-width: none;
+  margin-bottom: 1rem;
+  color: var(--color-action);
+}
+
+.hero h1 {
+  max-width: 10ch;
+  margin: 0;
+  font-size: clamp(3.4rem, 7.4vw, 6.4rem);
+  line-height: 0.93;
+  letter-spacing: -0.055em;
+  text-wrap: balance;
+}
+
+.hero__lead {
+  max-width: 38rem;
+  margin: 1.5rem 0 0;
+  color: var(--color-text-soft);
+  font-size: clamp(1.08rem, 1.5vw, 1.28rem);
+  line-height: 1.65;
+}
+
+.hero__primary-link {
+  display: inline-flex;
+  min-height: 54px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.5rem;
+  margin-top: 1.75rem;
+  padding: 0 1.35rem;
+  border: 1px solid var(--color-action);
+  border-radius: var(--radius-sm);
+  background: var(--color-action);
+  color: var(--color-text-on-fill);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: background-color var(--motion-base) var(--ease-out), transform var(--motion-base) var(--ease-out);
+}
+
+.hero__primary-link:hover {
+  background: var(--color-action-hover);
+  color: var(--color-text-on-fill);
+  transform: translateY(-2px);
+}
+
+.hero__proof {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  max-width: 38rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-border-strong);
+  border-bottom: 1px solid var(--color-border-strong);
+}
+
+.hero__proof > div {
+  display: grid;
+  gap: 0.25rem;
+  padding: 1rem 1rem 1rem 0;
+}
+
+.hero__proof > div + div {
+  padding-left: 1rem;
+  border-left: 1px solid var(--color-border-strong);
+}
+
+.hero__proof strong,
+.hero__proof span {
+  display: block;
+}
+
+.hero__proof strong {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.hero__proof span {
+  color: var(--color-text-soft);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.hero__portrait {
+  width: min(100%, 21.25rem);
+  margin: 0;
+  justify-self: end;
+}
+
+.hero__portrait-media {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-sunk);
+}
+
+.hero__portrait-media img {
+  object-fit: cover;
+  object-position: center 18%;
+}
+
+.hero__portrait figcaption {
+  display: grid;
+  gap: 0.2rem;
+  padding: 0.9rem 0 0;
+  border-top: 0;
+}
+
+.hero__portrait figcaption span {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.hero__portrait figcaption strong {
+  color: var(--color-text-soft);
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+/* The choice band is the commercial continuation of the hero, not a detached section. */
+.home-page .journey-experience {
+  background: var(--color-bg);
+}
+
+.home-page .intent-gateway {
+  padding: clamp(2.75rem, 5vw, 4.25rem) 0;
+  background: var(--color-action);
+  color: var(--color-text-on-fill);
+}
+
+.home-page .intent-gateway > .container {
+  display: grid;
+  gap: 2rem;
+}
+
+.home-page .intent-gateway__heading {
+  max-width: 24rem;
+}
+
+.home-page .intent-gateway__heading .eyebrow {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.home-page .intent-gateway__heading h2 {
+  max-width: 8ch;
+  margin: 0;
+  color: var(--color-text-on-fill);
+  font-size: clamp(2.5rem, 4.3vw, 4.25rem);
+  line-height: 0.98;
+}
+
+.home-page .intent-gateway__grid {
+  display: grid;
+  gap: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.home-page .intent-card {
+  min-height: 9.5rem;
+  padding: 1.35rem;
+  border: 0;
+  border-top: 4px solid var(--color-action);
+  border-radius: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  box-shadow: none;
+  transform: none;
+}
+
+.home-page .intent-card:first-child {
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+}
+
+.home-page .intent-card:last-child {
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.home-page .intent-card--pain {
+  border-top-color: var(--color-urgent);
+}
+
+.home-page .intent-card--aesthetic {
+  border-top-color: #9a7650;
+}
+
+.home-page .intent-card--wellness {
+  border-top-color: var(--color-action);
+}
+
+.home-page .intent-card:hover,
+.home-page .intent-card--active {
+  background: var(--color-surface);
+  box-shadow: inset 0 0 0 3px var(--color-action);
+  transform: none;
+}
+
+.home-page .intent-card--pain.intent-card--active {
+  box-shadow: inset 0 0 0 3px var(--color-urgent);
+}
+
+.home-page .intent-card__number {
+  color: var(--color-action);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+}
+
+.home-page .intent-card--pain .intent-card__number {
+  color: var(--color-urgent);
+}
+
+.home-page .intent-card__copy strong {
+  font-size: clamp(1.12rem, 1.5vw, 1.32rem);
+}
+
+.home-page .intent-card__copy small {
+  margin-top: 0.45rem;
+  color: var(--color-text-soft);
+  line-height: 1.45;
+}
+
+.home-page .conversion-journey {
+  background: var(--color-bg);
+}
+
+.home-page .conversion-journey--active {
+  padding: clamp(2.5rem, 5vw, 4.5rem) 0;
+}
+
+.home-page .conversion-journey__prompt {
+  padding: 1.1rem 0;
+  margin: 0;
+  color: var(--color-text-soft);
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+.home-page .section {
+  padding-top: clamp(4.5rem, 8vw, 7rem);
+  padding-bottom: clamp(4.5rem, 8vw, 7rem);
+}
+
+@media (min-width: 720px) {
+  .hero__stage {
+    grid-template-columns: minmax(0, 1.45fr) minmax(15rem, 0.55fr);
+    gap: clamp(3rem, 8vw, 8rem);
+  }
+
+  .home-page .intent-gateway > .container {
+    grid-template-columns: minmax(15rem, 0.58fr) minmax(0, 1.42fr);
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: end;
+  }
+
+  .home-page .intent-gateway__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .hero h1 {
+    font-size: clamp(5.2rem, 6.4vw, 6.4rem);
+  }
+}
+
+@media (max-width: 719px) {
+  .hero {
+    padding: 2.25rem 0 2rem;
+  }
+
+  .hero__stage {
+    gap: 1.25rem;
+  }
+
+  .hero h1 {
+    max-width: none;
+    font-size: clamp(3.05rem, 13vw, 3.55rem);
+    line-height: 0.94;
+  }
+
+  .hero__lead {
+    display: block;
+    margin-top: 1.15rem;
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .hero__primary-link {
+    width: 100%;
+    margin-top: 1.35rem;
+  }
+
+  .hero__proof {
+    margin-top: 1.5rem;
+  }
+
+  .hero__proof > div {
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+  }
+
+  .hero__portrait {
+    display: grid;
+    grid-template-columns: 7.25rem minmax(0, 1fr);
+    gap: 1rem;
+    width: 100%;
+    align-items: end;
+    justify-self: stretch;
+  }
+
+  .hero__portrait-media {
+    aspect-ratio: 4 / 5;
+  }
+
+  .hero__portrait figcaption {
+    padding: 0 0 0.9rem;
+    border-bottom: 1px solid var(--color-border-strong);
+  }
+
+  .site-header--home .site-header__inner {
+    min-height: 56px;
+  }
+
+  .home-page .intent-gateway {
+    padding: 2.75rem 0 2.5rem;
+  }
+
+  .home-page .intent-gateway__heading h2 {
+    max-width: none;
+    font-size: 2.75rem;
+  }
+
+  .home-page .intent-card {
+    min-height: 7.75rem;
+    border-top-width: 3px;
+  }
+
+  .home-page .intent-card:first-child,
+  .home-page .intent-card:last-child {
+    border-radius: 0;
+  }
+}

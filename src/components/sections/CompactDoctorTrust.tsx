@@ -22,9 +22,9 @@ export function CompactDoctorTrust() {
     <section className="section compact-trust" id="doctora">
       <div className="container compact-trust__inner">
         <div data-reveal>
-          <p className="eyebrow">Confianza en segundos</p>
-          <h2>Un equipo cercano en Carepa</h2>
-          <p>Valoración profesional y opciones explicadas con claridad.</p>
+          <p className="eyebrow">Quién te orienta</p>
+          <h2>Personas reales, atención cercana.</h2>
+          <p>Tu caso se valora antes de recomendar un tratamiento.</p>
         </div>
 
         <div className="compact-trust__panel" data-reveal>

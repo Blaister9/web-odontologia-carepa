@@ -15,7 +15,11 @@ const navItems = [
   { label: "Equipo", href: "/equipo" }
 ];
 
-export function Header() {
+type HeaderProps = {
+  homeMode?: boolean;
+};
+
+export function Header({ homeMode = false }: HeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
@@ -39,7 +43,7 @@ export function Header() {
   }, [isOpen]);
 
   return (
-    <header className="site-header">
+    <header className={`site-header${homeMode ? " site-header--home" : ""}`}>
       <div className="container site-header__inner">
         <Link className="site-header__brand" href="/" aria-label="Ir al inicio">
           <span className="site-header__mark" aria-hidden="true">
