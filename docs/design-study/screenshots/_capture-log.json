@@ -1,0 +1,822 @@
+[
+  {
+    "vp": "360x800",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 6007,
+    "docHeight": 6353,
+    "screens": 7.94,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=750&q=75",
+        "w": 360,
+        "h": 247,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=750&q=75",
+        "w": 360,
+        "h": 260,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=750&q=75",
+        "w": 360,
+        "h": 260,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=750&q=75",
+        "w": 360,
+        "h": 260,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=750&q=75",
+        "w": 360,
+        "h": 260,
+        "alt": ""
+      },
+      {
+        "src": "",
+        "w": 0,
+        "h": 0,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 5060,
+    "docHeight": 6070,
+    "screens": 7.19,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 268,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "",
+        "w": 0,
+        "h": 0,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "consultorio",
+    "url": "/consultorio",
+    "status": 200,
+    "ms": 4317,
+    "docHeight": 3593,
+    "screens": 4.26,
+    "h1": "Más que cuidar dientes, creamos sonrisas con confianza.",
+    "h2count": 2,
+    "sections": 3,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "equipo",
+    "url": "/equipo",
+    "status": 200,
+    "ms": 4101,
+    "docHeight": 3805,
+    "screens": 4.51,
+    "h1": "Un equipo para orientar tu atención odontológica con claridad.",
+    "h2count": 5,
+    "sections": 2,
+    "waLinks": 7,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 476,
+        "alt": "Imagen referencial del equipo: Dra. Nataly Jiménez"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 476,
+        "alt": "Imagen referencial del equipo: Dra. Clara Parra"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 476,
+        "alt": "Imagen referencial del equipo: Dr. Adalberto Atencia"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 476,
+        "alt": "Imagen referencial del equipo: Vanesa López"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "servicios",
+    "url": "/servicios",
+    "status": 200,
+    "ms": 5150,
+    "docHeight": 9782,
+    "screens": 11.59,
+    "h1": "Catálogo de atención odontológica en Carepa.",
+    "h2count": 9,
+    "sections": 2,
+    "waLinks": 42,
+    "buttons": 1,
+    "imgs": [],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "svc-limpieza",
+    "url": "/servicios/limpieza-dental-carepa",
+    "status": 200,
+    "ms": 4712,
+    "docHeight": 5525,
+    "screens": 6.55,
+    "h1": "Limpieza dental en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": "Imagen referencial de limpieza dental en consultorio odontológico"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "svc-ortodoncia",
+    "url": "/servicios/ortodoncia-carepa",
+    "status": 200,
+    "ms": 4754,
+    "docHeight": 5495,
+    "screens": 6.51,
+    "h1": "Ortodoncia en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fortodoncia.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": "Imagen referencial de ortodoncia"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "svc-sonrisa",
+    "url": "/servicios/diseno-de-sonrisa-carepa",
+    "status": 200,
+    "ms": 4670,
+    "docHeight": 5472,
+    "screens": 6.48,
+    "h1": "Diseño de sonrisa en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": "Imagen referencial de diseño de sonrisa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "svc-urgencias",
+    "url": "/servicios/urgencias-odontologicas-carepa",
+    "status": 200,
+    "ms": 4725,
+    "docHeight": 5487,
+    "screens": 6.5,
+    "h1": "Urgencias odontológicas en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": "Imagen referencial de urgencias odontológicas"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "390x844",
+    "page": "campana-uraba",
+    "url": "/c/uraba",
+    "status": 200,
+    "ms": 5252,
+    "docHeight": 6983,
+    "screens": 8.27,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 9,
+    "sections": 9,
+    "waLinks": 14,
+    "buttons": 11,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=828&q=75",
+        "w": 390,
+        "h": 268,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=828&q=75",
+        "w": 390,
+        "h": 281,
+        "alt": ""
+      },
+      {
+        "src": "",
+        "w": 0,
+        "h": 0,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "414x896",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 5009,
+    "docHeight": 6074,
+    "screens": 6.78,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=828&q=75",
+        "w": 414,
+        "h": 284,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=828&q=75",
+        "w": 414,
+        "h": 299,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=828&q=75",
+        "w": 414,
+        "h": 299,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=828&q=75",
+        "w": 414,
+        "h": 299,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=828&q=75",
+        "w": 414,
+        "h": 299,
+        "alt": ""
+      },
+      {
+        "src": "",
+        "w": 0,
+        "h": 0,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "36px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "768x1024",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 5937,
+    "docHeight": 5453,
+    "screens": 5.33,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=1920&q=75",
+        "w": 640,
+        "h": 440,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=828&q=75",
+        "w": 384,
+        "h": 277,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=828&q=75",
+        "w": 384,
+        "h": 277,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=828&q=75",
+        "w": 384,
+        "h": 277,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=828&q=75",
+        "w": 384,
+        "h": 277,
+        "alt": ""
+      },
+      {
+        "src": "",
+        "w": 0,
+        "h": 0,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "52.8px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1366x768",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 4821,
+    "docHeight": 4261,
+    "screens": 5.55,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=750&q=75",
+        "w": 655,
+        "h": 451,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=384&q=75",
+        "w": 341,
+        "h": 246,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=384&q=75",
+        "w": 341,
+        "h": 246,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=384&q=75",
+        "w": 341,
+        "h": 246,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=384&q=75",
+        "w": 341,
+        "h": 246,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=96&q=75",
+        "w": 96,
+        "h": 117,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "home",
+    "url": "/",
+    "status": 200,
+    "ms": 4767,
+    "docHeight": 4261,
+    "screens": 4.73,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 7,
+    "sections": 8,
+    "waLinks": 14,
+    "buttons": 4,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=750&q=75",
+        "w": 691,
+        "h": 475,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=96&q=75",
+        "w": 96,
+        "h": 117,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "consultorio",
+    "url": "/consultorio",
+    "status": 304,
+    "ms": 3980,
+    "docHeight": 2289,
+    "screens": 2.54,
+    "h1": "Más que cuidar dientes, creamos sonrisas con confianza.",
+    "h2count": 2,
+    "sections": 3,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "equipo",
+    "url": "/equipo",
+    "status": 304,
+    "ms": 3718,
+    "docHeight": 1938,
+    "screens": 2.15,
+    "h1": "Un equipo para orientar tu atención odontológica con claridad.",
+    "h2count": 5,
+    "sections": 2,
+    "waLinks": 7,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=384&q=75",
+        "w": 359,
+        "h": 439,
+        "alt": "Imagen referencial del equipo: Dra. Nataly Jiménez"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=384&q=75",
+        "w": 359,
+        "h": 439,
+        "alt": "Imagen referencial del equipo: Dra. Clara Parra"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=384&q=75",
+        "w": 359,
+        "h": 439,
+        "alt": "Imagen referencial del equipo: Dr. Adalberto Atencia"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=384&q=75",
+        "w": 359,
+        "h": 439,
+        "alt": "Imagen referencial del equipo: Vanesa López"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "servicios",
+    "url": "/servicios",
+    "status": 304,
+    "ms": 4283,
+    "docHeight": 6213,
+    "screens": 6.9,
+    "h1": "Catálogo de atención odontológica en Carepa.",
+    "h2count": 9,
+    "sections": 2,
+    "waLinks": 42,
+    "buttons": 1,
+    "imgs": [],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "svc-limpieza",
+    "url": "/servicios/limpieza-dental-carepa",
+    "status": 304,
+    "ms": 4140,
+    "docHeight": 3306,
+    "screens": 3.67,
+    "h1": "Limpieza dental en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=640&q=75",
+        "w": 633,
+        "h": 457,
+        "alt": "Imagen referencial de limpieza dental en consultorio odontológico"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "svc-ortodoncia",
+    "url": "/servicios/ortodoncia-carepa",
+    "status": 304,
+    "ms": 4161,
+    "docHeight": 3274,
+    "screens": 3.64,
+    "h1": "Ortodoncia en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fortodoncia.png&w=640&q=75",
+        "w": 633,
+        "h": 457,
+        "alt": "Imagen referencial de ortodoncia"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "svc-sonrisa",
+    "url": "/servicios/diseno-de-sonrisa-carepa",
+    "status": 304,
+    "ms": 4187,
+    "docHeight": 3273,
+    "screens": 3.64,
+    "h1": "Diseño de sonrisa en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=640&q=75",
+        "w": 633,
+        "h": 457,
+        "alt": "Imagen referencial de diseño de sonrisa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "svc-urgencias",
+    "url": "/servicios/urgencias-odontologicas-carepa",
+    "status": 304,
+    "ms": 4161,
+    "docHeight": 3350,
+    "screens": 3.72,
+    "h1": "Urgencias odontológicas en Carepa",
+    "h2count": 6,
+    "sections": 6,
+    "waLinks": 8,
+    "buttons": 1,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=640&q=75",
+        "w": 633,
+        "h": 457,
+        "alt": "Imagen referencial de urgencias odontológicas"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  },
+  {
+    "vp": "1440x900",
+    "page": "campana-uraba",
+    "url": "/c/uraba",
+    "status": 200,
+    "ms": 4960,
+    "docHeight": 4819,
+    "screens": 5.35,
+    "h1": "Tu sonrisa empieza por elegir bien",
+    "h2count": 9,
+    "sections": 9,
+    "waLinks": 14,
+    "buttons": 11,
+    "imgs": [
+      {
+        "src": "image?url=%2Fimages%2Fhero%2Fconsultorio-odontologico-carepa.png&w=750&q=75",
+        "w": 691,
+        "h": 475,
+        "alt": "Consultorio odontológico moderno en Carepa"
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Flimpieza-dental.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fblanqueamiento-dental.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Fdiseno-sonrisa.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fservicios%2Furgencias-odontologicas.png&w=384&q=75",
+        "w": 359,
+        "h": 259,
+        "alt": ""
+      },
+      {
+        "src": "image?url=%2Fimages%2Fequipo%2Fodontologia-profesional-carepa.png&w=96&q=75",
+        "w": 96,
+        "h": 117,
+        "alt": "Dra. Nataly Jiménez, odontóloga en Carepa"
+      }
+    ],
+    "fontFamily": "Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+    "h1Size": "64px",
+    "h1Weight": "850",
+    "bodySize": "16px"
+  }
+]

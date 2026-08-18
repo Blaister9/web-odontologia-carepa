@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moodboard C · Noche Suave</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  :root{
+    --bg:#1A1714; --surface:#241F1B; --ink:#F2EDE6; --soft:#B3A697;
+    --gold:#D9A25E; --clay:#C97B6E; --line:#3A322B;
+    --display:"Didot","Bodoni MT","Playfair Display",Georgia,"Times New Roman",serif;
+  }
+  body{background:var(--bg);color:var(--ink)}
+  .mb-head{border-color:var(--line)}
+  .mb-head h1{font-family:var(--display);font-weight:500;letter-spacing:-.01em}
+  .spec{border-color:var(--line)}
+  .disp{font-family:var(--display);font-weight:500;line-height:1.05;margin:0}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:54px;padding:0 28px;border-radius:999px;font-weight:600;font-size:1rem}
+  .btn--p{background:var(--gold);color:#1A1714}
+  .btn--s{border:1px solid rgba(242,237,230,.3);color:var(--ink)}
+  .btn--u{background:var(--clay);color:#1A1714}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mb-head">
+    <div>
+      <p class="kicker">Moodboard · Dirección C</p>
+      <h1>Noche Suave</h1>
+    </div>
+    <p class="tag">La consulta como un lugar<br>al que apetece entrar.</p>
+  </header>
+
+  <section>
+    <h2 class="sec">Paleta · carbón cálido, no negro</h2>
+    <div class="grid g6">
+      <div class="sw" style="background:#1A1714;border:1px solid var(--line);color:var(--ink)"><b>bg</b><span>#1A1714</span><span class="ratio">carbón cálido</span></div>
+      <div class="sw" style="background:#241F1B;border:1px solid var(--line);color:var(--ink)"><b>surface</b><span>#241F1B</span><span class="ratio">tarjetas</span></div>
+      <div class="sw" style="background:#F2EDE6;color:#1A1714"><b>ink</b><span>#F2EDE6</span><span class="ratio">15,33 : 1</span></div>
+      <div class="sw" style="background:#B3A697;color:#1A1714"><b>text-soft</b><span>#B3A697</span><span class="ratio">7,49 : 1</span></div>
+      <div class="sw" style="background:#D9A25E;color:#1A1714"><b>gold</b><span>#D9A25E</span><span class="ratio">7,89 : 1</span></div>
+      <div class="sw" style="background:#C97B6E;color:#1A1714"><b>clay</b><span>#C97B6E</span><span class="ratio">5,56 : 1</span></div>
+    </div>
+    <p class="note" style="color:var(--soft)"><strong>Deliberadamente no es negro y oro.</strong>
+    Ese par está saturado en Medellín (Smile Natural, Be Dharma, Ortoclin). La diferencia
+    entre <code>#000000 + #D4AF37</code> y <code>#1A1714 + #D9A25E + #C97B6E</code> es la
+    diferencia entre lujo de plantilla y penumbra habitada.</p>
+    <p class="note" style="color:var(--clay)"><strong>Regla blindada en el token:</strong> sobre el
+    ámbar, el texto es carbón (7,89 : 1). Blanco sobre ámbar da 2,26 : 1 y falla. Es el
+    error clásico de las paletas oro.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Tipografía · display de alto contraste</h2>
+    <div class="spec">
+      <p class="lbl" style="color:var(--soft)">Display serif — Playfair Display / Prata / Bodoni Moda</p>
+      <p class="disp" style="font-size:clamp(2.6rem,1.7rem + 3.8vw,4.5rem)">Cuidar<br>sin prisa</p>
+    </div>
+    <div class="spec">
+      <p class="lbl" style="color:var(--soft)">Cuerpo · grotesca ligera 400</p>
+      <p style="margin:0;font-size:1.06rem;max-width:66ch;color:var(--soft)">Cada valoración empieza
+      escuchando. Te explicamos qué vemos, qué opciones hay y qué pasaría si no haces nada.</p>
+    </div>
+    <div class="spec">
+      <p class="lbl" style="color:var(--soft)">Etiqueta · versalitas · letter-spacing .12em</p>
+      <p style="margin:0;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)">Carepa · Urabá · Antioquia</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Materia · penumbra y luz lateral</h2>
+    <div class="grid g3">
+      <div class="tex" style="background:linear-gradient(150deg,#2C251F,#161311);color:var(--soft);border:1px solid var(--line)">Penumbra cálida</div>
+      <div class="tex" style="background:linear-gradient(150deg,#D9A25E,#A8763D);color:#1A1714">Ámbar apagado</div>
+      <div class="tex" style="background:linear-gradient(150deg,#C97B6E,#9C594E);color:#1A1714">Rosa arcilla</div>
+      <div class="tex" style="background:linear-gradient(100deg,#241F1B 0%,#3A322B 60%,#241F1B 100%);color:var(--soft)">Luz rasante sobre pared</div>
+      <div class="tex" style="background:linear-gradient(180deg,rgba(26,23,20,0) 40%,rgba(26,23,20,.92) 100%),linear-gradient(150deg,#4A403A,#241F1B);color:var(--ink);align-items:flex-end">Velo fotográfico · solo tercio inferior</div>
+      <div class="tex" style="background:#241F1B;border:1px solid var(--gold);color:var(--gold)">Filete ámbar · hover</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Interfaz</h2>
+    <div class="ui-row" style="margin-bottom:24px">
+      <a class="btn btn--p">Escribir por WhatsApp</a>
+      <a class="btn btn--s">Ver tratamientos</a>
+      <a class="btn btn--u">Tengo dolor ahora</a>
+    </div>
+    <div class="grid g3">
+      <div class="card"><p style="margin:0 0 12px;font-family:var(--display);font-size:2rem;color:var(--gold);line-height:1">01</p><p class="disp" style="font-size:1.3rem;margin:0 0 8px">Diseño de sonrisa</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Valoración estética antes de cualquier plan.</p></div>
+      <div class="card"><p style="margin:0 0 12px;font-family:var(--display);font-size:2rem;color:var(--gold);line-height:1">02</p><p class="disp" style="font-size:1.3rem;margin:0 0 8px">Blanqueamiento</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Opciones responsables según tu salud oral.</p></div>
+      <div class="card"><p style="margin:0 0 12px;font-family:var(--display);font-size:2rem;color:var(--gold);line-height:1">03</p><p class="disp" style="font-size:1.3rem;margin:0 0 8px">Resinas estéticas</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Forma, función y apariencia.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="sec">Fotografía · el punto crítico</h2>
+    <div class="grid g4">
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#4A403A,#1F1A17);color:var(--soft)">Retrato<br>luz lateral suave</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#403631,#1C1815);color:var(--soft)">Espacio<br>en penumbra</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#514540,#221D19);color:var(--soft)">Detalle<br>fondo desenfocado</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#3A312C,#191512);color:var(--soft)">Manos<br>gesto cuidadoso</div>
+    </div>
+    <p class="note" style="color:var(--clay)"><strong>Advertencia.</strong> Con las fotografías
+    actuales —recortes de material de redes— esta dirección se vería <em>peor</em> que la web de
+    hoy. Un fondo oscuro es implacable con la fotografía mediocre. Requiere producir las tomas
+    P-2, P-3 y P-4 antes de implementarla.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Por qué se descarta</h2>
+    <p class="note" style="color:var(--soft);max-width:70ch">Tiene el mayor techo estético del
+    estudio y el mayor riesgo, por dos motivos independientes: <strong>(1)</strong> depende de
+    fotografía que no existe; <strong>(2)</strong> un lenguaje visual de lujo comunica precio
+    alto, y en un consultorio local donde el freno declarado nº 1 es el coste, eso trabaja en
+    contra del segmento de urgencia, que es el más frecuente.</p>
+    <p class="note" style="color:var(--soft);max-width:70ch;margin-top:16px">Queda archivada como
+    posible lenguaje para campañas de estética, no como dirección de sitio. Ver
+    <code>priority-matrix.md</code> · P3-4.</p>
+  </section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,1064 @@
+[
+ {
+  "group": "A",
+  "slug": "vitaldent-apartado",
+  "url": "https://www.holavitaldent.com/",
+  "place": "Apartadó, Urabá (CO)",
+  "title": "Inicio | VitalDent - Odontología Especializada | Apartadó",
+  "h1": "Dra. Lida Martín García",
+  "h1Size": "22px",
+  "h1Weight": "400",
+  "h1Transform": "none",
+  "fonts": [
+   "Arial, Helvetica, sans-serif",
+   "\"Times New Roman\"",
+   "assistant-semibold, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(191, 227, 246)",
+   "rgb(228, 237, 128)",
+   "rgb(250, 250, 250)",
+   "rgb(221, 221, 221)",
+   "rgb(240, 246, 171)"
+  ],
+  "bigImages": 4,
+  "videos": 0,
+  "radiusSample": [
+   "24px",
+   "100px",
+   "50%"
+  ],
+  "ctas": [
+   "Agenda tu Cita",
+   "Agenda tu Cita",
+   "Agenda tu Cita",
+   "Agenda tu Cita"
+  ],
+  "navItems": 21,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 5817
+ },
+ {
+  "group": "A",
+  "slug": "ortoclinicas-uraba",
+  "url": "https://ortoclinicasdeuraba.com/",
+  "place": "Urabá (CO)",
+  "title": "Ortoclínicas de Urabá | Especialistas en Ortodoncia",
+  "h1": "Ortoclínicas de Urabá",
+  "h1Size": "56px",
+  "h1Weight": "800",
+  "h1Transform": "none",
+  "fonts": [
+   "Inter, sans-serif",
+   "Montserrat, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(235, 244, 250)",
+   "rgb(255, 255, 255)",
+   "rgba(107, 192, 72, 0.2)",
+   "rgb(245, 247, 250)",
+   "rgb(31, 95, 139)",
+   "rgb(235, 247, 227)"
+  ],
+  "bigImages": 9,
+  "videos": 0,
+  "radiusSample": [
+   "50px",
+   "8px",
+   "12px",
+   "50%",
+   "5px"
+  ],
+  "ctas": [
+   "Contacto",
+   "Agendar cita",
+   "📍 Contacto",
+   "📅 Agendar cita"
+  ],
+  "navItems": 12,
+  "hasReviews": true,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 6572
+ },
+ {
+  "group": "A",
+  "slug": "ortoclin-medellin",
+  "url": "https://ortoclin.co/",
+  "place": "Medellín (CO)",
+  "title": "Ortoclin | Diseño de sonrisa y ortodoncia especializada Medellín",
+  "h1": "",
+  "h1Size": "40px",
+  "h1Weight": "600",
+  "h1Transform": "none",
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "\"Bebas Neue\", sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgba(175, 149, 143, 0)",
+   "rgba(39, 39, 39, 0.36)",
+   "rgb(255, 255, 255)",
+   "rgb(54, 54, 54)",
+   "rgba(29, 29, 29, 0.27)",
+   "rgba(29, 29, 29, 0.93)"
+  ],
+  "bigImages": 25,
+  "videos": 0,
+  "radiusSample": [
+   "3px",
+   "100px",
+   "1px",
+   "50px"
+  ],
+  "ctas": [
+   "CONTACTO",
+   "Contacto",
+   "AGENDA TU CITA",
+   "Contacto"
+  ],
+  "navItems": 36,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": false,
+  "docHeight": 11453
+ },
+ {
+  "group": "A",
+  "slug": "bocasyrisas-medellin",
+  "url": "https://bocasyrisas.com/",
+  "place": "Medellín (CO)",
+  "title": "Clínica Dental en Medellín | 30 Años | Bocas y Risas",
+  "h1": "Clínica Dental en Medellín: devolvemos el encanto a tu sonrisa",
+  "h1Size": "50.4px",
+  "h1Weight": "800",
+  "h1Transform": "none",
+  "fonts": [
+   "Outfit, sans-serif",
+   "\"Times New Roman\"",
+   "Arial"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(0, 229, 255)",
+   "rgb(10, 25, 47)",
+   "rgb(240, 253, 255)",
+   "rgba(0, 0, 0, 0.55)",
+   "rgba(10, 25, 47, 0.85)"
+  ],
+  "bigImages": 22,
+  "videos": 1,
+  "radiusSample": [
+   "0px 0px 10px 10px",
+   "2px",
+   "12px",
+   "50px",
+   "20px",
+   "14px"
+  ],
+  "ctas": [
+   "CONTACTO",
+   "AGENDAR CITA DE VALORACIÓN",
+   "Contacto y Ubicación",
+   "Agendar Cita"
+  ],
+  "navItems": 22,
+  "hasReviews": true,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 5650
+ },
+ {
+  "group": "A",
+  "slug": "smilenatural-medellin",
+  "url": "https://smilenaturalstudio.com/",
+  "place": "Medellín (CO)",
+  "title": "Clínica Odontológica en Medellín | Smile Natural Studio",
+  "h1": "Inicio",
+  "h1Size": "40px",
+  "h1Weight": "500",
+  "h1Transform": "none",
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "Jost, sans-serif",
+   "arial"
+  ],
+  "palette": [
+   "rgb(0, 0, 0)",
+   "rgb(19, 18, 14)",
+   "rgba(201, 169, 110, 0.18)",
+   "rgba(201, 169, 110, 0.35)",
+   "rgb(255, 255, 255)",
+   "rgb(8, 8, 7)"
+  ],
+  "bigImages": 8,
+  "videos": 0,
+  "radiusSample": [
+   "2px",
+   "25px",
+   "12px",
+   "3px"
+  ],
+  "ctas": [
+   "Contacto",
+   "Contacto",
+   "QUIERO AGENDAR",
+   "QUIERO AGENDAR MI CITA"
+  ],
+  "navItems": 27,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": false,
+  "docHeight": 11082
+ },
+ {
+  "group": "A",
+  "slug": "bedharma-medellin",
+  "url": "https://clinicabedharma.com/",
+  "place": "Medellín (CO)",
+  "title": "Centro de Estética en Medellín | Be Dharma",
+  "h1": "",
+  "h1Size": "48px",
+  "h1Weight": "400",
+  "h1Transform": "none",
+  "fonts": [
+   "Lato, sans-serif",
+   "Roboto, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(0, 0, 0)",
+   "rgb(255, 255, 255)",
+   "rgb(239, 239, 239)",
+   "rgb(234, 234, 235)",
+   "rgba(2, 1, 1, 0)",
+   "rgb(124, 124, 124)"
+  ],
+  "bigImages": 27,
+  "videos": 0,
+  "radiusSample": [
+   "4px",
+   "3px",
+   "50px",
+   "10px",
+   "50%"
+  ],
+  "ctas": [
+   "Agendar Cita",
+   "Agendar Cita",
+   "Agendar Cita",
+   "DESEO AGENDAR UNA CITA EN BE DHARMA"
+  ],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 12003
+ },
+ {
+  "group": "A",
+  "slug": "dentioral-medellin",
+  "url": "https://dentioral.com/",
+  "place": "Medellín (CO)",
+  "title": "Implantes Dentales y Diseño de Sonrisa en Medellín",
+  "h1": "TRATAMIENTOS ODONTOLÓGICOS EN MEDELLÍN",
+  "h1Size": "40px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "\"Open Sans\", sans-serif",
+   "\"Times New Roman\"",
+   "Montserrat, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(136, 186, 219)",
+   "rgb(136, 185, 218)",
+   "rgb(180, 191, 91)"
+  ],
+  "bigImages": 1,
+  "videos": 0,
+  "radiusSample": [
+   "50%",
+   "24px",
+   "4px",
+   "8px 8px 0px 0px",
+   "0px 0px 8px 8px",
+   "8px"
+  ],
+  "ctas": [
+   "Solicitar información"
+  ],
+  "navItems": 31,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 4925
+ },
+ {
+  "group": "A",
+  "slug": "clinodont-antioquia",
+  "url": "http://www.clinicaodontologicadeantioquia.com.co/",
+  "place": "Antioquia (CO)",
+  "error": "desktop:net::ERR_NAME_NOT_RESOLVED at http://www.clinicaod mobile:net::ERR_NAME_NOT_RESOLVED at http://www.clinicaod "
+ },
+ {
+  "group": "B",
+  "slug": "1485-dentalspa-bogota",
+  "url": "https://1485dentalspa.com/",
+  "place": "Bogotá (CO)",
+  "title": "Clínica Odontológica 14-85 Dental Spa en Bogotá | Implantes dentales",
+  "h1": "BIENVENIDO A 14-85 DENTAL SPA CLÍNICA ODONTOLÓGICA EN BOGOTÁ EXPERTOS EN IMPLANTES DENTALES Y REHABILITACIÓN ORAL",
+  "h1Size": "30px",
+  "h1Weight": "700",
+  "h1Transform": "uppercase",
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "\"Open Sans\"",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(25, 136, 130)",
+   "rgb(255, 255, 255)",
+   "rgba(255, 255, 255, 0.16)",
+   "rgba(240, 255, 255, 0)",
+   "rgb(0, 186, 185)",
+   "rgb(224, 232, 235)"
+  ],
+  "bigImages": 5,
+  "videos": 0,
+  "radiusSample": [
+   "2px",
+   "10%",
+   "6px",
+   "3px",
+   "5px"
+  ],
+  "ctas": [
+   "contacto@1485dentalspa.com",
+   "Facebook-f",
+   "Contacto",
+   "Contacto"
+  ],
+  "navItems": 162,
+  "hasReviews": false,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": true,
+  "hasPrices": false,
+  "docHeight": 13056
+ },
+ {
+  "group": "B",
+  "slug": "elite-dental-cali",
+  "url": "https://clinicaelitedental.com.co/",
+  "place": "Cali/Bogotá (CO)",
+  "title": "Clínicas Élite Dental | Odontología sin dolor en Cali y Bogotá",
+  "h1": "",
+  "h1Size": null,
+  "h1Weight": null,
+  "h1Transform": null,
+  "fonts": [
+   "Roboto, \"Helvetica Neue\", Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+   "Roboto",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(219, 219, 219)",
+   "rgb(0, 0, 0)",
+   "rgb(250, 250, 250)",
+   "rgba(1, 24, 88, 0.91)",
+   "rgb(255, 255, 255)",
+   "rgb(6, 45, 151)"
+  ],
+  "bigImages": 15,
+  "videos": 1,
+  "radiusSample": [],
+  "ctas": [
+   "Agenda tu Cita hoyy Vive la Experiencia ",
+   "Contactar",
+   "Agenda tu Cita hoyy Vive la Experiencia ",
+   "Contactar"
+  ],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 6831
+ },
+ {
+  "group": "B",
+  "slug": "sara-restrepo-cali",
+  "url": "https://www.drasararestrepos.com/",
+  "place": "Cali (CO)",
+  "error": "desktop:Navigation timeout of 35000 ms exceeded "
+ },
+ {
+  "group": "B",
+  "slug": "laclinicadental-cdmx",
+  "url": "https://laclinicadental.org/",
+  "place": "CDMX (MX)",
+  "title": "Implantes Dentales en Ciudad de México - La Clínica Dental (CDMX) | Red Dental Premium",
+  "h1": "La Clínica Dental – Red Dental Premium: Tratamientos Dentales Integrales",
+  "h1Size": "72px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "Inter, sans-serif",
+   "\"Times New Roman\"",
+   "sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(225, 245, 249)",
+   "rgb(233, 248, 252)",
+   "rgb(239, 246, 252)",
+   "rgb(222, 224, 247)",
+   "rgb(239, 246, 255)"
+  ],
+  "bigImages": 48,
+  "videos": 0,
+  "radiusSample": [
+   "4px",
+   "16px",
+   "8px",
+   "14px",
+   "13px",
+   "50%"
+  ],
+  "ctas": [
+   "¡Agenda tu cita ya!",
+   "Cita con especialista",
+   "Inscríbete para una consulta",
+   "contacto@laclinicadental.org"
+  ],
+  "navItems": 50,
+  "hasReviews": true,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 14499
+ },
+ {
+  "group": "B",
+  "slug": "laclinica-polanco",
+  "url": "https://laclinicapolanco.dental/",
+  "place": "CDMX Polanco (MX)",
+  "title": "Implantes Dentales en Polanco, CDMX | La Clínica Dental (Polanco) | Red Dental Premium",
+  "h1": "La Clínica Dental Polanco: Tu Sonrisa en Buenas Manos",
+  "h1Size": "30px",
+  "h1Weight": "400",
+  "h1Transform": "none",
+  "fonts": [
+   "Montserrat",
+   "sans-serif",
+   "Orionicon"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(0, 188, 212)",
+   "rgba(0, 0, 0, 0.2)",
+   "rgb(248, 248, 248)",
+   "rgb(133, 30, 152)",
+   "rgb(43, 53, 75)"
+  ],
+  "bigImages": 33,
+  "videos": 0,
+  "radiusSample": [
+   "2px",
+   "100%",
+   "0px 0px 6.3px",
+   "4px",
+   "4px 4px 0px 0px",
+   "0px 0px 4px 4px"
+  ],
+  "ctas": [
+   "SOLICITAR UNA CITA",
+   "Facebook",
+   "SOLICITAR UNA CITA",
+   "contacto@laclinicapolanco.dental"
+  ],
+  "navItems": 0,
+  "hasReviews": true,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 6833
+ },
+ {
+  "group": "B",
+  "slug": "odontoestetic-co",
+  "url": "http://odontoestetic.com.co/",
+  "place": "Colombia",
+  "title": "Protección web de Bitdefender",
+  "h1": "Protección web de Bitdefender",
+  "h1Size": "36px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "Roboto, Arial, Helvetica, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "4px"
+  ],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ },
+ {
+  "group": "B",
+  "slug": "doctoralia-apartado",
+  "url": "https://www.doctoralia.co/odontologo/apartado",
+  "place": "Plataforma (CO)",
+  "title": "Los 20 Odontólogos más recomendados en Apartadó - Doctoralia",
+  "h1": "Odontólogos en Apartadó",
+  "h1Size": "18px",
+  "h1Weight": "600",
+  "h1Transform": "none",
+  "fonts": [
+   "system-ui, -apple-system, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+   "sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(0, 124, 104)",
+   "rgb(255, 246, 186)"
+  ],
+  "bigImages": 3,
+  "videos": 0,
+  "radiusSample": [
+   "999px",
+   "24px",
+   "0px 800px 800px 0px",
+   "8px",
+   "50%"
+  ],
+  "ctas": [
+   "Consulta en línea",
+   "Contacto"
+  ],
+  "navItems": 4,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": true,
+  "docHeight": 5020
+ },
+ {
+  "group": "B",
+  "slug": "topdoctors-bogota",
+  "url": "https://www.topdoctors.com.co/bogota-ciudad/clinica-dental/odontologia-y-ortodoncia/estetica-dental/",
+  "place": "Plataforma (CO)",
+  "title": "Estética Dental en Bogotá: clínicas. Agenda cita | Top Doctors",
+  "h1": "Clínicas odontológicas para Estética Dental en Bogotá",
+  "h1Size": "32px",
+  "h1Weight": "100",
+  "h1Transform": "none",
+  "fonts": [
+   "Roboto-615695cf70180ec5, \"Roboto-615695cf70180ec5 fallback: Arial\", sans-serif, sans-serif",
+   "td-font-icons-5ec5829378fc3e6d",
+   "Helvetica, Arial, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(244, 246, 247)",
+   "rgb(217, 217, 217)",
+   "rgb(9, 59, 91)",
+   "rgb(229, 245, 233)",
+   "rgb(230, 246, 253)"
+  ],
+  "bigImages": 15,
+  "videos": 0,
+  "radiusSample": [
+   "6px",
+   "50%",
+   "5px",
+   "0px 5px 5px 0px",
+   "3px",
+   "4px"
+  ],
+  "ctas": [
+   "Pide una cita",
+   "Prepagada Consulta Particular (sin Prepa",
+   "Reservar",
+   "Prepagada Consulta Particular (sin Prepa"
+  ],
+  "navItems": 7,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 3784
+ },
+ {
+  "group": "C",
+  "slug": "tend-nyc",
+  "url": "https://www.hellotend.com/site/home",
+  "place": "Nueva York (US)",
+  "title": "Attention Required! | Cloudflare",
+  "h1": "Sorry, you have been blocked",
+  "h1Size": "60px",
+  "h1Weight": "300",
+  "h1Transform": "none",
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(222, 80, 82)",
+   "rgb(235, 235, 235)"
+  ],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "2px",
+   "5px 5px 0px 0px"
+  ],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 1021
+ },
+ {
+  "group": "C",
+  "slug": "chelsea-dental-studio",
+  "url": "https://chelseadentalstudio.co.uk/",
+  "place": "Londres (UK)",
+  "title": "Chelsea Dental Studio — Dental Implants & Cosmetic Dentistry",
+  "h1": "Welcome to Chelsea Dental Studio",
+  "h1Size": "32px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "Raleway, ui-sans-serif, system-ui, -apple-system, \"Segoe UI\", sans-serif"
+  ],
+  "palette": [
+   "rgb(12, 47, 69)",
+   "rgba(241, 241, 241, 0.9)",
+   "rgb(231, 236, 235)",
+   "oklab(0.999994 0.0000455677 0.0000200868 / 0.7)",
+   "rgba(227, 230, 232, 0.9)",
+   "oklab(0.29216 -0.0276563 -0.0489332 / 0.25)"
+  ],
+  "bigImages": 7,
+  "videos": 0,
+  "radiusSample": [
+   "4px",
+   "1px"
+  ],
+  "ctas": [
+   "CONTACT",
+   "Contact",
+   "BOOK ONLINE",
+   "CONTACT US"
+  ],
+  "navItems": 86,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 3592
+ },
+ {
+  "group": "C",
+  "slug": "chelsea-dental-clinic",
+  "url": "https://www.chelseadentalclinic.co.uk/",
+  "place": "Londres (UK)",
+  "title": "Dentist in London - Chelsea Dental Clinic",
+  "h1": "Award Winning Dentist in London You Can Trust",
+  "h1Size": "30px",
+  "h1Weight": "500",
+  "h1Transform": "none",
+  "fonts": [
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "CenturyOld, sans-serif",
+   "NeueMontreal, sans-serif"
+  ],
+  "palette": [
+   "rgb(241, 236, 226)",
+   "rgb(89, 95, 55)"
+  ],
+  "bigImages": 24,
+  "videos": 0,
+  "radiusSample": [
+   "3px"
+  ],
+  "ctas": [
+   "Book An Appointment",
+   "Contact",
+   "Book An Appointment",
+   "Book an Appointment"
+  ],
+  "navItems": 57,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 5440
+ },
+ {
+  "group": "C",
+  "slug": "dental-clinic-chelsea",
+  "url": "https://www.dentalclinicchelsea.co.uk/",
+  "place": "Londres (UK)",
+  "title": "Dental Clinic Chelsea",
+  "h1": "WELCOME TO THE DENTAL CLINIC CHELSEA",
+  "h1Size": "50px",
+  "h1Weight": "500",
+  "h1Transform": "uppercase",
+  "fonts": [
+   "Poppins, sans-serif",
+   "Poppins",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(0, 128, 128)",
+   "rgb(132, 95, 77)",
+   "rgb(55, 60, 65)",
+   "rgb(244, 246, 243)",
+   "rgb(19, 15, 14)"
+  ],
+  "bigImages": 12,
+  "videos": 0,
+  "radiusSample": [
+   "6px",
+   "10px",
+   "8px",
+   "20px",
+   "5px",
+   "50px"
+  ],
+  "ctas": [
+   "Contact Us",
+   "Book a Consultation",
+   "Contact us",
+   "BOOK A CONSULTATION"
+  ],
+  "navItems": 80,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": true,
+  "docHeight": 5939
+ },
+ {
+  "group": "C",
+  "slug": "grind-dentistry",
+  "url": "https://grinddentistry.com/",
+  "place": "Los Ángeles (US)",
+  "error": "desktop:net::ERR_NAME_NOT_RESOLVED at https://grinddentist mobile:net::ERR_NAME_NOT_RESOLVED at https://grinddentist "
+ },
+ {
+  "group": "C",
+  "slug": "london-smile-clinic",
+  "url": "https://www.londonsmileclinic.co.uk/",
+  "place": "Londres (UK)",
+  "error": "desktop:net::ERR_SSL_PROTOCOL_ERROR at https://www.londons mobile:net::ERR_SSL_PROTOCOL_ERROR at https://www.londons "
+ },
+ {
+  "group": "C",
+  "slug": "dental-design-studio",
+  "url": "https://www.thedentaldesignstudio.co.uk/",
+  "place": "Reino Unido",
+  "title": "Home | The Dental Design Studio",
+  "h1": "Stay up to date",
+  "h1Size": "26px",
+  "h1Weight": "400",
+  "h1Transform": "none",
+  "fonts": [
+   "Arial, Helvetica, sans-serif",
+   "\"Times New Roman\"",
+   "helvetica-w01-roman, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgba(247, 247, 247, 0)",
+   "rgb(28, 74, 140)",
+   "rgba(255, 255, 255, 0)",
+   "rgb(89, 89, 89)",
+   "rgb(139, 205, 227)"
+  ],
+  "bigImages": 3,
+  "videos": 1,
+  "radiusSample": [
+   "50%"
+  ],
+  "ctas": [],
+  "navItems": 45,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": true,
+  "docHeight": 4535
+ },
+ {
+  "group": "C",
+  "slug": "smile-stylist",
+  "url": "https://www.smilestylist.ca/",
+  "place": "Toronto (CA)",
+  "title": "",
+  "h1": "",
+  "h1Size": null,
+  "h1Weight": null,
+  "h1Transform": null,
+  "fonts": [
+   "\"GD Sherpa\", arial",
+   "\"Times New Roman\"",
+   "Arial, serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)"
+  ],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "14px",
+   "6px"
+  ],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 1230
+ },
+ {
+  "group": "C",
+  "slug": "pure-dental-health",
+  "url": "https://www.puredentalhealth.com.au/",
+  "place": "Australia",
+  "error": "desktop:net::ERR_NAME_NOT_RESOLVED at https://www.puredent mobile:net::ERR_NAME_NOT_RESOLVED at https://www.puredent "
+ },
+ {
+  "group": "C",
+  "slug": "zahnarzt-praxis-berlin",
+  "url": "https://www.dentalclinicberlin.de/",
+  "place": "Berlín (DE)",
+  "error": "desktop:net::ERR_NAME_NOT_RESOLVED at https://www.dentalcl mobile:net::ERR_NAME_NOT_RESOLVED at https://www.dentalcl "
+ },
+ {
+  "group": "D",
+  "slug": "minimale-skin",
+  "url": "https://minimaleskin.com/",
+  "place": "NYC dermo-estética (US)",
+  "title": "MINIMALE SKIN",
+  "h1": "",
+  "h1Size": null,
+  "h1Weight": null,
+  "h1Transform": null,
+  "fonts": [
+   "Poppins",
+   "sans-serif",
+   "poppins"
+  ],
+  "palette": [
+   "rgba(157, 177, 197, 0.5)",
+   "rgb(157, 177, 197)",
+   "rgb(237, 236, 231)",
+   "rgb(43, 68, 92)",
+   "rgb(109, 134, 144)",
+   "rgba(220, 235, 244, 0.38)"
+  ],
+  "bigImages": 10,
+  "videos": 0,
+  "radiusSample": [
+   "25px",
+   "300px"
+  ],
+  "ctas": [
+   "BOOK NOW",
+   "BOOK NOW",
+   "BOOK NOW"
+  ],
+  "navItems": 22,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 3681
+ },
+ {
+  "group": "D",
+  "slug": "aesop",
+  "url": "https://www.aesop.com/",
+  "place": "Luxury beauty (AU)",
+  "title": "Un momento…",
+  "h1": "www.aesop.com",
+  "h1Size": "40px",
+  "h1Weight": "600",
+  "h1Transform": "none",
+  "fonts": [
+   "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "monospace"
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "50%"
+  ],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ },
+ {
+  "group": "D",
+  "slug": "six-senses",
+  "url": "https://www.sixsenses.com/",
+  "place": "Hospitality (TH)",
+  "title": "Access Denied",
+  "h1": "Access Denied",
+  "h1Size": "32px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "\"Times New Roman\""
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ },
+ {
+  "group": "D",
+  "slug": "the-well",
+  "url": "https://www.the-well.com/",
+  "place": "Wellness (US)",
+  "title": "Complete Health and Wellness | THE WELL",
+  "h1": "",
+  "h1Size": "18px",
+  "h1Weight": "300",
+  "h1Transform": "none",
+  "fonts": [
+   "\"Styrene B\", Helvetica, Arial, sans-serif",
+   "\"Chronicle Display\", serif"
+  ],
+  "palette": [
+   "rgb(242, 237, 233)",
+   "rgba(255, 255, 255, 0.6)",
+   "rgb(255, 255, 255)"
+  ],
+  "bigImages": 1,
+  "videos": 0,
+  "radiusSample": [
+   "100px",
+   "9999px"
+  ],
+  "ctas": [
+   "CONTACT US",
+   "CONSULTATION"
+  ],
+  "navItems": 17,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 4579
+ },
+ {
+  "group": "D",
+  "slug": "skinlaundry",
+  "url": "https://www.skinlaundry.com/",
+  "place": "Estética clínica (US)",
+  "title": "Laser Skin Resurfacing & Facial Rejuvenation - SKIN LAUNDRY",
+  "h1": "A Gift for Mom & a Gift for You",
+  "h1Size": "48px",
+  "h1Weight": "300",
+  "h1Transform": "none",
+  "fonts": [
+   "articulat-cf, sans-serif",
+   "Apris, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(246, 237, 228)",
+   "rgb(255, 255, 255)",
+   "rgb(60, 32, 29)",
+   "rgb(205, 247, 101)",
+   "rgb(255, 59, 48)",
+   "rgb(94, 50, 23)"
+  ],
+  "bigImages": 7,
+  "videos": 2,
+  "radiusSample": [
+   "10px"
+  ],
+  "ctas": [
+   "Book your first Facial for $50 ($275 val",
+   "Book Now",
+   "Book Now",
+   "Book Now"
+  ],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ },
+ {
+  "group": "D",
+  "slug": "dr-barbara-sturm",
+  "url": "https://www.drsturm.com/",
+  "place": "Skincare médico (DE)",
+  "title": "Un momento…",
+  "h1": "www.drsturm.com",
+  "h1Size": "40px",
+  "h1Weight": "600",
+  "h1Transform": "none",
+  "fonts": [
+   "system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "monospace"
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "50%"
+  ],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ }
+]

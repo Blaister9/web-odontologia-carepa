@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mockups de héroe · 3 direcciones</title>
+<style>
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:#EDEDEA;color:#1a1a1a;font-family:Inter,system-ui,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+.page{max-width:1320px;margin:0 auto;padding:48px 24px 96px}
+.top{border-bottom:1px solid #C9C9C4;padding-bottom:20px;margin-bottom:48px}
+.top h1{margin:0 0 6px;font-size:1.9rem;letter-spacing:-.02em}
+.top p{margin:0;color:#5a5a55;font-size:.95rem;max-width:74ch}
+.block{margin-bottom:72px}
+.block > h2{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:#6a6a64;margin:0 0 4px;font-weight:600}
+.block > .title{font-size:1.6rem;margin:0 0 4px;letter-spacing:-.01em}
+.block > .sub{margin:0 0 22px;color:#5a5a55;font-size:.92rem}
+.pair{display:grid;grid-template-columns:1fr 400px;gap:24px;align-items:start}
+@media(max-width:1080px){.pair{grid-template-columns:1fr}}
+.frame{background:#fff;border:1px solid #C9C9C4;border-radius:8px;overflow:hidden}
+.bar{display:flex;align-items:center;gap:6px;padding:9px 12px;background:#F4F4F1;border-bottom:1px solid #DEDEDA}
+.bar i{width:9px;height:9px;border-radius:50%;background:#CFCFC9;display:block}
+.bar em{margin-left:8px;font-style:normal;font-size:.68rem;color:#8a8a84;letter-spacing:.04em}
+.dev-d{height:600px;overflow:hidden}
+.dev-m{width:390px;height:700px;overflow:hidden;margin:0 auto}
+.mock{width:100%;height:100%;display:flex;flex-direction:column}
+.ph{position:relative;overflow:hidden}
+.ph::after{content:attr(data-label);position:absolute;left:0;right:0;bottom:0;padding:10px 14px;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;z-index:3}
+.note{margin:14px 0 0;font-size:.85rem;color:#5a5a55;max-width:78ch}
+.note b{color:#1a1a1a}
+
+/* ---------- A · Luz de Urabá ---------- */
+.A{--bg:#F7F2EA;--sf:#fff;--ink:#23201C;--soft:#5C554C;--act:#1E4D3A;--urg:#A24A30;--ln:#E2D8C9;--ls:#C9BCA6;
+   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;background:var(--bg);color:var(--ink)}
+.A .nav{display:flex;align-items:center;justify-content:space-between;padding:14px 40px;border-bottom:1px solid var(--ln)}
+.A .logo{font-family:var(--serif);font-size:1.15rem;font-weight:600;letter-spacing:-.01em}
+.A .logo small{display:block;font-family:Inter,sans-serif;font-size:.6rem;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600}
+.A .links{display:flex;gap:26px;font-size:.86rem;color:var(--soft)}
+.A .cta{background:var(--act);color:#fff;padding:11px 20px;border-radius:4px;font-size:.86rem;font-weight:600}
+.A .hero{flex:1;display:grid;grid-template-columns:1fr 1fr}
+.A .hl{padding:56px 40px;display:flex;flex-direction:column;justify-content:center}
+.A .eyebrow{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--act);font-weight:600;margin:0 0 16px}
+.A h1{font-family:var(--serif);font-weight:600;font-size:3.1rem;line-height:1.04;letter-spacing:-.015em;margin:0 0 18px;max-width:12ch}
+.A .lead{margin:0 0 26px;color:var(--soft);font-size:1.02rem;max-width:40ch}
+.A .btnp{display:inline-flex;align-items:center;justify-content:center;background:var(--act);color:#fff;height:52px;padding:0 26px;border-radius:4px;font-weight:600;width:fit-content;font-size:.98rem}
+.A .trust{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.A .trust span{background:var(--sf);border:1px solid var(--ln);border-radius:999px;padding:8px 14px;font-size:.76rem;color:var(--soft)}
+.A .gates{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:0 40px 28px}
+.A .gate{background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:16px}
+.A .gate b{display:block;font-family:var(--serif);font-size:1.08rem;font-weight:600;margin-bottom:4px}
+.A .gate i{font-style:normal;font-size:.78rem;color:var(--soft)}
+.A .ph{background:linear-gradient(150deg,#EFE6D6,#CFC3AC)}
+.A .ph::after{color:#5C554C;background:linear-gradient(0deg,rgba(247,242,234,.94),rgba(247,242,234,0))}
+
+/* mobile A */
+.Am .top{display:flex;align-items:center;justify-content:space-between;padding:10px 18px;border-bottom:1px solid var(--ln);height:56px}
+.Am .logo{font-family:var(--serif);font-size:1rem;font-weight:600}
+.Am .burger{width:22px;height:2px;background:var(--ink);box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink)}
+.Am .ph{height:300px}
+.Am .ph::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(0deg,rgba(35,32,28,.82) 0%,rgba(35,32,28,.35) 45%,rgba(35,32,28,.05) 100%)}
+.Am .over{position:absolute;left:18px;right:18px;bottom:18px;z-index:2}
+.Am h1{font-family:var(--serif);font-weight:600;font-size:1.95rem;line-height:1.06;margin:0;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.4)}
+.Am .trust{display:flex;flex-wrap:wrap;gap:6px;padding:14px 18px 4px}
+.Am .trust span{background:var(--sf);border:1px solid var(--ln);border-radius:999px;padding:7px 12px;font-size:.72rem;color:var(--soft)}
+.Am .gq{padding:14px 18px 0;font-family:var(--serif);font-size:1.15rem;font-weight:600}
+.Am .gates{padding:8px 18px 0;display:flex;flex-direction:column;gap:10px}
+.Am .gate{background:var(--sf);border:1px solid var(--ln);border-radius:4px;padding:14px 16px;min-height:74px;display:flex;flex-direction:column;justify-content:center}
+.Am .sticky{margin-top:auto;padding:10px 18px 14px}
+.Am .sticky a{display:flex;align-items:center;justify-content:center;height:56px;background:var(--act);color:#fff;border-radius:4px;font-weight:600}
+
+/* ---------- B · Consultorio Claro ---------- */
+.B{--bg:#FAFAF8;--sf:#fff;--ink:#14181A;--soft:#4A5257;--act:#0A6E47;--urg:#B3341F;--ln:#DCE0DE;background:var(--bg);color:var(--ink)}
+.B .nav{display:flex;align-items:center;justify-content:space-between;padding:0 40px;height:56px;border-bottom:1px solid var(--ln)}
+.B .logo{font-weight:700;font-size:1rem;letter-spacing:-.01em}
+.B .links{display:flex;gap:26px;font-size:.88rem;color:var(--soft)}
+.B .cta{background:var(--act);color:#fff;padding:10px 18px;border-radius:2px;font-size:.86rem;font-weight:600}
+.B .hero{padding:64px 40px 40px}
+.B h1{font-size:3.2rem;font-weight:700;letter-spacing:-.035em;line-height:1.08;margin:0 0 16px;max-width:16ch}
+.B .lead{margin:0 0 28px;font-size:1.12rem;color:var(--soft);max-width:60ch}
+.B .btnp{display:inline-flex;align-items:center;justify-content:center;background:var(--act);color:#fff;height:56px;padding:0 28px;border-radius:2px;font-weight:600;font-size:1.02rem}
+.B .facts{display:flex;gap:0;margin-top:40px;border-top:1px solid var(--ln)}
+.B .facts div{flex:1;padding:18px 0;border-right:1px solid var(--ln)}
+.B .facts div:last-child{border-right:0}
+.B .facts b{display:block;font-size:1.02rem;font-weight:600}
+.B .facts i{font-style:normal;font-size:.82rem;color:var(--soft)}
+.B .list{margin:0 40px;border-top:1px solid var(--ln)}
+.B .li{display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:1px solid var(--ln);font-size:1rem}
+.B .li b{font-weight:600}
+.B .li i{font-style:normal;color:var(--soft);font-size:.86rem;margin-left:10px}
+
+/* mobile B */
+.Bm .top{display:flex;align-items:center;justify-content:space-between;padding:0 18px;height:56px;border-bottom:1px solid var(--ln)}
+.Bm .hero{padding:32px 18px 24px}
+.Bm h1{font-size:2.1rem;font-weight:700;letter-spacing:-.03em;line-height:1.12;margin:0 0 12px}
+.Bm .lead{margin:0 0 22px;color:var(--soft);font-size:1.02rem}
+.Bm .facts{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid var(--ln)}
+.Bm .facts div{padding:14px 0;border-bottom:1px solid var(--ln)}
+.Bm .facts div:nth-child(odd){border-right:1px solid var(--ln);padding-right:12px}
+.Bm .facts div:nth-child(even){padding-left:12px}
+.Bm .list{margin:0 18px}
+.Bm .li{display:flex;align-items:center;justify-content:space-between;min-height:56px;border-bottom:1px solid var(--ln)}
+.Bm .sticky{margin-top:auto}
+.Bm .sticky a{display:flex;align-items:center;justify-content:center;height:56px;background:var(--act);color:#fff;font-weight:600}
+
+/* ---------- C · Noche Suave ---------- */
+.C{--bg:#1A1714;--sf:#241F1B;--ink:#F2EDE6;--soft:#B3A697;--gold:#D9A25E;--clay:#C97B6E;--ln:#3A322B;
+   --disp:"Didot","Bodoni MT","Playfair Display",Georgia,serif;background:var(--bg);color:var(--ink)}
+.C .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 40px;position:relative;z-index:3}
+.C .logo{font-family:var(--disp);font-size:1.15rem;letter-spacing:.02em}
+.C .links{display:flex;gap:26px;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.C .cta{border:1px solid rgba(242,237,230,.32);padding:10px 20px;border-radius:999px;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase}
+.C .hero{flex:1;position:relative;overflow:hidden;display:flex;align-items:flex-end}
+.C .hero .bgimg{position:absolute;inset:0;background:linear-gradient(150deg,#4A403A,#1C1815)}
+.C .hero .veil{position:absolute;inset:0;background:linear-gradient(0deg,rgba(26,23,20,.95) 0%,rgba(26,23,20,.5) 34%,rgba(26,23,20,0) 66%)}
+.C .hc{position:relative;z-index:2;padding:0 40px 48px;width:100%}
+.C .eyebrow{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin:0 0 14px}
+.C h1{font-family:var(--disp);font-weight:500;font-size:3.4rem;line-height:1.04;margin:0 0 16px;max-width:14ch}
+.C .lead{margin:0 0 26px;color:var(--soft);max-width:44ch;font-size:1rem}
+.C .btnp{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#1A1714;height:54px;padding:0 28px;border-radius:999px;font-weight:600}
+.C .idx{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:22px 40px 26px}
+.C .icard{background:var(--sf);border:1px solid var(--ln);border-radius:6px;padding:16px}
+.C .icard em{font-style:normal;font-family:var(--disp);font-size:1.7rem;color:var(--gold);display:block;line-height:1}
+.C .icard b{display:block;font-family:var(--disp);font-weight:500;font-size:1.05rem;margin:6px 0 2px}
+.C .icard i{font-style:normal;font-size:.76rem;color:var(--soft)}
+
+/* mobile C */
+.Cm .top{display:flex;align-items:center;justify-content:space-between;padding:0 18px;height:56px;position:relative;z-index:3}
+.Cm .hero{position:relative;height:440px;display:flex;align-items:flex-end}
+.Cm h1{font-family:var(--disp);font-weight:500;font-size:2.3rem;line-height:1.05;margin:0 0 12px}
+.Cm .hc{position:relative;z-index:2;padding:0 18px 26px;width:100%}
+.Cm .sticky{margin-top:auto;padding:14px 18px 16px}
+.Cm .sticky a{display:flex;align-items:center;justify-content:center;height:56px;background:var(--gold);color:#1A1714;border-radius:999px;font-weight:600}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="top">
+  <h1>Mockups conceptuales de héroe</h1>
+  <p>Tres direcciones, escritorio (1440) y móvil (390). Prototipos HTML aislados: no importan
+  nada de <code>src/</code>, no se compilan con Next.js y no se sirven desde <code>public/</code>.
+  Las zonas de fotografía se representan como campos de color etiquetados, porque la
+  fotografía definitiva aún no está producida.</p>
+</header>
+
+<!-- ================= A ================= -->
+<section class="block">
+  <h2>Dirección A — recomendada</h2>
+  <p class="title">Luz de Urabá</p>
+  <p class="sub">Hueso cálido, verde selva, terracota. Serif editorial en titulares. Fotografía documental.</p>
+  <div class="pair">
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>dranatalyjimenez.com — 1440 x 900</em></div>
+      <div class="dev-d">
+        <div class="mock A">
+          <div class="nav">
+            <div class="logo">Dra. Nataly Jiménez<small>Consultorio odontológico · Carepa</small></div>
+            <div class="links"><span>Necesidad</span><span>Servicios</span><span>Consultorio</span><span>Equipo</span></div>
+            <span class="cta">Escribir por WhatsApp</span>
+          </div>
+          <div class="hero">
+            <div class="hl">
+              <p class="eyebrow">Carepa · Urabá · Antioquia</p>
+              <h1>Cuéntanos qué sientes</h1>
+              <p class="lead">No necesitas conocer el nombre del tratamiento. Elige lo más cercano a lo que te pasa y te decimos qué contar.</p>
+              <span class="btnp">Escribir por WhatsApp</span>
+              <div class="trust"><span>Carepa, Antioquia</span><span>Lun–Vie 8:00–18:00</span><span>★ 4,9 · 27 reseñas</span></div>
+            </div>
+            <div class="ph" data-label="Retrato 4:5 — Dra. Nataly, luz de ventana, fondo real del consultorio"></div>
+          </div>
+          <div class="gates">
+            <div class="gate"><b>Me duele algo</b><i>Dolor, inflamación o fractura</i></div>
+            <div class="gate"><b>Quiero verme mejor</b><i>Estética con valoración previa</i></div>
+            <div class="gate"><b>Quiero cuidarme</b><i>Limpieza, control, prevención</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>390 x 844</em></div>
+      <div class="dev-m">
+        <div class="mock A Am">
+          <div class="top"><div class="logo">Dra. Nataly Jiménez</div><span class="burger"></span></div>
+          <div class="ph" data-label="Retrato 4:5 con velo · solo tercio inferior" style="position:relative">
+            <div class="over"><p class="eyebrow" style="color:#F7F2EA;opacity:.9">Carepa · Urabá</p><h1>Cuéntanos qué sientes</h1></div>
+          </div>
+          <div class="trust"><span>Carepa, Antioquia</span><span>Lun–Vie 8–18</span><span>★ 4,9 · 27</span></div>
+          <p class="gq">¿Qué necesitas hoy?</p>
+          <div class="gates">
+            <div class="gate"><b style="font-family:var(--serif);font-size:1.05rem">Me duele algo</b><i style="font-style:normal;font-size:.8rem;color:var(--soft)">Dolor, inflamación o fractura</i></div>
+            <div class="gate"><b style="font-family:var(--serif);font-size:1.05rem">Quiero verme mejor</b><i style="font-style:normal;font-size:.8rem;color:var(--soft)">Estética con valoración previa</i></div>
+          </div>
+          <div class="sticky"><a>Escribir por WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Qué cambia respecto a hoy:</b> el cromo móvil baja del 32 % al 13 % (header
+  de 56 px con marca corta en una línea, un solo CTA sticky). La primera puerta de intención
+  queda visible sin desplazar. Los datos de confianza aparecen en el fold. La ilustración
+  vectorial desaparece.</p>
+</section>
+
+<!-- ================= B ================= -->
+<section class="block">
+  <h2>Dirección B</h2>
+  <p class="title">Consultorio Claro</p>
+  <p class="sub">Neutro frío, un único verde de señal, una sola tipografía. Cero gradientes, cero sombras.</p>
+  <div class="pair">
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>dranatalyjimenez.com — 1440 x 900</em></div>
+      <div class="dev-d">
+        <div class="mock B">
+          <div class="nav">
+            <div class="logo">Dra. Nataly Jiménez</div>
+            <div class="links"><span>Necesidad</span><span>Servicios</span><span>Consultorio</span><span>Equipo</span></div>
+            <span class="cta">Escribir por WhatsApp</span>
+          </div>
+          <div class="hero">
+            <h1>¿Qué necesitas hoy?</h1>
+            <p class="lead">Elige el motivo más cercano a lo que te pasa. Te decimos qué contar y escribes por WhatsApp.</p>
+            <span class="btnp">Escribir por WhatsApp</span>
+            <div class="facts">
+              <div><b>Carepa, Antioquia</b><i>Dirección exacta y mapa</i></div>
+              <div><b>Lun–Vie 8:00–18:00</b><i>Sábado con cita previa</i></div>
+              <div><b>★ 4,9 · 27 reseñas</b><i>Google Business Profile</i></div>
+              <div><b>+57 312 831 1449</b><i>WhatsApp directo</i></div>
+            </div>
+          </div>
+          <div class="list">
+            <div class="li"><span><b>Me duele algo</b><i>Urgencias · endodoncia · cordales</i></span><span>→</span></div>
+            <div class="li"><span><b>Quiero verme mejor</b><i>Diseño de sonrisa · blanqueamiento · resinas</i></span><span>→</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>390 x 844</em></div>
+      <div class="dev-m">
+        <div class="mock B Bm">
+          <div class="top"><div class="logo">Dra. Nataly Jiménez</div><span style="width:22px;height:2px;background:var(--ink);box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink)"></span></div>
+          <div class="hero">
+            <h1>¿Qué necesitas hoy?</h1>
+            <p class="lead">Elige lo más cercano a lo que te pasa. Te decimos qué contar.</p>
+          </div>
+          <div class="facts">
+            <div><b style="font-size:.94rem;font-weight:600">Carepa</b><i style="font-style:normal;font-size:.78rem;color:var(--soft)">Antioquia</i></div>
+            <div><b style="font-size:.94rem;font-weight:600">Lun–Vie 8–18</b><i style="font-style:normal;font-size:.78rem;color:var(--soft)">Sáb con cita</i></div>
+            <div><b style="font-size:.94rem;font-weight:600">★ 4,9</b><i style="font-style:normal;font-size:.78rem;color:var(--soft)">27 reseñas</i></div>
+            <div><b style="font-size:.94rem;font-weight:600">WhatsApp</b><i style="font-style:normal;font-size:.78rem;color:var(--soft)">312 831 1449</i></div>
+          </div>
+          <div class="list">
+            <div class="li"><span><b style="font-weight:600">Me duele algo</b><br><i style="font-style:normal;font-size:.82rem;color:var(--soft)">Urgencias · cordales</i></span><span>→</span></div>
+            <div class="li"><span><b style="font-weight:600">Quiero verme mejor</b><br><i style="font-style:normal;font-size:.82rem;color:var(--soft)">Estética · blanqueamiento</i></span><span>→</span></div>
+            <div class="li"><span><b style="font-weight:600">Quiero cuidarme</b><br><i style="font-style:normal;font-size:.82rem;color:var(--soft)">Limpieza · ortodoncia</i></span><span>→</span></div>
+          </div>
+          <div class="sticky"><a>Escribir por WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Nota:</b> el héroe no lleva imagen. La fotografía entra después del fold.
+  Es la dirección más barata de producir y la más rápida de cargar, pero no produce deseo.
+  <b>Su disciplina de sistema se adopta dentro de la dirección A.</b></p>
+</section>
+
+<!-- ================= C ================= -->
+<section class="block">
+  <h2>Dirección C — descartada</h2>
+  <p class="title">Noche Suave</p>
+  <p class="sub">Carbón cálido, ámbar apagado, rosa arcilla. Display serif de alto contraste. Retrato cinematográfico.</p>
+  <div class="pair">
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>dranatalyjimenez.com — 1440 x 900</em></div>
+      <div class="dev-d">
+        <div class="mock C">
+          <div class="nav">
+            <div class="logo">Nataly Jiménez</div>
+            <div class="links"><span>Necesidad</span><span>Tratamientos</span><span>Consultorio</span><span>Equipo</span></div>
+            <span class="cta">Agendar</span>
+          </div>
+          <div class="hero">
+            <div class="bgimg"></div><div class="veil"></div>
+            <div class="hc">
+              <p class="eyebrow">Carepa · Urabá · Antioquia</p>
+              <h1>Cuidar sin prisa</h1>
+              <p class="lead">Cada valoración empieza escuchando. Te explicamos qué vemos y qué opciones hay.</p>
+              <span class="btnp">Escribir por WhatsApp</span>
+            </div>
+          </div>
+          <div class="idx">
+            <div class="icard"><em>01</em><b>Diseño de sonrisa</b><i>Valoración estética previa</i></div>
+            <div class="icard"><em>02</em><b>Blanqueamiento</b><i>Según tu salud oral</i></div>
+            <div class="icard"><em>03</em><b>Resinas estéticas</b><i>Forma, función, apariencia</i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="frame">
+      <div class="bar"><i></i><i></i><i></i><em>390 x 844</em></div>
+      <div class="dev-m">
+        <div class="mock C Cm">
+          <div class="hero" style="height:520px">
+            <div class="bgimg"></div><div class="veil"></div>
+            <div class="top" style="position:absolute;top:0;left:0;right:0"><div class="logo" style="font-size:1rem">Nataly Jiménez</div><span style="width:22px;height:1px;background:var(--ink);box-shadow:0 6px 0 var(--ink),0 -6px 0 var(--ink)"></span></div>
+            <div class="hc">
+              <p class="eyebrow">Carepa · Urabá</p>
+              <h1>Cuidar sin prisa</h1>
+              <p class="lead" style="font-size:.94rem;margin-bottom:0">Cada valoración empieza escuchando.</p>
+            </div>
+          </div>
+          <div class="idx" style="grid-template-columns:1fr;padding:16px 18px 0;gap:10px">
+            <div class="icard" style="display:flex;gap:14px;align-items:baseline"><em>01</em><div><b>Diseño de sonrisa</b><i>Valoración estética previa</i></div></div>
+            <div class="icard" style="display:flex;gap:14px;align-items:baseline"><em>02</em><div><b>Blanqueamiento</b><i>Según tu salud oral</i></div></div>
+          </div>
+          <div class="sticky"><a>Escribir por WhatsApp</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="note"><b>Por qué se descarta:</b> depende por completo de fotografía que aún no
+  existe — con los recortes actuales se vería peor que la web de hoy — y un lenguaje visual
+  de lujo comunica precio alto, lo que trabaja en contra del segmento de urgencia, que es
+  el más frecuente.</p>
+</section>
+
+</div>
+</body>
+</html>

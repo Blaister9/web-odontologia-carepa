@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es-CO">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moodboard A · Luz de Urabá</title>
+<link rel="stylesheet" href="_shared.css">
+<style>
+  :root{
+    --bg:#F7F2EA; --surface:#FFFFFF; --sunk:#F0E9DD;
+    --ink:#23201C; --soft:#5C554C; --action:#1E4D3A; --urgent:#A24A30;
+    --line:#E2D8C9; --line-strong:#C9BCA6;
+    --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman",serif;
+  }
+  body{background:var(--bg);color:var(--ink)}
+  .mb-head{border-color:var(--line-strong)}
+  .mb-head h1{font-family:var(--serif);font-weight:600}
+  .spec{border-color:var(--line)}
+  .disp{font-family:var(--serif);line-height:1.02;letter-spacing:-.015em;margin:0}
+  .paper{position:relative}
+  .paper::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:radial-gradient(circle at 20% 30%,rgba(35,32,28,.045) 0 1px,transparent 1px),
+                     radial-gradient(circle at 70% 65%,rgba(35,32,28,.035) 0 1px,transparent 1px);
+    background-size:7px 7px,11px 11px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;border-radius:4px;font-weight:600;font-size:1rem}
+  .btn--p{background:var(--action);color:#fff}
+  .btn--s{border:1.5px solid var(--line-strong);color:var(--ink)}
+  .btn--u{background:var(--urgent);color:#fff}
+  .card{background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:22px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="mb-head">
+    <div>
+      <p class="kicker">Moodboard · Dirección A</p>
+      <h1>Luz de Urabá</h1>
+    </div>
+    <p class="tag">Odontología del trópico húmedo.<br>Cálida, real, de aquí.</p>
+  </header>
+
+  <section>
+    <h2 class="sec">Paleta · todos los ratios verificados WCAG 2.2 AA</h2>
+    <div class="grid g6">
+      <div class="sw" style="background:#F7F2EA;border:1px solid var(--line)"><b>bg</b><span>#F7F2EA</span><span class="ratio">hueso cálido</span></div>
+      <div class="sw" style="background:#FFFFFF;border:1px solid var(--line)"><b>surface</b><span>#FFFFFF</span><span class="ratio">tarjetas</span></div>
+      <div class="sw" style="background:#23201C;color:#F7F2EA"><b>ink</b><span>#23201C</span><span class="ratio">14,55 : 1</span></div>
+      <div class="sw" style="background:#5C554C;color:#F7F2EA"><b>text-soft</b><span>#5C554C</span><span class="ratio">6,59 : 1</span></div>
+      <div class="sw" style="background:#1E4D3A;color:#fff"><b>action</b><span>#1E4D3A</span><span class="ratio">8,65 : 1</span></div>
+      <div class="sw" style="background:#A24A30;color:#fff"><b>urgent</b><span>#A24A30</span><span class="ratio">5,30 : 1</span></div>
+    </div>
+    <p class="note"><strong>Verde selva y terracota sobre hueso.</strong> Ninguno de los 27 referentes
+    analizados usa esta combinación. El sector entero elige azul de hospital; esta dirección
+    elige el lugar donde el consultorio está. El verde es el único color de acción: si algo
+    es verde, se toca.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Tipografía</h2>
+    <div class="spec">
+      <p class="lbl">Display · serif humanista — Fraunces / Source Serif 4</p>
+      <p class="disp" style="font-size:clamp(2.4rem,1.6rem + 3.4vw,4rem)">Tu sonrisa<br>empieza aquí</p>
+    </div>
+    <div class="spec">
+      <p class="lbl">H2 · serif · 36 px en escritorio</p>
+      <p class="disp" style="font-size:2.25rem;font-weight:600">Un equipo cercano en Carepa</p>
+    </div>
+    <div class="spec">
+      <p class="lbl">Cuerpo · grotesca — Inter / Public Sans · 17 px · medida 68ch</p>
+      <p style="font-size:1.06rem;max-width:68ch;margin:0;color:var(--soft)">No necesitas conocer el nombre del
+      tratamiento. Cuéntanos qué sientes y revisamos juntos el siguiente paso, sin compromiso
+      y sin presión.</p>
+    </div>
+    <div class="spec">
+      <p class="lbl">Etiqueta · versalitas · 14 px · letter-spacing .08em</p>
+      <p style="margin:0;font-size:.875rem;letter-spacing:.08em;text-transform:uppercase;font-weight:600;color:var(--action)">Carepa · Antioquia</p>
+    </div>
+    <p class="note"><strong>Solo tres pesos: 400 / 600 / 700.</strong> Hoy hay once pesos declarados que
+    colapsan a dos o tres en pantalla porque la fuente nunca se descarga. El serif se limita
+    a display, H1, H2 y citas — nunca a botones ni a interfaz.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Forma · radio 4 px · elevación cero · filete de 1 px</h2>
+    <div class="shapes">
+      <div class="shape" style="background:var(--surface);border:1px solid var(--line);border-radius:4px">radio 4</div>
+      <div class="shape" style="background:var(--surface);border:1px solid var(--line);border-radius:8px">radio 8<br>contenedor</div>
+      <div class="shape" style="background:var(--sunk);border-radius:999px">999px<br>chip / avatar</div>
+      <div class="shape" style="background:var(--action);border-radius:4px"></div>
+      <div class="shape" style="background:var(--urgent);border-radius:4px"></div>
+      <div class="shape" style="border:1.5px solid var(--line-strong);border-radius:4px">fantasma</div>
+    </div>
+    <p class="note">Tres radios en todo el sistema. Hoy hay catorce, incluidos cinco radios
+    asimétricos tipo <code>280px 0 0</code>. La jerarquía la da el espacio y el filete,
+    nunca la sombra.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Materia · papel, luz y vegetación</h2>
+    <div class="grid g3">
+      <div class="tex paper" style="background:#F7F2EA;border:1px solid var(--line);color:var(--soft)">Papel hueso · textura 2 %</div>
+      <div class="tex" style="background:linear-gradient(160deg,#1E4D3A,#16382A);color:#F7F2EA">Verde selva · bandas planas</div>
+      <div class="tex" style="background:linear-gradient(160deg,#A24A30,#8A3D28);color:#fff">Terracota · solo urgencias</div>
+      <div class="tex" style="background:linear-gradient(105deg,#F7F2EA 0%,#EFE6D6 55%,#E2D8C9 100%);color:var(--soft)">Luz de media mañana</div>
+      <div class="tex" style="background:#F0E9DD;color:var(--soft);border:1px solid var(--line)">Superficie hundida</div>
+      <div class="tex" style="background:#FFFFFF;border:1px solid var(--line);color:var(--soft)">Superficie de tarjeta</div>
+    </div>
+    <p class="note">El único gradiente permitido es el velo sobre fotografía. Los 68 gradientes
+    decorativos actuales desaparecen.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Interfaz</h2>
+    <div class="ui-row" style="margin-bottom:20px">
+      <a class="btn btn--p">Escribir por WhatsApp</a>
+      <a class="btn btn--s">Ver servicios</a>
+      <a class="btn btn--u">Tengo dolor ahora</a>
+    </div>
+    <div class="ui-row" style="margin-bottom:24px">
+      <span class="pill" style="background:var(--surface);border:1px solid var(--line)">Carepa, Antioquia</span>
+      <span class="pill" style="background:var(--surface);border:1px solid var(--line)">Lun–Vie 8:00–18:00</span>
+      <span class="pill" style="background:var(--surface);border:1px solid var(--line)">★ 4,9 · 27 reseñas</span>
+    </div>
+    <div class="grid g3">
+      <div class="card"><p style="margin:0 0 6px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--action);font-weight:600">Me duele algo</p><p class="disp" style="font-size:1.35rem;margin:0 0 8px">Urgencias</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Dolor, inflamación, fractura o restauración caída.</p></div>
+      <div class="card"><p style="margin:0 0 6px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--action);font-weight:600">Quiero verme mejor</p><p class="disp" style="font-size:1.35rem;margin:0 0 8px">Estética</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Diseño de sonrisa, blanqueamiento, resinas.</p></div>
+      <div class="card"><p style="margin:0 0 6px;font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--action);font-weight:600">Quiero cuidarme</p><p class="disp" style="font-size:1.35rem;margin:0 0 8px">Prevención</p><p style="margin:0;font-size:.92rem;color:var(--soft)">Limpieza, ortodoncia, prótesis, familiar.</p></div>
+    </div>
+    <p class="note">Un solo botón primario por pantalla. Altura mínima 56 px en móvil.
+    Los chips de confianza no usan punto relleno: hoy se leen como radio buttons.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Fotografía</h2>
+    <div class="grid g4">
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#EFE6D6,#D8CCB8);color:var(--soft)">Retrato 4:5<br>luz de ventana</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#E8E2D4,#CFC5AF);color:var(--soft)">Sala de espera<br>sin personas</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#E2DCCB,#BFB49C);color:var(--soft)">Fachada<br>seña de referencia</div>
+      <div class="tex" style="aspect-ratio:4/5;background:linear-gradient(150deg,#DCD4C0,#B3A88E);color:var(--soft)">Manos<br>explicando</div>
+    </div>
+    <p class="note"><strong>Luz natural siempre.</strong> Fondos reales del consultorio, nunca fondo
+    infinito blanco. Media sonrisa, mirada a cámara, manos visibles.
+    <strong>Prohibido:</strong> brazos cruzados, flash directo, sonrisa de dientes a pantalla
+    completa, instrumental en primer plano.</p>
+  </section>
+
+  <section>
+    <h2 class="sec">Lo que esta dirección no hace</h2>
+    <ul class="dont" style="color:var(--soft)">
+      <li>Ni un solo teal, cian o azul sanitario — saturado en 9 de 14 referentes odontológicos.</li>
+      <li>Ni un icono de diente.</li>
+      <li>Ni glassmorphism ni <code>backdrop-filter</code> decorativo.</li>
+      <li>Ni gradientes fuera de los velos fotográficos.</li>
+      <li>Ni sombras para expresar elevación.</li>
+      <li>Ni animaciones infinitas.</li>
+      <li>Ni ilustración vectorial de stock.</li>
+    </ul>
+  </section>
+
+</div>
+</body>
+</html>

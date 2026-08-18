@@ -1,0 +1,285 @@
+[
+ {
+  "group": "C",
+  "slug": "marylebone-smile-london",
+  "url": "https://marylebonesmileclinic.co.uk/",
+  "place": "Londres (UK)",
+  "title": "Cosmetic Dentist London, Cosmetic Dentistry W1 | Marylebone Smile Clinic",
+  "h1": "Premier Cosmetic Dentistry in London",
+  "h1Size": "33.3px",
+  "h1Weight": "500",
+  "h1Transform": "none",
+  "fonts": [
+   "sans-serif",
+   "\"Times New Roman\"",
+   "Inter, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(242, 242, 242)",
+   "rgb(0, 0, 0)",
+   "rgb(71, 162, 215)",
+   "rgb(233, 238, 244)",
+   "rgb(20, 27, 39)"
+  ],
+  "bigImages": 1,
+  "videos": 0,
+  "radiusSample": [
+   "50px",
+   "17.982px",
+   "10px"
+  ],
+  "ctas": [
+   "BOOK A FREE E-CONSULTATION",
+   "Contact",
+   "Contact",
+   "BOOK A CONSULTATION"
+  ],
+  "navItems": 158,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 13550
+ },
+ {
+  "group": "C",
+  "slug": "clinica-anitua-vitoria",
+  "url": "https://clinicaeduardoanitua.com/",
+  "place": "Vitoria (ES)",
+  "title": "Clínica dental y odontología - Dentistas Vitoria",
+  "h1": "CLÍNICA DENTAL Y ODONTOLOGÍA - DENTISTAS VITORIA",
+  "h1Size": "11px",
+  "h1Weight": "700",
+  "h1Transform": "uppercase",
+  "fonts": [
+   "sans-serif",
+   "Arial, sans-serif",
+   "\"Yanone Kaffeesatz\", Arial, sans-serif"
+  ],
+  "palette": [
+   "rgba(0, 0, 0, 0.05)",
+   "rgb(214, 214, 214)",
+   "rgb(239, 239, 239)",
+   "rgb(255, 255, 255)",
+   "rgb(95, 95, 100)",
+   "rgb(0, 0, 0)"
+  ],
+  "bigImages": 8,
+  "videos": 0,
+  "radiusSample": [
+   "8px",
+   "60px",
+   "15px",
+   "7.5px",
+   "3.75px"
+  ],
+  "ctas": [
+   "Contacto",
+   "Solicite una cita online",
+   "Agenda",
+   "Solicite una cita"
+  ],
+  "navItems": 0,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 989
+ },
+ {
+  "group": "C",
+  "slug": "propdental-barcelona",
+  "url": "https://propdental.es/",
+  "place": "Barcelona (ES)",
+  "title": "Propdental | Clínica Dental en Barcelona, Badalona y Hospitalet",
+  "h1": "En Propdental te lo ponemos fácil",
+  "h1Size": "60px",
+  "h1Weight": "600",
+  "h1Transform": "none",
+  "fonts": [
+   "Montserrat, sans-serif",
+   "ui-sans-serif, system-ui, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\"",
+   "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "color(srgb 0.924706 0.95702 0.95451)",
+   "rgb(0, 185, 227)",
+   "rgb(244, 244, 245)",
+   "rgb(229, 221, 213)",
+   "rgb(212, 212, 216)"
+  ],
+  "bigImages": 3,
+  "videos": 0,
+  "radiusSample": [
+   "9999px",
+   "17.6px",
+   "24px",
+   "16px",
+   "50%",
+   "26px"
+  ],
+  "ctas": [
+   "PIDE CITA GRATIS AQUÍ",
+   "PIDE CITA GRATIS",
+   "PIDE CITA GRATIS",
+   "PIDE CITA GRATIS"
+  ],
+  "navItems": 32,
+  "hasReviews": true,
+  "hasBeforeAfter": true,
+  "hasWhatsapp": false,
+  "hasPrices": true,
+  "docHeight": 6687
+ },
+ {
+  "group": "C",
+  "slug": "vitaldent-es",
+  "url": "https://vitaldent.com/",
+  "place": "España",
+  "title": "Vitaldent - Clínicas Dentales | Tratamientos y Consejos",
+  "h1": "Clínicas dentales en toda España",
+  "h1Size": "32px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "Poppins, sans-serif",
+   "\"Times New Roman\"",
+   "\"Font Awesome 5 Free\""
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(246, 250, 253)",
+   "rgba(2, 1, 1, 0)",
+   "rgb(226, 239, 249)",
+   "rgb(241, 242, 243)",
+   "rgb(8, 61, 105)"
+  ],
+  "bigImages": 2,
+  "videos": 1,
+  "radiusSample": [
+   "3px",
+   "4px",
+   "8px",
+   "6px",
+   "6px 0px 0px 6px",
+   "0px 4px 4px 0px"
+  ],
+  "ctas": [
+   "Pide tu cita",
+   "Pide tu cita gratis",
+   "Pide tu cita",
+   "Pide tu cita gratis"
+  ],
+  "navItems": 133,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 8086
+ },
+ {
+  "group": "C",
+  "slug": "bupa-dental-au",
+  "url": "https://bupadental.com.au/",
+  "place": "Australia",
+  "title": "Find Dentist Near You Friendly Local Bupa Dentists | Bupa Dental",
+  "h1": "",
+  "h1Size": null,
+  "h1Weight": null,
+  "h1Transform": null,
+  "fonts": [
+   "Montserrat, arial, sans-serif",
+   "Montserrat, system-ui, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\"",
+   "sans-serif"
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [
+   "4px",
+   "30px"
+  ],
+  "ctas": [
+   "contact us"
+  ],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 4034
+ },
+ {
+  "group": "C",
+  "slug": "dental-boutique-au",
+  "url": "https://dentalboutique.com.au/",
+  "place": "Melbourne (AU)",
+  "title": "Error 403 Forbidden",
+  "h1": "403 Forbidden",
+  "h1Size": "32px",
+  "h1Weight": "700",
+  "h1Transform": "none",
+  "fonts": [
+   "\"Times New Roman\""
+  ],
+  "palette": [],
+  "bigImages": 0,
+  "videos": 0,
+  "radiusSample": [],
+  "ctas": [],
+  "navItems": 0,
+  "hasReviews": false,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": false,
+  "hasPrices": false,
+  "docHeight": 900
+ },
+ {
+  "group": "D",
+  "slug": "clinica-baviera",
+  "url": "https://clinicabaviera.com/",
+  "place": "Oftalmología premium (ES)",
+  "title": "Baviera: Instituto Oftalmológico - Centro Oftalmología Avanzada",
+  "h1": "Baviera - Instituto Oftalmológico",
+  "h1Size": "32px",
+  "h1Weight": "400",
+  "h1Transform": "none",
+  "fonts": [
+   "Montserrat, sans-serif",
+   "Gilroy-Medium, sans-serif",
+   "\"Times New Roman\""
+  ],
+  "palette": [
+   "rgb(255, 255, 255)",
+   "rgb(243, 250, 255)",
+   "rgb(197, 231, 253)",
+   "rgb(0, 27, 88)",
+   "rgb(229, 237, 244)",
+   "rgba(0, 0, 0, 0.6)"
+  ],
+  "bigImages": 2,
+  "videos": 0,
+  "radiusSample": [
+   "80px",
+   "50px",
+   "30px",
+   "15px",
+   "50%",
+   "70px"
+  ],
+  "ctas": [
+   "Cita Online",
+   "Primera consulta",
+   "Primera consulta",
+   "Primera consulta"
+  ],
+  "navItems": 58,
+  "hasReviews": true,
+  "hasBeforeAfter": false,
+  "hasWhatsapp": true,
+  "hasPrices": true,
+  "docHeight": 6028
+ }
+]
