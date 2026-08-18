@@ -30,8 +30,8 @@ export function Header() {
             {siteConfig.brandInitials}
           </span>
           <span className="site-header__brand-text">
-            <strong>{siteConfig.clinicName}</strong>
-            <small>{siteConfig.specialty}</small>
+            <strong>{siteConfig.doctorName}</strong>
+            <small>Consultorio odontológico · Carepa</small>
           </span>
         </Link>
 

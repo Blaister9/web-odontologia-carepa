@@ -80,7 +80,7 @@ export default function Home({ campaignSlug }: HomeProps) {
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <Hero />
         {campaign ? <CampaignEntry campaign={campaign} /> : null}
         <ConversionJourney />

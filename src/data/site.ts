@@ -108,7 +108,7 @@ export type DoctorProfile = {
 
 export const siteConfig: SiteConfig = {
   brandInitials: "NJ",
-  clinicName: "CONSULTORIO ODONTÓLOGICO DRA NATALY JIMÉNEZ",
+  clinicName: "CONSULTORIO ODONTOLÓGICO DRA NATALY JIMÉNEZ",
   doctorName: "Dra. Nataly Jiménez",
   specialty: "Odontología general, estética y especializada.",
   city: "Carepa",
