@@ -1,20 +1,19 @@
 import { conversionJourneys } from "@/data/conversionJourneys";
 
 import { useJourney } from "../conversion/JourneyContext";
-import { JourneyIcon } from "../conversion/JourneyIcon";
 
 export function IntentGateway() {
   const { intentId, selectIntent } = useJourney();
 
   return (
-    <section className="intent-gateway" id="elige-tu-camino" aria-labelledby="intent-title">
+    <div className="intent-gateway" id="elige-tu-camino" aria-labelledby="intent-title">
       <div className="container">
         <div className="intent-gateway__heading">
-          <p className="eyebrow">¿Qué necesitas hoy?</p>
+          <p className="eyebrow">Paso 1 de 2 · ¿Qué necesitas hoy?</p>
           <h2 id="intent-title">Elige cómo podemos orientarte</h2>
         </div>
         <div className="intent-gateway__grid" aria-label="Motivos principales de consulta">
-          {conversionJourneys.map((journey) => {
+          {conversionJourneys.map((journey, index) => {
             const active = intentId === journey.id;
             return (
               <button
@@ -25,7 +24,7 @@ export function IntentGateway() {
                 aria-pressed={active}
                 aria-controls="recorrido-opciones"
               >
-                <span className="intent-card__icon"><JourneyIcon iconKey={journey.iconKey} /></span>
+                <span className="intent-card__number" aria-hidden="true">0{index + 1}</span>
                 <span className="intent-card__copy">
                   <strong>{journey.title}</strong>
                   <small>{journey.support}</small>
@@ -36,6 +35,6 @@ export function IntentGateway() {
           })}
         </div>
       </div>
-    </section>
+    </div>
   );
 }

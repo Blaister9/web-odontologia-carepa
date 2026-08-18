@@ -1,0 +1,70 @@
+:root {
+  /* Luz de Urabá — foundations */
+  --color-bg: #f7f2ea;
+  --color-surface: #ffffff;
+  --color-surface-sunk: #f0e9dd;
+  --color-text: #23201c;
+  --color-text-soft: #5c554c;
+  --color-text-on-fill: #ffffff;
+  --color-action: #1e4d3a;
+  --color-action-hover: #17402f;
+  --color-urgent: #a24a30;
+  --color-border: #e2d8c9;
+  --color-border-strong: #c9bca6;
+  --color-focus: #1e4d3a;
+
+  --surface-page: var(--color-bg);
+  --surface-card: var(--color-surface);
+  --surface-subtle: var(--color-surface-sunk);
+  --text-primary: var(--color-text);
+  --text-secondary: var(--color-text-soft);
+  --accent-action: var(--color-action);
+  --accent-urgent: var(--color-urgent);
+  --border-subtle: var(--color-border);
+  --border-strong: var(--color-border-strong);
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-full: 999px;
+  --shadow-none: none;
+  --shadow-floating: 0 8px 24px rgb(35 32 28 / 10%);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-text: var(--font-public-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display-size: clamp(2.4rem, 1.75rem + 3vw, 4.4rem);
+  --font-h1: clamp(2rem, 1.5rem + 2.3vw, 3.25rem);
+  --font-h2: clamp(1.65rem, 1.3rem + 1.45vw, 2.4rem);
+  --font-h3: clamp(1.2rem, 1.08rem + 0.55vw, 1.55rem);
+  --font-body-lg: clamp(1.06rem, 1rem + 0.25vw, 1.19rem);
+
+  --motion-instant: 120ms;
+  --motion-quick: 180ms;
+  --motion-base: 240ms;
+  --motion-slow: 400ms;
+  --ease-out: cubic-bezier(0.22, 0.75, 0.35, 1);
+  --ease-move: cubic-bezier(0.4, 0, 0.2, 1);
+  --motion-shift: 8px;
+
+  /* Transitional aliases for the established component layer. */
+  --color-ink: var(--color-text);
+  --color-ink-soft: var(--color-text-soft);
+  --color-muted: var(--color-text-soft);
+  --color-teal: var(--color-action);
+  --color-teal-dark: var(--color-action-hover);
+  --color-gold: var(--color-action);
+  --color-ivory: var(--color-bg);
+  --color-white: var(--color-surface);
+  --color-danger: var(--color-urgent);
+  --color-line: var(--color-border);
+}

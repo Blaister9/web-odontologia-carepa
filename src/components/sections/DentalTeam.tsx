@@ -32,18 +32,25 @@ export function DentalTeam() {
         <div className="dental-team__grid">
           {featuredMembers.map((member) => (
             <article className="team-card" key={member.name}>
-              <div className="team-card__image">
-                <Image
-                  src={member.image}
-                  alt={
-                    member.hasRealPhoto
-                      ? `${member.name}, ${member.role}`
-                      : `Imagen referencial del equipo: ${member.name}`
-                  }
-                  fill
-                  sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
-                />
-              </div>
+              {member.hasRealPhoto && member.image ? (
+                <div className="team-card__image">
+                  <Image
+                    src={member.image}
+                    alt={`${member.name}, ${member.role}`}
+                    fill
+                    sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
+                  />
+                </div>
+              ) : (
+                <div className="team-card__initials" aria-hidden="true">
+                  {member.name
+                    .replace(/^(Dra\.|Dr\.)\s*/, "")
+                    .split(" ")
+                    .map((part) => part[0])
+                    .slice(0, 2)
+                    .join("")}
+                </div>
+              )}
               <div className="team-card__body">
                 <span>{member.profileComplete ? "Perfil del equipo" : "Perfil en actualización"}</span>
                 <h3>{member.name}</h3>

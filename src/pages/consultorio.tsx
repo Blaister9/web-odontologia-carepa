@@ -1,11 +1,9 @@
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
-import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { brandContent } from "@/data/brandContent";
 import { siteConfig } from "@/data/site";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
@@ -47,7 +45,7 @@ export default function ConsultorioPage() {
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Consultorio</p>
@@ -57,9 +55,6 @@ export default function ConsultorioPage() {
               <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
                 Agendar valoración
               </a>
-              <Link className="button button--outline button--lg" href="/servicios">
-                Ver servicios
-              </Link>
             </div>
           </div>
         </section>
@@ -71,6 +66,8 @@ export default function ConsultorioPage() {
                 src="/images/client/web/nataly-natural-portrait.webp"
                 alt={`${siteConfig.doctorName} en el consultorio odontológico de Carepa`}
                 fill
+                priority
+                loading="eager"
                 sizes="(min-width: 980px) 38vw, 100vw"
               />
             </div>
@@ -102,9 +99,6 @@ export default function ConsultorioPage() {
                   <li key={highlight}>{highlight}</li>
                 ))}
               </ul>
-              <a className="button button--primary button--md" href={whatsappUrl} target="_blank" rel="noreferrer">
-                Escribir por WhatsApp
-              </a>
             </aside>
           </div>
         </section>
@@ -121,7 +115,6 @@ export default function ConsultorioPage() {
         </section>
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
       <MobileStickyCTA />
     </>
   );

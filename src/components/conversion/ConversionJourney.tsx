@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 
 import { getJourney } from "@/data/conversionJourneys";
@@ -17,21 +18,36 @@ export function ConversionJourney() {
         ? "Consultar disponibilidad"
         : `Consultar ${selectedOption.label.toLocaleLowerCase("es")}`
     : "";
+  const responseRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!journey) return;
+
+    const frame = window.requestAnimationFrame(() => {
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      responseRef.current?.scrollIntoView({
+        behavior: reduceMotion ? "auto" : "smooth",
+        block: "nearest"
+      });
+    });
+
+    return () => window.cancelAnimationFrame(frame);
+  }, [journey, selectedOption]);
 
   return (
-    <>
+    <section className="journey-experience" id="que-necesitas" aria-label="Orientación por necesidad">
       <IntentGateway />
-      <section className={`conversion-journey${journey ? " conversion-journey--active" : ""}`} id="recorrido-opciones" aria-live="polite">
+      <div className={`conversion-journey${journey ? " conversion-journey--active" : ""}`} id="recorrido-opciones" aria-live="polite" ref={responseRef}>
         <div className="container">
           {!journey ? (
-            <div className="conversion-journey__prompt"><span aria-hidden="true">↑</span><p>Selecciona una opción para ver el siguiente paso.</p></div>
+            <p className="conversion-journey__prompt">Selecciona una opción para recibir una orientación breve, sin formularios.</p>
           ) : (
             <div className="conversion-journey__panel" key={journey.id}>
               <div className="conversion-journey__header">
-                <div><p className="eyebrow">Paso 2 de 2</p><h2>{journey.title}</h2><p>Elige la opción más cercana a tu necesidad.</p></div>
+                <div><p className="eyebrow">Paso 2 de 2 · Tu orientación</p><h2>{journey.title}</h2><p>Elige una opción o escribe directamente. No necesitas acertar el nombre del tratamiento.</p></div>
                 <button type="button" className="text-action" onClick={reset}>Cambiar camino</button>
               </div>
-              <div className="journey-options" aria-label={`Opciones para ${journey.title}`}>
+              <div className={`journey-options${selectedOption ? " journey-options--selected" : ""}`} aria-label={`Opciones para ${journey.title}`}>
                 {journey.options.map((option) => {
                   const active = selectedOption?.id === option.id;
                   return (
@@ -55,7 +71,7 @@ export function ConversionJourney() {
             </div>
           )}
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }

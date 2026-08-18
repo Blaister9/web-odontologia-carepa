@@ -40,6 +40,7 @@ const securityHeaders = [
 
 const nextConfig = {
   reactStrictMode: true,
+  agentRules: false,
   async headers() {
     return [
       {

@@ -13,7 +13,6 @@ import { GoogleTrustPreview } from "@/components/sections/GoogleTrustPreview";
 import { RegionWhatsApp } from "@/components/sections/RegionWhatsApp";
 import { Button } from "@/components/ui/Button";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
-import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import {
   CampaignConfig,
   CampaignRequest,
@@ -80,19 +79,18 @@ export default function Home({ campaignSlug }: HomeProps) {
       </Head>
 
       <Header />
-      <main>
+      <main id="main-content">
         <Hero />
         {campaign ? <CampaignEntry campaign={campaign} /> : null}
         <ConversionJourney />
-        <FeaturedTreatments />
         <CompactDoctorTrust />
+        <FeaturedTreatments />
         <GoogleTrustPreview />
         <Emergency />
         <RegionWhatsApp />
         <FinalWhatsAppCTA />
       </main>
       <Footer />
-      <WhatsAppFloatingButton />
       <MobileStickyCTA />
     </>
   );

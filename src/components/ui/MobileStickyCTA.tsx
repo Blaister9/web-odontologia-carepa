@@ -24,6 +24,10 @@ export function MobileStickyCTA() {
       ? "Consultar mi sonrisa"
       : "Agendar valoración";
 
+  if (selectedOption) {
+    return null;
+  }
+
   return (
     <nav className="mobile-sticky-cta" aria-label="Acciones rápidas por WhatsApp">
       <a
@@ -31,16 +35,10 @@ export function MobileStickyCTA() {
         target="_blank"
         rel="noreferrer"
         aria-label={`${label} por WhatsApp`}
+        data-cta-location="mobile_sticky"
+        data-journey-id={intentId ?? undefined}
       >
         {label}
-      </a>
-      <a
-        href={emergencyUrl}
-        target="_blank"
-        rel="noreferrer"
-        aria-label="Consultar urgencia odontológica por WhatsApp"
-      >
-        ¿Tienes dolor?
       </a>
     </nav>
   );
