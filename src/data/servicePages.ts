@@ -16,6 +16,33 @@ export type ServicePage = {
   }>;
   whatsappMessage: string;
   relatedServices: string[];
+  /**
+   * Bloque opcional de caso real. Solo se declara cuando existe material
+   * clínico entregado por el consultorio para ese servicio. Las fotografías
+   * se muestran sin edición más allá del recorte y la compresión.
+   */
+  caseStudy?: ServiceCaseStudy;
+};
+
+export type ServiceCaseStudy = {
+  /**
+   * El bloque solo se renderiza con `enabled: true`. Se mantiene declarado y
+   * desactivado mientras no exista autorización escrita de uso de imagen del
+   * paciente (Ley 1581 de 2012).
+   *
+   * Mientras esté en `false`, las fotografías NO viven en public/: están en
+   * private/client-clinical-pending/ (fuera del repositorio), así que las rutas
+   * de abajo todavía no resuelven. Son metadata para reactivar el caso.
+   *
+   * Para publicar, una vez exista la autorización:
+   *   1. regenerar con `dir: webDir` en scripts/process-client-photography.mjs;
+   *   2. poner `enabled: true`.
+   */
+  enabled: boolean;
+  title: string;
+  before: { src: string; alt: string };
+  after: { src: string; alt: string };
+  disclaimer: string;
 };
 
 export const servicePages: ServicePage[] = [
@@ -257,7 +284,22 @@ export const servicePages: ServicePage[] = [
     ],
     whatsappMessage:
       "Hola, estoy en Carepa y quiero consultar por prótesis dentales. ¿Me pueden orientar con disponibilidad para una valoración?",
-    relatedServices: ["resinas-esteticas-carepa", "odontologia-familiar-carepa", "limpieza-dental-carepa"]
+    relatedServices: ["resinas-esteticas-carepa", "odontologia-familiar-carepa", "limpieza-dental-carepa"],
+    caseStudy: {
+      // Pendiente: autorización de publicación del paciente.
+      enabled: false,
+      title: "Caso de rehabilitación con prótesis dental",
+      before: {
+        src: "/images/client/web/caso-protesis-antes.webp",
+        alt: "Paciente antes de la rehabilitación con prótesis dental superior"
+      },
+      after: {
+        src: "/images/client/web/caso-protesis-despues.webp",
+        alt: "El mismo paciente después de la rehabilitación con prótesis dental superior"
+      },
+      disclaimer:
+        "Cada caso requiere valoración individual. Los resultados y alternativas de tratamiento dependen de las condiciones de cada paciente."
+    }
   },
   {
     slug: "endodoncia-carepa",

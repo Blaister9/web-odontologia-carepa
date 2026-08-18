@@ -132,6 +132,45 @@ export default function ServiceDetailPage({
           </div>
         </section>
 
+        {servicePage.caseStudy?.enabled ? (
+          <section className="section service-case" aria-labelledby="service-case-title">
+            <div className="container service-case__inner">
+              <div className="section-heading section-heading--center">
+                <p className="section-heading__eyebrow">Caso real</p>
+                <h2 id="service-case-title">{servicePage.caseStudy.title}</h2>
+              </div>
+
+              <div className="service-case__pair">
+                <figure className="service-case__item">
+                  <div className="service-case__media">
+                    <Image
+                      src={servicePage.caseStudy.before.src}
+                      alt={servicePage.caseStudy.before.alt}
+                      fill
+                      sizes="(min-width: 640px) 260px, 45vw"
+                    />
+                  </div>
+                  <figcaption>Antes</figcaption>
+                </figure>
+
+                <figure className="service-case__item">
+                  <div className="service-case__media">
+                    <Image
+                      src={servicePage.caseStudy.after.src}
+                      alt={servicePage.caseStudy.after.alt}
+                      fill
+                      sizes="(min-width: 640px) 260px, 45vw"
+                    />
+                  </div>
+                  <figcaption>Después</figcaption>
+                </figure>
+              </div>
+
+              <p className="service-case__disclaimer">{servicePage.caseStudy.disclaimer}</p>
+            </div>
+          </section>
+        ) : null}
+
         <section className="section service-faq">
           <div className="container service-faq__grid">
             <div>
@@ -220,9 +259,15 @@ export const getStaticProps: GetStaticProps<ServicePageProps> = ({ params }) => 
     .map((relatedSlug) => siteConfig.services.find((item) => item.slug === relatedSlug))
     .filter((item): item is Service => Boolean(item));
 
+  // Un caso desactivado se elimina de las props: si viajara en el payload de
+  // __NEXT_DATA__ publicaría las rutas de las fotos del paciente aunque el
+  // bloque no se pinte, y esta bandera existe por consentimiento, no por diseño.
+  const { caseStudy, ...restOfPage } = servicePage;
+  const safePage: ServicePage = caseStudy?.enabled ? servicePage : restOfPage;
+
   return {
     props: {
-      servicePage,
+      servicePage: safePage,
       service,
       relatedServices
     }

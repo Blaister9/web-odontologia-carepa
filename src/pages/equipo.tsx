@@ -6,7 +6,7 @@ import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { WhatsAppFloatingButton } from "@/components/ui/WhatsAppFloatingButton";
 import { siteConfig } from "@/data/site";
-import { teamMembers } from "@/data/team";
+import { teamGroupPhoto, teamMembers } from "@/data/team";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
@@ -52,13 +52,43 @@ export default function EquipoPage() {
             <p className="eyebrow">Equipo</p>
             <h1>Un equipo para orientar tu atención odontológica con claridad.</h1>
             <p>
-              La información del equipo se mantiene editable y prudente. Las fotos reales se podrán
-              reemplazar cuando la cliente las entregue.
+              La información del equipo se mantiene editable y prudente. Los retratos individuales
+              se irán reemplazando a medida que se reciba la fotografía de cada profesional.
             </p>
             <div className="internal-hero__actions">
               <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
                 Agendar por WhatsApp
               </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="section team-intro">
+          <div className="container team-intro__inner">
+            {/*
+              Banda fotográfica recortada de la pieza entregada por la clienta.
+              Identidades confirmadas: Nataly Jiménez y Vanesa López. El pie es
+              solo nominal; los roles ya viven en las tarjetas individuales.
+            */}
+            <figure className="team-intro__figure">
+              <div className="team-intro__media">
+                <Image
+                  src={teamGroupPhoto.current}
+                  alt={teamGroupPhoto.alt}
+                  fill
+                  sizes="(min-width: 980px) 52vw, 100vw"
+                  priority
+                />
+              </div>
+              <figcaption>{teamGroupPhoto.caption}</figcaption>
+            </figure>
+            <div className="team-intro__copy">
+              <p className="eyebrow">Atención cercana</p>
+              <h2>Personas detrás de cada valoración</h2>
+              <p>
+                La atención combina odontología general, estética y apoyo especializado. Cada caso
+                se revisa en valoración antes de recomendar un tratamiento.
+              </p>
             </div>
           </div>
         </section>
@@ -70,7 +100,11 @@ export default function EquipoPage() {
                 <div className="team-card__image">
                   <Image
                     src={member.image}
-                    alt={`Imagen referencial del equipo: ${member.name}`}
+                    alt={
+                      member.hasRealPhoto
+                        ? `${member.name}, ${member.role}`
+                        : `Imagen referencial del equipo: ${member.name}`
+                    }
                     fill
                     sizes="(min-width: 980px) 25vw, (min-width: 640px) 50vw, 100vw"
                   />

@@ -148,7 +148,7 @@ export const siteConfig: SiteConfig = {
       "Atención odontológica con enfoque claro, humano y responsable para pacientes de Carepa y la región de Urabá.",
     quote:
       "Antes de iniciar cualquier tratamiento, lo más importante es entender qué necesitas y explicarte las opciones con claridad.",
-    image: "/images/equipo/odontologia-profesional-carepa.png",
+    image: "/images/client/web/nataly-clinica-avatar.webp",
     highlights: [
       "Atención cercana y personalizada",
       "Valoración antes de definir el tratamiento",
