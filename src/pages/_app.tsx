@@ -11,6 +11,7 @@ import { ScrollReveal } from "@/components/motion/ScrollReveal";
 import "@/styles/globals.css";
 import "@/styles/tokens.css";
 import "@/styles/luz-de-uraba.css";
+import "@/styles/home-correction.css";
 
 const displayFont = Fraunces({
   subsets: ["latin"],

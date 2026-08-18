@@ -78,8 +78,8 @@ export default function Home({ campaignSlug }: HomeProps) {
         />
       </Head>
 
-      <Header />
-      <main id="main-content">
+      <Header homeMode />
+      <main id="main-content" className="home-page">
         <Hero />
         {campaign ? <CampaignEntry campaign={campaign} /> : null}
         <ConversionJourney />

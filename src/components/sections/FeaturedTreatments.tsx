@@ -28,9 +28,9 @@ export function FeaturedTreatments() {
       <div className="container">
         <div data-reveal>
           <SectionHeading
-            eyebrow="Tratamientos destacados"
-            title="Resultados que puedes buscar"
-            description="Elige por lo que quieres resolver."
+            eyebrow="Guías de tratamiento"
+            title="Opciones según lo que quieres resolver"
+            description="Conoce alternativas frecuentes. La valoración define el paso adecuado."
           />
         </div>
 

@@ -1,10 +1,16 @@
+import { useEffect, useState } from "react";
+import { useRouter } from "next/router";
+
 import { siteConfig } from "@/data/site";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
 import { useJourney } from "../conversion/JourneyContext";
 
 export function MobileStickyCTA() {
+  const { pathname } = useRouter();
   const { intentId, selectedOption } = useJourney();
+  const [heroActionVisible, setHeroActionVisible] = useState(true);
+  const [journeyVisible, setJourneyVisible] = useState(true);
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
     "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
@@ -24,7 +30,40 @@ export function MobileStickyCTA() {
       ? "Consultar mi sonrisa"
       : "Agendar valoración";
 
-  if (selectedOption) {
+  useEffect(() => {
+    const heroAction = document.getElementById("hero-primary-action");
+    if (!heroAction) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setHeroActionVisible(entry.isIntersecting),
+      { threshold: 0.2 }
+    );
+    observer.observe(heroAction);
+
+    return () => observer.disconnect();
+  }, []);
+
+  useEffect(() => {
+    const journey = document.querySelector(".journey-experience");
+    if (!journey) {
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setJourneyVisible(entry.isIntersecting),
+      { rootMargin: "-96px 0px 0px 0px", threshold: 0.05 }
+    );
+    observer.observe(journey);
+
+    return () => observer.disconnect();
+  }, []);
+
+  const homeConversionSurfaceVisible =
+    pathname === "/" && (heroActionVisible || journeyVisible);
+
+  if (selectedOption || homeConversionSurfaceVisible) {
     return null;
   }
 
