@@ -40,8 +40,13 @@
   --space-9: 96px;
   --space-10: 128px;
 
-  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
-  --font-text: var(--font-public-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* Fallbacks del sistema. Las familias reales se resuelven en .app-shell:
+     next/font expone --font-fraunces/--font-public-sans en ese contenedor, no
+     en :root, y una var() sin definir invalida toda la declaración. Resolverlas
+     aquí dejaba --font-display/--font-text vacías y arrastraba todo el sitio a
+     Times New Roman, incluida producción. */
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-text: system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-display-size: clamp(2.4rem, 1.75rem + 3vw, 4.4rem);
   --font-h1: clamp(2rem, 1.5rem + 2.3vw, 3.25rem);
   --font-h2: clamp(1.65rem, 1.3rem + 1.45vw, 2.4rem);
@@ -67,4 +72,14 @@
   --color-white: var(--color-surface);
   --color-danger: var(--color-urgent);
   --color-line: var(--color-border);
+}
+
+/* next/font monta sus variables en el contenedor de _app.tsx, así que la
+   identidad tipográfica de Luz de Urabá tiene que resolverse aquí. */
+.app-shell {
+  --font-display: var(--font-fraunces), Georgia, "Times New Roman", serif;
+  --font-text: var(--font-public-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+  /* body resuelve --font-text fuera del shell, así que sin esto la navegación
+     y todo el cuerpo heredarían el fallback del sistema en vez de Public Sans. */
+  font-family: var(--font-text);
 }

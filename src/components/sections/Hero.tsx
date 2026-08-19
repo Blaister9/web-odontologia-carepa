@@ -2,15 +2,10 @@ import Image from "next/image";
 
 import { siteConfig } from "@/data/site";
 
-const heroProof = [
-  {
-    title: "Carepa, Antioquia",
-    detail: "Atención con cita previa"
-  },
-  {
-    title: "Equipo interdisciplinario",
-    detail: "Orientación clara desde el inicio"
-  }
+const heroCues = [
+  `${siteConfig.city}, ${siteConfig.department}`,
+  "Equipo interdisciplinario",
+  "Cita previa por WhatsApp"
 ];
 
 export function Hero() {
@@ -31,28 +26,42 @@ export function Hero() {
             Elegir qué necesito <span aria-hidden="true">↓</span>
           </a>
 
-          <div className="hero__proof" aria-label="Datos de confianza">
-            {heroProof.map((item) => (
-              <div key={item.title}>
-                <strong>{item.title}</strong>
-                <span>{item.detail}</span>
-              </div>
+          <ul className="hero__cues" aria-label="Datos de confianza">
+            {heroCues.map((cue) => (
+              <li key={cue}>{cue}</li>
             ))}
-          </div>
+          </ul>
+
+          {/* Firma compacta: en móvil sustituye al retrato para que el gateway
+              no quede empujado fuera de la primera pantalla. */}
+          <p className="hero__signature">
+            <span className="hero__signature-avatar">
+              <Image
+                src="/images/client/web/nataly-signature-avatar.webp"
+                alt=""
+                fill
+                loading="eager"
+                sizes="(min-width: 720px) 1vw, 48px"
+              />
+            </span>
+            <span className="hero__signature-text">
+              <strong>{siteConfig.doctorName}</strong>
+              <small>{siteConfig.doctorProfile.title}</small>
+            </span>
+          </p>
         </div>
 
         <figure className="hero__portrait">
           <div className="hero__portrait-media">
             <Image
-              src="/images/client/web/nataly-promo-portrait.webp"
+              src="/images/client/web/nataly-hero-portrait.webp"
               alt={`${siteConfig.doctorName}, odontóloga general y estética en Carepa`}
               fill
               priority
-              loading="eager"
-              sizes="(min-width: 1024px) 340px, (min-width: 720px) 30vw, 116px"
+              sizes="(min-width: 720px) 45vw, 1vw"
             />
           </div>
-          <figcaption>
+          <figcaption className="hero__portrait-plate">
             <span>{siteConfig.doctorName}</span>
             <strong>{siteConfig.doctorProfile.title}</strong>
           </figcaption>
