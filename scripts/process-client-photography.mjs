@@ -65,6 +65,32 @@ const jobs = [
     quality: 82
   },
   {
+    source: "nataly-bata-promo.jpeg",
+    output: "nataly-hero-portrait.webp",
+    note:
+      "Retrato editorial alto para el hero de la home. Mismo original que " +
+      "nataly-promo-portrait.webp, pero llegando hasta el torso para que la " +
+      "figura sostenga una columna alta en desktop en vez de una tarjeta " +
+      "pequeña. El borde izquierdo evita el logo y el inferior el bloque " +
+      "publicitario; el derecho recorta la pared vacía que dejaba a Nataly " +
+      "descentrada dentro del marco.",
+    crop: { left: 215, top: 0, width: 455, height: 830 },
+    width: 455,
+    quality: 82
+  },
+  {
+    source: "nataly-bata-promo.jpeg",
+    output: "nataly-signature-avatar.webp",
+    note:
+      "Avatar frontal para la firma compacta del hero en móvil. Se recorta del " +
+      "mismo material que el retrato del hero, no de nataly-bata-clinica.jpeg, " +
+      "porque allí Nataly aparece de perfil y mirando fuera de cámara: a 46 px " +
+      "ese encuadre se lee como un recorte fallido.",
+    crop: { left: 225, top: 40, width: 400, height: 400 },
+    width: 240,
+    quality: 86
+  },
+  {
     // Provisional: recorte del material de redes mientras llega su retrato
     // profesional. El ancho útil está limitado por la posición de Nataly en
     // la toma original, así que no puede crecer más sin invadirla.
