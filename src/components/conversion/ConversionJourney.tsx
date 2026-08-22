@@ -16,7 +16,7 @@ export function ConversionJourney() {
       ? "Consultar diseño de sonrisa"
       : selectedOption.urgencyLevel === "high"
         ? "Consultar disponibilidad"
-        : `Consultar ${selectedOption.label.toLocaleLowerCase("es")}`
+        : `Consultar sobre ${selectedOption.label.toLocaleLowerCase("es")}`
     : "";
   const responseRef = useRef<HTMLDivElement>(null);
 
@@ -35,17 +35,17 @@ export function ConversionJourney() {
   }, [journey, selectedOption]);
 
   return (
-    <section className="journey-experience" id="que-necesitas" aria-label="Orientación por necesidad">
+    <section className="journey-experience" id="que-necesitas" aria-label="Opciones según tu necesidad">
       <IntentGateway />
       <div className={`conversion-journey${journey ? " conversion-journey--active" : ""}`} id="recorrido-opciones" aria-live="polite" ref={responseRef}>
         <div className="container">
           {!journey ? (
-            <p className="conversion-journey__prompt">Selecciona una opción para recibir una orientación breve, sin formularios.</p>
+            <p className="conversion-journey__prompt">Elige una opción.</p>
           ) : (
             <div className="conversion-journey__panel" key={journey.id}>
               <div className="conversion-journey__header">
-                <div><p className="eyebrow">Paso 2 de 2 · Tu orientación</p><h2>{journey.title}</h2><p>Elige una opción o escribe directamente. No necesitas acertar el nombre del tratamiento.</p></div>
-                <button type="button" className="text-action" onClick={reset}>Cambiar camino</button>
+                <div><p className="eyebrow">Paso 2 de 2</p><h2>{journey.title}</h2><p>Elige lo más parecido a tu caso. También puedes escribirnos directamente.</p></div>
+                <button type="button" className="text-action" onClick={reset}>Cambiar motivo</button>
               </div>
               <div className={`journey-options${selectedOption ? " journey-options--selected" : ""}`} aria-label={`Opciones para ${journey.title}`}>
                 {journey.options.map((option) => {
@@ -60,7 +60,7 @@ export function ConversionJourney() {
               </div>
               {selectedOption ? (
                 <article className="journey-result" key={selectedOption.id}>
-                  <div className="journey-result__copy"><span>Tu orientación</span><h3>{selectedOption.label}</h3><p>{selectedOption.shortGuidance}</p></div>
+                  <div className="journey-result__copy"><span>Información</span><h3>{selectedOption.label}</h3><p>{selectedOption.shortGuidance}</p></div>
                   <div className="journey-result__actions">
                     <DynamicWhatsAppCTA label={ctaLabel} message={selectedOption.whatsappMessage} ctaLocation="conversion_journey" variant={selectedOption.urgencyLevel === "high" ? "emergency" : "primary"} serviceSlug={selectedOption.serviceUrl?.split("/").pop()} fullWidth />
                     {selectedOption.serviceUrl ? <Link href={selectedOption.serviceUrl}>Ver información</Link> : null}

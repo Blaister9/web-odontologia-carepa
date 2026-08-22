@@ -11,7 +11,7 @@ import { SectionHeading } from "../ui/SectionHeading";
 export function DentalTeam() {
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una valoración odontológica con el equipo de la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?"
   );
   const featuredMembers = teamMembers.filter((member) => member.featured).slice(0, 4);
 
@@ -21,8 +21,8 @@ export function DentalTeam() {
         <div className="dental-team__heading">
           <SectionHeading
             eyebrow="Equipo"
-            title="Profesionales para una atención odontológica integral"
-            description="Un equipo pensado para orientar, valorar y acompañar cada caso con comunicación clara desde el primer contacto."
+            title="Conoce al equipo"
+            description="Odontología general y estética, con apoyo en ortodoncia, cirugía maxilofacial e implantología."
           />
           <Button href={appointmentUrl} target="_blank" size="md">
             Agendar por WhatsApp
@@ -52,7 +52,7 @@ export function DentalTeam() {
                 </div>
               )}
               <div className="team-card__body">
-                <span>{member.profileComplete ? "Perfil del equipo" : "Perfil en actualización"}</span>
+                <span>{member.profileComplete ? "Equipo odontológico" : "Información pendiente"}</span>
                 <h3>{member.name}</h3>
                 <strong>{member.role}</strong>
                 <p>{member.description}</p>

@@ -13,11 +13,11 @@ export function MobileStickyCTA() {
   const [journeyVisible, setJourneyVisible] = useState(true);
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
+    "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?"
   );
   const emergencyUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa y tengo una urgencia odontológica. ¿Me pueden orientar con disponibilidad de atención?"
+    "Hola, tengo una urgencia odontológica. ¿Tienen disponibilidad para atenderme?"
   );
   const contextualUrl = selectedOption
     ? getWhatsAppUrl(siteConfig.whatsappNumber, selectedOption.whatsappMessage)

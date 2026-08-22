@@ -7,9 +7,9 @@ export function Testimonials() {
     <section className="section testimonials">
       <div className="container">
         <SectionHeading
-          eyebrow="Experiencia del paciente"
-          title="Una experiencia pensada para que decidas con tranquilidad"
-          description="Mientras se incorporan testimonios reales autorizados, estos principios describen el tipo de atención que buscamos sostener en cada contacto."
+          eyebrow="Antes de decidir"
+          title="Lo que puedes esperar de la consulta"
+          description="No publicamos testimonios sin autorización. Estos puntos explican cómo funciona la atención."
           align="center"
         />
 

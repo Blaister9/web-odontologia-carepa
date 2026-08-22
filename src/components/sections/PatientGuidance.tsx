@@ -6,24 +6,23 @@ import { Button } from "../ui/Button";
 export function PatientGuidance() {
   const whatsappUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa y no sé qué tratamiento necesito. Quiero contar lo que siento para recibir orientación y revisar disponibilidad."
+    "Hola, no sé qué tratamiento necesito. ¿Tienen disponibilidad para una valoración?"
   );
 
   return (
     <section className="guidance-band">
       <div className="container guidance-band__grid">
         <div>
-          <p className="eyebrow eyebrow--light">Orientación sin presión</p>
-          <h2>No necesitas saber qué tratamiento pedir</h2>
+          <p className="eyebrow eyebrow--light">Puedes empezar por aquí</p>
+          <h2>No tienes que saber qué tratamiento pedir</h2>
           <p>
-            Puedes escribir con tus síntomas, una molestia, una duda estética o una foto de
-            referencia si la tienes. La valoración ayuda a traducir esa inquietud en un camino
-            clínico responsable.
+            Escribe qué sientes o qué quieres cambiar. En la valoración revisamos el caso y te
+            explicamos las opciones.
           </p>
         </div>
         <div className="guidance-band__actions">
           <Button href="#que-necesitas" variant="emergency" size="lg">
-            Usar selector de necesidad
+            Elegir una opción
           </Button>
           <Button href={whatsappUrl} target="_blank" variant="outline" size="lg">
             Escribir directamente

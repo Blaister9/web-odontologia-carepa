@@ -51,10 +51,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "limpieza-dental",
     title: "Limpieza dental en Carepa | Profilaxis y cuidado preventivo",
     metaDescription:
-      "Agenda por WhatsApp una valoración para limpieza dental en Carepa, Antioquia. Cuidado preventivo, orientación clara y recomendaciones según tu caso.",
+      "Consulta por limpieza dental en Carepa, Antioquia. Agenda una valoración por WhatsApp y recibe indicaciones según tu salud oral.",
     h1: "Limpieza dental en Carepa",
     intro:
-      "La limpieza dental ayuda a mantener una buena higiene oral y permite revisar el estado de encías, dientes y hábitos de cuidado. En Carepa, puedes agendar una valoración para recibir orientación profesional antes de decidir el siguiente paso.",
+      "La limpieza dental ayuda a remover placa y manchas superficiales. Antes de realizarla, revisamos el estado de dientes y encías.",
     benefits: [
       "Ayuda a controlar acumulación de placa y manchas superficiales.",
       "Permite recibir recomendaciones de higiene según tus hábitos.",
@@ -68,7 +68,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Escribes por WhatsApp y cuentas qué necesitas.",
       "Se agenda una valoración según disponibilidad.",
-      "La profesional revisa tu caso y define el manejo adecuado."
+      "Revisamos dientes y encías para definir qué limpieza necesitas."
     ],
     faq: [
       {
@@ -83,7 +83,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por limpieza dental. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre limpieza dental. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["blanqueamiento-dental-carepa", "odontologia-familiar-carepa", "resinas-esteticas-carepa"]
   },
   {
@@ -91,10 +91,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "blanqueamiento-dental",
     title: "Blanqueamiento dental en Carepa | Valoración estética responsable",
     metaDescription:
-      "Consulta por blanqueamiento dental en Carepa. Valoración estética responsable para revisar sensibilidad, expectativas y opciones según tu salud oral.",
+      "Consulta por blanqueamiento dental en Carepa. Revisa sensibilidad, tono y opciones según tu salud oral antes de iniciar.",
     h1: "Blanqueamiento dental en Carepa",
     intro:
-      "El blanqueamiento dental puede ayudar a aclarar el tono de los dientes, pero debe valorarse según sensibilidad, restauraciones existentes y estado general de la boca. La orientación profesional evita expectativas poco realistas.",
+      "El blanqueamiento puede aclarar el tono de los dientes. Antes de iniciarlo, hay que revisar sensibilidad, restauraciones y salud oral.",
     benefits: [
       "Permite revisar si eres candidato antes de iniciar.",
       "Ayuda a aclarar expectativas sobre tono, sensibilidad y cuidados.",
@@ -108,7 +108,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Cuentas por WhatsApp qué cambio te gustaría lograr.",
       "Se revisa disponibilidad para valoración.",
-      "La profesional evalúa tu caso y explica opciones responsables."
+      "Revisamos el caso y te explicamos las opciones."
     ],
     faq: [
       {
@@ -123,7 +123,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por blanqueamiento dental. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre blanqueamiento dental. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["limpieza-dental-carepa", "diseno-de-sonrisa-carepa", "resinas-esteticas-carepa"]
   },
   {
@@ -148,7 +148,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Envías tu motivo de consulta por WhatsApp.",
       "Se agenda una valoración para revisar el diente o zona afectada.",
-      "Recibes explicación de opciones, cuidados y limitaciones del tratamiento."
+      "Te explicamos las opciones, los cuidados y los límites del tratamiento."
     ],
     faq: [
       {
@@ -163,7 +163,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por resinas estéticas. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre resinas estéticas. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["diseno-de-sonrisa-carepa", "protesis-dentales-carepa", "limpieza-dental-carepa"]
   },
   {
@@ -171,10 +171,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "diseno-sonrisa",
     title: "Diseño de sonrisa en Carepa | Valoración estética dental",
     metaDescription:
-      "Consulta por diseño de sonrisa en Carepa. Valoración estética responsable para revisar opciones reales según salud oral, forma dental y expectativas.",
+      "Consulta por diseño de sonrisa en Carepa. Revisa opciones según tu salud oral, la forma de los dientes y lo que quieres cambiar.",
     h1: "Diseño de sonrisa en Carepa",
     intro:
-      "El diseño de sonrisa debe iniciar con una valoración responsable. Antes de hablar de materiales o cambios estéticos, conviene revisar salud oral, encías, mordida, color y expectativas.",
+      "Antes de planear un diseño de sonrisa, revisamos la salud oral, las encías, la mordida y los cambios que te gustaría hacer.",
     benefits: [
       "Permite planear cambios de forma más ordenada.",
       "Ayuda a alinear expectativas con posibilidades reales.",
@@ -183,12 +183,12 @@ export const servicePages: ServicePage[] = [
     whenToConsider: [
       "Quieres mejorar armonía, forma o color de tu sonrisa.",
       "No sabes si necesitas resinas, blanqueamiento u otro tratamiento.",
-      "Buscas orientación antes de tomar una decisión estética."
+      "Quieres conocer las opciones antes de tomar una decisión estética."
     ],
     processSteps: [
       "Cuentas qué te gustaría mejorar.",
       "Se agenda valoración para revisar salud oral y expectativas.",
-      "Recibes alternativas explicadas de forma clara y responsable."
+      "Te explicamos qué alternativas podrían corresponder."
     ],
     faq: [
       {
@@ -199,11 +199,11 @@ export const servicePages: ServicePage[] = [
       {
         question: "¿Puedo preguntar antes de agendar?",
         answer:
-          "Sí. Puedes escribir por WhatsApp para recibir orientación inicial y saber si conviene una valoración."
+          "Sí. Puedes escribir por WhatsApp y preguntar si conviene agendar una valoración."
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por diseño de sonrisa. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre diseño de sonrisa. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["blanqueamiento-dental-carepa", "resinas-esteticas-carepa", "limpieza-dental-carepa"]
   },
   {
@@ -214,7 +214,7 @@ export const servicePages: ServicePage[] = [
       "Consulta por ortodoncia en Carepa. Agenda valoración para revisar alineación dental, mordida y alternativas según diagnóstico profesional.",
     h1: "Ortodoncia en Carepa",
     intro:
-      "La ortodoncia busca revisar alineación dental y mordida. Antes de iniciar, es importante una valoración que permita entender el caso y definir si hay condiciones previas por tratar.",
+      "La ortodoncia corrige la alineación de los dientes y la mordida. Antes de iniciar, revisamos el caso y si hay algo que deba tratarse primero.",
     benefits: [
       "Ayuda a revisar alineación y mordida de forma integral.",
       "Permite conocer alternativas y pasos generales del proceso.",
@@ -228,7 +228,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Escribes por WhatsApp indicando que te interesa ortodoncia.",
       "Se agenda una valoración inicial según disponibilidad.",
-      "La profesional revisa tu caso y explica opciones o pasos necesarios."
+      "Revisamos el caso y te explicamos las opciones y los pasos necesarios."
     ],
     faq: [
       {
@@ -243,7 +243,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por ortodoncia. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre ortodoncia. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["limpieza-dental-carepa", "odontologia-familiar-carepa", "diseno-de-sonrisa-carepa"]
   },
   {
@@ -251,10 +251,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "protesis-dentales",
     title: "Prótesis dentales en Carepa | Recuperar función y comodidad",
     metaDescription:
-      "Consulta por prótesis dentales en Carepa. Valoración para revisar alternativas orientadas a recuperar piezas, función masticatoria y comodidad.",
+      "Consulta por prótesis dentales en Carepa. Conoce alternativas para reemplazar piezas y recuperar la función al masticar.",
     h1: "Prótesis dentales en Carepa",
     intro:
-      "Las prótesis dentales pueden ser una alternativa para recuperar piezas ausentes y mejorar función masticatoria. La opción adecuada depende de la valoración clínica y de las condiciones de cada paciente.",
+      "Las prótesis dentales sirven para reemplazar piezas ausentes y recuperar la función al masticar. La opción depende de la boca y las necesidades de cada persona.",
     benefits: [
       "Ayudan a revisar alternativas para piezas ausentes.",
       "Buscan recuperar función y comodidad al comer.",
@@ -268,7 +268,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Cuentas tu caso por WhatsApp.",
       "Se agenda valoración para revisar piezas presentes, encías y función.",
-      "Recibes orientación sobre alternativas y pasos posibles."
+      "Te explicamos las alternativas y los pasos posibles."
     ],
     faq: [
       {
@@ -283,7 +283,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por prótesis dentales. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre prótesis dentales. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["resinas-esteticas-carepa", "odontologia-familiar-carepa", "limpieza-dental-carepa"],
     caseStudy: {
       // Pendiente: autorización de publicación del paciente.
@@ -306,13 +306,13 @@ export const servicePages: ServicePage[] = [
     serviceId: "endodoncia",
     title: "Endodoncia en Carepa | Valoración por dolor dental",
     metaDescription:
-      "Consulta por endodoncia en Carepa. Agenda valoración para revisar dolor, sensibilidad o molestias dentales y recibir orientación profesional.",
+      "Consulta por endodoncia en Carepa. Agenda una valoración para revisar dolor, sensibilidad o molestias en un diente.",
     h1: "Endodoncia en Carepa",
     intro:
-      "La endodoncia puede considerarse cuando hay dolor, sensibilidad persistente o señales de compromiso interno del diente. La valoración permite revisar el caso y definir si este manejo corresponde.",
+      "La endodoncia puede ser necesaria cuando hay dolor o sensibilidad persistente. Primero hay que revisar si la molestia viene del interior del diente.",
     benefits: [
       "Permite estudiar molestias que no mejoran o aparecen con frío, calor o presión.",
-      "Ayuda a orientar el manejo cuando el dolor parece venir del interior del diente.",
+      "Ayuda a definir el manejo cuando el dolor viene del interior del diente.",
       "Evita asumir un tratamiento sin una revisión odontológica previa."
     ],
     whenToConsider: [
@@ -334,11 +334,11 @@ export const servicePages: ServicePage[] = [
       {
         question: "¿Puedo consultar primero por WhatsApp?",
         answer:
-          "Sí. Puedes explicar tus síntomas para revisar disponibilidad y saber cómo iniciar la valoración."
+          "Sí. Describe los síntomas para consultar disponibilidad y saber cómo empezar."
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por endodoncia. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre endodoncia. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["urgencias-odontologicas-carepa", "resinas-esteticas-carepa", "limpieza-dental-carepa"]
   },
   {
@@ -349,21 +349,21 @@ export const servicePages: ServicePage[] = [
       "Consulta por implantología en Carepa. Valoración para revisar piezas ausentes, alternativas de rehabilitación oral y pasos según diagnóstico.",
     h1: "Implantología en Carepa",
     intro:
-      "La implantología es una alternativa de rehabilitación oral que debe planearse con valoración profesional. Antes de decidir, se revisan condiciones orales, necesidades funcionales y opciones posibles.",
+      "Los implantes dentales pueden reemplazar piezas ausentes. Antes de decidir, revisamos la salud oral y las alternativas de rehabilitación.",
     benefits: [
       "Ayuda a revisar alternativas ante la ausencia de una o varias piezas dentales.",
       "Permite entender pasos generales, criterios y necesidades antes de iniciar.",
-      "Integra función, comodidad y planificación responsable."
+      "Considera la función, la comodidad y la planificación del caso."
     ],
     whenToConsider: [
       "Te falta una pieza dental y quieres conocer opciones.",
       "Usas una prótesis y deseas revisar alternativas de rehabilitación.",
-      "Quieres orientación antes de tomar una decisión sobre implantes."
+      "Quieres conocer las opciones antes de decidir sobre implantes."
     ],
     processSteps: [
       "Cuentas por WhatsApp qué pieza o zona quieres revisar.",
       "Se agenda valoración para examinar el caso y definir necesidades.",
-      "Recibes orientación sobre alternativas, estudios o remisiones si aplican."
+      "Te explicamos las alternativas, los estudios o las remisiones que hagan falta."
     ],
     faq: [
       {
@@ -378,7 +378,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por implantología. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre implantes dentales. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["protesis-dentales-carepa", "limpieza-dental-carepa", "odontologia-familiar-carepa"]
   },
   {
@@ -386,24 +386,24 @@ export const servicePages: ServicePage[] = [
     serviceId: "armonizacion-orofacial",
     title: "Armonización orofacial en Carepa | Valoración estética responsable",
     metaDescription:
-      "Consulta por armonización orofacial en Carepa. Orientación estética responsable con valoración previa, expectativas claras y disponibilidad por WhatsApp.",
+      "Consulta por armonización orofacial en Carepa. Revisa indicaciones, alternativas y disponibilidad por WhatsApp.",
     h1: "Armonización orofacial en Carepa",
     intro:
-      "La armonización orofacial requiere valoración individual, explicación clara de expectativas y criterio profesional. La consulta ayuda a revisar si el procedimiento que tienes en mente es adecuado para tu caso.",
+      "La armonización orofacial reúne procedimientos estéticos para el rostro. En consulta revisamos si la opción que tienes en mente corresponde a tu caso.",
     benefits: [
       "Permite conversar expectativas antes de decidir.",
-      "Ayuda a revisar alternativas estéticas con orientación responsable.",
+      "Ayuda a revisar alternativas estéticas y sus límites.",
       "Evita iniciar procedimientos sin una valoración individual."
     ],
     whenToConsider: [
-      "Quieres orientación sobre labios, perfil facial o procedimientos estéticos.",
+      "Quieres consultar sobre labios, perfil facial o procedimientos estéticos.",
       "Buscas entender opciones antes de tomar una decisión.",
       "Tienes dudas sobre indicaciones, cuidados o disponibilidad."
     ],
     processSteps: [
       "Escribes por WhatsApp contando qué procedimiento te interesa.",
       "Se agenda una valoración según disponibilidad.",
-      "Se revisan expectativas, alternativas y recomendaciones responsables."
+      "Revisamos expectativas, alternativas y cuidados."
     ],
     faq: [
       {
@@ -414,11 +414,11 @@ export const servicePages: ServicePage[] = [
       {
         question: "¿Puedo consultar por varios procedimientos?",
         answer:
-          "Sí. Puedes escribir qué opciones te interesan para recibir orientación inicial y revisar disponibilidad."
+          "Sí. Escribe qué opciones te interesan y consulta disponibilidad."
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por armonización orofacial. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre armonización orofacial. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["diseno-de-sonrisa-carepa", "blanqueamiento-dental-carepa", "odontologia-familiar-carepa"]
   },
   {
@@ -429,7 +429,7 @@ export const servicePages: ServicePage[] = [
       "Consulta por extracción de cordales en Carepa. Valoración para revisar dolor, inflamación, posición de terceros molares y disponibilidad.",
     h1: "Extracción de cordales en Carepa",
     intro:
-      "Las cordales pueden generar dolor, inflamación o molestias, pero no todos los casos requieren extracción. La valoración ayuda a revisar síntomas, posición y siguiente paso responsable.",
+      "Las cordales pueden causar dolor o inflamación, pero no siempre hay que extraerlas. Primero revisamos los síntomas y la posición de los dientes.",
     benefits: [
       "Permite revisar si la molestia está relacionada con terceros molares.",
       "Ayuda a definir si se necesita manejo quirúrgico, control o remisión.",
@@ -443,7 +443,7 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Escribes por WhatsApp indicando síntomas y zona afectada.",
       "Se revisa disponibilidad para valoración.",
-      "La profesional orienta si se requiere estudio adicional, manejo o remisión."
+      "Te indicamos si hace falta un estudio, tratamiento o remisión."
     ],
     faq: [
       {
@@ -458,7 +458,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por extracción de cordales. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera información sobre extracción de cordales. ¿Tienen disponibilidad para una valoración?",
     relatedServices: ["urgencias-odontologicas-carepa", "endodoncia-carepa", "limpieza-dental-carepa"]
   },
   {
@@ -466,10 +466,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "urgencias-odontologicas",
     title: "Urgencias odontológicas en Carepa | Dolor dental e inflamación",
     metaDescription:
-      "Consulta disponibilidad para urgencias odontológicas en Carepa por dolor dental, inflamación, fractura o restauración caída. Orientación por WhatsApp.",
+      "Consulta disponibilidad para urgencias odontológicas en Carepa por dolor, inflamación, fractura o una restauración caída.",
     h1: "Urgencias odontológicas en Carepa",
     intro:
-      "Si tienes dolor dental, inflamación, trauma o una restauración caída, puedes escribir por WhatsApp para revisar disponibilidad. La orientación inicial no reemplaza una valoración profesional.",
+      "Si tienes dolor, inflamación, un golpe o una restauración caída, escribe por WhatsApp para consultar disponibilidad. No hacemos diagnósticos por chat.",
     benefits: [
       "Ayuda a definir si debes buscar atención odontológica cuanto antes.",
       "Permite comunicar síntomas importantes desde el primer mensaje.",
@@ -498,7 +498,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y tengo una urgencia odontológica. ¿Me pueden orientar con disponibilidad de atención?",
+      "Hola, tengo una urgencia odontológica. ¿Tienen disponibilidad para atenderme?",
     relatedServices: ["limpieza-dental-carepa", "resinas-esteticas-carepa", "odontologia-familiar-carepa"]
   },
   {
@@ -506,10 +506,10 @@ export const servicePages: ServicePage[] = [
     serviceId: "odontologia-familiar",
     title: "Odontología familiar en Carepa | Cuidado oral para la familia",
     metaDescription:
-      "Agenda por WhatsApp valoración de odontología familiar en Carepa. Atención preventiva y restaurativa con orientación clara para diferentes etapas.",
+      "Agenda por WhatsApp una consulta de odontología familiar en Carepa. Atención preventiva y restaurativa para distintas edades.",
     h1: "Odontología familiar en Carepa",
     intro:
-      "La odontología familiar reúne cuidado preventivo y restaurativo para diferentes etapas de la vida. La valoración ayuda a definir prioridades y hábitos de cuidado oral en casa.",
+      "La odontología familiar incluye revisión, prevención y restauraciones para distintas edades. En consulta definimos qué conviene atender primero.",
     benefits: [
       "Permite revisar necesidades preventivas y restaurativas.",
       "Ayuda a ordenar prioridades de atención para la familia.",
@@ -523,13 +523,13 @@ export const servicePages: ServicePage[] = [
     processSteps: [
       "Escribes por WhatsApp contando quién necesita la valoración.",
       "Se revisa disponibilidad y datos básicos de la cita.",
-      "La profesional orienta el plan según hallazgos y prioridades."
+      "Definimos el plan según lo que encontremos y lo que convenga atender primero."
     ],
     faq: [
       {
         question: "¿Puedo consultar por varios integrantes de la familia?",
         answer:
-          "Sí. Puedes escribir por WhatsApp y contar cuántas personas necesitan orientación o valoración."
+          "Sí. Escribe por WhatsApp cuántas personas necesitan una consulta."
       },
       {
         question: "¿La atención familiar incluye urgencias?",
@@ -538,7 +538,7 @@ export const servicePages: ServicePage[] = [
       }
     ],
     whatsappMessage:
-      "Hola, estoy en Carepa y quiero consultar por odontología familiar. ¿Me pueden orientar con disponibilidad para una valoración?",
+      "Hola, quisiera agendar una consulta de odontología familiar. ¿Tienen disponibilidad?",
     relatedServices: ["limpieza-dental-carepa", "ortodoncia-carepa", "urgencias-odontologicas-carepa"]
   }
 ];

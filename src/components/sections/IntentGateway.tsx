@@ -9,7 +9,7 @@ export function IntentGateway() {
     <div className="intent-gateway" id="elige-tu-camino" aria-labelledby="intent-title">
       <div className="container">
         <div className="intent-gateway__heading">
-          <p className="eyebrow">Paso 1 de 2 · Elige tu motivo</p>
+          <p className="eyebrow">Paso 1 de 2</p>
           <h2 id="intent-title">¿Qué necesitas hoy?</h2>
         </div>
         <div className="intent-gateway__grid" aria-label="Motivos principales de consulta">

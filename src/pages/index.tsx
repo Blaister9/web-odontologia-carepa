@@ -35,7 +35,7 @@ function CampaignEntry({ campaign }: { campaign: CampaignConfig }) {
     >
       <div className="container campaign-entry__inner">
         <div className="campaign-entry__copy">
-          <p className="eyebrow">Llegaste por: {campaign.name}</p>
+          <p className="eyebrow">Información sobre {campaign.name}</p>
           <h2 id="campaign-entry-title">{campaign.headline}</h2>
           <p>{campaign.supportingLine}</p>
         </div>

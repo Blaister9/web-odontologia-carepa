@@ -4,7 +4,7 @@ import { siteConfig } from "@/data/site";
 
 const heroCues = [
   `${siteConfig.city}, ${siteConfig.department}`,
-  "Equipo interdisciplinario",
+  "Equipo odontológico",
   "Cita previa por WhatsApp"
 ];
 
@@ -16,17 +16,17 @@ export function Hero() {
           <p className="eyebrow">Odontología en Carepa</p>
           <h1>Cuéntanos qué necesitas</h1>
           <p className="hero__lead">
-            Dolor, una inquietud estética o cuidado preventivo: elige lo más cercano a tu caso y te mostramos cómo empezar.
+            ¿Tienes dolor, quieres mejorar tu sonrisa o buscas una revisión? Elige una opción.
           </p>
           <a
             className="hero__primary-link"
             href="#elige-tu-camino"
             id="hero-primary-action"
           >
-            Elegir qué necesito <span aria-hidden="true">↓</span>
+            Elegir una opción <span aria-hidden="true">↓</span>
           </a>
 
-          <ul className="hero__cues" aria-label="Datos de confianza">
+          <ul className="hero__cues" aria-label="Datos del consultorio">
             {heroCues.map((cue) => (
               <li key={cue}>{cue}</li>
             ))}

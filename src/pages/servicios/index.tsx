@@ -13,7 +13,7 @@ export default function ServiciosPage() {
   const canonicalUrl = absoluteUrl(siteConfig, "/servicios");
   const title = "Servicios odontológicos en Carepa | Dra. Nataly Jiménez";
   const description =
-    "Consulta el catálogo de servicios odontológicos en Carepa: odontología general, estética, ortodoncia, urgencias, rehabilitación y especialidades.";
+    "Consulta servicios odontológicos en Carepa: odontología general, estética, ortodoncia, urgencias, rehabilitación y especialidades.";
   const jsonLd = getDentistJsonLd(siteConfig);
 
   return (
@@ -45,10 +45,10 @@ export default function ServiciosPage() {
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Servicios</p>
-            <h1>Catálogo de atención odontológica en Carepa.</h1>
+            <h1>Servicios odontológicos en Carepa</h1>
             <p>
-              Explora por categoría y abre la guía de cada tratamiento. Si no sabes cuál
-              corresponde a tu caso, la valoración es el punto de partida.
+              Busca el servicio que necesitas. Si no estás seguro, escríbenos y te indicamos
+              cómo empezar.
             </p>
           </div>
         </section>
@@ -73,9 +73,9 @@ export default function ServiciosPage() {
                         </div>
                         <div className="service-directory__actions">
                           {service.slug ? (
-                            <Link href={`/servicios/${service.slug}`}>Ver guía</Link>
+                            <Link href={`/servicios/${service.slug}`}>Más información</Link>
                           ) : (
-                            <span>Orientación en valoración</span>
+                            <span>Consulta por WhatsApp</span>
                           )}
                         </div>
                       </div>
@@ -91,18 +91,18 @@ export default function ServiciosPage() {
           <div className="container service-directory__closing-inner">
             <div>
               <span>¿No sabes cuál elegir?</span>
-              <p>Cuéntanos qué sientes y te orientamos para agendar una valoración.</p>
+              <p>Cuéntanos qué sientes o qué quieres cambiar.</p>
             </div>
             <a
               className="button button--primary button--md"
               href={getWhatsAppUrl(
                 siteConfig.whatsappNumber,
-                "Hola, quiero orientación para saber qué valoración odontológica necesito."
+                "Hola, no sé qué tratamiento necesito. ¿Tienen disponibilidad para una valoración?"
               )}
               target="_blank"
               rel="noreferrer"
             >
-              Pedir orientación
+              Escribir por WhatsApp
             </a>
           </div>
         </section>

@@ -13,11 +13,11 @@ export default function ConsultorioPage() {
   const canonicalUrl = absoluteUrl(siteConfig, "/consultorio");
   const whatsappUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una valoración odontológica en el consultorio de la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, quisiera agendar una valoración. ¿Tienen disponibilidad?"
   );
   const title = "Consultorio odontológico en Carepa | Dra. Nataly Jiménez";
   const description =
-    "Conoce Odontología Dra. Nataly Jiménez en Carepa: salud oral, estética dental, bienestar y atención personalizada con orientación clara.";
+    "Conoce el consultorio de la Dra. Nataly Jiménez en Carepa, el equipo y la forma de agendar una valoración por WhatsApp.";
   const jsonLd = getDentistJsonLd(siteConfig);
 
   return (
@@ -83,11 +83,11 @@ export default function ConsultorioPage() {
         <section className="section clinic-space" aria-labelledby="clinic-space-title">
           <div className="container clinic-space__inner">
             <div className="clinic-space__copy">
-              <p className="eyebrow">El espacio</p>
-              <h2 id="clinic-space-title">Un consultorio real, preparado para atenderte.</h2>
+              <p className="eyebrow">En Carepa</p>
+              <h2 id="clinic-space-title">El consultorio</h2>
               <p>
-                La unidad odontológica y el espacio de atención forman parte del consultorio en
-                Carepa. La disponibilidad y las indicaciones para llegar se confirman al agendar.
+                La atención es en Carepa. La dirección exacta y las indicaciones para llegar se
+                confirman al agendar.
               </p>
             </div>
             <figure className="clinic-space__figure">
@@ -99,7 +99,7 @@ export default function ConsultorioPage() {
                   sizes="(min-width: 980px) 58vw, 100vw"
                 />
               </div>
-              <figcaption>Fotografía real del consultorio.</figcaption>
+              <figcaption>Consultorio de la Dra. Nataly Jiménez en Carepa.</figcaption>
             </figure>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function ConsultorioPage() {
 
             <aside className="consultorio-story__panel" aria-label="Enfoque del consultorio">
               <span>Carepa, Antioquia</span>
-              <strong>Salud oral, estética dental y bienestar con atención personalizada.</strong>
+              <strong>Odontología general, estética y servicios especializados.</strong>
               <ul>
                 {brandContent.presentation.highlights.map((highlight) => (
                   <li key={highlight}>{highlight}</li>

@@ -7,7 +7,7 @@ import { getWhatsAppUrl } from "@/utils/whatsapp";
 import { Button } from "../ui/Button";
 
 const navItems = [
-  { label: "Necesidad", href: "/#que-necesitas" },
+  { label: "Qué necesitas", href: "/#que-necesitas" },
   { label: "Servicios", href: "/#servicios" },
   { label: "Doctora", href: "/#doctora" },
   { label: "Urgencias", href: "/#urgencias" },
@@ -25,7 +25,7 @@ export function Header({ homeMode = false }: HeaderProps) {
   const mobileMenuRef = useRef<HTMLDivElement>(null);
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, estoy en Carepa y quiero agendar una valoración odontológica. ¿Me pueden orientar con disponibilidad?"
+    "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?"
   );
 
   useEffect(() => {
@@ -65,7 +65,7 @@ export function Header({ homeMode = false }: HeaderProps) {
 
         <div className="site-header__actions">
           <Button href={appointmentUrl} target="_blank" size="sm">
-            Agendar cita
+            Agendar por WhatsApp
           </Button>
           <button
             ref={menuButtonRef}
