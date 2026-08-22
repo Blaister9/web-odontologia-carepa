@@ -1,0 +1,51 @@
+list_scope,negative_keyword,match_type,reason,status
+ACCOUNT,"empleo",phrase,Intención laboral,DRAFT
+ACCOUNT,"trabajo",phrase,Intención laboral,DRAFT
+ACCOUNT,"vacante",phrase,Intención laboral,DRAFT
+ACCOUNT,"salario",phrase,Intención laboral,DRAFT
+ACCOUNT,"hoja de vida",phrase,Intención laboral,DRAFT
+ACCOUNT,"curso",phrase,Intención educativa,DRAFT
+ACCOUNT,"carrera",phrase,Intención educativa,DRAFT
+ACCOUNT,"universidad",phrase,Intención educativa,DRAFT
+ACCOUNT,"técnico dental",phrase,Intención educativa/laboral,DRAFT
+ACCOUNT,"pdf",phrase,Investigación no comercial,DRAFT
+ACCOUNT,"definición",phrase,Investigación no comercial,DRAFT
+ACCOUNT,"significado",phrase,Investigación no comercial,DRAFT
+ACCOUNT,"wikipedia",phrase,Investigación no comercial,DRAFT
+ACCOUNT,"tarea",phrase,Investigación escolar,DRAFT
+ACCOUNT,"tesis",phrase,Investigación académica,DRAFT
+ACCOUNT,"gratis",phrase,Busca gratuidad no ofrecida,DRAFT
+ACCOUNT,"gratuito",phrase,Busca gratuidad no ofrecida,DRAFT
+ACCOUNT,"sin costo",phrase,Busca gratuidad no ofrecida,DRAFT
+ACCOUNT,"remedio casero",phrase,Autotratamiento,DRAFT
+ACCOUNT,"remedios caseros",phrase,Autotratamiento,DRAFT
+ACCOUNT,"cómo sacar",phrase,Autoprocedimiento riesgoso,DRAFT
+ACCOUNT,"hazlo tú mismo",phrase,Autoprocedimiento,DRAFT
+ACCOUNT,"diy",phrase,Autoprocedimiento,DRAFT
+ACCOUNT,"kit blanqueamiento",phrase,Producto doméstico,DRAFT
+ACCOUNT,"comprar brackets",phrase,Compra de producto,DRAFT
+ACCOUNT,"venta de",phrase,Compra de producto,DRAFT
+ACCOUNT,"mayorista",phrase,Compra B2B,DRAFT
+ACCOUNT,"instrumental",phrase,Insumos,DRAFT
+ACCOUNT,"laboratorio dental",phrase,Servicio B2B distinto,DRAFT
+ACCOUNT,"prótesis dental laboratorio",phrase,Servicio B2B distinto,DRAFT
+ACCOUNT,"fotos",phrase,Búsqueda visual,DRAFT
+ACCOUNT,"imágenes",phrase,Búsqueda visual,DRAFT
+ACCOUNT,"plantilla",phrase,Recurso digital,DRAFT
+ACCOUNT,"logo",phrase,Recurso visual,DRAFT
+ACCOUNT,"juego",phrase,Entretenimiento,DRAFT
+ACCOUNT,"película",phrase,Entretenimiento,DRAFT
+ACCOUNT,"veterinario",phrase,Servicio no humano,DRAFT
+ACCOUNT,"veterinaria",phrase,Servicio no humano,DRAFT
+ACCOUNT,"medellín",phrase,Fuera de zona inicial,REVIEW
+ACCOUNT,"bogotá",phrase,Fuera de zona inicial,REVIEW
+ACCOUNT,"cali",phrase,Fuera de zona inicial,REVIEW
+ACCOUNT,"barranquilla",phrase,Fuera de zona inicial,REVIEW
+ACCOUNT,"cartagena",phrase,Fuera de zona inicial,REVIEW
+ACCOUNT,"precio sillón odontológico",phrase,Equipo profesional,DRAFT
+ACCOUNT,"software odontológico",phrase,Software B2B,DRAFT
+ACCOUNT,"formato historia clínica",phrase,Recurso profesional,DRAFT
+ACCOUNT,"odontólogo salario",phrase,Intención laboral,DRAFT
+ACCOUNT,"facultad odontología",phrase,Intención educativa,DRAFT
+ACCOUNT,"especialización odontología",phrase,Intención educativa,DRAFT
+ACCOUNT,"proveedor odontológico",phrase,Compra B2B,DRAFT

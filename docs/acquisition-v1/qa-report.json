@@ -1,0 +1,47 @@
+{
+  "generatedAt": "2026-08-22T22:56:23.251Z",
+  "overall": "pass",
+  "checks": [
+    {
+      "name": "required-files",
+      "status": "pass",
+      "detail": "27 present"
+    },
+    {
+      "name": "google-rsa-limits",
+      "status": "pass",
+      "detail": "105 assets; 15 concepts across 5 intents with 5 headlines/2 descriptions"
+    },
+    {
+      "name": "copy-policy-guard",
+      "status": "pass",
+      "detail": "no prohibited promotional claims in paid copy"
+    },
+    {
+      "name": "meta-assets-and-utm",
+      "status": "pass",
+      "detail": "15 ads resolve to local assets with canonical UTM"
+    },
+    {
+      "name": "google-utm",
+      "status": "pass",
+      "detail": "all final URLs use canonical domain and complete UTM"
+    },
+    {
+      "name": "offline-status",
+      "status": "pass",
+      "detail": "31 campaign records remain DRAFT/HOLD"
+    },
+    {
+      "name": "attribution-template",
+      "status": "pass",
+      "detail": "header only; no patient rows"
+    },
+    {
+      "name": "media-integrity",
+      "status": "pass",
+      "detail": "13 WebP + 4 H.264/AAC files match manifest, dimensions, durations, hashes and complete PUBLIC-SAFE allowlist"
+    }
+  ],
+  "errors": []
+}
