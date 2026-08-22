@@ -1,0 +1,45 @@
+campaign,ad_group,keyword,match_type,intent,landing,priority,risk,notes
+G_SEARCH_CAREPA_V1,Local,dentista carepa,phrase,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Local,[dentista carepa],exact,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Local,odontólogo carepa,phrase,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Local,[odontólogo carepa],exact,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Local,odontologia carepa,phrase,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Local,consultorio odontologico carepa,phrase,local,/c/valoracion,P0,low,Núcleo; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Valoracion,valoracion odontologica carepa,phrase,valuation,/c/valoracion,P0,low,Sin afirmar gratuidad; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Valoracion,[valoracion odontologica carepa],exact,valuation,/c/valoracion,P0,low,Sin afirmar gratuidad; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Valoracion,cita odontologica carepa,phrase,valuation,/c/valoracion,P0,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Valoracion,consulta odontologica carepa,phrase,valuation,/c/valoracion,P0,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Urgencia,urgencia dental carepa,phrase,urgent,/c/urgencias,P0,policy-review,Orientar a valoración; no prometer atención inmediata; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Urgencia,[urgencia dental carepa],exact,urgent,/c/urgencias,P0,policy-review,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Urgencia,dolor de muela dentista carepa,phrase,urgent,/c/urgencias,P0,policy-review,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Urgencia,odontologo dolor dental carepa,phrase,urgent,/c/urgencias,P0,policy-review,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Sonrisa,diseño de sonrisa carepa,phrase,smile,/c/sonrisa,P1,low,Sin prometer resultado; DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Sonrisa,[diseño de sonrisa carepa],exact,smile,/c/sonrisa,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Sonrisa,blanqueamiento dental carepa,phrase,smile,/c/sonrisa,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Sonrisa,carillas dentales carepa,phrase,smile,/c/sonrisa,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Higiene,limpieza dental carepa,phrase,prevention,/c/limpieza,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Higiene,[limpieza dental carepa],exact,prevention,/c/limpieza,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Higiene,higiene oral carepa,phrase,prevention,/c/limpieza,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Ortodoncia,ortodoncia carepa,phrase,orthodontics,/c/ortodoncia,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CAREPA_V1,Ortodoncia,[ortodoncia carepa],exact,orthodontics,/c/ortodoncia,P1,low,DRAFT; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,dentista apartado,phrase,local,/c/valoracion,P0,geo-hold,Abrir como geografía separada; HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,[dentista apartado],exact,local,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,odontólogo apartado,phrase,local,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Valoracion,valoracion odontologica apartado,phrase,valuation,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Urgencia,urgencia dental apartado,phrase,urgent,/c/urgencias,P0,policy-review,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Sonrisa,diseño de sonrisa apartado,phrase,smile,/c/sonrisa,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Higiene,limpieza dental apartado,phrase,prevention,/c/limpieza,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Ortodoncia,ortodoncia apartado,phrase,orthodontics,/c/ortodoncia,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,dentista chigorodo,phrase,local,/c/valoracion,P0,geo-hold,Abrir como geografía separada; HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,[dentista chigorodo],exact,local,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Local,odontólogo chigorodo,phrase,local,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Valoracion,valoracion odontologica chigorodo,phrase,valuation,/c/valoracion,P0,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Urgencia,urgencia dental chigorodo,phrase,urgent,/c/urgencias,P0,policy-review,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Sonrisa,diseño de sonrisa chigorodo,phrase,smile,/c/sonrisa,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Higiene,limpieza dental chigorodo,phrase,prevention,/c/limpieza,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_CORREDOR_V1,Ortodoncia,ortodoncia chigorodo,phrase,orthodontics,/c/ortodoncia,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_TURBO_V1,Local,dentista turbo antioquia,phrase,local,/c/valoracion,P1,geo-hold,No abrir antes del día 15; HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_TURBO_V1,Local,[dentista turbo antioquia],exact,local,/c/valoracion,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_TURBO_V1,Valoracion,valoracion odontologica turbo,phrase,valuation,/c/valoracion,P1,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_TURBO_V1,Urgencia,urgencia dental turbo antioquia,phrase,urgent,/c/urgencias,P1,policy-review,HOLD; DRAFT; DRAFT; DRAFT
+G_SEARCH_TURBO_V1,Sonrisa,diseño de sonrisa turbo antioquia,phrase,smile,/c/sonrisa,TEST,geo-hold,HOLD; DRAFT; DRAFT; DRAFT
