@@ -65,15 +65,15 @@ export const teamMembers: TeamMember[] = [
 ];
 
 /**
- * Apertura de `/equipo`. Identidades confirmadas por la clienta: Dra. Nataly
- * Jiménez y Vanesa López. Complementa las tarjetas individuales, no las
- * reemplaza.
+ * Apertura de `/equipo`. Nueva fotografía real entregada el 2026-08-22;
+ * identidades confirmadas por la clienta: Dra. Nataly Jiménez y Vanesa López.
+ * Complementa las tarjetas individuales, no las reemplaza.
  *
  * Sigue pendiente la foto grupal de las cuatro personas
  * (`/images/equipo/equipo-completo.webp`, toma 5 de la shot list).
  */
 export const teamGroupPhoto = {
-  current: "/images/client/web/equipo-preview.webp",
+  current: "/images/client/web-v2/nataly-vanesa-team.webp",
   pending: "/images/equipo/equipo-completo.webp",
   alt: "Dra. Nataly Jiménez y Vanesa López, auxiliar e higienista oral",
   caption: "Dra. Nataly Jiménez y Vanesa López"

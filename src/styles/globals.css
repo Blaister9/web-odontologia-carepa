@@ -3832,6 +3832,10 @@ p {
   aspect-ratio: 4 / 3;
 }
 
+.team-intro__media img {
+  object-position: 50% 32%;
+}
+
 .team-intro__figure figcaption {
   margin-top: 10px;
   color: var(--color-muted);
@@ -3862,6 +3866,53 @@ p {
   color: var(--color-ink);
   font-size: 1.02rem;
   font-style: italic;
+}
+
+.clinic-space {
+  background: var(--color-bg);
+}
+
+.clinic-space__inner {
+  display: grid;
+  gap: 28px;
+  align-items: center;
+}
+
+.clinic-space__copy {
+  max-width: 640px;
+}
+
+.clinic-space__copy h2 {
+  margin-top: 6px;
+}
+
+.clinic-space__copy p:last-child {
+  margin-bottom: 0;
+  color: var(--color-ink-soft);
+}
+
+.clinic-space__figure {
+  margin: 0;
+}
+
+.clinic-space__media {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-teal-soft);
+  box-shadow: var(--shadow-card);
+}
+
+.clinic-space__media img {
+  object-fit: cover;
+}
+
+.clinic-space__figure figcaption {
+  margin-top: 10px;
+  color: var(--color-muted);
+  font-size: 0.86rem;
 }
 
 /* Caso clínico antes/después */
@@ -3916,6 +3967,10 @@ p {
 }
 
 @media (min-width: 768px) {
+  .clinic-space__inner {
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1.28fr);
+  }
+
   .team-intro__inner {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   }
