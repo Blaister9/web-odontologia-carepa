@@ -7,9 +7,9 @@ export function CareExperience() {
     <section className="section care-experience">
       <div className="container">
         <SectionHeading
-          eyebrow="Experiencia de atención"
-          title="Una ruta clara desde el primer mensaje"
-          description="El objetivo es que entiendas qué sigue, qué se revisa y por qué cada recomendación depende de una valoración profesional."
+          eyebrow="Cómo es la consulta"
+          title="Desde el primer mensaje"
+          description="Estos son los pasos habituales desde que escribes hasta que conoces las opciones."
           align="center"
         />
 

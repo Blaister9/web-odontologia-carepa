@@ -7,7 +7,7 @@ import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 export function FinalWhatsAppCTA() {
   const whatsappUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una valoración odontológica con la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?"
   );
 
   return (
@@ -16,9 +16,9 @@ export function FinalWhatsAppCTA() {
         <div className="final-whatsapp__inner" data-reveal>
           <div>
             <p className="eyebrow eyebrow--light">Agenda por WhatsApp</p>
-            <h2>Cuéntanos qué necesitas y revisamos el siguiente paso.</h2>
+            <h2>¿Quieres agendar una valoración?</h2>
             <p>
-              Puedes escribir aunque no sepas el tratamiento. La valoración define las opciones adecuadas.
+              Escribe aunque no sepas el nombre del tratamiento. Cuéntanos qué necesitas.
             </p>
           </div>
           <div className="final-whatsapp__actions">

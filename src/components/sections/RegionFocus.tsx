@@ -16,9 +16,8 @@ export function RegionFocus() {
           <p className="eyebrow">Carepa y Urabá</p>
           <h2>Atención en Carepa para pacientes de la región</h2>
           <p>
-            Este sitio está pensado para personas de Carepa y la región de Urabá que quieren
-            orientación clara antes de iniciar un tratamiento. La atención es en Carepa y la
-            disponibilidad se confirma por WhatsApp.
+            La atención es en Carepa. Si vienes desde otro municipio de Urabá, confirma la cita y
+            la ubicación por WhatsApp antes de desplazarte.
           </p>
           <Button href={whatsappUrl} target="_blank" size="lg">
             Confirmar disponibilidad

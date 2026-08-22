@@ -13,11 +13,11 @@ export default function EquipoPage() {
   const canonicalUrl = absoluteUrl(siteConfig, "/equipo");
   const whatsappUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una valoración odontológica con el equipo de la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, quisiera agendar una valoración. ¿Tienen disponibilidad?"
   );
   const title = "Equipo odontológico en Carepa | Dra. Nataly Jiménez";
   const description =
-    "Conoce el equipo del Consultorio Odontológico Dra Nataly Jiménez en Carepa y agenda una valoración odontológica por WhatsApp.";
+    "Conoce el equipo odontológico de la Dra. Nataly Jiménez en Carepa y consulta disponibilidad por WhatsApp.";
   const jsonLd = getDentistJsonLd(siteConfig);
 
   return (
@@ -49,10 +49,10 @@ export default function EquipoPage() {
         <section className="internal-hero">
           <div className="container internal-hero__inner">
             <p className="eyebrow">Equipo</p>
-            <h1>Un equipo para orientar tu atención odontológica con claridad.</h1>
+            <h1>Conoce al equipo</h1>
             <p>
-              Conoce a las personas que acompañan la valoración, el tratamiento y el cuidado oral
-              de pacientes de Carepa y la región de Urabá.
+              Nataly atiende odontología general y estética. El consultorio cuenta con apoyo en
+              ortodoncia, cirugía maxilofacial e implantología.
             </p>
             <div className="internal-hero__actions">
               <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
@@ -82,11 +82,10 @@ export default function EquipoPage() {
               <figcaption>{teamGroupPhoto.caption}</figcaption>
             </figure>
             <div className="team-intro__copy">
-              <p className="eyebrow">Atención cercana</p>
-              <h2>Personas detrás de cada valoración</h2>
+              <p className="eyebrow">Nataly y Vanesa</p>
+              <h2>Quiénes te atienden</h2>
               <p>
-                La atención combina odontología general, estética y apoyo especializado. Cada caso
-                se revisa en valoración antes de recomendar un tratamiento.
+                Cada profesional participa según el motivo de consulta.
               </p>
             </div>
           </div>
@@ -116,7 +115,7 @@ export default function EquipoPage() {
                   </div>
                 )}
                 <div className="team-card__body">
-                  <span>{member.profileComplete ? "Perfil del equipo" : "Perfil en actualización"}</span>
+                  <span>{member.profileComplete ? "Equipo odontológico" : "Información pendiente"}</span>
                   <h2>{member.name}</h2>
                   <strong>{member.role}</strong>
                   <p>{member.description}</p>

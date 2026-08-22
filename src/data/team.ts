@@ -24,7 +24,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dra. Nataly Jiménez",
     role: "Odontóloga General y Estética.",
     description:
-      "Acompaña valoraciones odontológicas con enfoque claro, humano y responsable para pacientes de Carepa y la región de Urabá.",
+      "Realiza la valoración inicial y atiende casos de odontología general y estética.",
     image: "/images/client/web/nataly-promo-portrait.webp",
     hasRealPhoto: true,
     awaitingProfessionalPhoto: true,
@@ -35,7 +35,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dra. Clara Parra",
     role: "Especialista en Ortodoncia y Ortopedia Maxilar.",
     description:
-      "Apoya la valoración y orientación de casos relacionados con alineación dental, mordida y desarrollo maxilar.",
+      "Valora casos de alineación dental, mordida y desarrollo maxilar.",
     hasRealPhoto: false,
     awaitingProfessionalPhoto: true,
     featured: true,
@@ -45,7 +45,7 @@ export const teamMembers: TeamMember[] = [
     name: "Dr. Adalberto Atencia",
     role: "Cirujano Maxilofacial e Implantólogo.",
     description:
-      "Profesional de apoyo para casos que requieren orientación especializada en cirugía maxilofacial e implantología.",
+      "Atiende los casos que requieren cirugía maxilofacial o valoración para implantes.",
     hasRealPhoto: false,
     awaitingProfessionalPhoto: true,
     featured: true,
@@ -55,7 +55,7 @@ export const teamMembers: TeamMember[] = [
     name: "Vanesa López",
     role: "Auxiliar e Higienista Oral.",
     description:
-      "Acompaña la atención al paciente, la orientación inicial y el proceso de agendamiento por WhatsApp.",
+      "Apoya la atención en el consultorio y coordina citas por WhatsApp.",
     image: "/images/equipo/vanesa-lopez.webp",
     hasRealPhoto: true,
     awaitingProfessionalPhoto: true,

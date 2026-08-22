@@ -86,7 +86,7 @@ export default function ServiceDetailPage({
 
             <div className="service-hero__note">
               <span>Antes de iniciar</span>
-              <strong>La valoración define si este tratamiento corresponde a tu caso.</strong>
+              <strong>Primero hay que revisar si este tratamiento corresponde a tu caso.</strong>
               <p>Sin diagnósticos por chat ni promesas de resultado.</p>
             </div>
           </div>
@@ -118,10 +118,9 @@ export default function ServiceDetailPage({
           <div className="container">
             <div className="section-heading section-heading--center">
               <p className="section-heading__eyebrow">Proceso</p>
-              <h2>Cómo suele ser el proceso</h2>
+              <h2>Cómo empieza</h2>
               <p>
-                La ruta exacta depende de tu valoración. Estos pasos ayudan a entender cómo
-                iniciar sin asumir un diagnóstico previo.
+                Los pasos pueden cambiar según lo que encontremos en la valoración.
               </p>
             </div>
 
@@ -180,10 +179,7 @@ export default function ServiceDetailPage({
             <div>
               <p className="eyebrow">Preguntas frecuentes</p>
               <h2>Dudas antes de agendar</h2>
-              <p>
-                Estas respuestas son orientación general. La conducta clínica se define con una
-                valoración profesional.
-              </p>
+              <p>Son respuestas generales. La valoración define qué corresponde en cada caso.</p>
             </div>
 
             <div className="faq__items">
@@ -225,9 +221,8 @@ export default function ServiceDetailPage({
             <div>
               <span>Antes de decidir</span>
               <p>
-                La información de esta página es educativa y no reemplaza una valoración
-                odontológica profesional. Para confirmar disponibilidad y orientación inicial,
-                escribe por WhatsApp.
+                Esta información es general y no reemplaza una valoración odontológica. Para
+                consultar disponibilidad, escribe por WhatsApp.
               </p>
             </div>
             <a className="button button--primary button--md" href={whatsappUrl} target="_blank" rel="noreferrer">

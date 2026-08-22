@@ -6,7 +6,7 @@ export function RegionWhatsApp() {
       <div className="container region-whatsapp__inner">
         <div data-reveal>
           <p className="eyebrow eyebrow--light">Carepa y Urabá</p>
-          <h2>Escribe desde tu ubicación y revisamos disponibilidad.</h2>
+          <h2>¿Vienes desde otro lugar de Urabá?</h2>
           <p>
             Atendemos pacientes de Carepa, veredas cercanas y la región de Urabá con cita previa.
           </p>
@@ -32,7 +32,7 @@ export function RegionWhatsApp() {
           </div>
         </div>
         <div className="region-whatsapp__note" data-reveal>
-          <span>Atención con cita previa</span>
+          <span>Antes de desplazarte</span>
           <strong>La ubicación exacta y la disponibilidad se confirman al agendar.</strong>
         </div>
       </div>

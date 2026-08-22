@@ -7,7 +7,7 @@ import { WhatsAppIcon } from "../ui/WhatsAppIcon";
 export function Emergency() {
   const emergencyUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, tengo una urgencia odontológica y estoy en Carepa o cerca. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, tengo una urgencia odontológica. ¿Tienen disponibilidad para atenderme?"
   );
 
   return (
@@ -20,7 +20,7 @@ export function Emergency() {
           </p>
           <p className="eyebrow eyebrow--light">Urgencias odontológicas</p>
           <h2>¿Tienes dolor ahora?</h2>
-          <p>Escríbenos para consultar disponibilidad de valoración.</p>
+          <p>Escríbenos y dinos qué pasó para consultar disponibilidad.</p>
           <Button
             href={emergencyUrl}
             target="_blank"

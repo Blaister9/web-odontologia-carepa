@@ -87,13 +87,12 @@ export function NeedSelector() {
       <div className="container need-selector__grid">
         <div data-reveal>
           <SectionHeading
-            eyebrow="Orientación inicial"
+            eyebrow="Motivo de consulta"
             title="¿Qué necesitas hoy?"
             description="Elige la opción que más se parece a tu situación. Te ayudamos a escribir un mensaje claro por WhatsApp, sin diagnosticarte por internet."
           />
           <p className="need-selector__note">
-            Esta guía reduce la fricción del primer mensaje. La valoración profesional define el
-            diagnóstico y el plan adecuado.
+            Esto no es un diagnóstico. La valoración define el tratamiento.
           </p>
         </div>
 

@@ -9,7 +9,7 @@ export function AboutDoctor() {
   const doctorProfile = siteConfig.doctorProfile;
   const appointmentUrl = getWhatsAppUrl(
     siteConfig.whatsappNumber,
-    "Hola, quiero agendar una valoración odontológica con la Dra. Nataly Jiménez. ¿Me pueden ayudar con disponibilidad?"
+    "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?"
   );
 
   return (
@@ -40,10 +40,10 @@ export function AboutDoctor() {
 
         <div className="about__content">
           <p className="eyebrow">Conoce a la doctora</p>
-          <h2>Una atención odontológica clara, cercana y profesional.</h2>
+          <h2>Dra. Nataly Jiménez</h2>
           <p className="about__intro">{doctorProfile.intro}</p>
 
-          <div className="about__highlights" aria-label="Puntos de confianza">
+          <div className="about__highlights" aria-label="Datos de atención">
             {doctorProfile.highlights.map((highlight) => (
               <article className="about__highlight" key={highlight}>
                 <span aria-hidden="true" />

@@ -12,8 +12,8 @@ const featuredServiceIds = [
 ];
 
 const outcomeCopy: Record<string, { title: string; summary: string }> = {
-  "limpieza-dental": { title: "Quiero una sonrisa más limpia", summary: "Cuidado preventivo para dientes y encías." },
-  "blanqueamiento-dental": { title: "Quiero aclarar mis dientes", summary: "Opciones responsables según tu salud oral." },
+  "limpieza-dental": { title: "Necesito una limpieza", summary: "Remoción de placa y revisión de las encías." },
+  "blanqueamiento-dental": { title: "Quiero aclarar mis dientes", summary: "Opciones según tu salud oral y sensibilidad." },
   "diseno-sonrisa": { title: "Quiero mejorar mi sonrisa", summary: "Alternativas estéticas con valoración previa." },
   "urgencias-odontologicas": { title: "Necesito atención por dolor", summary: "Consulta disponibilidad para una valoración." }
 };
@@ -30,7 +30,7 @@ export function FeaturedTreatments() {
           <SectionHeading
             eyebrow="Guías de tratamiento"
             title="Opciones según lo que quieres resolver"
-            description="Conoce alternativas frecuentes. La valoración define el paso adecuado."
+            description="Revisa las consultas más frecuentes."
           />
         </div>
 
@@ -52,7 +52,7 @@ export function FeaturedTreatments() {
                   <h3>{outcome.title}</h3>
                   <p>{outcome.summary}</p>
                   <div className="featured-treatment-card__actions">
-                    <Link href={`/servicios/${service.slug}`}>Ver guía del tratamiento <span aria-hidden="true">→</span></Link>
+                    <Link href={`/servicios/${service.slug}`}>Más información <span aria-hidden="true">→</span></Link>
                   </div>
                 </div>
               </article>

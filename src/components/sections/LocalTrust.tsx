@@ -8,9 +8,9 @@ export function LocalTrust() {
       <div className="container local-trust__grid">
         <div>
           <SectionHeading
-            eyebrow="Confianza local"
-            title="Una atención pensada para Carepa y la región de Urabá"
-            description="Para personas que buscan claridad antes de iniciar un tratamiento odontológico, con una conversación directa y sin promesas exageradas."
+            eyebrow="Carepa y Urabá"
+            title="Atención odontológica en Carepa"
+            description="Si vienes desde otro municipio, confirma la cita y la ubicación por WhatsApp antes de desplazarte."
           />
         </div>
 

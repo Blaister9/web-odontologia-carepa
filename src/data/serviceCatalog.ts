@@ -12,29 +12,29 @@ export type ServiceCategory = {
 };
 
 const defaultMessage = (serviceName: string) =>
-  `Hola, estoy en Carepa y quiero consultar por ${serviceName}. ¿Me pueden orientar con disponibilidad para una valoración?`;
+  `Hola, quisiera información sobre ${serviceName}. ¿Tienen disponibilidad para una valoración?`;
 
 export const serviceCatalog: ServiceCategory[] = [
   {
     title: "Odontología general y preventiva",
-    description: "Revisión, prevención y restauraciones básicas según valoración profesional.",
+    description: "Consultas, prevención y restauraciones básicas.",
     services: [
       {
         name: "Consulta o valoración por odontología general",
         slug: "odontologia-familiar-carepa",
-        summary: "Primer paso para revisar salud oral, molestias o dudas de tratamiento.",
+        summary: "Revisión de la salud oral, molestias o dudas de tratamiento.",
         whatsappMessage: defaultMessage("una valoración por odontología general")
       },
       {
         name: "Limpieza dental",
         slug: "limpieza-dental-carepa",
-        summary: "Cuidado preventivo para placa, encías y recomendaciones de higiene.",
+        summary: "Remoción de placa y revisión del cuidado de las encías.",
         whatsappMessage: defaultMessage("limpieza dental")
       },
       {
         name: "Profilaxis",
         slug: "limpieza-dental-carepa",
-        summary: "Orientación preventiva y control de higiene oral según cada caso.",
+        summary: "Limpieza y recomendaciones de higiene oral.",
         whatsappMessage: defaultMessage("profilaxis")
       },
       {
@@ -46,24 +46,24 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Cambio de amalgamas por resinas estéticas",
         slug: "resinas-esteticas-carepa",
-        summary: "Revisión de restauraciones antiguas y alternativas estéticas responsables.",
+        summary: "Revisión de restauraciones antiguas y opciones de reemplazo.",
         whatsappMessage: defaultMessage("cambio de amalgamas por resinas estéticas")
       },
       {
         name: "Extracciones simples",
-        summary: "Valoración para definir si una extracción simple es necesaria y viable.",
+        summary: "Revisión para saber si es necesario extraer el diente.",
         whatsappMessage: defaultMessage("extracciones simples")
       }
     ]
   },
   {
     title: "Odontología estética",
-    description: "Opciones estéticas explicadas con expectativas realistas y valoración previa.",
+    description: "Opciones para cambiar el color, la forma o la apariencia de los dientes.",
     services: [
       {
         name: "Odontología estética",
         slug: "diseno-de-sonrisa-carepa",
-        summary: "Orientación para revisar forma, color, armonía y salud oral.",
+        summary: "Revisión de forma, color y salud oral.",
         whatsappMessage: defaultMessage("odontología estética")
       },
       {
@@ -75,7 +75,7 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Diseño de sonrisa",
         slug: "diseno-de-sonrisa-carepa",
-        summary: "Planeación estética responsable según salud oral y expectativas.",
+        summary: "Planeación de cambios según la salud oral y lo que quieres mejorar.",
         whatsappMessage: defaultMessage("diseño de sonrisa")
       },
       {
@@ -87,13 +87,13 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Resinas estéticas",
         slug: "resinas-esteticas-carepa",
-        summary: "Restauraciones estéticas para casos definidos en valoración.",
+        summary: "Restauraciones del color del diente para mejorar forma y función.",
         whatsappMessage: defaultMessage("resinas estéticas")
       },
       {
         name: "Coronas dentales",
         slug: "protesis-dentales-carepa",
-        summary: "Alternativa restaurativa que requiere diagnóstico y planificación.",
+        summary: "Restauración para cubrir y proteger un diente cuando corresponde.",
         whatsappMessage: defaultMessage("coronas dentales")
       }
     ]
@@ -111,7 +111,7 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Ortopedia maxilar",
         slug: "ortodoncia-carepa",
-        summary: "Orientación para casos que requieren valoración del desarrollo maxilar.",
+        summary: "Revisión del crecimiento y desarrollo de los maxilares.",
         whatsappMessage: defaultMessage("ortopedia maxilar")
       }
     ]
@@ -142,7 +142,7 @@ export const serviceCatalog: ServiceCategory[] = [
   },
   {
     title: "Endodoncia, cirugía y especialidades",
-    description: "Orientación para dolor, cordales, casos especializados y remisiones.",
+    description: "Consultas por dolor, cordales y casos que necesitan especialista.",
     services: [
       {
         name: "Endodoncia",
@@ -153,50 +153,50 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Extracción de cordales",
         slug: "extraccion-de-cordales-carepa",
-        summary: "Valoración de terceros molares, molestias, inflamación o indicación quirúrgica.",
+        summary: "Revisión de cordales por molestia, inflamación o posible extracción.",
         whatsappMessage: defaultMessage("extracción de cordales")
       },
       {
         name: "Consulta por odontología especializada",
-        summary: "Orientación para definir el profesional o manejo adecuado.",
+        summary: "Revisión para saber qué profesional debe atender el caso.",
         whatsappMessage: defaultMessage("consulta por odontología especializada")
       },
       {
         name: "Remisión a periodoncia",
-        summary: "Orientación cuando se identifican necesidades relacionadas con encías o soporte dental.",
+        summary: "Remisión para casos relacionados con encías o soporte dental.",
         whatsappMessage: defaultMessage("remisión a periodoncia")
       },
       {
         name: "Remisión a odontopediatría",
-        summary: "Orientación para casos infantiles que requieren valoración especializada.",
+        summary: "Remisión de casos infantiles que necesitan especialista.",
         whatsappMessage: defaultMessage("remisión a odontopediatría")
       }
     ]
   },
   {
     title: "Atención infantil",
-    description: "Orientación prudente para necesidades odontológicas en niños.",
+    description: "Consultas y remisiones odontológicas para niños.",
     services: [
       {
         name: "Remisión a odontopediatría",
-        summary: "Apoyo para dirigir casos infantiles hacia valoración especializada cuando aplica.",
+        summary: "Remisión a especialista cuando el caso lo requiere.",
         whatsappMessage: defaultMessage("remisión a odontopediatría")
       },
       {
         name: "Exodoncias simples para niños",
-        summary: "Valoración previa para definir si el manejo corresponde y es oportuno.",
+        summary: "Revisión previa para saber si corresponde extraer el diente.",
         whatsappMessage: defaultMessage("exodoncias simples para niños")
       }
     ]
   },
   {
     title: "Armonización orofacial",
-    description: "Procedimientos estéticos que requieren valoración, criterio profesional y expectativas claras.",
+    description: "Procedimientos estéticos para el rostro, definidos después de una consulta.",
     services: [
       {
         name: "Perfilación y aumento de labios",
         slug: "armonizacion-orofacial-carepa",
-        summary: "Orientación estética responsable según valoración individual.",
+        summary: "Consulta sobre forma, volumen y opciones para los labios.",
         whatsappMessage: defaultMessage("perfilación y aumento de labios")
       },
       {
@@ -208,13 +208,13 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Botox estético y para bruxismo",
         slug: "armonizacion-orofacial-carepa",
-        summary: "Valoración para orientación estética o funcional según necesidad.",
+        summary: "Consulta por motivos estéticos o relacionados con bruxismo.",
         whatsappMessage: defaultMessage("botox estético y para bruxismo")
       },
       {
         name: "Hilos tensores",
         slug: "armonizacion-orofacial-carepa",
-        summary: "Orientación profesional antes de considerar el procedimiento.",
+        summary: "Consulta para revisar indicación y alternativas.",
         whatsappMessage: defaultMessage("hilos tensores")
       },
       {
@@ -226,20 +226,20 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Lipopapada",
         slug: "armonizacion-orofacial-carepa",
-        summary: "Valoración estética previa antes de definir cualquier manejo.",
+        summary: "Consulta estética para revisar indicación y opciones.",
         whatsappMessage: defaultMessage("lipopapada")
       },
       {
         name: "Dermapen",
         slug: "armonizacion-orofacial-carepa",
-        summary: "Orientación para cuidado estético según valoración profesional.",
+        summary: "Consulta sobre este procedimiento para el cuidado de la piel.",
         whatsappMessage: defaultMessage("dermapen")
       }
     ]
   },
   {
     title: "Urgencias odontológicas",
-    description: "Orientación por WhatsApp para revisar disponibilidad según el motivo de urgencia.",
+    description: "Consulta disponibilidad por WhatsApp si tienes dolor, inflamación o una fractura.",
     services: [
       {
         name: "Dolor dental",
@@ -250,19 +250,19 @@ export const serviceCatalog: ServiceCategory[] = [
       {
         name: "Inflamación",
         slug: "urgencias-odontologicas-carepa",
-        summary: "Orientación si hay inflamación, absceso o molestia progresiva.",
+        summary: "Consulta si hay inflamación, absceso o una molestia que aumenta.",
         whatsappMessage: defaultMessage("inflamación dental")
       },
       {
         name: "Fracturas",
         slug: "urgencias-odontologicas-carepa",
-        summary: "Revisión de disponibilidad ante fractura dental o trauma.",
+        summary: "Consulta disponibilidad ante una fractura dental o un golpe.",
         whatsappMessage: defaultMessage("fractura dental")
       },
       {
         name: "Molestias dentales",
         slug: "urgencias-odontologicas-carepa",
-        summary: "Orientación inicial para definir el siguiente paso responsable.",
+        summary: "Describe la molestia para consultar disponibilidad.",
         whatsappMessage: defaultMessage("molestias dentales")
       },
       {
@@ -270,7 +270,7 @@ export const serviceCatalog: ServiceCategory[] = [
         slug: "urgencias-odontologicas-carepa",
         summary: "Consulta disponibilidad para dolor, inflamación, fractura o emergencia dental.",
         whatsappMessage:
-          "Hola, tengo una urgencia odontológica y estoy en Carepa o cerca. ¿Me pueden ayudar con disponibilidad?"
+          "Hola, tengo una urgencia odontológica. ¿Tienen disponibilidad para atenderme?"
       }
     ]
   }

@@ -1,41 +1,41 @@
 export const brandContent = {
   homeIntro:
-    "Odontología general, estética y especializada en Carepa, con atención cercana, profesional y orientada a que cada paciente entienda sus opciones antes de iniciar.",
-  consultorioTitle: "Atención odontológica clara, humana y responsable en Carepa",
+    "Odontología general, estética y servicios especializados en Carepa. Cuéntanos qué necesitas y te indicamos cómo empezar.",
+  consultorioTitle: "Cómo trabajamos",
   consultorioIntro:
-    "El consultorio está pensado para pacientes que buscan orientación profesional antes de iniciar un tratamiento. La atención parte de escuchar el motivo de consulta, revisar el caso y explicar opciones de forma sencilla.",
+    "Primero revisamos el motivo de consulta. Después explicamos qué encontramos y qué opciones hay.",
   presentation: {
     eyebrow: "Odontología Dra. Nataly Jiménez",
-    title: "Más que cuidar dientes, creamos sonrisas con confianza.",
+    title: "Un consultorio odontológico en Carepa",
     lead:
-      "En Odontología Dra. Nataly Jiménez acompañamos a cada paciente con pasión, profesionalismo y atención personalizada. Desde Carepa, Antioquia, trabajamos con un enfoque responsable en salud oral, estética dental y bienestar.",
+      "Aquí puedes consultar odontología general, estética y servicios especializados. Primero revisamos tu caso y después te explicamos las opciones.",
     paragraphs: [
-      "El consultorio reúne servicios de odontología general, estética y especializada, con tratamientos pensados según las necesidades reales de cada sonrisa y definidos a partir de una valoración profesional.",
-      "Nuestro objetivo es que vivas una experiencia cálida, confiable y de calidad desde el primer momento: que puedas preguntar, entender tus opciones y tomar decisiones con tranquilidad.",
-      "Tu sonrisa merece una atención cuidadosa, humana y profesional."
+      "La atención comienza con una valoración. Cuéntanos qué te molesta o qué quieres cambiar; no necesitas llegar sabiendo el nombre del tratamiento.",
+      "Nataly atiende odontología general y estética. Cuando el caso lo requiere, el equipo cuenta con apoyo en ortodoncia, cirugía maxilofacial e implantología.",
+      "La dirección exacta y el horario se confirman por WhatsApp al agendar."
     ],
     highlights: [
-      "Pasión por una atención cercana",
-      "Profesionalismo desde la valoración",
-      "Estética dental con criterio responsable",
-      "Bienestar y claridad para cada paciente"
+      "Valoración antes del tratamiento",
+      "Odontología general y estética",
+      "Apoyo de especialistas cuando aplica",
+      "Citas coordinadas por WhatsApp"
     ]
   },
   principles: [
     {
-      title: "Primero entender",
+      title: "Cuéntanos qué necesitas",
       description:
-        "Cada cita inicia con una conversación sobre lo que sientes, lo que quieres mejorar y las dudas que necesitas resolver."
+        "La cita comienza por lo que sientes, lo que quieres cambiar o la duda que necesitas resolver."
     },
     {
-      title: "Luego valorar",
+      title: "Revisamos el caso",
       description:
-        "La valoración permite revisar salud oral, prioridades y necesidades reales antes de sugerir un tratamiento."
+        "Antes de sugerir un tratamiento revisamos tu salud oral y el motivo de consulta."
     },
     {
-      title: "Después decidir",
+      title: "Te explicamos las opciones",
       description:
-        "Las recomendaciones se explican con claridad para que puedas tomar decisiones informadas y sin presión."
+        "Te contamos qué encontramos y qué alternativas corresponden a tu caso."
     }
   ],
   internalLinks: [

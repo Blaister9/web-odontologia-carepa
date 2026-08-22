@@ -39,19 +39,19 @@ export const campaigns: readonly CampaignConfig[] = [
     objective:
       "Dar a conocer el nuevo recorrido web y convertir el interés general en una conversación de valoración por WhatsApp.",
     audience:
-      "Personas de Carepa y municipios cercanos que buscan orientación odontológica y aún no saben qué servicio necesitan.",
+      "Personas de Carepa y municipios próximos que aún no saben qué servicio necesitan.",
     utmCampaign: "lanzamiento_sitio",
     journeyId: "care",
     landingPath: "/",
     whatsappMessage:
-      "Hola, conocí el nuevo sitio de la Dra. Nataly Jiménez y quiero recibir orientación para una valoración odontológica. ¿Me ayudan con disponibilidad?",
+      "Hola, quisiera agendar una valoración odontológica. ¿Tienen disponibilidad?",
     primaryCopy:
-      "Ahora puedes contarnos qué necesitas desde un recorrido corto y claro. Elige tu motivo de consulta, revisa la orientación inicial y decide cuándo escribirnos.",
-    shortCopy: "Elige tu necesidad y encuentra un punto de partida claro.",
-    headline: "Una forma más clara de empezar a cuidar tu sonrisa",
+      "Elige tu motivo de consulta y encuentra la información que necesitas para empezar.",
+    shortCopy: "Elige tu motivo de consulta.",
+    headline: "¿Qué necesitas consultar?",
     supportingLine:
-      "No necesitas conocer el nombre del tratamiento. Elige el motivo más cercano a lo que buscas y revisa el siguiente paso.",
-    cta: "Elegir mi necesidad",
+      "No tienes que saber el nombre del tratamiento. Elige lo más parecido a tu caso.",
+    cta: "Elegir una opción",
     visualConcept:
       "Composición luminosa con arcos de marca, tres caminos visuales y una interfaz móvil simplificada, sin fotografías añadidas.",
     enabled: true
@@ -62,21 +62,21 @@ export const campaigns: readonly CampaignConfig[] = [
     objective:
       "Ayudar a personas con dolor, inflamación, fracturas u otras molestias a identificar su motivo y consultar disponibilidad.",
     audience:
-      "Personas de Carepa y la región de Urabá con una molestia odontológica que requiere orientación oportuna.",
+      "Personas de Carepa y Urabá con dolor u otra molestia odontológica.",
     utmCampaign: "urgencias_carepa",
     journeyId: "urgency",
     landingPath: "/c/urgencias",
     whatsappMessage:
-      "Hola, tengo una urgencia odontológica y quiero consultar disponibilidad para una valoración. Estoy en Carepa o cerca.",
+      "Hola, tengo una urgencia odontológica. ¿Tienen disponibilidad para atenderme?",
     primaryCopy:
       "¿Tienes dolor, inflamación o se fracturó un diente? Elige lo que ocurrió y consulta disponibilidad de atención por WhatsApp.",
     shortCopy: "Elige tu molestia y consulta disponibilidad.",
     headline: "Si algo te duele o se dañó, empieza por aquí",
     supportingLine:
-      "Selecciona la situación más cercana a la tuya para recibir una orientación breve antes de escribirnos.",
-    cta: "Revisar mi urgencia",
+      "Elige lo que más se parece a tu caso y consulta disponibilidad.",
+    cta: "Elegir la molestia",
     visualConcept:
-      "Señal de orientación en coral sobrio, icono dental lineal y ruta corta hacia las opciones de urgencia.",
+      "Señal coral sobria, icono dental lineal y ruta corta hacia las opciones de urgencia.",
     enabled: true
   },
   {
@@ -90,13 +90,13 @@ export const campaigns: readonly CampaignConfig[] = [
     journeyId: "aesthetic",
     landingPath: "/c/sonrisa",
     whatsappMessage:
-      "Hola, quiero mejorar mi sonrisa, pero deseo recibir orientación antes de elegir un tratamiento. ¿Me ayudan con disponibilidad para una valoración?",
+      "Hola, quiero mejorar mi sonrisa. ¿Tienen disponibilidad para una valoración?",
     primaryCopy:
-      "Blanqueamiento, resinas, diseño de sonrisa u otras alternativas: explora el camino más cercano a lo que quieres mejorar.",
+      "Blanqueamiento, resinas, diseño de sonrisa u otras alternativas: elige lo que quieres mejorar.",
     shortCopy: "Explora opciones para mejorar tu sonrisa.",
-    headline: "Tu idea de sonrisa comienza con una valoración",
+    headline: "¿Qué te gustaría cambiar de tu sonrisa?",
     supportingLine:
-      "Cuéntanos qué te gustaría mejorar y conoce opciones que siempre deben revisarse según tu salud oral y tus expectativas.",
+      "Elige una opción. La valoración permite saber qué corresponde según tu salud oral.",
     cta: "Explorar opciones",
     visualConcept:
       "Arco de sonrisa abstracto, destellos dorados discretos y tarjetas que representan alternativas estéticas.",
@@ -114,14 +114,14 @@ export const campaigns: readonly CampaignConfig[] = [
     optionId: "cleaning",
     landingPath: "/c/limpieza",
     whatsappMessage:
-      "Hola, quiero agendar una limpieza o profilaxis dental. ¿Me ayudan con disponibilidad?",
+      "Hola, quisiera agendar una limpieza o profilaxis dental. ¿Tienen disponibilidad?",
     primaryCopy:
-      "Si estás pensando en una limpieza dental, aquí puedes revisar por qué la valoración ayuda a orientar el cuidado de dientes y encías.",
-    shortCopy: "Empieza tu cuidado preventivo con una valoración.",
+      "Antes de una limpieza revisamos el estado de los dientes y las encías.",
+    shortCopy: "Consulta por limpieza o profilaxis.",
     headline: "¿Estás pensando en una limpieza dental?",
     supportingLine:
-      "La opción de limpieza o profilaxis ya está seleccionada para que revises la orientación y decidas si deseas escribirnos.",
-    cta: "Ver orientación de limpieza",
+      "Ya seleccionamos la opción de limpieza para que puedas ver la información y consultar disponibilidad.",
+    cta: "Ver información",
     visualConcept:
       "Formas limpias en verde agua, brillo puntual y un icono de profilaxis con lectura clara en pantalla móvil.",
     enabled: true
@@ -138,14 +138,14 @@ export const campaigns: readonly CampaignConfig[] = [
     optionId: "orthodontics",
     landingPath: "/c/ortodoncia",
     whatsappMessage:
-      "Hola, quiero consultar una valoración para ortodoncia. ¿Me ayudan con disponibilidad en Carepa?",
+      "Hola, quisiera información sobre ortodoncia. ¿Tienen disponibilidad para una valoración?",
     primaryCopy:
       "Si quieres revisar alineación dental o mordida, una valoración es el punto de partida para conocer alternativas aplicables a tu caso.",
     shortCopy: "Conoce el punto de partida para ortodoncia.",
     headline: "La ortodoncia empieza por entender tu caso",
     supportingLine:
-      "La opción de ortodoncia ya está seleccionada. Revisa la orientación y consulta disponibilidad cuando quieras continuar.",
-    cta: "Ver orientación de ortodoncia",
+      "Ya seleccionamos ortodoncia para que puedas ver la información y consultar disponibilidad.",
+    cta: "Ver información",
     visualConcept:
       "Secuencia modular de arcos alineados, acentos dorados y trazos clínicos simples, sin promesas de resultado.",
     enabled: true
@@ -162,14 +162,14 @@ export const campaigns: readonly CampaignConfig[] = [
     optionId: "general-assessment",
     landingPath: "/c/valoracion",
     whatsappMessage:
-      "Hola, quiero agendar una valoración odontológica general. Estoy en Carepa o cerca. ¿Me ayudan con disponibilidad?",
+      "Hola, quisiera agendar una valoración general. ¿Tienen disponibilidad?",
     primaryCopy:
       "No necesitas llegar con un tratamiento elegido. Una valoración permite revisar tu salud oral y conversar sobre prioridades de cuidado.",
     shortCopy: "Empieza con una valoración general.",
-    headline: "Cuando no sabes por dónde empezar, empieza por valorar",
+    headline: "Puedes empezar por una valoración general",
     supportingLine:
-      "La valoración general ya está seleccionada para que conozcas el siguiente paso sin formularios ni decisiones apresuradas.",
-    cta: "Ver orientación de valoración",
+      "Ya seleccionamos la valoración general para que puedas ver cómo empezar.",
+    cta: "Ver información",
     visualConcept:
       "Ruta central con lista de revisión, formas redondeadas en teal y una jerarquía tranquila orientada a claridad.",
     enabled: true
@@ -178,21 +178,21 @@ export const campaigns: readonly CampaignConfig[] = [
     slug: "uraba",
     name: "Carepa, veredas y Urabá",
     objective:
-      "Acercar el consultorio a pacientes de Carepa, veredas cercanas y otros municipios de Urabá con un recorrido general.",
+      "Presentar el consultorio a pacientes de Carepa, veredas próximas y otros municipios de Urabá.",
     audience:
-      "Personas de Carepa, veredas cercanas y la región de Urabá que buscan orientación odontológica local.",
+      "Personas de Carepa, veredas próximas y otros municipios de Urabá que buscan consulta odontológica.",
     utmCampaign: "uraba_carepa",
     journeyId: "care",
     landingPath: "/c/uraba",
     whatsappMessage:
-      "Hola, estoy en Carepa, una vereda cercana o la región de Urabá y quiero consultar disponibilidad para una valoración odontológica. ¿Me orientan?",
+      "Hola, estoy en Carepa o en otro municipio de Urabá. ¿Tienen disponibilidad para una valoración?",
     primaryCopy:
-      "Si estás en Carepa, una vereda cercana o en Urabá, puedes comenzar el recorrido en línea y consultar disponibilidad antes de desplazarte.",
-    shortCopy: "Orientación odontológica para Carepa y Urabá.",
-    headline: "Un punto de partida cercano para Carepa y Urabá",
+      "Si estás en Carepa, una vereda próxima u otro municipio de Urabá, consulta disponibilidad antes de desplazarte.",
+    shortCopy: "Consultas odontológicas para Carepa y Urabá.",
+    headline: "Atención odontológica en Carepa",
     supportingLine:
-      "Elige tu necesidad, revisa una orientación breve y confirma por WhatsApp la información de tu cita antes de desplazarte.",
-    cta: "Elegir mi necesidad",
+      "Elige tu motivo y confirma por WhatsApp la cita y la ubicación antes de desplazarte.",
+    cta: "Elegir una opción",
     visualConcept:
       "Mapa abstracto de conexión regional, ondas teal y nodos que representan Carepa, veredas y municipios de Urabá.",
     enabled: true
