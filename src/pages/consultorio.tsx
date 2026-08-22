@@ -80,6 +80,30 @@ export default function ConsultorioPage() {
           </div>
         </section>
 
+        <section className="section clinic-space" aria-labelledby="clinic-space-title">
+          <div className="container clinic-space__inner">
+            <div className="clinic-space__copy">
+              <p className="eyebrow">El espacio</p>
+              <h2 id="clinic-space-title">Un consultorio real, preparado para atenderte.</h2>
+              <p>
+                La unidad odontológica y el espacio de atención forman parte del consultorio en
+                Carepa. La disponibilidad y las indicaciones para llegar se confirman al agendar.
+              </p>
+            </div>
+            <figure className="clinic-space__figure">
+              <div className="clinic-space__media">
+                <Image
+                  src="/images/client/web-v2/clinic-chair.webp"
+                  alt="Unidad odontológica del consultorio de la Dra. Nataly Jiménez en Carepa"
+                  fill
+                  sizes="(min-width: 980px) 58vw, 100vw"
+                />
+              </div>
+              <figcaption>Fotografía real del consultorio.</figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="section consultorio-story">
           <div className="container consultorio-story__grid">
             <div className="consultorio-story__copy">

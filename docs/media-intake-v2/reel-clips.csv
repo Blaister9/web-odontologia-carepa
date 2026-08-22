@@ -1,0 +1,6 @@
+asset_id,start_time,end_time,suggested_duration,hook,overlay_text,cta,landing_route,status
+VID-001,00:00,00:05,5s,"Así cerramos una jornada en el consultorio","Un espacio preparado para cuidarte","Conoce cómo empezar",/c/uraba,PUBLIC-SAFE
+VID-002,00:00,00:06,6s,"Un vistazo al espacio donde te atendemos","Atención odontológica en Carepa","Consulta disponibilidad",/c/uraba,PUBLIC-SAFE
+VID-003,00:00.2,00:07.0,6.8s,"¿No sabes cómo empezar?","Cuéntanos qué quieres revisar","Inicia tu valoración",/c/valoracion,PUBLIC-SAFE
+VID-004,00:00.2,00:12.0,11.8s,"¿Para qué sirven las carillas?","La opción depende de una valoración profesional","Explora opciones para tu sonrisa",/c/sonrisa,PUBLIC-PENDING-CONFIRMATION
+VID-005,00:01,00:08.5,7.5s,"Estamos listas para orientarte","Nataly + Vanesa | Atención cercana","Conoce al equipo",/equipo,PUBLIC-PENDING-CONFIRMATION

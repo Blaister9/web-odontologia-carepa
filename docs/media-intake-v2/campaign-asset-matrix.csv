@@ -1,0 +1,8 @@
+campaign,best_photo,second_photo,best_video,alternate_video,format,hook,CTA,landing_path,confidence_level,consent_status
+general,IMG-004,IMG-017,VID-003,VID-005,"portrait/reel","Un equipo cercano para orientarte","Consulta disponibilidad",/c/valoracion,high,"Public-safe; VID-005 pending free-promo confirmation"
+urgencias,IMG-005,IMG-015,VID-003,VID-001,"meta horizontal/story","¿Tienes dolor o una molestia dental?","Cuéntanos qué sucede",/c/urgencias,medium,"Public-safe; patient procedure permission confirmed"
+sonrisa,IMG-017,IMG-015,VID-004,VID-003,"portrait/reel","Mejorar tu sonrisa empieza por entender tu caso","Explora tus opciones",/c/sonrisa,high,"Photo public-safe; VID-004 pending free-promo confirmation; patient permission confirmed"
+limpieza,IMG-015,IMG-005,VID-003,VID-001,"portrait/story","Cuidar tu sonrisa también es prevenir","Consulta por limpieza",/c/limpieza,medium,"Public-safe; patient procedure permission confirmed"
+ortodoncia,IMG-004,IMG-017,VID-003,VID-005,"portrait/reel","Cada sonrisa necesita una valoración propia","Consulta por ortodoncia",/c/ortodoncia,medium,"Public-safe; VID-005 pending free-promo confirmation"
+valoracion,IMG-017,IMG-004,VID-003,VID-005,"portrait/reel","No necesitas saber qué tratamiento pedir","Empieza tu valoración",/c/valoracion,high,"Public-safe; VID-005 pending free-promo confirmation"
+Urabá/local trust,IMG-005,IMG-004,VID-001,VID-002,"google business/reel","Atención odontológica desde Carepa para la región","Consulta disponibilidad",/c/uraba,high,"All public-safe"
