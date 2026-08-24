@@ -12,6 +12,7 @@ import "@/styles/globals.css";
 import "@/styles/tokens.css";
 import "@/styles/luz-de-uraba.css";
 import "@/styles/home-correction.css";
+import "@/styles/media-storytelling.css";
 
 const displayFont = Fraunces({
   subsets: ["latin"],

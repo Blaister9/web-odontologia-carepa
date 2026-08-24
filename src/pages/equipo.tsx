@@ -3,9 +3,10 @@ import Image from "next/image";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { MediaPair } from "@/components/media/MediaPair";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { siteConfig } from "@/data/site";
-import { teamGroupPhoto, teamMembers } from "@/data/team";
+import { teamMembers } from "@/data/team";
 import { absoluteUrl, getDentistJsonLd } from "@/utils/seo";
 import { getWhatsAppUrl } from "@/utils/whatsapp";
 
@@ -46,48 +47,35 @@ export default function EquipoPage() {
 
       <Header />
       <main id="main-content">
-        <section className="internal-hero">
-          <div className="container internal-hero__inner">
-            <p className="eyebrow">Equipo</p>
-            <h1>Conoce al equipo</h1>
-            <p>
-              Nataly atiende odontología general y estética. El consultorio cuenta con apoyo en
-              ortodoncia, cirugía maxilofacial e implantología.
-            </p>
-            <div className="internal-hero__actions">
-              <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
-                Agendar por WhatsApp
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="section team-intro">
-          <div className="container team-intro__inner">
-            {/*
-              Banda fotográfica recortada de la pieza entregada por la clienta.
-              Identidades confirmadas: Nataly Jiménez y Vanesa López. El pie es
-              solo nominal; los roles ya viven en las tarjetas individuales.
-            */}
-            <figure className="team-intro__figure">
-              <div className="team-intro__media">
-                <Image
-                  src={teamGroupPhoto.current}
-                  alt={teamGroupPhoto.alt}
-                  fill
-                  sizes="(min-width: 980px) 52vw, 100vw"
-                  priority
-                />
-              </div>
-              <figcaption>{teamGroupPhoto.caption}</figcaption>
-            </figure>
-            <div className="team-intro__copy">
-              <p className="eyebrow">Nataly y Vanesa</p>
-              <h2>Quiénes te atienden</h2>
+        <section className="internal-hero team-hero">
+          <div className="container team-hero__grid">
+            <div className="team-hero__copy">
+              <p className="eyebrow">Equipo</p>
+              <h1>Conoce al equipo</h1>
               <p>
-                Cada profesional participa según el motivo de consulta.
+                Nataly atiende odontología general y estética. El consultorio cuenta con apoyo en
+                ortodoncia, cirugía maxilofacial e implantología.
               </p>
+              <div className="internal-hero__actions">
+                <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
+                  Agendar por WhatsApp
+                </a>
+              </div>
             </div>
+            <MediaPair
+              className="team-hero__media-pair"
+              primary={{
+                src: "/images/client/web-v2/nataly-vanesa-team.webp",
+                alt: "Dra. Nataly Jiménez y Vanesa López en el consultorio",
+                caption: "Nataly y Vanesa.",
+                position: "center 28%"
+              }}
+              secondary={{
+                src: "/images/client/web/equipo-preview.webp",
+                alt: "Nataly Jiménez y Vanesa López",
+                position: "center 30%"
+              }}
+            />
           </div>
         </section>
 

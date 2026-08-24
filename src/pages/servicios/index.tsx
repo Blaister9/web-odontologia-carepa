@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { MediaPair } from "@/components/media/MediaPair";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { serviceCatalog } from "@/data/serviceCatalog";
 import { siteConfig } from "@/data/site";
@@ -42,14 +43,30 @@ export default function ServiciosPage() {
 
       <Header />
       <main id="main-content">
-        <section className="internal-hero">
-          <div className="container internal-hero__inner">
-            <p className="eyebrow">Servicios</p>
-            <h1>Servicios odontológicos en Carepa</h1>
-            <p>
-              Busca el servicio que necesitas. Si no estás seguro, escríbenos y te indicamos
-              cómo empezar.
-            </p>
+        <section className="internal-hero services-hero">
+          <div className="container services-hero__grid">
+            <div className="services-hero__copy">
+              <p className="eyebrow">Servicios</p>
+              <h1>Servicios odontológicos en Carepa</h1>
+              <p>
+                Busca el servicio que necesitas. Si no estás seguro, escríbenos y te indicamos
+                cómo empezar.
+              </p>
+            </div>
+            <MediaPair
+              className="services-hero__media-pair"
+              primary={{
+                src: "/images/client/web-v2/nataly-clinic-work.webp",
+                alt: "Dra. Nataly Jiménez atendiendo a una paciente",
+                caption: "Atención en el consultorio.",
+                position: "center 44%"
+              }}
+              secondary={{
+                src: "/images/client/web-v2/clinic-chair-portrait.webp",
+                alt: "Unidad odontológica del consultorio en Carepa",
+                position: "center 44%"
+              }}
+            />
           </div>
         </section>
 

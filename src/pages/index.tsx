@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { ConversionJourney } from "@/components/conversion/ConversionJourney";
 import { CompactDoctorTrust } from "@/components/sections/CompactDoctorTrust";
+import { ClinicStory } from "@/components/sections/ClinicStory";
 import { Emergency } from "@/components/sections/Emergency";
 import { FeaturedTreatments } from "@/components/sections/FeaturedTreatments";
 import { FinalWhatsAppCTA } from "@/components/sections/FinalWhatsAppCTA";
@@ -85,6 +86,7 @@ export default function Home({ campaignSlug }: HomeProps) {
         <ConversionJourney />
         <CompactDoctorTrust />
         <FeaturedTreatments />
+        <ClinicStory />
         <GoogleTrustPreview />
         <Emergency />
         <RegionWhatsApp />

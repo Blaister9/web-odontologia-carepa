@@ -7,6 +7,7 @@ export type ServicePage = {
   metaDescription: string;
   h1: string;
   intro: string;
+  heroMedia?: ServiceEditorialMedia;
   benefits: string[];
   whenToConsider: string[];
   processSteps: string[];
@@ -22,6 +23,13 @@ export type ServicePage = {
    * se muestran sin edición más allá del recorte y la compresión.
    */
   caseStudy?: ServiceCaseStudy;
+};
+
+export type ServiceEditorialMedia = {
+  src: string;
+  alt: string;
+  caption: string;
+  position?: string;
 };
 
 export type ServiceCaseStudy = {
@@ -55,6 +63,12 @@ export const servicePages: ServicePage[] = [
     h1: "Limpieza dental en Carepa",
     intro:
       "La limpieza dental ayuda a remover placa y manchas superficiales. Antes de realizarla, revisamos el estado de dientes y encías.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-clinic-work.webp",
+      alt: "Dra. Nataly Jiménez durante una atención odontológica",
+      caption: "Atención en el consultorio.",
+      position: "center 45%"
+    },
     benefits: [
       "Ayuda a controlar acumulación de placa y manchas superficiales.",
       "Permite recibir recomendaciones de higiene según tus hábitos.",
@@ -95,6 +109,12 @@ export const servicePages: ServicePage[] = [
     h1: "Blanqueamiento dental en Carepa",
     intro:
       "El blanqueamiento puede aclarar el tono de los dientes. Antes de iniciarlo, hay que revisar sensibilidad, restauraciones y salud oral.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-portrait.webp",
+      alt: "Dra. Nataly Jiménez en el consultorio",
+      caption: "Dra. Nataly Jiménez.",
+      position: "center 24%"
+    },
     benefits: [
       "Permite revisar si eres candidato antes de iniciar.",
       "Ayuda a aclarar expectativas sobre tono, sensibilidad y cuidados.",
@@ -135,6 +155,12 @@ export const servicePages: ServicePage[] = [
     h1: "Resinas estéticas en Carepa",
     intro:
       "Las resinas estéticas pueden ayudar a restaurar dientes con desgaste, fracturas pequeñas o cambios de forma, siempre que el diagnóstico indique que son una opción adecuada.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-clinic-work.webp",
+      alt: "Dra. Nataly Jiménez atendiendo a una paciente",
+      caption: "Atención odontológica real.",
+      position: "center 45%"
+    },
     benefits: [
       "Pueden mejorar forma y función de dientes específicos.",
       "Se adaptan al color dental cuando el caso lo permite.",
@@ -175,6 +201,12 @@ export const servicePages: ServicePage[] = [
     h1: "Diseño de sonrisa en Carepa",
     intro:
       "Antes de planear un diseño de sonrisa, revisamos la salud oral, las encías, la mordida y los cambios que te gustaría hacer.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-portrait.webp",
+      alt: "Dra. Nataly Jiménez en el consultorio odontológico",
+      caption: "Dra. Nataly Jiménez.",
+      position: "center 24%"
+    },
     benefits: [
       "Permite planear cambios de forma más ordenada.",
       "Ayuda a alinear expectativas con posibilidades reales.",
@@ -215,6 +247,12 @@ export const servicePages: ServicePage[] = [
     h1: "Ortodoncia en Carepa",
     intro:
       "La ortodoncia corrige la alineación de los dientes y la mordida. Antes de iniciar, revisamos el caso y si hay algo que deba tratarse primero.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-vanesa-team.webp",
+      alt: "Dra. Nataly Jiménez y Vanesa López en el consultorio",
+      caption: "Equipo en el consultorio.",
+      position: "center 26%"
+    },
     benefits: [
       "Ayuda a revisar alineación y mordida de forma integral.",
       "Permite conocer alternativas y pasos generales del proceso.",
@@ -255,6 +293,12 @@ export const servicePages: ServicePage[] = [
     h1: "Prótesis dentales en Carepa",
     intro:
       "Las prótesis dentales sirven para reemplazar piezas ausentes y recuperar la función al masticar. La opción depende de la boca y las necesidades de cada persona.",
+    heroMedia: {
+      src: "/images/client/web-v2/clinic-chair-portrait.webp",
+      alt: "Unidad odontológica del consultorio en Carepa",
+      caption: "Consultorio en Carepa.",
+      position: "center 44%"
+    },
     benefits: [
       "Ayudan a revisar alternativas para piezas ausentes.",
       "Buscan recuperar función y comodidad al comer.",
@@ -310,6 +354,12 @@ export const servicePages: ServicePage[] = [
     h1: "Endodoncia en Carepa",
     intro:
       "La endodoncia puede ser necesaria cuando hay dolor o sensibilidad persistente. Primero hay que revisar si la molestia viene del interior del diente.",
+    heroMedia: {
+      src: "/images/client/web-v2/clinic-chair-portrait.webp",
+      alt: "Unidad odontológica del consultorio en Carepa",
+      caption: "Consultorio en Carepa.",
+      position: "center 44%"
+    },
     benefits: [
       "Permite estudiar molestias que no mejoran o aparecen con frío, calor o presión.",
       "Ayuda a definir el manejo cuando el dolor viene del interior del diente.",
@@ -430,6 +480,12 @@ export const servicePages: ServicePage[] = [
     h1: "Extracción de cordales en Carepa",
     intro:
       "Las cordales pueden causar dolor o inflamación, pero no siempre hay que extraerlas. Primero revisamos los síntomas y la posición de los dientes.",
+    heroMedia: {
+      src: "/images/client/web-v2/clinic-chair-portrait.webp",
+      alt: "Unidad odontológica del consultorio en Carepa",
+      caption: "Consultorio en Carepa.",
+      position: "center 44%"
+    },
     benefits: [
       "Permite revisar si la molestia está relacionada con terceros molares.",
       "Ayuda a definir si se necesita manejo quirúrgico, control o remisión.",
@@ -470,6 +526,12 @@ export const servicePages: ServicePage[] = [
     h1: "Urgencias odontológicas en Carepa",
     intro:
       "Si tienes dolor, inflamación, un golpe o una restauración caída, escribe por WhatsApp para consultar disponibilidad. No hacemos diagnósticos por chat.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-clinic-work.webp",
+      alt: "Dra. Nataly Jiménez durante una atención odontológica",
+      caption: "Atención en el consultorio.",
+      position: "center 45%"
+    },
     benefits: [
       "Ayuda a definir si debes buscar atención odontológica cuanto antes.",
       "Permite comunicar síntomas importantes desde el primer mensaje.",
@@ -510,6 +572,12 @@ export const servicePages: ServicePage[] = [
     h1: "Odontología familiar en Carepa",
     intro:
       "La odontología familiar incluye revisión, prevención y restauraciones para distintas edades. En consulta definimos qué conviene atender primero.",
+    heroMedia: {
+      src: "/images/client/web-v2/nataly-vanesa-team.webp",
+      alt: "Dra. Nataly Jiménez y Vanesa López en el consultorio",
+      caption: "Nataly y Vanesa.",
+      position: "center 26%"
+    },
     benefits: [
       "Permite revisar necesidades preventivas y restaurativas.",
       "Ayuda a ordenar prioridades de atención para la familia.",

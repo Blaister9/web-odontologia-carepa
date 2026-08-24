@@ -3,6 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
+import { EditorialMedia } from "@/components/media/EditorialMedia";
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
@@ -66,7 +67,11 @@ export default function ServiceDetailPage({
       <Header />
       <main id="main-content">
         <section className="service-hero">
-          <div className="container service-hero__grid">
+          <div
+            className={`container service-hero__grid${
+              servicePage.heroMedia ? " service-hero__grid--media" : ""
+            }`}
+          >
             <div>
               <Link className="service-hero__back" href="/#servicios">
                 Volver a servicios
@@ -84,11 +89,26 @@ export default function ServiceDetailPage({
               </div>
             </div>
 
-            <div className="service-hero__note">
-              <span>Antes de iniciar</span>
-              <strong>Primero hay que revisar si este tratamiento corresponde a tu caso.</strong>
-              <p>Sin diagnósticos por chat ni promesas de resultado.</p>
-            </div>
+            {servicePage.heroMedia ? (
+              <aside className="service-hero__media-column" aria-label="Contexto del servicio">
+                <EditorialMedia
+                  {...servicePage.heroMedia}
+                  className="service-detail-media"
+                  sizes="(min-width: 980px) 32vw, 92vw"
+                />
+                <div className="service-hero__note service-hero__note--compact">
+                  <span>Antes de iniciar</span>
+                  <strong>Primero revisamos si corresponde a tu caso.</strong>
+                  <p>Sin diagnósticos por chat ni promesas de resultado.</p>
+                </div>
+              </aside>
+            ) : (
+              <div className="service-hero__note">
+                <span>Antes de iniciar</span>
+                <strong>Primero hay que revisar si este tratamiento corresponde a tu caso.</strong>
+                <p>Sin diagnósticos por chat ni promesas de resultado.</p>
+              </div>
+            )}
           </div>
         </section>
 
