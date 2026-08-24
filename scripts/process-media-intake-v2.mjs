@@ -53,12 +53,32 @@ async function writeWebAssets() {
     .webp({ quality: 82 })
     .toFile(path.join(webDir, "clinic-chair.webp"));
 
+  await sharp(clinicSource)
+    .rotate()
+    .resize({ width: 900, height: 1200, fit: "cover", position: "centre", withoutEnlargement: true })
+    .webp({ quality: 82 })
+    .toFile(path.join(webDir, "clinic-chair-portrait.webp"));
+
   const teamSource = await ensureSource(sources.team);
   await sharp(teamSource)
     .rotate()
     .resize({ width: 800, withoutEnlargement: true })
     .webp({ quality: 84 })
     .toFile(path.join(webDir, "nataly-vanesa-team.webp"));
+
+  const procedureSource = await ensureSource(sources.procedure);
+  await sharp(procedureSource)
+    .rotate()
+    .resize({ width: 900, withoutEnlargement: true })
+    .webp({ quality: 84 })
+    .toFile(path.join(webDir, "nataly-clinic-work.webp"));
+
+  const natalySource = await ensureSource(sources.nataly);
+  await sharp(natalySource)
+    .rotate()
+    .resize({ width: 1000, withoutEnlargement: true })
+    .webp({ quality: 84 })
+    .toFile(path.join(webDir, "nataly-portrait.webp"));
 }
 
 async function writeFormatSet(key, filename, position = "centre") {
@@ -117,7 +137,7 @@ async function main() {
   await writeFormatSet("nataly-portrait", sources.nataly, "north");
   await copyApprovedOriginals();
 
-  console.log("Media V2: 2 web images, 20 format candidates and 3 approved originals generated.");
+  console.log("Media V2: 5 web images, 20 format candidates and 3 approved originals generated.");
 }
 
 main().catch((error) => {

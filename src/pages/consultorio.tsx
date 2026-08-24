@@ -1,8 +1,10 @@
 import Head from "next/head";
-import Image from "next/image";
 
 import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
+import { EditorialMedia } from "@/components/media/EditorialMedia";
+import { InlineVideo } from "@/components/media/InlineVideo";
+import { MediaPair } from "@/components/media/MediaPair";
 import { MobileStickyCTA } from "@/components/ui/MobileStickyCTA";
 import { brandContent } from "@/data/brandContent";
 import { siteConfig } from "@/data/site";
@@ -46,84 +48,93 @@ export default function ConsultorioPage() {
 
       <Header />
       <main id="main-content">
-        <section className="internal-hero">
-          <div className="container internal-hero__inner">
-            <p className="eyebrow">Consultorio</p>
-            <h1>{brandContent.presentation.title}</h1>
-            <p>{brandContent.presentation.lead}</p>
-            <div className="internal-hero__actions">
-              <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
-                Agendar valoración
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <section className="section consultorio-portrait">
-          <div className="container consultorio-portrait__inner">
-            <div className="consultorio-portrait__media">
-              <Image
-                src="/images/client/web/nataly-natural-portrait.webp"
-                alt={`${siteConfig.doctorName} en el consultorio odontológico de Carepa`}
-                fill
-                priority
-                loading="eager"
-                sizes="(min-width: 980px) 38vw, 100vw"
-              />
-            </div>
-            <div className="consultorio-portrait__copy">
-              <p className="eyebrow">Quién te atiende</p>
-              <h2>{siteConfig.doctorName}</h2>
-              <p>{siteConfig.doctorProfile.intro}</p>
-              <blockquote>{siteConfig.doctorProfile.quote}</blockquote>
-            </div>
-          </div>
-        </section>
-
-        <section className="section clinic-space" aria-labelledby="clinic-space-title">
-          <div className="container clinic-space__inner">
-            <div className="clinic-space__copy">
-              <p className="eyebrow">En Carepa</p>
-              <h2 id="clinic-space-title">El consultorio</h2>
-              <p>
-                La atención es en Carepa. La dirección exacta y las indicaciones para llegar se
-                confirman al agendar.
-              </p>
-            </div>
-            <figure className="clinic-space__figure">
-              <div className="clinic-space__media">
-                <Image
-                  src="/images/client/web-v2/clinic-chair.webp"
-                  alt="Unidad odontológica del consultorio de la Dra. Nataly Jiménez en Carepa"
-                  fill
-                  sizes="(min-width: 980px) 58vw, 100vw"
-                />
+        <section className="internal-hero consultorio-hero">
+          <div className="container consultorio-hero__grid">
+            <div className="consultorio-hero__copy">
+              <p className="eyebrow">Consultorio</p>
+              <h1>{brandContent.presentation.title}</h1>
+              <p>{brandContent.presentation.lead}</p>
+              <div className="internal-hero__actions">
+                <a className="button button--primary button--lg" href={whatsappUrl} target="_blank" rel="noreferrer">
+                  Agendar valoración
+                </a>
               </div>
-              <figcaption>Consultorio de la Dra. Nataly Jiménez en Carepa.</figcaption>
-            </figure>
+            </div>
+            <EditorialMedia
+              src="/images/client/web-v2/clinic-chair.webp"
+              alt="Unidad odontológica del consultorio de la Dra. Nataly Jiménez en Carepa"
+              caption="Consultorio en Carepa."
+              className="consultorio-hero__media"
+              priority
+              sizes="(min-width: 900px) 48vw, 92vw"
+            />
           </div>
         </section>
 
-        <section className="section consultorio-story">
-          <div className="container consultorio-story__grid">
-            <div className="consultorio-story__copy">
+        <section className="section consultorio-work" aria-labelledby="consultorio-work-title">
+          <div className="container consultorio-work__grid">
+            <EditorialMedia
+              src="/images/client/web-v2/nataly-clinic-work.webp"
+              alt="Dra. Nataly Jiménez atendiendo a una paciente en el consultorio"
+              caption="Atención en el consultorio."
+              className="consultorio-work__media"
+              sizes="(min-width: 900px) 56vw, 92vw"
+              position="center 46%"
+            />
+            <div className="consultorio-work__copy">
               <p className="eyebrow">{brandContent.presentation.eyebrow}</p>
-              <h2>{brandContent.consultorioTitle}</h2>
+              <h2 id="consultorio-work-title">{brandContent.consultorioTitle}</h2>
               <p>{brandContent.consultorioIntro}</p>
-              {brandContent.presentation.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
-            </div>
-
-            <aside className="consultorio-story__panel" aria-label="Enfoque del consultorio">
-              <span>Carepa, Antioquia</span>
-              <strong>Odontología general, estética y servicios especializados.</strong>
+              <p>{brandContent.presentation.paragraphs[0]}</p>
               <ul>
                 {brandContent.presentation.highlights.map((highlight) => (
                   <li key={highlight}>{highlight}</li>
                 ))}
               </ul>
-            </aside>
+            </div>
+          </div>
+        </section>
+
+        <section className="section consultorio-people" aria-labelledby="consultorio-people-title">
+          <div className="container consultorio-people__inner">
+            <div className="consultorio-people__copy">
+              <p className="eyebrow">Quién te atiende</p>
+              <h2 id="consultorio-people-title">{siteConfig.doctorName}</h2>
+              <p>{siteConfig.doctorProfile.intro}</p>
+              <blockquote>{siteConfig.doctorProfile.quote}</blockquote>
+            </div>
+            <MediaPair
+              primary={{
+                src: "/images/client/web-v2/nataly-portrait.webp",
+                alt: `${siteConfig.doctorName} en el consultorio`,
+                caption: "Dra. Nataly Jiménez.",
+                position: "center 20%"
+              }}
+              secondary={{
+                src: "/images/client/web-v2/nataly-vanesa-team.webp",
+                alt: "Dra. Nataly Jiménez y Vanesa López en el consultorio",
+                position: "center 28%"
+              }}
+            />
+          </div>
+        </section>
+
+        <section className="section consultorio-video" aria-labelledby="consultorio-video-title">
+          <div className="container consultorio-video__grid">
+            <div className="consultorio-video__copy">
+              <p className="eyebrow">El espacio</p>
+              <h2 id="consultorio-video-title">Un vistazo al consultorio</h2>
+              <p>
+                La atención es en Carepa. La dirección exacta y las indicaciones para llegar se
+                confirman al agendar.
+              </p>
+            </div>
+            <InlineVideo
+              src="/marketing/media-v2/video-previews/clinic-room-closing-vertical.mp4"
+              poster="/images/client/web-v2/clinic-tour-poster.webp"
+              label="Video del consultorio odontológico en Carepa"
+              caption="Consultorio al finalizar la jornada."
+            />
           </div>
         </section>
 
