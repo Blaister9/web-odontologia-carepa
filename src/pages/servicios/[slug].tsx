@@ -94,6 +94,7 @@ export default function ServiceDetailPage({
                 <EditorialMedia
                   {...servicePage.heroMedia}
                   className="service-detail-media"
+                  priority
                   sizes="(min-width: 980px) 32vw, 92vw"
                 />
                 <div className="service-hero__note service-hero__note--compact">
