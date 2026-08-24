@@ -25,7 +25,7 @@ También se reutilizaron fotografías web ya autorizadas del proyecto en la home
 ## Tratamiento técnico
 
 - Derivados WebP generados sin ampliar el original y con `sizes` responsivos.
-- Solo el medio LCP de `/consultorio` lleva prioridad; el resto conserva carga diferida.
+- Solo los medios LCP reales de las aperturas de `/consultorio`, `/equipo`, `/servicios` y los detalles con fotografía llevan prioridad; el resto conserva carga diferida.
 - Video con controles nativos, `playsInline`, `preload="none"`, sin autoplay, loop ni reproducción silenciada forzada.
 - Póster `clinic-tour-poster.webp` extraído de VID-002 en `00:01.000`.
 - Peso público nuevo: 309,832 bytes (cuatro derivados nuevos, incluido el póster).

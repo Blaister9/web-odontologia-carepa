@@ -64,6 +64,7 @@ export default function EquipoPage() {
             </div>
             <MediaPair
               className="team-hero__media-pair"
+              primaryPriority
               primary={{
                 src: "/images/client/web-v2/nataly-vanesa-team.webp",
                 alt: "Dra. Nataly Jiménez y Vanesa López en el consultorio",

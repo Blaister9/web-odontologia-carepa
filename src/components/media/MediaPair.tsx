@@ -4,14 +4,21 @@ type MediaPairProps = {
   primary: EditorialMediaSource;
   secondary: EditorialMediaSource;
   className?: string;
+  primaryPriority?: boolean;
 };
 
-export function MediaPair({ primary, secondary, className = "" }: MediaPairProps) {
+export function MediaPair({
+  primary,
+  secondary,
+  className = "",
+  primaryPriority = false
+}: MediaPairProps) {
   return (
     <div className={`media-pair ${className}`.trim()}>
       <EditorialMedia
         {...primary}
         className="media-pair__primary"
+        priority={primaryPriority}
         sizes="(min-width: 980px) 48vw, 92vw"
       />
       <EditorialMedia

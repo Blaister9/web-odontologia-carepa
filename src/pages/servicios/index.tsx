@@ -55,6 +55,7 @@ export default function ServiciosPage() {
             </div>
             <MediaPair
               className="services-hero__media-pair"
+              primaryPriority
               primary={{
                 src: "/images/client/web-v2/nataly-clinic-work.webp",
                 alt: "Dra. Nataly Jiménez atendiendo a una paciente",
